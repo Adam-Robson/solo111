@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function About() {
   return (
     <>
-      <Link className="min-w-full text-xs m-6 md:text-md md:m-48" to="/">back</Link>
+      <Link className="min-w-full text-xs m-6 md:text-md md:m-48 subpixel-antialiased" to="/">back</Link>
       <h2 className="text-center text-xl md:text-3xl py-8 subpixel-antialiased">about</h2>
       <div className="text-center text-xs md:text-lg md:leading-loose leading-relaxed px-8 flex flex-col items-center justify-center subpixel-antialiased">
         <p>I am a full-stack software engineer in the pacific northwest.</p>
