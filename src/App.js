@@ -9,7 +9,7 @@ import Projects from './components/Projects/Projects';
 import Arts from './components/Arts/Arts';
 import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
-import Writing from './components/Writing/Writing';
+import Writing from './components/Arts/Writing';
 import Error from './components/Error/Error';
 
 import { writings } from './data.js';
