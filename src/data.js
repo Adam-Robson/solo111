@@ -3,7 +3,7 @@ export const writings = [
     id: '1',
     name: 'silence',
     title: 'the realm the silence heard',
-    text: ['you are pacing instants, ', 'a rhythmic ethereal air, ', 'acute distraction draped upon, ', 'a far off dreamy layer. ', 'where eveything is happenstance, ', 'each face another place, ', 'take either way and let it pass, ', 'soon we call it fate. ', 'there\'s warmth in practice,', 'taking time - to learn to contemplate, ', 'in the midst of mostly noise, ', 'subconscious congregates. ', 'the realm that birthed the universe, ', 'a realm that sees your words, ', 'in this collage, ', 'our senses wait, ', 'in the realm the silence heard. ']
+    text: ['you are pacing instants, ', 'a rhythmic ethereal air, ', 'acute distraction draped upon, ', 'a far off dreamy layer. ', 'where eveything is happenstance, ', 'each face another place, ', 'take either way and let it pass, ', 'soon we call it fate. ', 'there\'s warmth in practice, ', 'taking time - to learn to contemplate, ', 'in the midst of mostly noise, ', 'subconscious congregates. ', 'the realm that birthed the universe, ', 'a realm that sees your words, ', 'in this collage, ', 'our senses wait, ', 'in the realm the silence heard. ']
   },
   {
     id: '2',
@@ -31,13 +31,13 @@ export const writings = [
   },
   {
     id: '6',
-    name: 'water weight',
+    name: 'water',
     title: 'water weight',
     text: ['a tiny earthen crease, ', 'irrigation and release, ', 'precious drip, ', 'a tiny leak, ', 'walking water, ', 'wears all weak, ', 'a gymnast in a gentle stream, ', 'soon to swallow everything']
   },
   {
     id: 7,
-    name: 'planet earth',
+    name: 'planet',
     title: 'planet earth',
     text: ['almost all water', 'and within every dew drop', 'brids punctuate the days']
   }];
