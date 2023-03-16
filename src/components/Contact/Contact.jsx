@@ -10,8 +10,8 @@ import {
 export default function Contact() {
   return (
     <>
-      <Link className="min-w-full text-xs m-6 md:m-12 subpixel-antialiased" to="/">back</Link>
-      <h2 className="text-center text-xl py-8 md:text-3xl subpixel-antialiased">contact</h2>
+      <Link className="min-w-full text-xs m-6 md:text-md md:m-48 subpixel-antialiased" to="/">back</Link>
+      <h2 className="text-center text-2xl md:text-3xl py-8 subpixel-antialiased">contact</h2>
       <section className="mx-auto text-center">
         <ul className="min-h-full flex flex-col items-center justify-between mt-12 md:mx-12 md:flex-row">
           <li>
