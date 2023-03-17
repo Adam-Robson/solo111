@@ -36,7 +36,7 @@ export default function Contact() {
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com/in/adam-ray-robson">
+            <a href="https://linkedin.com/in/adamrayrobson">
               <SlSocialLinkedin className="feather-icon mt-4"></SlSocialLinkedin>
             </a>
           </li>
