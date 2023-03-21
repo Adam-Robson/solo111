@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 export default function Projects() {
   return (
     <>
-      <Link className="min-w-full text-xs m-6 md:text-md md:m-48 subpixel-antialiased" to="/">back</Link>
       <h2 className="text-center text-xl md:text-3xl py-8 subpixel-antialiased">projects</h2>
-      <section className="flex flex-col items-center md:flex-row md:justify-evenly md:items-center">
+      <section className="flex flex-col items-center md:flex-row md:justify-evenly md:items-center md:mt-24">
         <Link
           to="https://collabomusic.co/">
           <img

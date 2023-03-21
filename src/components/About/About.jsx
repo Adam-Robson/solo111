@@ -1,22 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
     <>
-      <Link className="min-w-full text-xs m-6 md:text-md md:m-48 subpixel-antialiased" to="/">back</Link>
-      <h2 className="text-center text-xl md:text-3xl py-8 subpixel-antialiased">about</h2>
-      <div className="text-center text-xs md:text-lg md:leading-loose leading-relaxed px-8 flex flex-col items-center justify-center subpixel-antialiased">
-        <p>I am a full-stack software engineer in the pacific northwest.</p>
+      <h2 className="text-center text-xl md:text-3xl py-6 subpixel-antialiased">about</h2>
+      <div className="text-center text-xs md:text-lg leading-loose px-4 flex flex-col items-center justify-center subpixel-antialiased">
+        <p>I grew up in California, and now live in the pacific northwest.</p>
         <span>===</span>
-        <p>I am a creative person, who uses progressive programming methods to make technology.</p>
+        <p>For me, creativity is an animating force, a welcome challenge, and source of meaning.</p>
         <span>===</span>
-        <p>I enjoy building user-focused programs, with empathy and foresight.</p>
-        <spn>===</spn>
-        <p>My goal is to empower users and to better connect them within their own community.</p>
+        <p>I use progressive programming methods to build user-focused technology with empathy and foresight.</p>
         <span>===</span>
-        <p>I mostly work with a PERN stack - PostgreSQL, Express, React & Node.</p>
-        <div className="flex flex-col md:flex-row max-w-fit mx-auto">
+        <p>My goal is to empower people and to contribute to better connected community.</p>
+        <span>===</span>
+        <p>I mainly work with a PostgreSQL, Express, React & Node stack.</p>
+        <span>===</span>
+        <div className="flex flex-col md:flex-row max-w-fit mx-auto mt-6 md:mt-24">
           <img
             src={ process.env.PUBLIC_URL + '/images/adaam.png' }
             alt="image of adam robson"

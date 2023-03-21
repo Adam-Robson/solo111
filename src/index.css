@@ -7,20 +7,26 @@
 /* standard css */
 
 :root {
+    --outer-space: hsla(210, 10%, 32%, 1);
     --jet: hsla(240, 1%, 23%, 1);
-    --primary: hsla(135, 8%, 72%, 1);
+    --feldgrau: hsla(184, 10%, 33%, 1);
     --secondary: hsla(12, 12%, 54%, 1); 
     --purple: hsla(274, 12%, 37%, 1);
+    --honeydew: hsla(139, 27%, 82%, 1);
+    --verdigris: hsla(170, 40%, 60%, 1);
+    --celadon: hsla(105, 27%, 76%, 1);
+    --light-orange: hsla(32, 67%, 83%, 1);
 }
 
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(cloudmin.png);
+  background-blend-mode:darken;
 }
 
 body {
-  color: var(--purple);
+  color: var(--feldgrau);
   min-height: 100vh;
   max-width:100vw;
   margin: auto;
@@ -30,11 +36,20 @@ body {
 }
 
 a:hover {
-  color: var(--primary);
+  color: var(--verdigris);
   text-decoration: underline;
 }
 
 .feather-icon {
   height: 4rem;
   width: 4rem;
+}
+
+.label {
+  opacity: 0%;
+}
+
+.feather-icon:hover + .label {
+  color: var(--verdigris);
+  opacity:100%;
 }

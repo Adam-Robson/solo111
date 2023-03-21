@@ -2,6 +2,8 @@ import React from 'react';
 import {
   Routes,
   Route,
+  useLocation,
+  NavLink
 } from 'react-router-dom';
 
 import About from './components/About/About';
@@ -15,8 +17,18 @@ import Error from './components/Error/Error';
 import { writings } from './data.js';
 
 export default function App() {
+  let location = useLocation();
+
+  function showHomeLink() {
+    if (location.pathname !== '/') {
+      return <NavLink className="text-xs ml-8 relative top-2 md:ml-36 md:top-6" to='/'>home</NavLink>;
+    } else {
+      return null;
+    }
+  }
   return (
     <>
+      { showHomeLink()}
       <Routes>
         <Route path="/projects" element={ <Projects /> } />
         <Route path="/contact" element={ <Contact /> } />
