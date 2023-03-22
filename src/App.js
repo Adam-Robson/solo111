@@ -21,7 +21,7 @@ export default function App() {
 
   function showHomeLink() {
     if (location.pathname !== '/') {
-      return <NavLink className="text-xs ml-8 relative top-2 md:ml-36 md:top-6" to='/'>home</NavLink>;
+      return <NavLink className="text-sm ml-8 relative top-2 md:ml-36 md:top-6" to='/'>home</NavLink>;
     } else {
       return null;
     }

@@ -1,11 +1,13 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 export default function About() {
   return (
     <>
       <h2 className="text-center text-xl md:text-3xl py-6 subpixel-antialiased">about</h2>
-      <div className="text-center text-xs md:text-lg leading-loose px-4 flex flex-col items-center justify-center subpixel-antialiased">
+      <div className="text-center text-xs md:text-lg leading-loose px-4 flex flex-col items-center justify-center max-w-3xl mx-auto subpixel-antialiased">
         <p>I grew up in California, and now live in the pacific northwest.</p>
+        <span>===</span>
+        <p>Before settling in, my partner and I travelled around the western half of the United States in a 1980 Volkswagen Vanagon. Images of the adventures can be seen <Link to="https://lapaztravels.wordpress.com/">here</Link>.</p>
         <span>===</span>
         <p>For me, creativity is an animating force, a welcome challenge, and source of meaning.</p>
         <span>===</span>
@@ -15,7 +17,7 @@ export default function About() {
         <span>===</span>
         <p>I mainly work with a PostgreSQL, Express, React & Node stack.</p>
         <span>===</span>
-        <div className="flex flex-col md:flex-row max-w-fit mx-auto mt-6 md:mt-24">
+        <div className="flex flex-col md:flex-row max-w-full mx-auto mt-6 md:mt-24">
           <img
             src={ process.env.PUBLIC_URL + '/images/adaam.png' }
             alt="image of adam robson"
