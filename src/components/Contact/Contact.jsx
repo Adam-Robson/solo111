@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { 
   SlSocialFacebook, 
   SlSocialInstagram, 
@@ -14,35 +14,35 @@ export default function Contact() {
       <section className="mx-auto text-center md:mt-24">
         <ul className="min-h-full flex flex-col items-center justify-between md:mt-32 md:mx-36 md:flex-row">
           <li className="mb-4">
-            <NavLink
-              href="https://github.com/Adam-Robson">
+            <Link
+              to="https://github.com/Adam-Robson">
               <SlSocialGithub className="feather-icon mt-4"></SlSocialGithub>
               <span className="label">github</span>
-            </NavLink>
+            </Link>
           </li>
           <li className="mb-4">
-            <NavLink href="https://www.instagram.com/this.is.le.fog/">
+            <Link to="https://www.instagram.com/this.is.le.fog/">
               <SlSocialInstagram className="feather-icon mt-4"></SlSocialInstagram>
               <span className="label">instagram</span>
-            </NavLink>
+            </Link>
           </li>
           <li className="mb-4">
-            <NavLink href="https://facebook.com/adamrayrobson">
+            <Link to="https://facebook.com/adamrayrobson">
               <SlSocialFacebook className="feather-icon mt-4"></SlSocialFacebook>
               <span className="label">facebook</span>
-            </NavLink>
+            </Link>
           </li>
           <li className="mb-4">
-            <NavLink href="https://spoti.fi/3QNqMuE">
+            <Link to="https://spoti.fi/3QNqMuE">
               <SlSocialSpotify className="feather-icon mt-4"></SlSocialSpotify>
               <span className="label">spotify</span>
-            </NavLink>
+            </Link>
           </li>
           <li className="mb-4">
-            <NavLink href="https://linkedin.com/in/adamrayrobson">
+            <Link to="https://linkedin.com/in/adamrayrobson">
               <SlSocialLinkedin className="feather-icon mt-4"></SlSocialLinkedin>
               <span className="label">linkedin</span>
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </section>
