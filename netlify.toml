@@ -2,3 +2,53 @@
 command = 'npm run build'
 function = 'functions'
 publish = 'build'
+
+## This rule redirects to an external profile
+[[redirects]]
+  name = "contact page"
+  
+  [redirects.github]
+    from = "https://adamrayrobsonportfolio.netlify.app/contact"
+    to = "https://github.com/Adam-Robson"
+    status = 200
+    force = true # COMMENT: ensure always redirect
+    headers = {X-From = "Netlify"}
+    conditions = {Language = ["en"], Country = ["US"]}
+
+    [redirects.instagram]
+      from = "https://adamrayrobsonportfolio.netlify.app/contact"
+      to = "https://www.instagram.com/hiimadaam/"
+      status = 200
+      force = true # COMMENT: ensure always redirect
+      headers = {X-From = "Netlify"}
+      conditions = {Language = ["en"], Country = ["US"]}
+
+    [redirects.facebook]
+      from = "https://adamrayrobsonportfolio.netlify.app/contact"
+      to = "https://www.facebook.com/adamrayrobson/"
+      status = 200
+      force = true # COMMENT: ensure always redirect
+      headers = {X-From = "Netlify"}
+      conditions = {Language = ["en"], Country = ["US"]}
+    
+    [redirects.linkedin]
+    from = "https://adamrayrobsonportfolio.netlify.app/contact"
+      to = "https://www.linkedin.com/adamrayrobson/"
+      status = 200
+      force = true # COMMENT: ensure always redirect
+      headers = {X-From = "Netlify"}
+      conditions = {Language = ["en"], Country = ["US"]}
+
+    [redirects.spotify]
+      from = "https://adamrayrobsonportfolio.netlify.app/contact"
+      to = "https://spoti.fi/3QNqMuE"
+      status = 200
+      force = true # COMMENT: ensure always redirect
+      headers = {X-From = "Netlify"}
+      conditions = {Language = ["en"], Country = ["US"]}
+
+
+
+
+
+
