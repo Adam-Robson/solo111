@@ -53,3 +53,7 @@ a:hover {
   color: var(--verdigris);
   opacity:100%;
 }
+
+#pop-out {
+  color: var(--verdigris);
+}
