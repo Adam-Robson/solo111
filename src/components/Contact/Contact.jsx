@@ -10,8 +10,9 @@ import {
 export default function Contact() {
   return (
     <>
-      <h2 className="text-center text-2xl md:text-3xl my-8 subpixel-antialiased">contact</h2>
-      <section className="mx-auto text-center md:mt-24">
+      <h2 className="text-center text-3xl md:text-5xl my-8 relative bottom-2 md:bottom-20 subpixel-antialiased">contact</h2>
+      <p className="my-8 text-xl relative md:bottom-8">please feel free to reach out to me!</p>
+      <section className="w-screen mx-auto text-center md:mt-24">
         <ul className="min-h-full flex flex-col items-center justify-between md:mt-32 md:mx-36 md:flex-row">
           <li className="mb-4">
             <Link

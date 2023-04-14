@@ -19,15 +19,18 @@ import { writings } from './data.js';
 export default function App() {
   const location = useLocation();
 
-  useEffect(() => {
-    location.pathname !== '/' ?
-      <NavLink to='/'>Home</NavLink> :
-      null;
-  }, [location]);
+  function showHomeLink() {
+    if (location.pathname !== '/') {
+      return <NavLink className="text-md relative top-2 md:top-6" to='/'>home</NavLink>;
+    } else {
+      return null;
+    }
+  }
 
   
   return (
     <>
+      { showHomeLink()}
       <Routes>
         <Route path="/projects" element={ <Projects /> } />
         <Route path="/contact" element={ <Contact /> } />
