@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Routes,
   Route,
@@ -17,24 +17,23 @@ import Error from './components/Error/Error';
 import { writings } from './data.js';
 
 export default function App() {
-  let location = useLocation();
+  const location = useLocation();
 
-  function showHomeLink() {
-    if (location.pathname !== '/') {
-      return <NavLink className="text-sm ml-8 relative top-2 md:ml-36 md:top-6" to='/'>home</NavLink>;
-    } else {
-      return null;
-    }
-  }
+  useEffect(() => {
+    location.pathname !== '/' ?
+      <NavLink to='/'>Home</NavLink> :
+      null;
+  }, [location]);
+
+  
   return (
     <>
-      { showHomeLink()}
       <Routes>
         <Route path="/projects" element={ <Projects /> } />
         <Route path="/contact" element={ <Contact /> } />
         <Route path="/about" element={ <About /> } />
         <Route path="/arts/:id" element={ <Writing writings={ writings } /> } />
-        <Route path="/arts" element={ <Arts /> }/>
+        <Route path="/arts" element={ <Arts /> } />
         <Route path="/" element={ <Home /> } />
         <Route path="*" element={ <Error /> } />
       </Routes>

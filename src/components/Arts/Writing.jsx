@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 
 export default function Writing({ writings }) {
   const { id } = useParams();
-  const result = writings.find(({ name }) => name === id);
+  const result = writings.find(({ alias }) => alias === id);
   return (
     <>
       <h2 className="text-center text-xl md:text-2xl py-8 subpixel-antialiased">{ result.title }</h2>

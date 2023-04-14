@@ -3,22 +3,42 @@ import React from 'react';
 export default function Home() {
   return (
     <>
-      <section id="home-section" className="text-center md:min-h-full" style={ { color: `var(--feldgrau)` } }>
-        <div className="text-center">
-          <h1 className="text-center text-5xl my-32 font-extralight tracking-wider md:text-7xl subpixel-antialiased">
-            <p><strong><i>this</i></strong>.portfolio</p>
-          </h1>
-          <h2 className="text-xl font-light tracking-wider subpixel-antialiased md:text-3xl">adam robson</h2>
-          <h3 className="text-center text-sm font-light tracking-wider subpixel-antialiased my-32 mx-8 md:text-lg">
-            <i>creative software solutions designed using progressive programming methods</i>
-          </h3>
-          <ul className="flex justify-evenly items-end min-w-full absolute bottom-0 mb-20 subpixel-antialiased">
-            <li className="cursor-pointer"><a href="/about">about</a></li>
-            <li className="cursor-pointer"><a href="/projects">projects</a></li>
-            <li className="cursor-pointer"><a href="/arts">arts</a></li>
-            <li className="cursor-pointer"><a href="/contact">contact</a></li>
-          </ul>
-        </div >
+      <section className="w-screen mx-auto min-h-full">
+        <h1 className="text-5xl font-extralight my-10 md:text-7xl">
+          <p className="subpixel-antialiased">
+            <strong className="subpixel-antialiased">
+              this.
+            </strong>
+            portfolio
+          </p>
+        </h1>
+
+        <h2 className="text-4xl w-1/2 mx-auto my-12 flex flex-row justify-evenly">
+          adam ray robson
+        </h2>
+
+        <div className="flex justify-center">
+          <img
+            id="eloquent"
+            className="min-h-96 w-96 mix-blend-luminosity"
+            src={ process.env.PUBLIC_URL + '/images/condition.png' }
+            alt="quote from Eloquent JavaScript"
+          />
+        </div>
+        <ul className="flex justify-evenly items-end min-w-full absolute bottom-0 mb-20">
+          <li className="cursor-pointer">
+            <a href="/about" className="text-xl subpixel-antialiased">about</a>
+          </li>
+          <li className="cursor-pointer">
+            <a href="/projects" className="text-xl subpixel-antialiased">projects</a>
+          </li>
+          <li className="cursor-pointer">
+            <a href="/arts" className="text-xl subpixel-antialiased">arts</a>
+          </li>
+          <li className="cursor-pointer">
+            <a href="/contact" className="text-xl subpixel-antialiased">contact</a>
+          </li>
+        </ul>
       </section>
     </>
   );

@@ -6,8 +6,8 @@ export default function Arts() {
 
   const list = writings.map((writing) => (
 
-    <li className="" key={ writing.id }>
-      <Link className="text-center text-md subpixel-antialiased md:leading-loose" to={ writing.name }>
+    <li key={ writing.id }>
+      <Link className="text-center text-md subpixel-antialiased md:leading-loose" to={ writing.alias }>
         <p className="">{ writing.title }</p>
       </Link>
     </li>
