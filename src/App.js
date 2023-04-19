@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   Routes,
   Route,
@@ -21,13 +21,11 @@ export default function App() {
 
   function showHomeLink() {
     if (location.pathname !== '/') {
-      return <NavLink className="text-md relative top-2 md:top-6" to='/'>home</NavLink>;
+      return <NavLink className="text-sm md:text-lg absolute left-0 mx-8 my-8" to='/'>home</NavLink>;
     } else {
       return null;
     }
   }
-
-  
   return (
     <>
       { showHomeLink()}
