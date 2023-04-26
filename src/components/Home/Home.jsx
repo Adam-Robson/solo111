@@ -27,13 +27,13 @@ export default function Home() {
          
           <figure className="my-20">
             <blockquote cite="https://eloquentjavascript.net/">
-              <p className="quote text-md md:text-xl font-thin w-3/5 mx-auto subpixel-antialiased">
+              <p className="quote text-md md:text-xl font-medium w-3/5 mx-auto subpixel-antialiased">
                 {
-                  '"not all programs are straight roads.  we may,  for example, want to create a branching road, where the program takes the proper branch based on the situation at hand.  this is call conditional execution."'
+                  '"not all programs are straight roads.  we may,  for example, want to create a branching road, where the program takes the proper branch based on the situation at hand.  this is called conditional execution."'
                 }
               </p>
             </blockquote>
-            <figcaption className="my-4 pb-8 text-md md:text-xl ">
+            <figcaption className="my-4 pb-8 font-extralight text-md md:text-xl ">
               —<a href="https://eloquentjavascript.net/">Eloquent JavaScript</a>,
               <cite>{
                 ' Marijn Haverbeke'

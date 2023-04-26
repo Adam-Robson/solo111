@@ -49,10 +49,6 @@
 
   --jet: hsla(240, 1%, 23%, 1);
 
-  font-family: 'Josefin Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
- 
-  font-weight: 300;
-
   color-scheme: light dark;
 
   font-synthesis: none;
@@ -66,11 +62,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
-html,
-body {
-
+html {
   background-color: var(--jet);
   color: var(--eggshell);
+  font-family: 'Josefin Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+body {
   width: 100vw;
   max-height: 100vh;
   margin: 0 auto;
@@ -90,13 +89,6 @@ a:hover {
   color: var(--citron);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: var(--eggshell);
-    color: var(--jet);
-  }
-
-}
 
 .title {
   border: double 5px var(--slate-gray);
@@ -105,11 +97,31 @@ a:hover {
 
 .subtitle {
   border: double 3px var(--jasper);
-
   background-color: var(--wenge);
   color: var(--dun);
 }
 
 .name {
   color: var(--caramel);
+}
+.image {
+  border: 1px solid var(--outer-space);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--eggshell);
+    color: var(--jet);
+  }
+  a {
+    color: var(--old-rose);
+  }
+  .title {
+    background-color: var(--platinum);
+  }
+
+  .subtitle {
+    background-color: var(--cadet-gray);
+    color: var(--ebony);
+  }
 }
