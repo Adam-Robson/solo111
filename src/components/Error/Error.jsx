@@ -1,14 +1,21 @@
 import React from 'react';
+import { useRouteError } from 'react-router-dom';
 import life from '../../assets/life.gif';
 
 export default function Error() {
+  const error = useRouteError();
   return (
     <>
-      <section className="w-screen h-screen mx-auto flex flex-col justify-center items-center">
-        <h2 className="text-lg my-10 subpixel-antialiased">Something went wrong a bit!</h2>
-        <img src={ life } alt="life does not always go as planned gif" />
-        <h3 className="text-xl my-10 subpixel-antialiased font-semibold">Error 404: This resource has not been found.</h3>
-      </section>
+      <div className="flex flex-col w-screen mx-auto p-8">
+        <p className="text-center subpixel-antialiased m-10">
+          There was been an error loading this page.
+        </p>
+        <aside>Something went wrong a bit!</aside>
+        <img src={ life } className="h-40" />
+        <i className="text-center subpixel-antialiased m-10">
+          { error.statusText || error.message }
+        </i>
+      </div>
     </>
   );
 }
