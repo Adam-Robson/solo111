@@ -108,6 +108,18 @@ a:hover {
   border: 1px solid var(--outer-space);
 }
 
+.caption {
+  color: var(--slate-gray);
+}
+
+label {
+  opacity: 0;
+}
+
+.project_icon:hover + .label {
+  opacity: 1;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     background-color: var(--eggshell);
