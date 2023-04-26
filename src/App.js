@@ -12,6 +12,7 @@ import Arts from './components/Arts/Arts';
 import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
 import Writing from './components/Arts/Writing';
+import Resume from './components/Resume/Resume';
 import Error from './components/Error/Error';
 
 import { writings } from './data.js';
@@ -29,6 +30,7 @@ export default function App() {
     <>
       { showHomeLink() }
       <Routes>
+        <Route path="/resume" element={ <Resume /> } />
         <Route path="/projects" element={ <Projects /> } />
         <Route path="/contact" element={ <Contact /> } />
         <Route path="/about" element={ <About /> } />

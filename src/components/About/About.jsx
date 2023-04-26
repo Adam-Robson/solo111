@@ -8,7 +8,7 @@ import swans from '../../assets/swans.gif';
 export default function About() {
   return (
     <>
-      <NavLink to="/" className="text-sm md:text-lg m-10 absolute top-0 left-0">home</NavLink>
+      <NavLink to="/" className="text-sm md:text-md m-10 absolute top-0 left-0">home</NavLink>
       <section className="">
         <h2
           className="subtitle max-w-max mx-auto text-center text-xl md:text-2xl my-16 p-2 subpixel-antialiased underline"

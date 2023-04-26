@@ -120,6 +120,10 @@ label {
   opacity: 1;
 }
 
+.contact {
+  height: 4em;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     background-color: var(--eggshell);
@@ -133,7 +137,7 @@ label {
   }
 
   .subtitle {
-    background-color: var(--cadet-gray);
+    background-color: var(--platinum);
     color: var(--ebony);
   }
 }

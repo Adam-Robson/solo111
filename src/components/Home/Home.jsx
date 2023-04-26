@@ -1,6 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import ResumeButton from '../Resume/ResumeButton';
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  function handleNavigate() {
+    navigate('/resume');
+  }
   return (
     <>
       <section id="home-section" className="text-center md:min-h-full">
@@ -40,7 +48,7 @@ export default function Home() {
               }</cite>
             </figcaption>
           </figure>
-          
+          <ResumeButton handleNavigate={ handleNavigate } />
           <ul
             className="flex justify-evenly items-end min-w-full absolute bottom-0 mb-10 pt-10 subpixel-antialiased"
           >
