@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+<<<<<<< HEAD
   --antiflash-white: hsla(340, 9%, 94%, 1);
   --lavender-blush: hsla(349, 81%, 96%, 1);
   --beige: hsla(76, 57%, 91%, 1);
@@ -31,12 +32,78 @@
   text-align: center;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+=======
+
+  --eggshell: hsla(52, 50%, 91%, 1);
+  
+  --platinum: hsla(174, 11%, 82%, 1);
+
+  --dun: hsla(30, 35%, 79%, 1);
+
+  --sunset: hsla(37, 79%, 75%, 1);
+
+  --caramel: hsla(25, 47%, 52%, 1);
+  
+  --jasper: hsla(15, 54%, 48%, 1);
+
+  --ash-gray: hsla(78, 15%, 77%, 1);
+
+  --honeydew: hsla(139, 27%, 82%, 1);
+
+  --cadet-gray: hsla(93, 12%, 70%, 1);
+
+  --battleship-gray: hsla(120, 5%, 54%, 1);
+  
+  --citron: hsla(62, 41%, 57%, 1);
+
+  --pale-dogwood: hsla(19, 42%, 79%, 1);
+
+  --burnt-sienna: hsla(13, 68%, 63%, 1);
+
+  --old-rose: hsla(0, 36%, 58%, 1);
+
+  --rose-taupe: hsla(351, 15%, 45%, 1);
+
+  --purple: hsla(274, 12%, 37%, 1);
+  
+  --secondary: hsla(12, 12%, 54%, 1);
+
+  --wenge: hsla(355, 6%, 40%, 1);
+
+  --rose-ebony: hsla(3, 23%, 32%, 1);
+
+  --slate-gray: hsla(219, 8%, 53%, 1);
+
+  --outer-space: hsla(210, 10%, 32%, 1);
+
+  --ebony: hsla(64, 10%, 32%, 1);
+
+  --jet: hsla(240, 1%, 23%, 1);
+
+  font-family: 'Josefin Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+ 
+  font-weight: 300;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+
+  text-rendering: optimizeLegibility;
+
+>>>>>>> a181277 (face-lift the home page complete)
   -webkit-font-smoothing: antialiased;
+
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
+=======
+
+>>>>>>> a181277 (face-lift the home page complete)
   -webkit-text-size-adjust: 100%;
 }
 
+html,
 body {
+<<<<<<< HEAD
   color: var(--honeydew);
   min-height: 100vh;
   min-width: 50vw;
@@ -56,14 +123,38 @@ a {
 
 a:hover {
   color: var(--bittersweet);
+=======
+  background-color: var(--jet);
+  color: var(--eggshell);
+  width: 100vw;
+  max-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--pale-dogwood);
+}
+
+a:hover {
+>>>>>>> a181277 (face-lift the home page complete)
   text-decoration: underline;
+  color: var(--citron);
 }
 
-.feather-icon {
-  height: 4rem;
-  width: 4rem;
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--eggshell);
+    color: var(--jet);
+  }
+
 }
 
+<<<<<<< HEAD
 .label {
 opacity: 0%;
 }
@@ -105,3 +196,13 @@ opacity: 0%;
   }
 
 }
+=======
+.title {
+  border: double 5px var(--slate-gray);
+  background-color: var(--ebony);
+}
+
+.name {
+  color: var(--caramel);
+}
+>>>>>>> a181277 (face-lift the home page complete)

@@ -17,6 +17,7 @@ import Error from './components/Error/Error';
 import { writings } from './data.js';
 
 export default function App() {
+<<<<<<< HEAD
   const location = useLocation();
 
   function showHomeLink() {
@@ -25,10 +26,19 @@ export default function App() {
     } else {
       return null;
     }
+=======
+  let location = useLocation();
+  
+  function showHomeLink() {
+    location.pathname !== '/' ?
+      <NavLink to="/">home</NavLink> :
+      null;
+>>>>>>> a181277 (face-lift the home page complete)
   }
+
   return (
     <>
-      { showHomeLink()}
+      { showHomeLink() }
       <Routes>
         <Route path="/projects" element={ <Projects /> } />
         <Route path="/contact" element={ <Contact /> } />
