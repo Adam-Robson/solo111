@@ -103,6 +103,13 @@ a:hover {
   background-color: var(--ebony);
 }
 
+.subtitle {
+  border: double 3px var(--jasper);
+
+  background-color: var(--wenge);
+  color: var(--dun);
+}
+
 .name {
   color: var(--caramel);
 }
