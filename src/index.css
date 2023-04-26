@@ -89,6 +89,24 @@ a:hover {
   color: var(--citron);
 }
 
+button {
+  border-radius: .5em;
+  border: 1px solid transparent;
+  font-weight: 500;
+  padding: .5em 1.1em;
+  background-color: var(--dun);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--outer-space);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto --webkit-focus-ring-color;
+}
 
 .title {
   border: double 5px var(--slate-gray);

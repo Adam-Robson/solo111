@@ -48,9 +48,9 @@ export default function Home() {
               }</cite>
             </figcaption>
           </figure>
-          <ResumeButton handleNavigate={ handleNavigate } />
+         
           <ul
-            className="flex justify-evenly items-end min-w-full absolute bottom-0 mb-10 pt-10 subpixel-antialiased"
+            className="flex justify-evenly items-end min-w-full absolute bottom-0 md:mb-20 pt-10 subpixel-antialiased"
           >
             <li>
               <a href="/about">
@@ -74,7 +74,12 @@ export default function Home() {
             </li>
           </ul>
         </div >
+
       </section>
+      <div className="flex justify-end relative top-6">
+        <ResumeButton handleNavigate={ handleNavigate } />
+      </div>
+
     </>
   );
 }
