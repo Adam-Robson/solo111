@@ -17,23 +17,12 @@ import Error from './components/Error/Error';
 import { writings } from './data.js';
 
 export default function App() {
-<<<<<<< HEAD
-  const location = useLocation();
-
-  function showHomeLink() {
-    if (location.pathname !== '/') {
-      return <NavLink className="text-sm md:text-lg absolute left-0 mx-8 my-8" to='/'>home</NavLink>;
-    } else {
-      return null;
-    }
-=======
   let location = useLocation();
   
   function showHomeLink() {
     location.pathname !== '/' ?
       <NavLink to="/">home</NavLink> :
       null;
->>>>>>> a181277 (face-lift the home page complete)
   }
 
   return (

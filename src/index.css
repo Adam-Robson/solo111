@@ -3,37 +3,6 @@
 @tailwind utilities;
 
 :root {
-<<<<<<< HEAD
-  --antiflash-white: hsla(340, 9%, 94%, 1);
-  --lavender-blush: hsla(349, 81%, 96%, 1);
-  --beige: hsla(76, 57%, 91%, 1);
-  --honeydew: hsla(139, 27%, 82%, 1);
-  --light-orange: hsla(32, 67%, 83%, 1);
-  --thistle: hsla(333, 23%, 75%, 1);
-  --old-rose: hsla(358, 33%, 59%, 1);
-  --bittersweet: hsla(4, 79%, 63%, 1);
-  --purple: hsla(274, 12%, 37%, 1);
-  --taupe-gray: hsla(249, 5%, 54%, 1);
-  --paynes-gray: hsla(210, 15%, 38%, 1);
-  --outerspace: hsla(210, 10%, 32%, 1);
-  --jet: hsla(240, 1%, 23%, 1);
-
-  color-scheme: dark light;
-  color: var(--honeydew);
-  background-color:var(--outerspace);
-
-  max-width: 100vw;
-  margin: 0 auto;
-  
-  font-family: 'Inconsolata', 'Overpass', 'Lato', 'Source Sans 3', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.4;
-  letter-spacing: 1px;
-  font-weight: 300;
-  text-align: center;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-=======
-
   --eggshell: hsla(52, 50%, 91%, 1);
   
   --platinum: hsla(174, 11%, 82%, 1);
@@ -90,40 +59,16 @@
 
   text-rendering: optimizeLegibility;
 
->>>>>>> a181277 (face-lift the home page complete)
   -webkit-font-smoothing: antialiased;
 
   -moz-osx-font-smoothing: grayscale;
-<<<<<<< HEAD
-=======
 
->>>>>>> a181277 (face-lift the home page complete)
   -webkit-text-size-adjust: 100%;
 }
 
 html,
 body {
-<<<<<<< HEAD
-  color: var(--honeydew);
-  min-height: 100vh;
-  min-width: 50vw;
-  margin: 0 auto;
-  display: flex;
-  place-items: center;
-}
 
-h1 {
-  font-size: 2.2em;
-  line-height: 1.1;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--bittersweet);
-=======
   background-color: var(--jet);
   color: var(--eggshell);
   width: 100vw;
@@ -141,7 +86,6 @@ a {
 }
 
 a:hover {
->>>>>>> a181277 (face-lift the home page complete)
   text-decoration: underline;
   color: var(--citron);
 }
@@ -154,49 +98,6 @@ a:hover {
 
 }
 
-<<<<<<< HEAD
-.label {
-opacity: 0%;
-}
-
-.feather-icon:hover + .label {
-  color: var(--bittersweet);
-  opacity:100%;
-}
-
-
-#eloquent {
-  border: 2px solid var(--jet);
-}
-
-/* after this line is only the media query to toggle dark mode */
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--outerspace);
-    background-color:  var(--honeydew);
-  }
-
-  body {
-    color: var(--outerspace);
-  }
-
-  a {
-    color: var(--outerspace);
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: var(--bittersweet);
-    text-decoration: underline;
-  }
-
-  button {
-    background-color: var(--outerspace);
-    color: var(--honeydew);
-  }
-
-}
-=======
 .title {
   border: double 5px var(--slate-gray);
   background-color: var(--ebony);
@@ -205,4 +106,3 @@ opacity: 0%;
 .name {
   color: var(--caramel);
 }
->>>>>>> a181277 (face-lift the home page complete)
