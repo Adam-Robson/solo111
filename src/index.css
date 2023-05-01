@@ -86,7 +86,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: var(--purple);
+  color: var(--citron);
 }
 
 button {
