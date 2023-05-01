@@ -10,15 +10,15 @@ export default function Projects() {
   return (
     <>
       <section>
-        <div className="backdrop p-4 md:p-10 m-6 md:m-10">
+        <div className="backdrop p-4 font-light md:p-10 m-6 md:mx-48">
 
           <h2
             className="subtitle max-w-max mx-auto text-center text-xl md:text-4xl my-16 p-2 subpixel-antialiased underline"
           >
-          projects
+          Projects
           </h2>
 
-          <aside className="caption text-center text-sm md:text-lg relative bottom-12"><em>*hover on image to view name</em></aside>
+          <aside className="caption text-center text-xs md:text-sm relative bottom-12"><em>hover image to view name</em></aside>
        
           <article className="text-center flex flex-col items-center justify-around">
             <div className="my-10">
@@ -29,7 +29,7 @@ export default function Projects() {
                   alt="icon for buddystock"
                   className="project_icon h-40 md:h-72"
                 />
-                <label className="label">buddystock viii</label>
+                <label className="label">buddystock</label>
               </Link>
             </div>
             <div className="my-10">
@@ -62,7 +62,7 @@ export default function Projects() {
                   alt="icon for good books"
                   className="project_icon h-40 md:h-72"
                 />
-                <label className="label">books</label>
+                <label className="label">favorite books</label>
               </Link>
             </div>
             <div className="my-10">
@@ -73,12 +73,12 @@ export default function Projects() {
                   alt="icon for marked-icon"
                   className="project_icon md:h-72"
                 />
-                <label className="label">markdown editor</label>
+                <label className="label">marxdown</label>
               </Link>
             </div>
             <div className="caption w-1/2 mx-auto text-center text-sm md:text-md subpixel-antialiased mb-20">
               <em>
-              buddystock, books, and marxdown! were created by adam robson; tallyho and collabo were built by adam robson on a four-person team of developers.
+              buddystock, books, and marxdown were created by adam robson; tallyho and collabo were built by adam robson on a team with four developers.
               </em>
             </div>
           </article>

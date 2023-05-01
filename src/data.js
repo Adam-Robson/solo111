@@ -2,49 +2,55 @@ export const writings = [
   {
     id: '1',
     alias: 'silence',
-    title: 'the realm the silence heard',
+    title: 'The Realm the Silence Heard',
     text: ['you are pacing instants, ', 'a rhythmic ethereal air, ', 'acute distraction draped upon, ', 'a far off dreamy layer. ', 'where eveything is happenstance, ', 'each face another place, ', 'take either way and let it pass, ', 'soon we call it fate. ', 'there\'s warmth in practice, ', 'taking time - to learn to contemplate, ', 'in the midst of mostly noise, ', 'subconscious congregates. ', 'the realm that birthed the universe, ', 'the realm that sees your words, ', 'in this collage, ', 'our senses wait, ', 'in the realm the silence heard.']
   },
   {
     id: '2',
     alias: 'tuesday',
-    title: 'tuesday',
+    title: 'Tuesday',
     text: ['a fickle freckled fawn, ', 'treated dawn, ', 'with a yawn. ', 'as tears of newly wake, ', 'seeped through, ', 'her eyeballs drape. ', 'swaying back and forth, ', 'between shadows senses dreamed, ', 'she gleamed, ', 'disguising happenstance, ', 'with people that she\'d seen. ', 'the soundtrack was, ', 'their laughing rhythm, ', 'floating words like fiends, ', 'tickling her smile strings, ', 'a euphoric sleepy lean. ']
   },
   {
     id: '3',
     alias: 'earth',
-    title: 'heaven on earth',
+    title: 'Heaven on Earth',
     text: ['the static of the earth, ', 'attracts the magnet of a mind. ', 'the fabric of the earth, ', 'informs the senses, ', 'of the lines. ', 'the will inside the earth, ', 'humbles each and every heir, ', 'the brilliance of the earth, ', 'arrives acutely, ', 'and can tear. ', 'the contents of the earth, ', 'include the nows that all have passed. ', 'the shadows on the earth, ', 'hide the light, ', 'that can\'t be grasped. ', 'the folks on top of earth, ', 'looking elsewhere for their souls, ', 'miss the part of earth, ', 'that harbors heaven and its holes.']
   },
   {
     id: '4',
     alias: 'preference',
-    title: 'preference',
+    title: 'Preference',
     text: ['from the earliest nudge of dawn, ', 'to the cathartic drawl of noon, ', 'the primary precious and pregnant portion of the day, ', 'is therapeutic at least, ', 'and often appears drenched, ', 'in the excitement of possibility, ', 'the time of day designated, ', 'for solitude reflection and thankful, ', 'for silence leisure and breakfast, ', 'is best enjoyed with open windows, ', 'and accompanied by music, ', 'occasionally shared with, ', 'dearest friends and sleepy lovers, ', 'cultivate reverence for, ', 'the introduction of today, ', 'and today will show you, ', 'the most profound and primordial, ', 'respect and encouragement, ', 'you will ever know.']
   },
   {
     id: '5',
     alias: 'between',
-    title: 'in between',
+    title: 'In Between',
     text: ['while here i hear a tongue, ', 'feel the trees against the sun. ', 'in the breeze hear spirits breathe. ', 'the world weaved in gravity. ', 'maybe many can not taste, ', 'where you fill up to your face. ', 'see the thoughts, ', 'just like the clouds, ', 'will soon reveal, ', 'and sooner shroud. ', 'where even knowing, ', 'becomes confusing, ', 'and soon enough, ', 'becomes amusing, ', 'pinch my skin, ', 'and i will budge. ', 'i am in between, ', 'a grin and nudge.']
   },
   {
     id: '6',
     alias: 'water',
-    title: 'water weight',
+    title: 'Water Weight',
     text: ['a tiny earthen crease, ', 'irrigation and release, ', 'precious drip, ', 'a little leak, ', 'walking water, ', 'wears all weak. ', 'a gymnast in a gentle stream, ', 'soon will swallow everything.']
   },
   {
     id: 7,
     alias: 'planet',
-    title: 'planet earth',
+    title: 'Planet Earth',
     text: ['almost all water, ', 'and within every dew drop, ', 'brids punctuate the days.']
   },
   {
     id: 8,
     alias: 'tions',
-    title: 'tions',
+    title: 'Tions',
     text: ['while inside, ', 'the next mirror you find, ', 'do not think, ', 'about your sight, ', 'since the time, ', 'i thought of mine, ', 'mirrors won\'t tell me, ', 'what they find, ', 'though i look, ', 'and look and look, ', 'and turn around,', 'and play I\'m not,  ', 'surprise! i turn, ', 'around again, ', 'there\'s no surprise ', 'no mirror gives in, ', 'i see no thing, ', 'though standing still, ', 'i look so long, ', 'that wait! i must... ', 'i think i see... ', 'is that a bust?', 'is this thing real?, ', 'can I even trust? ', 'is this at last, ', 'a reflection!?, ', 'am i me? ', 'or my projection? ', 'and then it flickers, ', 'back to dust, ', 'it came and went ', 'and me nonplus ', 'no feels disturbed, ', 'no thoughtful hug, ', 'another me', 'will never be, ', 'go on i must ', 'yet to this day, ', 'me poached, my echo ', 'stays gone away.']
+  },
+  {
+    id: 9,
+    alias: 'labyrinth',
+    title: 'Labyrinth',
+    text: ['i get lost, ', 'it comes in waves, ', 'on the sea, ', 'in the density, ', 'this must be the place, ', 'can you believe what you see? ', 'there\'s a little bit of me in everything', 'there\'s a labyrinth in your skin, ', 'i can see you are dreaming, ', 'in my dream, ', 'in the fog, ', 'what a beautiful thing, ', 'nothing like it has bever been again. ', 'Your face says it all. ', 'we fade away, ', 'but we take our time, ', 'by the way, ', 'you can be so kind. ', 'if the ground goes away, ', 'or the light goes away too, ', 'i\'ll wear my sea legs, ', 'will you dance with me? ', 'there\'s a labyrinth in your skin, ', 'i can see you are dreaming, ', 'in my dream, ', 'in the fog, ', 'what a beautiful thing, ', 'nothing like it has bever been again. ', 'Your face says it all. ', 'we first met when we were dead, ', 'we live together on the moon, ', 'later on in the same maze, ', 'i grew flowers for you in june.']
   }
 ];

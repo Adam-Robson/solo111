@@ -67,6 +67,12 @@ html {
   color: var(--eggshell);
   font-family: 'Josefin Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
+
+  animation-duration: 1.5s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-direction: linear;
+
 }
 
 body {
@@ -145,16 +151,18 @@ label {
 }
 
 .backdrop {
-  background-color: var(--ash-gray);
+  background-color: var(--honeydew);
 }
 
+
+/* dark mode / light mode */
 @media (prefers-color-scheme: light) {
   :root {
     background-color: var(--eggshell);
     color: var(--jet);
   }
   a {
-    color: var(--pale-dogwood);
+    color: var(--jasper);
   }
   a:hover {
     color: var(--citron);
@@ -168,3 +176,55 @@ label {
     color: var(--ebony);
   }
 }
+
+/* animations */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes colorChange {
+  from {
+    color: var(--ebony);
+  }
+  to {
+    color: var(--dun);
+  }
+}
+@keyframes colorChange {
+  from {
+    color: var(--ebony);
+  }
+  to {
+    color: var(--dun);
+  }
+}
+.animate__color {
+  -webkit-animation-name: colorChange;
+  animation-name: colorChange;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+

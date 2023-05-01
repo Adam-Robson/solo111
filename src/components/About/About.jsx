@@ -10,12 +10,12 @@ export default function About() {
     <>
       <section className="">
         <h2
-          className="subtitle max-w-max mx-auto text-center text-xl md:text-2xl my-16 p-2 subpixel-antialiased underline"
+          className="subtitle max-w-max mx-auto text-center text-xl md:text-2xl my-16 p-2 font-light subpixel-antialiased underline"
         >
-          about me
+          About
         </h2>
 
-        <div className="text-center text-sm md:text-xl mx-2 md:mx-6 subpixel-antialiased">
+        <div className="text-center text-sm md:text-xl font-light mx-2 md:mx-6 subpixel-antialiased">
           <p className="my-2 md:my-4 p-4 md:p-6">
             Born & raised in California, I currently live in the pacific northwest.
           </p>

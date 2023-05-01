@@ -19,13 +19,13 @@ import { writings } from './data.js';
 
 export default function App() {
   const [homeLink, setHomeLink] = useState(false);
+  
   const location = useLocation();
   
   useEffect(() => {
     function showHomeLink() {
       if (location.pathname !== '/') {
         setHomeLink(true);
-
       } else {
         setHomeLink(false);
       }

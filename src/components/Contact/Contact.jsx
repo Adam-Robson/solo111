@@ -11,15 +11,15 @@ export default function Contact() {
     <>
       <section>
         <h2
-          className="subtitle max-w-max mx-auto text-center text-xl md:text-2xl my-16 p-2 subpixel-antialiased underline"
+          className="subtitle max-w-max mx-auto text-center font-light text-xl md:text-2xl my-16 p-2 subpixel-antialiased underline"
         >
-         contact
+         Contact
         </h2>
         <p className="text-center text-md md:text-xl subpixel-antialiased">
           feel free to reach out & happy coding!
         </p>
-        <article className="flex flex-col items-center justify-evenly my-10">
-          <ul className="">
+        <article className="flex md:flex-col items-center justify-evenly my-10">
+          <ul className="md:flex md:justify-around md:w-full">
             <li className="text-center">
               <Link
                 to="https://github.com/Adam-Robson">
