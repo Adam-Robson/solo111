@@ -11,28 +11,24 @@ export default function Home() {
   }
   return (
     <>
-      <section id="home-section" className="text-center md:min-h-full">
+      <section id="home-section" className="text-center min-h-full md:min-h-full">
         <div>
-          
-          <h1
-            className="title p-4 min-w-fit text-center text-5xl my-20 font-extralight md:text-7xl w-1/2 mx-auto subpixel-antialiased"
-          >
-            <p>
-              <strong>
-                <i>
-                  this
-                </i>
-              </strong>
+          <h1 className="title p-4 min-w-fit text-center text-5xl my-20 font-extralight md:text-7xl w-1/2 mx-auto subpixel-antialiased">
+            <strong>
+              <i>
+                this
+              </i>
+            </strong>
               .portfolio
-            </p>
           </h1>
-
-          <h2
-            className="name text-3xl my-10 font-light tracking-wider subpixel-antialiased md:text-4xl"
-          >
-            adam robson
-          </h2>
-         
+          <article className="">
+            <h2 className="name text-3xl my-10 font-light tracking-wider subpixel-antialiased md:text-4xl">
+              adam robson
+            </h2>
+            <div className="flex justify-center">
+              <ResumeButton handleNavigate={ handleNavigate } />
+            </div>
+          </article>
           <figure className="my-20">
             <blockquote cite="https://eloquentjavascript.net/">
               <p className="quote text-md md:text-xl font-medium w-3/5 mx-auto subpixel-antialiased">
@@ -48,10 +44,9 @@ export default function Home() {
               }</cite>
             </figcaption>
           </figure>
+
          
-          <ul
-            className="flex justify-evenly items-end min-w-full absolute bottom-0 md:mb-20 pt-10 subpixel-antialiased"
-          >
+          <ul className="flex justify-evenly items-end min-w-full bottom-0 pb-10 md:pb-10 pt-10 subpixel-antialiased">
             <li>
               <a href="/about">
                 about
@@ -76,9 +71,7 @@ export default function Home() {
         </div >
 
       </section>
-      <div className="flex justify-end relative top-6">
-        <ResumeButton handleNavigate={ handleNavigate } />
-      </div>
+     
 
     </>
   );

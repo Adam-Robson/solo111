@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { 
   SlSocialFacebook, 
   SlSocialGithub, 
@@ -9,8 +9,7 @@ import {
 export default function Contact() {
   return (
     <>
-      <NavLink to="/" className="text-sm md:text-md m-10 absolute top-0 left-0">home</NavLink>
-      <section className="">
+      <section>
         <h2
           className="subtitle max-w-max mx-auto text-center text-xl md:text-2xl my-16 p-2 subpixel-antialiased underline"
         >

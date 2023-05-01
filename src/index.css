@@ -81,20 +81,22 @@ a {
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
-  color: var(--pale-dogwood);
+  color: var(--caramel);
 }
 
 a:hover {
   text-decoration: underline;
-  color: var(--citron);
+  color: var(--purple);
 }
 
 button {
   border-radius: .5em;
   border: 1px solid transparent;
-  font-weight: 500;
-  padding: .5em 1.1em;
+  font-weight: 400;
+  padding: .4em .9em;
+  font-size: 1.25em;
   background-color: var(--dun);
+  color: var(--outer-space);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -142,13 +144,20 @@ label {
   height: 4em;
 }
 
+.backdrop {
+  background-color: var(--ash-gray);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     background-color: var(--eggshell);
     color: var(--jet);
   }
   a {
-    color: var(--old-rose);
+    color: var(--pale-dogwood);
+  }
+  a:hover {
+    color: var(--citron);
   }
   .title {
     background-color: var(--platinum);

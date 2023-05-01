@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { writings } from '../../data.js';
-import lefog from '../../assets/lefog.png';
 import heart from '../../assets/heart.gif';
 
 export default function Arts() {
@@ -16,7 +15,6 @@ export default function Arts() {
 
   return (
     <>
-      <NavLink to="/" className="text-sm md:text-md m-10 absolute top-0 left-0">home</NavLink>
       <section className="">
         <h2
           className="subtitle max-w-max mx-auto text-center text-xl md:text-2xl my-16 p-2 subpixel-antialiased underline"
@@ -25,7 +23,7 @@ export default function Arts() {
         </h2>
         <article>
           <div className="md:grid md:grid-cols-4 md:gap-12">
-            <div className="md:col-start-2 md:col-span-1">
+            <div className="md:col-start-1 md:col-span-2">
               <h3 className="caption text-center text-xl md:text-2xl font-semibold subpixel-antialiased">writings:</h3>
               <ul>{ list }</ul>
             </div>
@@ -47,7 +45,7 @@ export default function Arts() {
             <h4 className="text-center subpixel-antialiased my-6">LE FOG</h4>
           </div>
          
-          <div className="caption text-center w-2/3 mx-auto my-12 text-md md:text-lg md:p-8">
+          <div className="caption text-center w-2/3 mx-auto my-12 text-xs md:text-sm md:p-8">
             <em>
             all songs, sounds, writings, recordings and compositions are by adam robson
             </em>
