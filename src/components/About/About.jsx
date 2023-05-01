@@ -1,37 +1,61 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ufo from '../../assets/ufo.gif';
+import scarf from '../../assets/scarf.png';
+import daydream from '../../assets/daydream.png';
+import swans from '../../assets/swans.gif';
+
 export default function About() {
   return (
     <>
-      <h2 className="text-center text-xl md:text-3xl py-6 subpixel-antialiased">about</h2>
-      <div className="text-center text-xs md:text-lg leading-loose px-4 flex flex-col items-center justify-center max-w-3xl mx-auto subpixel-antialiased">
-        <p>I grew up in California, and now live in the pacific northwest.</p>
-        <span>===</span>
-        <p>Before settling in, my partner and I travelled around the western half of the United States in a 1980 Volkswagen Vanagon. Images of the adventures can be seen <Link to="https://lapaztravels.wordpress.com/">here</Link>.</p>
-        <span>===</span>
-        <p>For me, creativity is an animating force, a welcome challenge, and source of meaning.</p>
-        <span>===</span>
-        <p>I use progressive programming methods to build user-focused technology with empathy and foresight.</p>
-        <span>===</span>
-        <p>My goal is to empower people and to contribute to better connected community.</p>
-        <span>===</span>
-        <p>I mainly work with a PostgreSQL, Express, React & Node stack.</p>
-        <span>===</span>
-        <div className="flex flex-col md:flex-row max-w-full mx-auto mt-6 md:mt-24">
+      <section className="">
+        <h2
+          className="subtitle max-w-max mx-auto text-center text-xl md:text-2xl my-16 p-2 subpixel-antialiased underline"
+        >
+          about me
+        </h2>
+
+        <div className="text-center text-sm md:text-xl mx-2 md:mx-6 subpixel-antialiased">
+          <p className="my-2 md:my-4 p-4 md:p-6">
+            Born & raised in California, I currently live in the pacific northwest.
+          </p>
           <img
-            src={ process.env.PUBLIC_URL + '/images/adaam.png' }
-            alt="image of adam robson"
-            className="m-4 max-w-xs mx-auto object-scale-down h-60 w-96" />
+            className="image h-60 md:h-80 mx-auto my-4"
+            src={ ufo }
+            alt="gif of a ufo" 
+          />
+          <p className="my-2 md:my-4 p-4 md:p-6">
+            In the past, I traveled around the United States in a 1980 Volkswagen Vanagon. View images
+            <Link
+              to="https://lapaztravels.wordpress.com/"
+            >{
+                ' here.'
+              }</Link>
+          </p>
           <img
-            src={ process.env.PUBLIC_URL + '/images/cafe.png' }
+            src={ daydream }
             alt="image of adam robson"
-            className="m-4 max-w-xs mx-auto object-scale-down h-60 w-96" />
+            className="image h-60 md:h-80 mx-auto my-4" 
+          />
+          <p className="my-2 md:my-4 p-4 md:p-6"> 
+            Creativity is an animating force, a welcome challenge, and source of meaning for me.
+          </p>
           <img
-            src={ process.env.PUBLIC_URL + '/images/cactu.png' }
+            src={ swans }
+            alt="gif of swans"
+            className="image h-36 md:h-60 mx-auto mt-4"
+          />
+          <p className="my-2 md:my-4 p-4 md:p-6">
+            I am a software engineer, working with a PostgreSQL, Express, React & Node stack.
+          </p>
+          <img
+            src={ scarf }
             alt="image of adam robson"
-            className="m-4 max-w-xs mx-auto object-scale-down h-60 w-96" />
+            className="image h-60 md:h-80 mx-auto my-4"
+          />
         </div>
-      </div>
+        <div className="h-32"></div>
+      </section>
     </>
   );
 }

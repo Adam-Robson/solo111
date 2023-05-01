@@ -1,59 +1,170 @@
-/* tailwind */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* standard css */
-
 :root {
-    --outer-space: hsla(210, 10%, 32%, 1);
-    --jet: hsla(240, 1%, 23%, 1);
-    --feldgrau: hsla(184, 10%, 33%, 1);
-    --secondary: hsla(12, 12%, 54%, 1); 
-    --purple: hsla(274, 12%, 37%, 1);
-    --honeydew: hsla(139, 27%, 82%, 1);
-    --verdigris: hsla(170, 40%, 60%, 1);
-    --celadon: hsla(105, 27%, 76%, 1);
-    --light-orange: hsla(32, 67%, 83%, 1);
+  --eggshell: hsla(52, 50%, 91%, 1);
+  
+  --platinum: hsla(174, 11%, 82%, 1);
+
+  --dun: hsla(30, 35%, 79%, 1);
+
+  --sunset: hsla(37, 79%, 75%, 1);
+
+  --caramel: hsla(25, 47%, 52%, 1);
+  
+  --jasper: hsla(15, 54%, 48%, 1);
+
+  --ash-gray: hsla(78, 15%, 77%, 1);
+
+  --honeydew: hsla(139, 27%, 82%, 1);
+
+  --cadet-gray: hsla(93, 12%, 70%, 1);
+
+  --battleship-gray: hsla(120, 5%, 54%, 1);
+  
+  --citron: hsla(62, 41%, 57%, 1);
+
+  --pale-dogwood: hsla(19, 42%, 79%, 1);
+
+  --burnt-sienna: hsla(13, 68%, 63%, 1);
+
+  --old-rose: hsla(0, 36%, 58%, 1);
+
+  --rose-taupe: hsla(351, 15%, 45%, 1);
+
+  --purple: hsla(274, 12%, 37%, 1);
+  
+  --secondary: hsla(12, 12%, 54%, 1);
+
+  --wenge: hsla(355, 6%, 40%, 1);
+
+  --rose-ebony: hsla(3, 23%, 32%, 1);
+
+  --slate-gray: hsla(219, 8%, 53%, 1);
+
+  --outer-space: hsla(210, 10%, 32%, 1);
+
+  --ebony: hsla(64, 10%, 32%, 1);
+
+  --jet: hsla(240, 1%, 23%, 1);
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-text-size-adjust: 100%;
 }
 
 html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: url(cloudmin.png);
-  background-blend-mode:darken;
+  background-color: var(--jet);
+  color: var(--eggshell);
+  font-family: 'Josefin Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 
 body {
-  color: var(--feldgrau);
-  min-height: 100vh;
-  max-width:100vw;
-  margin: auto;
-  background-origin:border-box;
-  background-position: center;
-  background-size: contain; 
+  width: 100vw;
+  max-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--caramel);
 }
 
 a:hover {
-  color: var(--verdigris);
   text-decoration: underline;
+  color: var(--purple);
 }
 
-.feather-icon {
-  height: 4rem;
-  width: 4rem;
+button {
+  border-radius: .5em;
+  border: 1px solid transparent;
+  font-weight: 400;
+  padding: .4em .9em;
+  font-size: 1.25em;
+  background-color: var(--dun);
+  color: var(--outer-space);
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
 
-.label {
-  opacity: 0%;
+button:hover {
+  border-color: var(--outer-space);
 }
 
-.feather-icon:hover + .label {
-  color: var(--verdigris);
-  opacity:100%;
+button:focus,
+button:focus-visible {
+  outline: 4px auto --webkit-focus-ring-color;
 }
 
-#pop-out {
-  color: var(--verdigris);
+.title {
+  border: double 5px var(--slate-gray);
+  background-color: var(--ebony);
+}
+
+.subtitle {
+  border: double 3px var(--jasper);
+  background-color: var(--wenge);
+  color: var(--dun);
+}
+
+.name {
+  color: var(--caramel);
+}
+.image {
+  border: 1px solid var(--outer-space);
+}
+
+.caption {
+  color: var(--slate-gray);
+}
+
+label {
+  opacity: 0;
+}
+
+.project_icon:hover + .label {
+  opacity: 1;
+}
+
+.contact {
+  height: 4em;
+}
+
+.backdrop {
+  background-color: var(--ash-gray);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--eggshell);
+    color: var(--jet);
+  }
+  a {
+    color: var(--pale-dogwood);
+  }
+  a:hover {
+    color: var(--citron);
+  }
+  .title {
+    background-color: var(--platinum);
+  }
+
+  .subtitle {
+    background-color: var(--platinum);
+    color: var(--ebony);
+  }
 }
