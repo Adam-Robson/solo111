@@ -4,7 +4,9 @@ import {
   SlSocialFacebook, 
   SlSocialGithub, 
   SlSocialSpotify, 
-  SlSocialLinkedin } from 'react-icons/sl';
+  SlSocialLinkedin
+} from 'react-icons/sl';
+import adaam from '../../assets/golo.svg';
 
 export default function Contact() {
   return (
@@ -18,8 +20,8 @@ export default function Contact() {
         <p className="text-center text-md md:text-xl subpixel-antialiased">
           feel free to reach out & happy coding!
         </p>
-        <article className="flex md:flex-col items-center justify-evenly my-10">
-          <ul className="md:flex md:justify-around md:w-full">
+        <article className="flex flex-col items-center justify-evenly my-10">
+          <ul className="flex flex-col md:flex-row justify-around md:w-full">
             <li className="text-center">
               <Link
                 to="https://github.com/Adam-Robson">
@@ -46,6 +48,7 @@ export default function Contact() {
               </Link>
             </li>
           </ul>
+          <img src={ adaam } alt="adam logo" />
         </article>
       </section>
     </>
