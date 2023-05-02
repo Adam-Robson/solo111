@@ -9,7 +9,7 @@ import {
 export default function Contact() {
   return (
     <>
-      <section>
+      <section className="animate__fadeIn">
         <h2
           className="subtitle max-w-max mx-auto text-center font-light text-xl md:text-2xl my-16 p-2 subpixel-antialiased underline"
         >

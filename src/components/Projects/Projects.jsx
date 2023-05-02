@@ -9,7 +9,7 @@ import marked from '../../assets/marked.png';
 export default function Projects() {
   return (
     <>
-      <section>
+      <section className="animate__fadeIn">
         <div className="backdrop p-4 font-light md:p-10 m-6 md:mx-48">
 
           <h2
@@ -56,7 +56,7 @@ export default function Projects() {
             </div>
             <div className="my-10">
               <Link
-                to="https://https://deft-rolypoly-d4e615.netlify.app/">
+                to="https://adaamsfavoritebooks.netlify.app/">
                 <img
                   src={ heart }
                   alt="icon for good books"
@@ -67,7 +67,7 @@ export default function Projects() {
             </div>
             <div className="my-10">
               <Link
-                to="https://preeminent-bunny-fb20a4.netlify.app">
+                to="https://meek-griffin-f402ef.netlify.app">
                 <img
                   src={ marked }
                   alt="icon for marked-icon"

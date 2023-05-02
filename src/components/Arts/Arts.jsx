@@ -15,7 +15,7 @@ export default function Arts() {
 
   return (
     <>
-      <section className="">
+      <section className="animate__fadeIn">
         <h2
           className="subtitle max-w-max mx-auto text-center text-xl font-light md:text-2xl my-16 p-2 subpixel-antialiased underline"
         >

@@ -11,19 +11,19 @@ export default function Home() {
   }
   return (
     <>
-      <section id="home-section" className="text-center min-h-full md:min-h-full">
+      <section className="animate__fadeIn text-center min-h-full md:min-h-full">
         <div>
           <h1 className="title p-4 min-w-fit text-center text-5xl my-20 font-extralight md:text-7xl w-1/2 mx-auto subpixel-antialiased">
             <strong>
-              <i>
-                this
-              </i>
+              <i>{
+                'this '
+              }</i>
             </strong>
-              .portfolio
+               is a portfolio
           </h1>
           <article className="">
             <h2 className="name text-3xl my-10 font-light tracking-wider subpixel-antialiased md:text-4xl">
-              adam robson
+              by adam robson
             </h2>
             <div className="flex justify-center">
               <ResumeButton handleNavigate={ handleNavigate } />

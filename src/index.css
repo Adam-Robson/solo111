@@ -6,15 +6,7 @@
   --eggshell: hsla(52, 50%, 91%, 1);
   
   --platinum: hsla(174, 11%, 82%, 1);
-
-  --dun: hsla(30, 35%, 79%, 1);
-
-  --sunset: hsla(37, 79%, 75%, 1);
-
-  --caramel: hsla(25, 47%, 52%, 1);
   
-  --jasper: hsla(15, 54%, 48%, 1);
-
   --ash-gray: hsla(78, 15%, 77%, 1);
 
   --honeydew: hsla(139, 27%, 82%, 1);
@@ -25,7 +17,15 @@
   
   --citron: hsla(62, 41%, 57%, 1);
 
+  --dun: hsla(30, 35%, 79%, 1);
+
+  --sunset: hsla(37, 79%, 75%, 1);
+
+  --caramel: hsla(25, 47%, 52%, 1);
+
   --pale-dogwood: hsla(19, 42%, 79%, 1);
+
+  --jasper: hsla(15, 54%, 48%, 1);
 
   --burnt-sienna: hsla(13, 68%, 63%, 1);
 
@@ -99,8 +99,8 @@ button {
   border-radius: .5em;
   border: 1px solid transparent;
   font-weight: 400;
-  padding: .4em .9em;
-  font-size: 1.25em;
+  padding: .3em .7em;
+  font-size: 1.05em;
   background-color: var(--dun);
   color: var(--outer-space);
   cursor: pointer;
@@ -222,8 +222,8 @@ label {
 .animate__color {
   -webkit-animation-name: colorChange;
   animation-name: colorChange;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
