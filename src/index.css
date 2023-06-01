@@ -83,6 +83,10 @@ body {
 
 }
 
+#root {
+  height: calc(100vh - 10vmin);
+}
+
 a {
   font-weight: 500;
   text-decoration: none;
@@ -228,3 +232,7 @@ label {
   animation-fill-mode: both;
 }
 
+.download {
+  background-color:hsla(25, 47%, 52%, .25);
+  margin: 1rem;
+}
