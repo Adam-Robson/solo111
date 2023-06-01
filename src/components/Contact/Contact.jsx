@@ -6,7 +6,7 @@ import {
   SlSocialSpotify, 
   SlSocialLinkedin
 } from 'react-icons/sl';
-import adaam from '../../assets/golo.svg';
+import favicon from '../../assets/favicon.png';
 
 export default function Contact() {
   return (
@@ -48,7 +48,7 @@ export default function Contact() {
               </Link>
             </li>
           </ul>
-          <img src={ adaam } alt="adam logo" />
+          <img src={ favicon } alt="adam logo" />
         </article>
       </section>
     </>
