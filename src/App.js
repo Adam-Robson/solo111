@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home.jsx';
+import Bio from './components/Bio.jsx';
+import Art from './components/Art';
+import Writing from './components/Writing';
+// Supports weights 100-900
+import '@fontsource-variable/inter';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route index path='/' element={ <Home /> } />
+        <Route path='/bio' element={ <Bio /> } />
+        <Route path='/art' element={ <Art /> }>
+          <Route path="/art/:name" element={ <Writing /> } />
+        </Route>
+      </Routes>
+    </>
   );
 }
-
-export default App;
