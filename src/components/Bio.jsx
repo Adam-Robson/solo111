@@ -1,11 +1,11 @@
-import { NavLink } from 'react-router-dom';
-import face from '../assets/face.png';
+import { Link } from 'react-router-dom';
+import face from '../assets/faace-min.png';
 
 export default function Bio() {
   return (
     <>
       <section className="w-screen h-screen fadein px-6 overflow-hidden">
-        <NavLink className="absolute right-4 top-4 text-xl subpixel-antialiased" to='/'>home</NavLink>
+        <Link className="absolute right-4 top-4 text-xl subpixel-antialiased" to='/'>home</Link>
         <h1 className="title text-8xl md:text-9xl relative top-8 subpixel-antialiased">bio</h1>
         <div className="md:grid md:grid-cols-2 md:gap-8 p-4">
           <div className="md:flex md:flex-col md:justify-evenly my-8">

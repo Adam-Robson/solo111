@@ -33,7 +33,7 @@ export default function Art() {
 
           <div className="container max-w-4xl w-full p-2 mx-auto">
             <h3 className="w-full text-right text-2xl md:text-5xl my-4">writings</h3>
-            <ul className="min-w-full mx-auto grid grid-flow-col gap-8">{ list }</ul>
+            <ul className="w-full mx-auto grid grid-flow-row md:grid-flow-col gap-8 mt-8">{ list }</ul>
           </div>
         </article>
       </section>

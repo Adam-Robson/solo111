@@ -5,56 +5,60 @@ export default function Home() {
   return (
     <>
       <main className="w-screen h-screen fadein">
-        <div className="px-2">
-          <h1 className="title max-w-full m-2 text-5xl sm:text-6xl md:text-7xl lg:text-8xl subpixel-antialiased">this is a portfolio</h1>
+        <div className="p-4">
+          <h1 className="title max-w-full m-2 text-7xl sm:text-8xl md:text-9xl subpixel-antialiased">this is a portfolio</h1>
         </div>
         <div className="h-full flex flex-col absolute right-4 text-right">
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
             to="/bio"
           >bio</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
             to="/art"
           >artwork</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
-            to="/recent"
-          >recent</NavLink>
+            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
+            to="/projects"
+          >projects</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
+            to="/resume"
+          >resume</NavLink>
+          <NavLink
+            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
             to="/misc"
-          >misc</NavLink>
+          >misc.</NavLink>
         </div>
 
-        <article className="name absolute bottom-16 right-10 sm:right-4 sm:bottom-4 w-full max-w-md mx-auto flex justify-end items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+        <article className="name absolute bottom-20 right-4 sm:bottom-8 w-full max-w-md mx-auto flex justify-end items-center text-4xl md:text-5xl lg:text-6xl">
           Adam Robson
         </article>
 
-        <article className="contact absolute bottom-4 w-full max-w-sm mx-auto flex justify-evenly items-baseline">
+        <article className="contact absolute bottom-8 w-full max-w-sm mx-auto flex justify-evenly items-baseline">
 
           <NavLink
             href="https://www.buymeacoffee.com/AdamRobson"
             className="homelink subpixel-antialiased">
-            <SiBuymeacoffee className="project-icon" size={ 36 } />
+            <SiBuymeacoffee className="project-icon" size={ 40 } />
           </NavLink>
 
           <NavLink
             href="https://github.com/Adam-Robson"
             className="homelink subpixel-antialiased">
-            <SiGithub className="project-icon" size={ 36 } />
+            <SiGithub className="project-icon" size={ 40 } />
           </NavLink>
 
           <NavLink
             href="https://www.linkedin.com/in/adamrayrobson/"
             className="homelink subpixel-antialiased">
-            <SiLinkedin className="project-icon" size={ 36 } />
+            <SiLinkedin className="project-icon" size={ 40 } />
           </NavLink>
 
           <NavLink
             href="https://spoti.fi/3QNqMuE"
             className="homelink subpixel-antialiased">
-            <SiSpotify className="project-icon" size={ 36 } />
+            <SiSpotify className="project-icon" size={ 40 } />
           </NavLink>
         </article>
       </main>
