@@ -21,7 +21,7 @@ export default function App() {
         <Route path='/art' element={ <Art /> }>
           <Route path="/art/:name" element={ <Writing /> } />
         </Route>
-        <Route to='/misc' element={ <Misc /> } />
+        <Route path='/misc' element={ <Misc /> } />
         <Route path='*' element={ <NotFound /> } />
       </Routes>
     </>
