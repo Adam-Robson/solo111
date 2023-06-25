@@ -12,13 +12,14 @@ export default function Resume() {
     link.click();
   }
   return (
-    <section className="mx-auto fadein px-6">
-      <Link className="absolute right-4 top-4 text-xl subpixel-antialiased" to='/'>home</Link>
-      <h1 className="title text-7xl sm:text-8xl md:text-9xl relative top-8 subpixel-antialiased">resume</h1>
-      <div className="fadeIn my-8 grid grid-cols-3 grid-rows-2">
-        <img src={ resume } id="download" className="m-6 col-start-2 col-span-1 row-start-1 row-span-1" alt="resume page" />
-        <Link className="slight mx-6 text-lg row-start-2 row-span-1 col-start-2 col-span-1 subpixel-antialiased" onClick={ handleDownload }>download</Link>
-      </div>
-    </section>
+    <>
+      <section className="container fadeIn mx-auto">
+        <Link className="text-7xl sm:text-8xl md:text-9xl relative top-8 subpixel-antialiased" to='/'>resume</Link>
+        <div className="flex flex-col mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
+          <img src={ resume } id="download" className="px-6" alt="resume page" />
+          <Link className="px-10 py-6" onClick={ handleDownload }>download</Link>
+        </div>
+      </section>
+    </>
   );
 }
