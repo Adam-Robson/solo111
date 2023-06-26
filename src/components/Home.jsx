@@ -15,12 +15,12 @@ export default function Home() {
           >bio</NavLink>
           <NavLink
             className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
-            to="/art"
-          >artwork</NavLink>
-          <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
             to="/projects"
           >projects</NavLink>
+          <NavLink
+            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
+            to="/arts"
+          >arts</NavLink>
           <NavLink
             className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
             to="/resume"
