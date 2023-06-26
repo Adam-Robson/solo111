@@ -10,10 +10,9 @@ import heart from '../assets/heart.png';
 export default function Projects() {
   return (
     <>
-      <section className="fadein px-6">
-        <Link className="text-7xl sm:text-8xl md:text-9xl relative top-8 mb-20 subpixel-antialiased" to='/'>
-          projects
-        </Link>
+      <section className="mx-auto fadein px-6">
+        <Link className="text-xl absolute top-8 right-8 subpixel-antialiased" to="/">home</Link>
+        <h1 className="title text-8xl md:text-9xl relative top-8 subpixel-antialiased">projects</h1>
         <div className="flex justify-center items-center">
           <article className="container flex flex-col items-center md:flex-row md:flex-wrap md:justify-evenly md:items-center">
             <div className="icon text-center text-3xl subpixel-antialiased p-6">

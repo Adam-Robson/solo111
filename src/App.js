@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home.jsx';
 import Bio from './components/Bio.jsx';
-import Art from './components/Art';
+import Arts from './components/Arts';
 import Writing from './components/Writing';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
@@ -18,8 +18,8 @@ export default function App() {
         <Route path='/bio' element={ <Bio /> } />
         <Route path='/projects' element={ <Projects /> } />
         <Route path='/resume' element={ <Resume /> } />
-        <Route path='/art' element={ <Art /> } />
-        <Route path="/art/:name" element={ <Writing /> } />
+        <Route path='/arts' element={ <Arts /> } />
+        <Route path="/arts/:name" element={ <Writing /> } />
         <Route path='/misc' element={ <Misc /> } />
       </Routes>
     </>
