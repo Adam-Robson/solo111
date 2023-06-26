@@ -10,23 +10,23 @@ export default function Home() {
         </div>
         <div className="h-full flex flex-col absolute right-4 text-right">
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl subpixel-antialiased"
             to="/bio"
           >bio</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl subpixel-antialiased"
             to="/projects"
           >projects</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl subpixel-antialiased"
             to="/arts"
           >arts</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl subpixel-antialiased"
             to="/resume"
           >resume</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-8 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl subpixel-antialiased"
             to="/misc"
           >misc.</NavLink>
         </div>
