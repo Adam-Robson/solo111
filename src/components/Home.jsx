@@ -10,19 +10,19 @@ export default function Home() {
         </div>
         <div className="h-full flex flex-col absolute right-4 text-right">
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-2 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
             to="/bio"
           >bio</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-2 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
             to="/projects"
           >projects</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-2 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
             to="/arts"
           >arts</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-2 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
             to="/resume"
           >resume</NavLink>
         </div>
