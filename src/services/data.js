@@ -27,6 +27,6 @@ export const writings = [
     id: '5',
     alias: 'planet',
     title: 'planet',
-    text: ['almost all water, ', 'and within every dew drop, ', 'brids punctuate the days.']
+    text: ['almost all water, ', 'and within every dew drop, ', 'birds punctuate the days.']
   }
 ];
