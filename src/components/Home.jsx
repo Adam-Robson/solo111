@@ -34,25 +34,25 @@ export default function Home() {
         <article className="contact absolute bottom-8 w-full max-w-sm mx-auto flex justify-evenly items-baseline">
 
           <NavLink
-            href="https://www.buymeacoffee.com/AdamRobson"
+            to="https://www.buymeacoffee.com/AdamRobson"
             className="homelink subpixel-antialiased">
             <SiBuymeacoffee className="project-icon" size={ 40 } />
           </NavLink>
 
           <NavLink
-            href="https://github.com/Adam-Robson"
+            to="https://github.com/Adam-Robson"
             className="homelink subpixel-antialiased">
             <SiGithub className="project-icon" size={ 40 } />
           </NavLink>
 
           <NavLink
-            href="https://www.linkedin.com/in/adamrayrobson/"
+            to="https://www.linkedin.com/in/adamrayrobson"
             className="homelink subpixel-antialiased">
             <SiLinkedin className="project-icon" size={ 40 } />
           </NavLink>
 
           <NavLink
-            href="https://spoti.fi/3QNqMuE"
+            to="https://spoti.fi/3QNqMuE"
             className="homelink subpixel-antialiased">
             <SiSpotify className="project-icon" size={ 40 } />
           </NavLink>
