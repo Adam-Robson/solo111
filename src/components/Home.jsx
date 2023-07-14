@@ -6,28 +6,28 @@ export default function Home() {
     <>
       <main className="w-screen h-screen fadein">
         <div className="p-4">
-          <h1 className="title max-w-full m-2 text-7xl sm:text-8xl md:text-9xl subpixel-antialiased">this is a portfolio</h1>
+          <h1 className="title max-w-full m-2 text-7xl sm:text-8xl md:text-7xl subpixel-antialiased">this is a portfolio</h1>
         </div>
-        <div className="h-full flex flex-col absolute right-4 text-right">
+        <div className="h-full flex flex-col absolute right-4 md:top-20 text-right">
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-4xl my-6 sm:my-4 md:my-2 lg:my-4 subpixel-antialiased"
             to="/bio"
           >bio</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-4xl my-6 sm:my-4 md:my-2 lg:my-4 subpixel-antialiased"
             to="/projects"
           >projects</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-4xl my-6 sm:my-4 md:my-2 lg:my-4 subpixel-antialiased"
             to="/arts"
           >arts</NavLink>
           <NavLink
-            className="homelink text-3xl sm:text-4xl md:text-5xl my-6 subpixel-antialiased"
+            className="homelink text-3xl sm:text-4xl md:text-4xl my-6 sm:my-4 md:my-2 lg:my-4 subpixel-antialiased"
             to="/resume"
           >resume</NavLink>
         </div>
 
-        <article className="name absolute bottom-20 right-4 sm:bottom-8 w-full max-w-md mx-auto flex justify-end items-center text-4xl md:text-5xl lg:text-6xl">
+        <article className="name absolute bottom-20 right-4 sm:bottom-8 w-full max-w-md mx-auto flex justify-end items-center text-4xl md:text-4xl lg:text-6xl">
           Adam Robson
         </article>
 
