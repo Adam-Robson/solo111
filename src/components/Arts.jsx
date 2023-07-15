@@ -14,8 +14,8 @@ export default function Arts() {
   return (
     <>
       <section className="container mx-auto fadein px-6">
-        <Link className="text-xl absolute top-8 right-8 subpixel-antialiased" to="/">home</Link>
-        <h1 className="title text-8xl md:text-9xl relative top-8 subpixel-antialiased">arts</h1>
+        <Link className="text-xl absolute top-6 right-8 subpixel-antialiased" to="/">home</Link>
+        <h1 className="title text-7xl md:text-8xl relative top-10 subpixel-antialiased">arts</h1>
         <article className="container w-full mx-auto flex flex-col p-4">
           <div className="container max-w-4xl w-full p-2 mx-auto">
             <h3 className="w-full text-left text-2xl md:text-5xl my-8 underline">le fog</h3>

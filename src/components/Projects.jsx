@@ -11,8 +11,8 @@ export default function Projects() {
   return (
     <>
       <section className="mx-auto fadein px-6">
-        <Link className="text-xl absolute top-8 right-8 subpixel-antialiased" to="/">home</Link>
-        <h1 className="title text-8xl md:text-9xl relative top-8 subpixel-antialiased">projects</h1>
+        <Link className="text-xl absolute top-6 right-8 subpixel-antialiased" to="/">home</Link>
+        <h1 className="title text-7xl md:text-8xl relative top-10 subpixel-antialiased">projects</h1>
         <div className="flex justify-center items-center">
           <article className="container flex flex-col items-center md:flex-row md:flex-wrap md:justify-evenly md:items-center">
             <div className="icon text-center text-3xl subpixel-antialiased p-6">
@@ -21,7 +21,7 @@ export default function Projects() {
                 <img
                   src={ pantry }
                   alt="icon for pantry pal"
-                  className="icon project_icon h-60 md:mx-32"
+                  className="icon project_icon h-52 md:mx-32"
                 />
                 <label className="label">pantry pal</label>
               </Link>
