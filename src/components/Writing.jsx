@@ -15,7 +15,7 @@ export default function Writing() {
 
   return (
     <>
-      <Link className="absolute right-8 top-8 text-xl subpixel-antialiased" to='/'>home</Link>
+      <Link className="absolute right-8 top-6 text-xl subpixel-antialiased" to='/'>home</Link>
       <button className="absolute left-8 top-8 text-xl subpixel-antialiased" onClick={goBack}>back</button>
       <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl py-8 mt-12 md:mt-24 subpixel-antialiased">{ writing.title }</h2>
       <div className="text-center mx-8">

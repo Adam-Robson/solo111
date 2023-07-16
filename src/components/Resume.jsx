@@ -14,9 +14,9 @@ export default function Resume() {
   return (
     <>
       <section className="mx-auto fadein px-6">
-        <Link className="text-xl absolute top-8 right-8 subpixel-antialiased" to="/">home</Link>
-        <h1 className="title text-8xl md:text-9xl relative top-8 subpixel-antialiased">resume</h1>
-        <div className="flex flex-col mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
+        <Link className="text-xl absolute top-6 right-8 subpixel-antialiased" to="/">home</Link>
+        <h1 className="title text-7xl md:text-8xl relative top-8 subpixel-antialiased">resume</h1>
+        <div className="flex flex-col mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl mt-8">
           <img src={ resume } id="download" className="px-6" alt="resume page" />
           <Link className="px-10 py-6" onClick={ handleDownload }>download</Link>
         </div>
