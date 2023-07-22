@@ -25,7 +25,7 @@ export default function Projects() {
                 <label className="label text-center">pantry pal</label>
               </Link>
             </div>
-            <div className="container">
+            <div className="text-center text-3xl subpixel-antialiased p-6">
               <Link
                 to="https://tourmaline-lollipop-044f88.netlify.app/">
                 <img
@@ -36,36 +36,36 @@ export default function Projects() {
                 <label className="label">playground</label>
               </Link>
             </div>
-            <div className="text-center text-3xl subpixel-antialiased">
+            <div className="text-center text-3xl subpixel-antialiased p-6">
               <Link
                 to="https://buddystockviii.com">
                 <img
                   src={ BVIII }
                   alt="icon for buddystock"
-                  className="project_icon h-96 md:mx-32"
+                  className="project_icon h-80 mb-10 md:mx-32"
                 />
                 <label className="label">buddystock</label>
               </Link>
             </div>
-            <div className="text-center text-3xl subpixel-antialiased">
+            <div className="text-center text-3xl subpixel-antialiased p-6">
               <Link
                 to="https://collabomusic.co/">
                 <img
                   src={ collabo }
                   alt="icon for collabo"
-                  className="project_icon h-72 my-10 md:mx-32"
+                  className="project_icon h-80 my-4 md:mx-32"
                 />
                 <label className="label">collabo</label>
               </Link>
             </div>
-            <div className="text-center text-3xl subpixel-antialiased">
+            <div className="text-center text-3xl subpixel-antialiased p-6">
               <Link
                 to="https://adaamsfavoritebooks.netlify.app/">
                 <img 
                   src={ heart } 
                   alt="a heart image" 
-                  className="project_icon h-52 my-10 md:mx-32  " />
-                <label className="label">favorite books</label>
+                  className="project_icon h-60 mb-10 md:mx-32" />
+                <label className="label mb-12">favorite books</label>
               </Link>
             </div>
           </article>
