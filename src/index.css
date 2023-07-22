@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-}
-
 :root {
   --taupe: hsla(335, 5%, 47%, 1);
   --floral-white: hsla(60, 53%, 97%, 1);
