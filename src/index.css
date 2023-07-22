@@ -18,7 +18,7 @@
   width: 100vw;
   margin: 0 auto;
   padding: 0;
-  color-scheme: light dark;
+  color-scheme: dark light;
   font-family: 'Inter Variable', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -114,7 +114,7 @@ label {
 }
 
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 
   html,
   body {
@@ -124,30 +124,29 @@ label {
 
   main {
     background-color: var(--slate);
-    color: var(--platinum);
+    color: var(--beige);
   }
 
 
 a {
-  color: var(--platinum);
+  color: var(--beige);
 }
 
 a:hover {
-  color: var(--lion);
+  color: var(--moonstone);
 }
 
 .homelink {
-  color: var(--platinum);
+  color: var(--beige);
   text-shadow: 0.05em 0.05em 8em var(--taupe);
 }
 
 .homelink:hover {
-  color: var(--moonstone);
-  cursor: pointer;
+  color: var(--vanilla);
 }
 
 .name {
-  color: var(--platinum);
+  color: var(--beige);
   text-shadow: 0.05em 0.05em 8em var(--taupe);
 }
   
