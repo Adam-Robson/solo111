@@ -87,9 +87,6 @@ label {
   opacity: 1;
 }
 
-@media (prefers-color-scheme: light) {
-}
-
 .fadein {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -114,4 +111,44 @@ label {
   to {
     opacity: 1;
   }
+}
+
+
+@media (prefers-color-scheme: light) {
+
+  html,
+  body {
+    background-color: var(--taupe);
+    color: var(--platinum);
+  }
+
+  main {
+    background-color: var(--slate);
+    color: var(--platinum);
+  }
+
+
+a {
+  color: var(--platinum);
+}
+
+a:hover {
+  color: var(--lion);
+}
+
+.homelink {
+  color: var(--platinum);
+  text-shadow: 0.05em 0.05em 8em var(--taupe);
+}
+
+.homelink:hover {
+  color: var(--moonstone);
+  cursor: pointer;
+}
+
+.name {
+  color: var(--platinum);
+  text-shadow: 0.05em 0.05em 8em var(--taupe);
+}
+  
 }
