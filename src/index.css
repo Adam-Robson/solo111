@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-}
-
 :root {
   --taupe: hsla(335, 5%, 47%, 1);
   --floral-white: hsla(60, 53%, 97%, 1);
@@ -27,7 +18,7 @@
   width: 100vw;
   margin: 0 auto;
   padding: 0;
-  color-scheme: light dark;
+  color-scheme: dark light;
   font-family: 'Inter Variable', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -96,9 +87,6 @@ label {
   opacity: 1;
 }
 
-@media (prefers-color-scheme: light) {
-}
-
 .fadein {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -123,4 +111,43 @@ label {
   to {
     opacity: 1;
   }
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+  html,
+  body {
+    background-color: var(--taupe);
+    color: var(--platinum);
+  }
+
+  main {
+    background-color: var(--slate);
+    color: var(--beige);
+  }
+
+
+a {
+  color: var(--beige);
+}
+
+a:hover {
+  color: var(--moonstone);
+}
+
+.homelink {
+  color: var(--beige);
+  text-shadow: 0.05em 0.05em 8em var(--taupe);
+}
+
+.homelink:hover {
+  color: var(--vanilla);
+}
+
+.name {
+  color: var(--beige);
+  text-shadow: 0.05em 0.05em 8em var(--taupe);
+}
+  
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import resume from '../assets/resume.png';
+import resume from '../assets/res.png';
 
 export default function Resume() {
   function handleDownload() {
