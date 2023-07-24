@@ -77,6 +77,7 @@ a:hover {
   color: var(--beige);
   line-height: 1.6;
   text-shadow: 0.05em 0.05em 8em var(--taupe);
+
 }
 
 label {
@@ -112,7 +113,6 @@ label {
     opacity: 1;
   }
 }
-
 
 @media (prefers-color-scheme: dark) {
 
