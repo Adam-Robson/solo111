@@ -36,25 +36,41 @@ export default function Home() {
           <NavLink
             to="https://www.buymeacoffee.com/AdamRobson"
             className="homelink subpixel-antialiased">
-            <SiBuymeacoffee className="project-icon" size={ 40 } />
+            <SiBuymeacoffee
+              className="project-icon"
+              size={40}
+              data-testid="coffee-icon-link"
+            />
           </NavLink>
 
           <NavLink
             to="https://github.com/Adam-Robson"
             className="homelink subpixel-antialiased">
-            <SiGithub className="project-icon" size={ 40 } />
+            <SiGithub
+              className="project-icon"
+              size={40}
+              data-testid="github-icon-link"
+            />
           </NavLink>
 
           <NavLink
             to="https://www.linkedin.com/in/adamrayrobson"
             className="homelink subpixel-antialiased">
-            <SiLinkedin className="project-icon" size={ 40 } />
+            <SiLinkedin
+              className="project-icon"
+              size={40}
+              data-testid="linkedin-icon-link"
+            />
           </NavLink>
 
           <NavLink
             to="https://spoti.fi/3QNqMuE"
             className="homelink subpixel-antialiased">
-            <SiSpotify className="project-icon" size={ 40 } />
+            <SiSpotify
+              className="project-icon"
+              size={40}
+              data-testid="spotify-icon-link"
+            />
           </NavLink>
         </article>
       </main>
