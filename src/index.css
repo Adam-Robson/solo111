@@ -3,15 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --taupe: hsla(335, 5%, 47%, 1);
-  --floral-white: hsla(60, 53%, 97%, 1);
   --platinum: hsla(90, 4%, 90%, 1);
   --beige: hsla(60, 47%, 88%, 1);
-  --vanilla: hsla(46, 53%, 77%, 1);
+  --dogwood: hsla(17, 44%, 86%, 1);
   --slate: hsla(208, 18%, 30%, 1);
-  --lion: hsla(36, 48%, 56%, 1);
   --moonstone: hsla(194, 31%, 59%, 1);
-  --charcoal: hsla(223, 15%, 24%, 1);
   --jet: hsla(0, 1%, 24%, 1);
 
   height: 100vh;
@@ -28,8 +24,8 @@
 
 html,
 body {
-  background-color: var(--beige);
-  color: var(--charcoal);
+  background-color: var(--platinum);
+  color: var(--jet);
   padding: 0.25em;
   margin: 0.5em auto;
   font-weight: 300;
@@ -41,8 +37,8 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--moonstone);
-  color: var(--beige);
+  background-color: var(--dogwood);
+  color: var(--jet);
   background-image: url('./assets/sun.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +49,7 @@ main {
 a {
   font-weight: 300;
   text-decoration: none;
-  color: var(--slate);
+  color: var(--jet);
 }
 
 a:hover {
@@ -64,19 +60,17 @@ a:hover {
 .homelink {
   font-weight: 300;
   text-decoration: none;
-  color: var(--beige);
-  text-shadow: 0.05em 0.05em 8em var(--taupe);
+  color: var(--jet);
 }
 
 .homelink:hover {
-  color: var(--slate);
+  color: var(--moonstone);
   cursor: pointer;
 }
 
 .name {
-  color: var(--beige);
+  color: var(--jet);
   line-height: 1.6;
-  text-shadow: 0.05em 0.05em 8em var(--taupe);
 }
 
 label {
@@ -87,11 +81,19 @@ label {
   opacity: 1;
 }
 
+.adventure:hover {
+  color: var(--dogwood);
+}
+
+.bioImage {
+  border: 4px double var(--dogwood);
+}
+
 .fadein {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-duration: 1.25s;
-  animation-duration: 1.25s;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -118,12 +120,12 @@ label {
 
   html,
   body {
-    background-color: var(--taupe);
+    background-color: var(--jet);
     color: var(--platinum);
   }
 
   main {
-    background-color: var(--slate);
+    background-color: var(--jet);
     color: var(--beige);
   }
 
@@ -138,16 +140,14 @@ a:hover {
 
 .homelink {
   color: var(--beige);
-  text-shadow: 0.05em 0.05em 8em var(--taupe);
 }
 
 .homelink:hover {
-  color: var(--vanilla);
+  color: var(--moonstone);
 }
 
 .name {
   color: var(--beige);
-  text-shadow: 0.05em 0.05em 8em var(--taupe);
 }
   
 }

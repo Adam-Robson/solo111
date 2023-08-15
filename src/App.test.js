@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders heading on home page', () => {
+test('renders heading on page', () => {
   render(<App />);
-  const headingElement = screen.getByText(/this is a portfolio/i);
-  expect(headingElement).toBeInTheDocument();
+  const headingEl = screen.getByText(/this is a portfolio/i);
+  expect(headingEl).toBeInTheDocument();
 });
 
 test('renders bio link on home page', () => {
@@ -29,6 +29,12 @@ test('renders resume on home page', () => {
   render(<App />);
   const linkElement = screen.getByText(/resume/i);
   expect(linkElement).toBeInTheDocument();
+});
+
+test('renders author name', () => {
+  render(<App />);
+  const textEl = screen.getByText(/Adam Robson/i);
+  expect(textEl).toBeInTheDocuemnt();
 });
 
 test('renders buy me a coffee icon link on home page', () => {
