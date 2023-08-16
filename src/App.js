@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home.jsx';
+import Home from './components/Home';
 import Arts from './components/Arts';
-import Projects from './components/Projects.jsx';
-import Bio from './components/Bio.jsx';
-import Resume from './components/Resume.jsx';
-import Writing from './components/Wrtiting.jsx';
-import NotFound from './components/NotFound.jsx';
+import Projects from './components/Projects';
+import Bio from './components/Bio';
+import Resume from './components/Resume';
+import Writing from './components/Writing';
+import NotFound from './components/NotFound';
 import Misc from './componets/Misc';
 
 import '@fontsource-variable/inter';
