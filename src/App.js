@@ -6,7 +6,7 @@ import Bio from './components/Bio';
 import Resume from './components/Resume';
 import Writing from './components/Writing';
 import NotFound from './components/NotFound';
-import Misc from './componets/Misc';
+import Misc from './components/Misc';
 
 import '@fontsource-variable/inter';
 
