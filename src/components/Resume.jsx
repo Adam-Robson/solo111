@@ -17,8 +17,8 @@ export default function Resume() {
         <Link className="text-xl absolute top-6 right-8 subpixel-antialiased" to="/">home</Link>
         <h1 className="title text-7xl md:text-8xl relative top-8 subpixel-antialiased">resume</h1>
         <div className="flex flex-col mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl mt-8">
+          <Link download className="px-10 py-6 flex justify-center" onClick={ handleDownload }>download</Link>
           <img data-testid="resume" src={ resume } id="download" className="px-6" alt="resume page" />
-          <Link download className="px-10 py-6" onClick={ handleDownload }>download</Link>
         </div>
       </section>
     </>
