@@ -4,30 +4,23 @@ import {
   SiLinkedin,
   SiSpotify
 } from 'react-icons/si';
+import {
+  PiLinkedinLogoLight,
+  PiGithubLogoDuotone
+} from 'react-icons/pi';
 import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="w-full absolute bottom-0">
-      <NavLink
-        to="https://www.buymeacoffee.com/AdamRobson"
-        className="homelink subpixel-antialiased"
-        target="blank"
-      >
-        <SiBuymeacoffee
-          className="m-4"
-          size={28}
-          data-testid="coffee-icon-link"
-        />
-      </NavLink>
+    <footer className="w-full absolute bottom-0 flex justify-around">
       <NavLink
         to="https://github.com/Adam-Robson"
         className="homelink subpixel-antialiased"
         target="blank"
       >
-        <SiGithub
+        <PiGithubLogoDuotone
           className="m-4"
-          size={28}
+          size={24}
           data-testid="github-icon-link"
         />
       </NavLink>
@@ -36,9 +29,9 @@ export default function Footer() {
         className="homelink subpixel-antialiased"
         target="blank"
       >
-        <SiLinkedin
+        <PiLinkedinLogoLight
           className="m-4"
-          size={28}
+          size={24}
           data-testid="linkedin-icon-link"
         />
       </NavLink>
@@ -49,7 +42,7 @@ export default function Footer() {
       >
         <SiSpotify
           className="m-4"
-          size={28}
+          size={24}
           data-testid="spotify-icon-link"
         />
       </NavLink>

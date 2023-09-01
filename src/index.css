@@ -1,73 +1,74 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-family: 'Inter Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
+:root {
+  box-sizing: border-box;
+
+  font-family: 'Work Sans Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: var(--eggshell);
-  background-color: var(--jet);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --chamoisee: hsla(29, 31%, 50%, 1);
-  --brown-sugar: hsla(15, 42%, 50%, 1);
-  --rose-taupe: hsla(351, 15%, 45%, 1);
-  --purple: hsla(274, 12%, 37%, 1);
-  --wenge: hsla(355, 6%, 40%, 1);
-  --rose-ebony: hsla(3, 23%, 32%, 1);
-  --ghost-white: hsla(240, 29%, 97%, 1);
-  --bone: hsla(35, 24%, 80%, 1);
-  --dun: hsla(30, 35%, 79%, 1);
-  --eggshell: hsla(52, 50%, 91%, 1);
-  --ash-gray: hsla(78, 15%, 77%, 1);
-  --honeydew: hsla(139, 27%, 82%, 1);
-  --cadet-gray: hsla(93, 12%, 70%, 1);
-  --battleship-gray: hsla(120, 5%, 54%, 1);
-  --jet: hsla(240, 1%, 23%, 1);
+    --platinum: hsla(212, 60%, 95%, 1);
+    --lavender: hsla(354, 100%, 96%, 1);
+    --beige: hsla(60, 56%, 91%, 1);
+    --dogwood: hsla(17, 64%, 88%, 1);
+    --orange: hsla(32, 74%, 81%, 1);
+    --taupe: hsla(351, 15%, 45%, 1);
+    --rose: hsla(8, 50%, 61%, 1);
+    --ash: hsla(78, 15%, 77%, 1);
+    --alice: hsla(203, 24%, 87%, 1);
+    --azure: hsla(159, 21%, 84%, 1);
+    --french: hsla(208, 13%, 74%, 1);
+    --honeydew: hsla(139, 27%, 82%, 1);
+    --cadet: hsla(93, 12%, 70%, 1);
+    --battleship: hsla(120, 5%, 54%, 1);
+    --space: hsla(210, 10%, 32%, 1);
+    --gray: hsla(210, 17%, 35%, 1);
+    --charcoal: hsla(225, 8%, 29%, 1);
+    --jet: hsla(15, 3%, 26%, 1);
 
-  box-sizing: border-box;
+  color-scheme: light dark;
+
+  color: var(--platinum);
+  background-color: var(--jet);
+}
+
+html,
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+  background-color: var(--charcoal);
+  color: var(--dogwood);
 }
 
 #root {
   min-height: 100vh;
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  background-image: url('./assets/sun.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
-
-body {
-  margin: 0;
-  font-size: 1em;
-  background-color: var(--ghost-white);
+main {
+  height: 100vh;
+  width: 100vw;
   display: flex;
+  flex-direction: column;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  justify-items: center;
+  align-items: center;
 
-header {
-  position: absolute;
-  top: 0;
-  padding: .75em;
-  width: 100%;
-  color: var(--cadet-gray);
-}
-
-nav {
-  display: flex;
-  padding: .5em;
-}
-
-svg {
-  max-width: 100%;
-  vertical-align: middle;
 }
 
 button {
@@ -89,13 +90,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto var(--honeydew);
-}
-
-.home-div-wrap {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
 }
 
 @media (prefers-color-scheme: light) {

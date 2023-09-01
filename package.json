@@ -4,8 +4,9 @@
   "description": "catalogue | adam robson",
   "main": "./src/index.js",
   "scripts": {
+    "dev": "webpack serve --mode development",
     "start": "webpack serve --mode development --hot --open",
-    "build": "webpack --mode=preoduction",
+    "build": "webpack --mode production",
     "test": "jest"
   },
   "repository": {
@@ -26,6 +27,8 @@
   },
   "homepage": "https://github.com/mur-mur-mur/murmurmur#readme",
   "dependencies": {
+    "@fontsource-variable/radio-canada": "^5.0.9",
+    "@fontsource-variable/work-sans": "^5.0.9",
     "netlify-cli": "^16.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -61,6 +64,7 @@
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.3.3",
     "postcss-nested": "^6.0.1",
+    "postcss-preset-env": "^9.1.2",
     "prettier": "^3.0.3",
     "style-loader": "^3.3.3",
     "url-loader": "^4.1.1"
