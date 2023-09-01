@@ -1,0 +1,108 @@
+:root {
+
+  font-family: 'Inter Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--eggshell);
+  background-color: var(--jet);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --chamoisee: hsla(29, 31%, 50%, 1);
+  --brown-sugar: hsla(15, 42%, 50%, 1);
+  --rose-taupe: hsla(351, 15%, 45%, 1);
+  --purple: hsla(274, 12%, 37%, 1);
+  --wenge: hsla(355, 6%, 40%, 1);
+  --rose-ebony: hsla(3, 23%, 32%, 1);
+  --ghost-white: hsla(240, 29%, 97%, 1);
+  --bone: hsla(35, 24%, 80%, 1);
+  --dun: hsla(30, 35%, 79%, 1);
+  --eggshell: hsla(52, 50%, 91%, 1);
+  --ash-gray: hsla(78, 15%, 77%, 1);
+  --honeydew: hsla(139, 27%, 82%, 1);
+  --cadet-gray: hsla(93, 12%, 70%, 1);
+  --battleship-gray: hsla(120, 5%, 54%, 1);
+  --jet: hsla(240, 1%, 23%, 1);
+
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+body {
+  margin: 0;
+  font-size: 1em;
+  background-color: var(--ghost-white);
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  padding: .75em;
+  width: 100%;
+  color: var(--cadet-gray);
+}
+
+nav {
+  display: flex;
+  padding: .5em;
+}
+
+svg {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+button {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4em 1em;
+  font-size: .85em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: var(--battleship-gray);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--ash-gray);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--honeydew);
+}
+
+.home-div-wrap {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--jet);
+    background-color: var(--eggshell);
+  }
+
+
+}
