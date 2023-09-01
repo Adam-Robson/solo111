@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
+
     <header
       className="w-screen max-h-40 h-1/5 flex justify-around items-baseline"
     >
@@ -32,5 +33,8 @@ export default function Header() {
       >misc.</NavLink>
 
     </header>
+
+    
+
   );
 }

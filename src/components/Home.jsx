@@ -1,8 +1,11 @@
+import Title from './Title';
 
-function Home() {
+export default function Home() {
   return (
-    <div>Home</div>
+    <>
+      <main className="w-screen h-full">
+        <Title />
+      </main>
+    </>
   );
 }
-
-export default Home;
