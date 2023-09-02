@@ -26,10 +26,9 @@ export const writings = [
   }
 ];
 
-export const projects = [
-  {
-    title: 'pantry pal',
-    description: `Pantry Pal is a mobile responsive web-application
+export const projects = {
+  "pantry pal": {
+    "description": `Pantry Pal is a mobile responsive web-application
                   for anyone seeking food assistance and was built with
                   React for the client-side and Flask for the Python
                   backend, MongoDB, which stores data gathered through
@@ -41,9 +40,9 @@ export const projects = [
                   and MongoAtlas to ensure smooth functionality and
                   accessibility.`
   },
-  {
-    title: 'buddystock viii',
-    description: `Buddystock VIII is a mobile-responsive website for
+
+  'buddystock viii': {
+    "description": `Buddystock VIII is a mobile-responsive website for
                   an annual, non-profit, music festival held in Mosier,
                   Oregon, set against the backdrop of a cherry orchard
                   overlooking the Columbia Gorge. This project was built
@@ -54,9 +53,8 @@ export const projects = [
                   information was freely accessible online and on mobile
                   devices.`
   },
-  {
-    title: 'tally-ho',
-    description: `Tally-Ho! is a mobile responsive web-application
+  "tally ho": {
+    "description": `Tally-Ho! is a mobile responsive web-application
                   built with React and styled using Chakra UI. It
                   leverages various technologies to provide users with
                   a comprehensive platform for planning and organizing
@@ -70,9 +68,8 @@ export const projects = [
                   routes effectively. Users can save their planned trips,
                   enhancing the practicality and value of the platform.`
   },
-  {
-    title: 'collabo',
-    description: `Collabo is an innovative open-source song-project
+  "collabo": {
+    "description": `Collabo is an innovative open-source song-project
                   platform built as a solution for enable musicians
                   to play music together remotely. The project was built
                   with vanilla JavaScript, HTML and CSS, and centers
@@ -82,9 +79,9 @@ export const projects = [
                   developers, the platform is built using vanilla JavaScript,
                   CSS, and HTML, and is accessible at collabomusic.co.`
   },
-  {
-    title: 'my favorite books',
-    description: `My Favorite Books is a personal project for
+
+  "my favorite books": {
+    "description": `My Favorite Books is a personal project for
                   cataloging a collection of favorite books.
                   The project emphasizes the use of HTML, CSS, JavaScript,
                   and Supabase to create a seamless experience for visitors.
@@ -97,9 +94,8 @@ export const projects = [
                   data source highlights integrates the use of APIs,
                   dynamic data, and Postgres data storage.`
   },
-  {
-    title: 'playground',
-    description: `Playground is a hub of classic games, and consists
+  'playground': {
+    "description": `Playground is a hub of classic games, and consists
                   of a landing page with a series of links to the various
                   game page.  the pages include including games such as
                   Shell Game and Block-Breaker. The collection is built
@@ -110,4 +106,4 @@ export const projects = [
                   graduates, tutorial content from MDN, and my
                   own creations.`
   }
-];
+};

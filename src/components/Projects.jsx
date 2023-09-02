@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom';
 import { projects } from '../services/data';
 
 export default function Projects() {
+
+  const { pantryPal, buddyStockVIII, tallyHo, collabo, myFavoriteBooks } = projects;
+
   return (
     <>
       <section className="mx-auto fadein px-6">
@@ -17,7 +20,7 @@ export default function Projects() {
               >
                 Pantry Pal
                 <label className="label">{
-
+                  pantryPal.description
                 }</label>
               </Link>
             </div>
@@ -30,7 +33,7 @@ export default function Projects() {
               >
                 Buddystock VIII
                 <label className="label">{
-
+                  buddyStockVIII.description
                 }</label>
               </Link>
             </div>
@@ -42,7 +45,7 @@ export default function Projects() {
               >
               Tally-Ho!
                 <label className="label">{
-
+                  tallyHo.description
                 }</label>
               </Link>
             </div>
@@ -54,7 +57,7 @@ export default function Projects() {
               >
                 Collabo
                 <label className="label">{
-
+                  collabo.description
                 }</label>
               </Link>
             </div>
@@ -67,7 +70,7 @@ export default function Projects() {
               >
                 My Favorite Books
                 <label
-                  className="label"></label>
+                  className="label">{ myFavoriteBooks.description }</label>
               </Link>
             </div>
 
@@ -79,11 +82,9 @@ export default function Projects() {
               >
                Playground
                 <label
-                  className="label">{
-                    ``}</label>
+                  className="label">{ playground.description}</label>
               </Link>
             </div>
-
           </article>
         </div>
       </section>
