@@ -15,7 +15,6 @@
   -webkit-text-size-adjust: 100%;
 
     --platinum: hsla(212, 60%, 95%, 1);
-    --lavender: hsla(354, 100%, 96%, 1);
     --beige: hsla(60, 56%, 91%, 1);
     --dogwood: hsla(17, 64%, 88%, 1);
     --orange: hsla(32, 74%, 81%, 1);
@@ -53,11 +52,15 @@ body {
   background-image: url('./assets/sun.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   overflow: hidden;
 }
 
 main {
+  background-image: url('./assets/sun.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -65,6 +68,10 @@ main {
   place-items: center;
   justify-items: center;
   align-items: center;
+}
+
+a:hover {
+  color: var(--taupe);
 }
 
 button {
@@ -88,6 +95,34 @@ button:focus,
 button:focus-visible {
   outline: 4px auto var(--honeydew);
 }
+
+.fadein {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -21,8 +21,16 @@ export default function Bio() {
             </p>
           </article>
           <article>
-            <img src={wa} alt='image of adam robson' className="bioImage w-2/3 mx-auto my-8 max-w-md" />
-            <img src={or} alt='image of adam robson' className="bioImage w-2/3 mx-auto my-8 max-w-md" />
+            <img
+            src={wa}
+            alt='image of adam robson'
+              className="bioImage w-2/3 mx-auto my-8 max-w-md"
+            />
+            <img
+              src={or}
+              alt='image of adam robson'
+              className="bioImage w-2/3 mx-auto my-8 max-w-md"
+            />
           </article>
         </div>
       </section>

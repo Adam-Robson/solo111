@@ -1,12 +1,7 @@
 import {
-  SiBuymeacoffee,
-  SiGithub,
-  SiLinkedin,
-  SiSpotify
-} from 'react-icons/si';
-import {
   PiLinkedinLogoLight,
-  PiGithubLogoDuotone
+  PiGithubLogoDuotone,
+  PiSpotifyLogoDuotone
 } from 'react-icons/pi';
 import { NavLink } from 'react-router-dom';
 
@@ -20,7 +15,7 @@ export default function Footer() {
       >
         <PiGithubLogoDuotone
           className="m-4"
-          size={24}
+          size={42}
           data-testid="github-icon-link"
         />
       </NavLink>
@@ -31,7 +26,7 @@ export default function Footer() {
       >
         <PiLinkedinLogoLight
           className="m-4"
-          size={24}
+          size={42}
           data-testid="linkedin-icon-link"
         />
       </NavLink>
@@ -40,9 +35,9 @@ export default function Footer() {
         className="homelink subpixel-antialiased"
         target="blank"
       >
-        <SiSpotify
+        <PiSpotifyLogoDuotone
           className="m-4"
-          size={24}
+          size={42}
           data-testid="spotify-icon-link"
         />
       </NavLink>

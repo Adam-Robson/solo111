@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { writings } from '../services/data.js';
 
 export default function Writing() {
-  /** bring in hook from teact-router v6 */
+  /** bring in hook from react-router v6 */
   const navigate = useNavigate();
   /** grab the parameters directly from the current URL */
   const { title } = useParams();

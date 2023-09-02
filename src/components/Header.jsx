@@ -2,10 +2,9 @@ import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
-
     <header
       className={
-        `absolute top-0 left-0 w-full mx-auto my-4 flex justify-around font-light`
+        `absolute top-2 left-0 w-full mx-auto my-4 flex justify-around font-light`
       }
     >
        <NavLink
@@ -33,8 +32,5 @@ export default function Header() {
         className="text-xl hover:underline hover:font-normal subpixel-antialiased"
       >misc.</NavLink>
     </header>
-
-
-
   );
 }

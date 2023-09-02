@@ -1,18 +1,39 @@
 import { useEffect, useState } from 'react';
 
+/**
+ * create a set of color values
+ * from which to cycle through
+ * for the color of the title
+ * element to change color
+ */
 const colorArray = [
-  'hsl(203, 24%, 87%)',
-  'hsl(354, 100%, 96%)',
-  'hsl(159, 21%, 84%)',
-  'hsl(208, 13%, 74%)',
-  'hsl(139, 27%, 82%)'
+  'hsl(17, 64%, 88%)', // dogwood
+  'hsl(78, 15%, 77%)', // ash
+  'hsl(32, 74%, 81%)', // orange
+  'hsl(208, 13%, 74%)' // french
 ];
 
-const transitionDuration = 3000;
+/**
+ * set the duration for how long
+ * each color will be displayed
+ * before switching to the next
+ * color
+ */
+
+const transitionDuration = 1000;
 
 export default function Title() {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
 
+  /**
+   * the color change event will be
+   * activity on the page that
+   * is not the executive purpose
+   * of the function component,
+   * and which will be necessary
+   * for the desired functionality
+   * we seek to employ: useEffect
+   */
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -32,14 +53,13 @@ export default function Title() {
     >
       <h1
         style={{ color: colorArray[currentColorIndex] }}
-        className="text-3xl subpixel-antialiased">
-        a catalogue
+        className="text-7xl font-normal tracking-wider animation-colorChange subpixel-antialiased">
+        catalog.
       </h1>
-      <em
-        style={{ color: colorArray[currentColorIndex] }}
-        className="text-lg italic subpixel-antialiased">
+      <p
+        className="text-xl italic tracking-wider mt-16 subpixel-antialiased">
         by Adam Robson
-      </em>
+      </p>
     </article>
   );
 }
