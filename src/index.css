@@ -41,7 +41,6 @@
 
 html,
 body {
-  min-width: 320px;
   min-height: 100vh;
   display: flex;
   place-items: center;
@@ -50,8 +49,6 @@ body {
 }
 
 #root {
-  min-height: 100vh;
-  max-width: 1280px;
   text-align: center;
   background-image: url('./assets/sun.png');
   background-position: center;
@@ -68,7 +65,6 @@ main {
   place-items: center;
   justify-items: center;
   align-items: center;
-
 }
 
 button {
@@ -78,13 +74,14 @@ button {
   font-size: .85em;
   font-weight: 400;
   font-family: inherit;
-  background-color: var(--battleship-gray);
+  background-color: var(--battleship);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: var(--ash-gray);
+  border-color: var(--ash);
+
 }
 
 button:focus,
@@ -95,7 +92,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--jet);
-    background-color: var(--eggshell);
+    background-color: var(--platinum);
   }
 
 
