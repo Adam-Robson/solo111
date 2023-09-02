@@ -70,6 +70,14 @@ main {
   align-items: center;
 }
 
+label {
+  opacity: 0;
+}
+
+.project:hover + .label {
+  opacity: 1;
+}
+
 a:hover {
   color: var(--taupe);
 }
