@@ -60,7 +60,7 @@ body {
 .bg-section {
   height: 100vh;
   width: 100vw;
-  background-color: var(--gray);
+  background-color: var(--space);
   color: var(--alice);
 }
 
