@@ -1,17 +1,18 @@
 import { useEffect, useState } from 'react';
 
 const colorArray = [
-  'hsl(209, 18%, 30%)',
-  'hsl(74, 11%, 54%)',
-  'hsl(4, 35%, 56%)',
-  'hsl(342, 17%, 54%)',
-  'hsl(252, 11%, 65%)'
+  'hsl(203, 24%, 87%)',
+  'hsl(354, 100%, 96%)',
+  'hsl(159, 21%, 84%)',
+  'hsl(208, 13%, 74%)',
+  'hsl(139, 27%, 82%)'
 ];
 
 const transitionDuration = 3000;
 
 export default function Title() {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,16 +28,16 @@ export default function Title() {
 
   return (
     <article
-      className="flex flex-col justify-center"
+      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
     >
       <h1
         style={{ color: colorArray[currentColorIndex] }}
-        className="subpixel-antialiased">
+        className="text-3xl subpixel-antialiased">
         a catalogue
       </h1>
       <em
         style={{ color: colorArray[currentColorIndex] }}
-        className="subpixel-antialiased">
+        className="text-lg italic subpixel-antialiased">
         by Adam Robson
       </em>
     </article>
