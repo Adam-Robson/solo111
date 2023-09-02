@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/mur-mur-mur/murmurmur#readme",
   "dependencies": {
+    "@fontsource-variable/karla": "^5.0.9",
     "@fontsource-variable/radio-canada": "^5.0.9",
+    "@fontsource-variable/source-code-pro": "^5.0.9",
     "@fontsource-variable/work-sans": "^5.0.9",
     "netlify-cli": "^16.2.0",
     "react": "^18.2.0",

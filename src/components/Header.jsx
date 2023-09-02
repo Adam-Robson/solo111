@@ -9,27 +9,27 @@ export default function Header() {
     >
        <NavLink
         to="/bio"
-        className="text-xl hover:underline hover:font-normal subpixel-antialiased"
+        className="text-xl sm:text-2xl lg:text-3xl hover:underline hover:font-normal tracking-wider subpixel-antialiased"
       >bio</NavLink>
 
        <NavLink
         to="projects"
-        className="text-xl hover:underline hover:font-normal subpixel-antialiased"
+        className="text-xl  sm:text-2xl lg:text-3xl hover:underline hover:font-normal tracking-wider subpixel-antialiased"
       >projects</NavLink>
 
       <NavLink
         to="arts"
-        className="text-xl hover:underline hover:font-normal subpixel-antialiased"
+        className="text-xl sm:text-2xl lg:text-3xl hover:underline hover:font-normal tracking-wider subpixel-antialiased"
       >arts</NavLink>
 
         <NavLink
         to="/resume"
-        className="text-xl hover:underline hover:font-normal subpixel-antialiased"
-      >resum&eacute;</NavLink>
+        className="text-xl sm:text-2xl lg:text-3xl hover:underline hover:font-normal tracking-wider subpixel-antialiased"
+      >resume</NavLink>
 
       <NavLink
         to="/misc"
-        className="text-xl hover:underline hover:font-normal subpixel-antialiased"
+        className="text-xl sm:text-2xl lg:text-3xl hover:underline hover:font-normal tracking-wider subpixel-antialiased"
       >misc.</NavLink>
     </header>
   );

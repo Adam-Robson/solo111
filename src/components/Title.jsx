@@ -20,7 +20,7 @@ const colorArray = [
  * color
  */
 
-const transitionDuration = 1000;
+const transitionDuration = 2500;
 
 export default function Title() {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
@@ -49,15 +49,15 @@ export default function Title() {
 
   return (
     <article
-      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+      className="max-w-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
     >
       <h1
         style={{ color: colorArray[currentColorIndex] }}
-        className="text-7xl font-normal tracking-wider animation-colorChange subpixel-antialiased">
+        className="max-w-lg text-7xl sm:text-8xl font-light tracking-wider animation-colorChange subpixel-antialiased">
         catalog.
       </h1>
       <p
-        className="text-xl italic tracking-wider mt-16 subpixel-antialiased">
+        className="max-w-lg text-xl sm:text-2xl tracking-wider subpixel-antialiased">
         by Adam Robson
       </p>
     </article>

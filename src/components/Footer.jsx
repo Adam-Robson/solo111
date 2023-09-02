@@ -15,7 +15,7 @@ export default function Footer() {
       >
         <PiGithubLogoDuotone
           className="m-4"
-          size={42}
+          size={44}
           data-testid="github-icon-link"
         />
       </NavLink>
@@ -26,7 +26,7 @@ export default function Footer() {
       >
         <PiLinkedinLogoLight
           className="m-4"
-          size={42}
+          size={44}
           data-testid="linkedin-icon-link"
         />
       </NavLink>
@@ -37,7 +37,7 @@ export default function Footer() {
       >
         <PiSpotifyLogoDuotone
           className="m-4"
-          size={42}
+          size={44}
           data-testid="spotify-icon-link"
         />
       </NavLink>

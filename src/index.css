@@ -4,8 +4,10 @@
 
 :root {
   box-sizing: border-box;
-
-  font-family: 'Work Sans Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --fonta: 'Karla Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --fontb: 'Source Code Pro Variable', Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  font-family: var(--fonta);
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -18,8 +20,6 @@
     --beige: hsla(60, 56%, 91%, 1);
     --dogwood: hsla(17, 64%, 88%, 1);
     --orange: hsla(32, 74%, 81%, 1);
-    --taupe: hsla(351, 15%, 45%, 1);
-    --rose: hsla(8, 50%, 61%, 1);
     --ash: hsla(78, 15%, 77%, 1);
     --alice: hsla(203, 24%, 87%, 1);
     --azure: hsla(159, 21%, 84%, 1);
@@ -43,31 +43,25 @@ body {
   min-height: 100vh;
   display: flex;
   place-items: center;
-  background-color: var(--charcoal);
-  color: var(--dogwood);
+  background-color: var(--jet);
+  color: var(--cadet);
 }
 
-#root {
-  text-align: center;
+.main {
+  margin: 25vh 0 25vh 0;
   background-image: url('./assets/sun.png');
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
-  overflow: hidden;
+  height: 15vh;
+  width: 100vw;
 }
 
-main {
-  background-image: url('./assets/sun.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.bg-section {
   height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  justify-items: center;
-  align-items: center;
+  background-color: var(--gray);
+  color: var(--alice);
 }
 
 label {
@@ -78,9 +72,25 @@ label {
   opacity: 1;
 }
 
-a:hover {
-  color: var(--taupe);
+ul {
+  list-style: none;
 }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  color: var(--azure-web);
+  transition: text-decoration .5s, color 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--beige);
+}
+
+
 
 button {
   border-radius: 4px;
@@ -131,12 +141,9 @@ button:focus-visible {
   }
 }
 
-
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--jet);
     background-color: var(--platinum);
   }
-
-
 }
