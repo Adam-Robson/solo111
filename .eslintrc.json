@@ -1,69 +1,60 @@
 {
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended"],
   "parserOptions": {
+    "ecmaVersion": 2020,
     "ecmaFeatures": {
+      "impliedStrict": true,
       "jsx": true
     },
-    "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "settings": {
-    "react": {
-      "pragma": "React",
-      "fragment": "Fragment",
-      "version": "detect"
-    }
-  },
-  "parser": "@babel/eslint-parser",
-  "globals": {
-    "process": true
-  },
   "env": {
-    "es6": true,
     "browser": true,
-    "jest": true
+    "es6": true,
+    "jest": true,
+    "node": true
   },
-  "plugins": [
-    "babel",
-    "react"
-    ],
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ],
+  "globals": {
+    "QUnit": false,
+    "before": false,
+    "cy": false
+  },
   "rules": {
-    "no-console": [
-      "warn",
-      {
-        "allow": [
-          "info",
-          "warn",
-          "error"
-        ]
-      }
-    ],
+    "eqeqeq": ["error", "always"],
+    "no-console": ["warn", { "allow": ["info", "error"] }],
     "indent": [
       "error",
       2,
       {
-        "SwitchCase": 1
+        "SwitchCase": 1,
+        "ignoreComments": true
       }
     ],
     "quotes": [
       "error",
-      "single"
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
     ],
-    "semi": [
+    "no-multi-spaces": [
       "error",
-      "always"
+      {
+        "ignoreEOLComments": true
+      }
     ],
-    "space-in-parens": [
-      "error"
+    "new-cap": "error",
+    "no-redeclare": [
+      "error",
+      {
+        "builtinGlobals": true
+      }
     ],
+    "semi": ["error", "always"],
+    "space-in-parens": ["error"],
     "space-infix-ops": "error",
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ],
+    "object-curly-spacing": ["error", "always"],
     "comma-spacing": "error",
     "space-before-function-paren": [
       "error",
@@ -73,11 +64,7 @@
         "named": "never"
       }
     ],
-    "eol-last": [
-      "error",
-      "always"
-    ],
-    "arrow-spacing": [
+    "keyword-spacing": [
       "error",
       {
         "before": true,
@@ -85,20 +72,13 @@
       }
     ],
     "array-bracket-spacing": "error",
-    "prefer-const": "error",
-    "no-var": "error",
-    "rest-spread-spacing": "error",
-    "prefer-arrow-callback": "error",
-    "object-shorthand": [
-      "error",
-      "always"
-    ],
-    "max-len": "warn",
-    "jsx-quotes": "error",
-    "babel/no-invalid-this": 1,
-    "babel/semi": 0,
-    "react/jsx-uses-react": "off",
-    "react/prop-types": 0,
+    "react/prop-types": "off",
+    "no-unused-vars": ["warn"],
     "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

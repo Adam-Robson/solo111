@@ -1,30 +1,33 @@
 import { Link } from 'react-router-dom';
-import wa from '../assets/pttwnsnd.png';
 import or from '../assets/slvrfls.png';
+import pool from '../assets/barcorner.png';
 
 export default function Bio() {
   return (
     <>
-      <section className="mx-auto fadein px-6 overflow-hidden">
-        <Link className="text-xl absolute top-6 right-8 subpixel-antialiased" to="/">home</Link>
-        <h1 className="title text-8xl md:text-9xl relative top-12 subpixel-antialiased mb-2">bio</h1>
-        <div className="md:grid md:grid-cols-2 md:gap-8 p-4">
-          <article className="md:flex md:flex-col md:justify-evenly my-8">
-            <p className="title text-lg sm:text-2xl md:text-3xl lg:text-4xl text-right subpixel-antialiased my-2">
-              I live in the pacific northwest.
-            </p>
-            <p className="title text-lg sm:text-2xl md:text-3xl lg:text-4xl  text-right subpixel-antialiased my-2">
-              I am a f/s software developer, a musician & artist.
-            </p>
-            <p className="title text-lg sm:text-2xl md:text-3xl lg:text-4xl text-right subpixel-antialiased my-2">
-              I am proficient in Postgres, Express, React, and Node.
-            </p>
-          </article>
-          <article>
-            <img src={wa} alt='image of adam robson' className="bioImage w-2/3 mx-auto my-8 max-w-md" />
-            <img src={or} alt='image of adam robson' className="bioImage w-2/3 mx-auto my-8 max-w-md" />
-          </article>
-        </div>
+      <section className="bg-section mx-auto fadein px-6 overflow-hidden">
+        <Link className="text-xl absolute top-10 right-10 subpixel-antialiased" to="/">home</Link>
+        <h1 className="text-9xl absolute top-20 left-10 subpixel-antialiased">bio</h1>
+
+        <label>I am a full-stack software engineer, musician & artist living in the coastal forests of the northwest.</label>
+
+        <img width="500" className="project hover:cursor-pointer relative top-48" src={or} alt="me at silver falls in the mist" />
+
+        <label>Working with software challenges creatively and analytically.</label>
+
+        <img width="500" className="project hover:cursor-pointer relative top-60" src={pool} alt="at a pool table in portland oregon" />
+        <h2>Fundamentals I try and live by:</h2>
+        <ul>
+          <li>What I try to understand becomes integrated and is eventually a part of me. It has the power to transform.</li>
+
+          <li>Humility fosters growth and enriches interactions & experience.</li>
+
+          <li>The unique parts of individuals and the planet reinforce diversity as a wellspring of strength.</li>
+
+          <li>I try and acknowledge that I will go through mistakes and remember to consider them as an opportunity for growth.</li>
+
+          <li>Collaboration and sharing is at the core of making meaning in the world.</li>
+        </ul>
       </section>
     </>
   );

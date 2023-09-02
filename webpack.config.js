@@ -3,6 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 require('dotenv').config();
 
@@ -12,7 +13,7 @@ module.exports = {
   output: {
     clean: true,
     filename: '[name].build.js',
-    path: path.resolve(__dirname, './build'),
+    path: path.resolve(__dirname, './dist'),
     publicPath: '/',
   },
   devServer: {
@@ -29,6 +30,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [{ from: 'public' }],
     }),
+    new CompressionPlugin(),
     new webpack.ProvidePlugin({
       React: 'react'
     }),
