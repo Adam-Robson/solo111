@@ -1,5 +1,5 @@
 import {
-  PiLinkedinLogoLight,
+  PiLinkedinLogoDuotone,
   PiGithubLogoDuotone,
   PiSpotifyLogoDuotone
 } from 'react-icons/pi';
@@ -7,37 +7,37 @@ import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="w-full absolute bottom-0 flex justify-around">
-      <NavLink
-        to="https://github.com/Adam-Robson"
-        className="homelink subpixel-antialiased"
-        target="blank"
-      >
-        <PiGithubLogoDuotone
-          className="m-4"
-          size={44}
-          data-testid="github-icon-link"
-        />
-      </NavLink>
-      <NavLink
-        to="https://www.linkedin.com/in/adamrayrobson"
-        className="homelink subpixel-antialiased"
-        target="blank"
-      >
-        <PiLinkedinLogoLight
-          className="m-4"
-          size={44}
-          data-testid="linkedin-icon-link"
-        />
-      </NavLink>
+    <footer className="w-full mr-10 absolute bottom-0 flex justify-end">
+        <NavLink
+          to="https://github.com/Adam-Robson"
+          className="subpixel-antialiased"
+          target="blank"
+        >
+          <PiGithubLogoDuotone
+            className="m-4"
+            size={32}
+            data-testid="github-icon-link"
+          />
+        </NavLink>
+        <NavLink
+          to="https://www.linkedin.com/in/adamrayrobson"
+          className="subpixel-antialiased"
+          target="blank"
+        >
+          <PiLinkedinLogoDuotone
+            data-testid="linkedin-icon-link"
+            className="m-4"
+            size={32}
+          />
+        </NavLink>
       <NavLink
         to="https://spoti.fi/3QNqMuE"
-        className="homelink subpixel-antialiased"
+        className="subpixel-antialiased"
         target="blank"
       >
         <PiSpotifyLogoDuotone
           className="m-4"
-          size={44}
+          size={32}
           data-testid="spotify-icon-link"
         />
       </NavLink>
