@@ -57,8 +57,9 @@ export default function Home() {
         >
           <h1
             style={{ color: colorArray[currentColorIndex] }}
-            className="text-3xl font-light relative top-40"
-          >catalog</h1>
+            className="text-8xl font-light subpixel-antialiased"
+          >catalog.
+          <p className="text-xl text-right absolute top-20 right-20">by Adam Robson</p></h1>
         </article>
       </main>
       <Footer />

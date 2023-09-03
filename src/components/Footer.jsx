@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="w-full mr-10 absolute bottom-0 flex justify-end">
+    <footer className="w-full mr-10 absolute bottom-0 flex justify-end items-center">
         <NavLink
           to="https://github.com/Adam-Robson"
           className="subpixel-antialiased"
