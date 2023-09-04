@@ -3,15 +3,10 @@ import { NavLink } from 'react-router-dom';
 export default function Header() {
   return (
     <header
-      className={
-        `absolute top-0 left-0 my-8 mx-6 flex flex-col font-light`
-      }
-    >
+      className="absolute top-0 left-0 my-8 mx-6 flex flex-col font-light">
        <NavLink
         to="/bio"
-        className={
-          `text-lg hover:underline hover:font-normal tracking-wider subpixel-antialiased`
-        }
+        className="text-lg hover:underline hover:font-normal tracking-wider subpixel-antialiased"
       >bio</NavLink>
 
        <NavLink
