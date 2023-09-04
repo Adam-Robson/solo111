@@ -93,7 +93,7 @@ button {
   font-family: inherit;
   background-color: var(--battleship);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 2s;
 }
 
 button:hover {

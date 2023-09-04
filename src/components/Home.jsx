@@ -10,8 +10,10 @@ import Footer from './Footer';
  */
 
 const colorArray = [
-  'hsl(17, 64%, 88%)', // dogwood
-  'hsl(208, 13%, 74%)' // french
+  // 'hsl(17, 64%, 88%)', // dogwood
+  // 'hsl(32, 74%, 81%)', // orange
+  'hsl(208, 13%, 74%)', // french
+  'hsl(120, 5%, 54%)'   // battleship
 ];
 
 /**
@@ -21,7 +23,7 @@ const colorArray = [
  * color
  */
 
-const transitionDuration = 3500;
+const transitionDuration = 3000;
 
 export default function Home() {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
@@ -53,13 +55,13 @@ export default function Home() {
       <Header />
       <main>
         <article
-          className="max-w-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+          className="max-w-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
         >
           <h1
             style={{ color: colorArray[currentColorIndex] }}
             className="text-8xl font-light subpixel-antialiased"
-          >catalog.
-          <p className="text-xl text-right absolute top-20 right-20">by Adam Robson</p></h1>
+          >portfolio.
+            <p className="text-xl text-right absolute top-20 right-20">Adam Robson</p></h1>
         </article>
       </main>
       <Footer />

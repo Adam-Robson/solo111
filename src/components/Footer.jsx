@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="w-full mr-10 absolute bottom-0 flex justify-end items-center">
+    <footer className="w-full mr-10 absolute top-0 flex justify-end items-center">
         <NavLink
           to="https://github.com/Adam-Robson"
           className="subpixel-antialiased"
@@ -15,7 +15,7 @@ export default function Footer() {
         >
           <PiGithubLogoDuotone
             className="m-4"
-            size={32}
+            size={24}
             data-testid="github-icon-link"
           />
         </NavLink>
@@ -27,7 +27,7 @@ export default function Footer() {
           <PiLinkedinLogoDuotone
             data-testid="linkedin-icon-link"
             className="m-4"
-            size={32}
+            size={24}
           />
         </NavLink>
       <NavLink
@@ -37,7 +37,7 @@ export default function Footer() {
       >
         <PiSpotifyLogoDuotone
           className="m-4"
-          size={32}
+          size={24}
           data-testid="spotify-icon-link"
         />
       </NavLink>
