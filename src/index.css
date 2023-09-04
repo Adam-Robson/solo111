@@ -47,6 +47,10 @@ body {
   color: var(--cadet);
 }
 
+#root {
+  min-width: 100vw;;
+}
+
 main {
   background-image: url('./assets/sun.png');
   background-position: center;
