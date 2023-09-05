@@ -169,3 +169,15 @@ button:focus-visible {
         font-size: 32px; /* Larger size for screens with a minimum width of 768px */
     }
 }
+
+/* Projects Page */
+
+.description {
+  display: none;
+}
+
+/* Show description on hover */
+.p-4:hover .description {
+  display: block;
+}
+
