@@ -173,11 +173,12 @@ button:focus-visible {
 /* Projects Page */
 
 .description {
-  display: none;
+  visibility: hidden;
 }
 
 /* Show description on hover */
 .p-4:hover .description {
   display: block;
+  visibility: visible;
 }
 
