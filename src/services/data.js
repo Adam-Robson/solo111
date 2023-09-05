@@ -27,7 +27,9 @@ export const writings = [
 ];
 
 export const projects = [
- `Pantry Pal is a mobile responsive web-application
+  {
+    title: "pantry pal",
+    description: `Pantry Pal is a mobile responsive web-application
                   for anyone seeking food assistance and was built with
                   React for the client-side and Flask for the Python
                   backend, MongoDB, which stores data gathered through
@@ -38,7 +40,36 @@ export const projects = [
                   coordinates. The project is deployed using Fly, Heroku,
                   and MongoAtlas to ensure smooth functionality and
                   accessibility.`,
-   `Buddystock VIII is a mobile-responsive website for
+    link: "https://pantry-pal-colab.herokuapp.com/",
+  },
+  {
+    title: "tally ho",
+    description: `Tally-Ho! is a mobile responsive web-application
+                  that allows users to create lists of their favorite
+                  trips! Built with React and styled using Chakra UI, it
+                  leverages the Context API from React, along with custom
+                  hooks to manage state, integration of Google Waypoints
+                  and JavaScript Maps API allow for planning and saving
+                  road trip routes effectively. The application employs
+                  authentiction so Users can save their planned trips`,
+    link: "https://tally-ho-road-trips.netlify.app/auth/sign-in",
+  },
+  {
+    title: "collabo",
+    description: `Collabo is an innovative remote-collaboration
+                  platform built as a solution to enable musicians
+                  to play music together remotely. The project was built
+                  with vanilla JavaScript, HTML and CSS, and centers
+                  around an audio mixer that incorporates the Waveform
+                  Playlist tool by Naomi Aro, which harnesses the power
+                  of the Web Audio API. Developed with a team of five
+                  developers, the platform is built using vanilla JavaScript,
+                  CSS, and HTML, and is accessible at collabomusic.co.`,
+    link: "https://collabomusic.co/",
+  },
+  {
+    title: "buddystock",
+    description: `Buddystock VIII is a mobile-responsive website for
                   an annual, non-profit, music festival held in Mosier,
                   Oregon, set against the backdrop of a cherry orchard
                   overlooking the Columbia Gorge. This project was built
@@ -47,48 +78,7 @@ export const projects = [
                   volunteers running logistics. The project was deployed
                   using cPanel and HostGator, ensuring the festival's
                   information was freely accessible online and on mobile
-                  devices.`, `Collabo is an innovative open-source song-project
-                  platform built as a solution for enable musicians
-                  to play music together remotely. The project was built
-                  with vanilla JavaScript, HTML and CSS, and centers
-                  around an audio mixer that incorporates the Waveform
-                  Playlist tool by Naomi Aro, which harnesses the power
-                  of the Web Audio API. Developed with a team of five
-                  developers, the platform is built using vanilla JavaScript,
-                  CSS, and HTML, and is accessible at collabomusic.co.`,
-                  `Tally-Ho! is a mobile responsive web-application
-                  built with React and styled using Chakra UI. It
-                  leverages various technologies to provide users with
-                  a comprehensive platform for planning and organizing
-                  road trips. The application employs the Context API
-                  from React, along with custom hooks, to manage state
-                  and facilitate a seamless user experience. The
-                  authentication feature enables users to create accounts,
-                  log in securely, and access personalized features. The
-                  integration of Google Waypoints and JavaScript Maps API
-                  provides users with the ability to plan and save road trip
-                  routes effectively. Users can save their planned trips,
-                  enhancing the practicality and value of the platform.`,
-                  `My Favorite Books is a personal project for
-                  cataloging a collection of favorite books.
-                  The project emphasizes the use of HTML, CSS, JavaScript,
-                  and Supabase to create a seamless experience for visitors.
-                  JavaScript is used to create interactive elements,
-                  handle user interactions, and fetch data from Supabase.
-                  Hypertext Markup Language structures the content and layout
-                  of the webpage Cascading Style Sheets are employed
-                  for styling and visual presentation.
-                  The integration of Supabase as a
-                  data source highlights integrates the use of APIs,
-                  dynamic data, and Postgres data storage.`,
-                 `Playground is a hub of classic games, and consists
-                  of a landing page with a series of links to the various
-                  game page.  the pages include including games such as
-                  Shell Game and Block-Breaker. The collection is built
-                  using Vanilla JavaScript, and most were developed
-                  during my time at Alchemy Code Lab in Portland,
-                  Oregon. The collection showcases a compilation of
-                  engaging games, with scripts written by fellow
-                  graduates, tutorial content from MDN, and my
-                  own creations.`
+                  devices.`,
+    link: "https://buddystockviii.com",
+  }
 ];
