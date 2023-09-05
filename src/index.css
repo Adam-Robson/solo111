@@ -153,10 +153,11 @@ button:focus-visible {
 
   a {
     color: var(--charcoal);
-    a:hover {
+  }
+
+  a:hover {
       color: var(--space);
     }
-  }
 }
 
 .icon {
