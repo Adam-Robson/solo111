@@ -137,10 +137,25 @@ button:focus-visible {
   }
 }
 
+/* set light mode theme */
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--jet);
     background-color: var(--platinum);
+  }
+
+  html,
+  body {
+
+    color: var(--jet);
+    background-color: var(--cadet);
+  }
+
+  a {
+    color: var(--charcoal);
+    a:hover {
+      color: var(--space);
+    }
   }
 }
 
