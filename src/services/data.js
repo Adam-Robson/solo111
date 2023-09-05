@@ -28,57 +28,43 @@ export const writings = [
 
 export const projects = [
   {
-    title: "pantry pal",
+    title: "Pantry Pal",
     description: `Pantry Pal is a mobile responsive web-application
-                  for anyone seeking food assistance and was built with
-                  React for the client-side and Flask for the Python
-                  backend, MongoDB, which stores data gathered through
-                  a Python scraping engine, Tailwind CSS for styling,
-                  Google Maps API for mapping functionalities,
-                  Geolocation API for determining user location, and
-                  GeoCoding API for converting addresses into geographic
-                  coordinates. The project is deployed using Fly, Heroku,
-                  and MongoAtlas to ensure smooth functionality and
-                  accessibility.`,
+                  that locates food pantries anywhere in the US. It
+                  uses the Google Maps API for mapping functionality,
+                  the Geolocation API for determining user location, and
+                  the GeoCoding API for converting addresses into geographic
+                  coordinates.  It was built with React and Python, and
+                  uses MongoDB for data storage.`,
     link: "https://pantry-pal-colab.herokuapp.com/",
   },
   {
-    title: "tally ho",
-    description: `Tally-Ho! is a mobile responsive web-application
+    title: "TallyHo",
+    description: `Tally-Ho is a mobile responsive web-application
                   that allows users to create lists of their favorite
                   trips! Built with React and styled using Chakra UI, it
-                  leverages the Context API from React, along with custom
-                  hooks to manage state, integration of Google Waypoints
-                  and JavaScript Maps API allow for planning and saving
-                  road trip routes effectively. The application employs
-                  authentiction so Users can save their planned trips`,
+                  integrates Google Waypoints and the JavaScript Maps
+                  API. The application includes authentiction so Users
+                  can save their trips`,
     link: "https://tally-ho-road-trips.netlify.app/auth/sign-in",
   },
   {
-    title: "collabo",
+    title: "Collabo",
     description: `Collabo is an innovative remote-collaboration
                   platform built as a solution to enable musicians
-                  to play music together remotely. The project was built
-                  with vanilla JavaScript, HTML and CSS, and centers
-                  around an audio mixer that incorporates the Waveform
-                  Playlist tool by Naomi Aro, which harnesses the power
-                  of the Web Audio API. Developed with a team of five
-                  developers, the platform is built using vanilla JavaScript,
-                  CSS, and HTML, and is accessible at collabomusic.co.`,
+                  to play music together remotely. The project was
+                  built with vanilla JavaScript, HTML and CSS, and
+                  harnesses the power of the Web Audio API.`,
     link: "https://collabomusic.co/",
   },
   {
-    title: "buddystock",
+    title: "Buddystock",
     description: `Buddystock VIII is a mobile-responsive website for
                   an annual, non-profit, music festival held in Mosier,
-                  Oregon, set against the backdrop of a cherry orchard
-                  overlooking the Columbia Gorge. This project was built
-                  using Create React App, and was the source of information
-                  for the eighth annual show for all attendees and
-                  volunteers running logistics. The project was deployed
-                  using cPanel and HostGator, ensuring the festival's
-                  information was freely accessible online and on mobile
-                  devices.`,
+                  Oregon. It was built with Create React App, and
+                  was the source of information for the eighth annual
+                  show for all attendees and volunteers running logistics.
+                  The project was deployed using cPanel and HostGator.`,
     link: "https://buddystockviii.com",
   }
 ];
