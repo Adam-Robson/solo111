@@ -21,12 +21,9 @@ export default function Resume() {
     link.click();
   }
   return (
-    <section className="mx-auto fadein px-6">
-      <Link className="text-xl absolute top-10 right-10 subpixel-antialiased" to="/">home</Link>
-      <h1
-        className="title text-7xl subpixel-antialiased">
-        resume
-      </h1>
+    <section className="max-w-full w-11/12 mx-auto fadein px-6">
+      <Link className="text-lg absolute top-10 right-10 subpixel-antialiased" to="/">home</Link>
+      <h1 className="text-7xl sm:text-8xl subpixel-antialiased mt-12">resume</h1>
       <div className="flex flex-col mx-auto max-w-lg">
         <Link
           download

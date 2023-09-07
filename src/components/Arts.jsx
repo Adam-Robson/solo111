@@ -31,7 +31,7 @@ export default function Arts() {
       <div className="w-full max-w-xl mx-auto">
         <article className="w-full mx-auto my-6">
           <h2 className="w-full text-2xl text-center py-4 subpixel-antialiased">le fog</h2>
-          <iframe style={{ borderRadius: '0.75rem' }} src="https://open.spotify.com/embed/artist/4NrRxIaVhlouvojuHGq62y?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
+          <iframe style={{ borderRadius: '0.75rem' }} src="https://open.spotify.com/embed/artist/4NrRxIaVhlouvojuHGq62y?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
         </article>
 
         <article className="w-full mx-auto my-6">

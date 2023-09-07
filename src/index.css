@@ -166,7 +166,12 @@ button:focus-visible {
     .icon {
         font-size: 32px; /* Larger size for screens with a minimum width of 768px */
     }
+
+    .gif {
+      width: 400px;
+    }
 }
+
 /* bio */
 
 .bioimage {

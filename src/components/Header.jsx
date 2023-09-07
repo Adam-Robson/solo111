@@ -4,12 +4,12 @@ export default function Header() {
   return (
     <header
       className="absolute top-0 left-0 my-8 mx-6 flex flex-col font-light">
-       <NavLink
+      <NavLink
         to="/bio"
         className="text-lg sm:text-2xl hover:underline hover:font-normal tracking-wider subpixel-antialiased"
       >bio</NavLink>
 
-       <NavLink
+      <NavLink
         to="projects"
         className="text-lg sm:text-2xl hover:underline hover:font-normal tracking-wider subpixel-antialiased"
       >projects</NavLink>
@@ -19,7 +19,7 @@ export default function Header() {
         className="text-lg sm:text-2xl hover:underline hover:font-normal tracking-wider subpixel-antialiased"
       >arts</NavLink>
 
-        <NavLink
+      <NavLink
         to="/resume"
         className="text-lg sm:text-2xl hover:underline hover:font-normal tracking-wider subpixel-antialiased"
       >resume</NavLink>

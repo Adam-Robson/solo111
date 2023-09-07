@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 /** bring in array of writings stored in project directory */
 import { writings } from '../services/data.js';
 
@@ -6,7 +6,7 @@ export default function Writing() {
   /** bring in hook from react-router v6 */
   const navigate = useNavigate();
   /** grab the parameters directly from the current URL */
-  const { title } = useParams();
+  const { params } = useParams();
 
   /**
    * provide a familiar way
@@ -20,20 +20,20 @@ export default function Writing() {
     navigate(-1);
   }
 
-  const writing = writings.find(({ alias }) => alias === title);
+  const writing = writings.find(({ alias }) => alias === params);
 
   return (
-    <>
+    <section className="max-w-full w-11/12 mx-auto fadein px-6">
+      <Link className="text-lg absolute top-10 right-10 subpixel-antialiased" to="/">home</Link>
+
       <button
-        className="absolute left-8 top-8 text-xl subpixel-antialiased"
+        className="absolute right-10 top-24 text-xl subpixel-antialiased"
         onClick={previousPage}
       >back</button>
-      <h2
-        className="text-center text-2xl subpixel-antialiased"
-      >{writing.alias}</h2>
+      <h1 className="text-7xl sm:text-8xl text-center subpixel-antialiased mt-4">{ writing.alias }</h1>
       <div
-        className="text-center text-xl subpixel-antialiased"
+        className="text-center text-xl sm:text-2xl subpixel-antialiased"
       >{ writing.body }</div>
-    </>
+    </section>
   );
 }
