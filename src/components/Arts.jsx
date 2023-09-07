@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 /** bring in array of writings stored in project directory */
 import { writings } from '../services/data.js';
 
 export default function Arts() {
-
+  const navigate = useNavigate();
   /**
    * map through objects in writings
    * to display the alias of each
@@ -24,9 +24,13 @@ export default function Arts() {
     </li>
   ));
 
+  function handleHomeNav() {
+    navigate('/');
+  }
+  
   return (
     <section className="max-w-full w-11/12 mx-auto fadein px-6">
-      <Link className="text-lg absolute top-10 right-10 subpixel-antialiased" to="/">home</Link>
+      <button onClick={ handleHomeNav } className="text-lg absolute top-10 right-10 subpixel-antialiased" to="/">home</button>
       <h1 className="text-7xl sm:text-8xl subpixel-antialiased mt-12">arts</h1>
       <div className="w-full max-w-xl mx-auto">
         <article className="w-full mx-auto my-6">
