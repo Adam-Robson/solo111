@@ -25,36 +25,24 @@ export default function Arts() {
   ));
 
   return (
-    <>
-      <h1 className="text-6xl subpixel-antialiased">arts</h1>
-      <section className="w-full mx-auto">
-        <h2 className="w-full text-2xl subpixel-antialiased">
-              le fog
-        </h2>
-        <iframe
-          className="rounded-xl md:w-4/5"
-          src={
-            `https://open.spotify.com
-                /embed/album/64LjLBqFsNtxvWGZ3jDtIy
-                ?utm_source=generator&theme=0`
-          }
-          width="100%"
-          height="300"
-          frameBorder="0"
-          allowFullScreen="false"
-          allow="clipboard-write; encrypted-media; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-      </section>
+    <section className="max-w-full w-11/12 mx-auto fadein px-6">
+      <Link className="text-xl absolute top-10 right-10 subpixel-antialiased" to="/">home</Link>
+      <h1 className="text-7xl sm:text-8xl subpixel-antialiased mt-12">arts</h1>
+      <div className="w-full max-w-xl mx-auto">
+        <article className="w-full mx-auto my-6">
+          <h2 className="w-full text-2xl text-center py-4 subpixel-antialiased">le fog</h2>
+          <iframe style={{ borderRadius: '0.75rem' }} src="https://open.spotify.com/embed/artist/4NrRxIaVhlouvojuHGq62y?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
+        </article>
 
-      <section className="w-full mx-auto">
-        <h2 className="w-full text-2xl subpixel-antialiased">
+        <article className="w-full mx-auto my-6">
+          <h2 className="w-full text-2xl text-center py-4 subpixel-antialiased">
             writings
-        </h2>
-        <ul
-          className="w-full mx-auto grid grid-flow-row md:grid-flow-col"
-        >{list}</ul>
-      </section>
-    </>
+          </h2>
+          <ul
+            className="w-full mx-auto text-center grid grid-flow-row md:grid-flow-col"
+          >{list}</ul>
+        </article>
+      </div>
+    </section>
   );
 }

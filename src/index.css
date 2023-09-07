@@ -86,8 +86,6 @@ a:hover {
   color: var(--french);
 }
 
-
-
 button {
   border-radius: 4px;
   border: 1px solid transparent;
@@ -169,16 +167,28 @@ button:focus-visible {
         font-size: 32px; /* Larger size for screens with a minimum width of 768px */
     }
 }
+/* bio */
 
+.bioimage {
+  border-radius: 0.85rem;
+}
 /* Projects Page */
+
+.project-title {
+  color: var(--honeydew);
+}
 
 .description {
   visibility: hidden;
+  color: var(--french);
+  font-size: 1.85rem;
 }
 
 /* Show description on hover */
-.p-4:hover .description {
-  display: block;
+.cloak:hover .description{
+  font-size: 0.85rem;
+  color: var(--french);
   visibility: visible;
 }
+
 
