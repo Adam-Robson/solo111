@@ -26,7 +26,7 @@ export default function Arts() {
 
   return (
     <section className="max-w-full w-11/12 mx-auto fadein px-6">
-      <Link className="text-xl absolute top-10 right-10 subpixel-antialiased" to="/">home</Link>
+      <Link className="text-lg absolute top-10 right-10 subpixel-antialiased" to="/">home</Link>
       <h1 className="text-7xl sm:text-8xl subpixel-antialiased mt-12">arts</h1>
       <div className="w-full max-w-xl mx-auto">
         <article className="w-full mx-auto my-6">

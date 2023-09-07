@@ -177,18 +177,20 @@ button:focus-visible {
 .project-title {
   color: var(--honeydew);
 }
-
+/*
 .description {
   visibility: hidden;
   color: var(--french);
   font-size: 1.85rem;
-}
+} */
 
 /* Show description on hover */
-.cloak:hover .description{
-  font-size: 0.85rem;
-  color: var(--french);
-  visibility: visible;
+.cloak {
+  display: none; /* Initially hide the description */
+}
+
+.cloak.block {
+  display: block; /* Show the description when the block class is applied */
 }
 
 
