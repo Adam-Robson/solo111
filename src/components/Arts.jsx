@@ -35,13 +35,13 @@ export default function Arts() {
         </article>
 
         <article className="w-full mx-auto my-6">
-        <h2 className="w-full text-2xl text-center py-4 subpixel-antialiased">
+          <h2 className="w-full text-2xl text-center py-4 subpixel-antialiased">
             writings
-        </h2>
-        <ul
-          className="w-full mx-auto text-center grid grid-flow-row md:grid-flow-col"
-        >{list}</ul>
-      </article>
+          </h2>
+          <ul
+            className="w-full mx-auto text-center grid grid-flow-row md:grid-flow-col"
+          >{list}</ul>
+        </article>
       </div>
     </section>
   );
