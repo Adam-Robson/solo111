@@ -22,6 +22,7 @@ export default function Resume() {
   }
   return (
     <section className="mx-auto fadein px-6">
+      <Link className="text-xl absolute top-10 right-10 subpixel-antialiased" to="/">home</Link>
       <h1
         className="title text-7xl subpixel-antialiased">
         resume

@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section className="max-w-4xl w-11/12 mx-auto">
       <Link className="text-xl absolute top-10 right-10 subpixel-antialiased" to="/">home</Link>
-      <h1 className="text-8xl subpixel-antialiased">arts</h1>
+      <h1 className="text-8xl subpixel-antialiased">projects</h1>
       {projects.map(({ title, description, link, features }, index) => (
         <>
           <Project
