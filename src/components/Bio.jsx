@@ -14,7 +14,7 @@ export default function Bio() {
   return (
     <section className="max-w-full w-11/12 mx-auto fadein px-6">
       <button onClick={ handleHomeNav } className="absolute top-6 right-6 subpixel-antialiased" to="/">home</button>
-      <h1 className="text-8xl subpixel-antialiased mt-8">bio</h1>
+      <h1 className="text-8xl font-light subpixel-antialiased mt-8">bio</h1>
 
       <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl w-full mx-auto p-2 flex flex-col lg:flex-row lg:justify-center space-y-4 lg:space-y-0 lg:space-x-4">
         <BioImage className="bioimage max-w-xs lg:max-w-lg" imageUrl={or} text="I am a software engineer and artist living in the beautiful pacific northwest." />

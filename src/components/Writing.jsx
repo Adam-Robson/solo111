@@ -36,7 +36,7 @@ export default function Writing() {
       >back</Link>
 
       <div className="flex flex-col h-screen justify-center">
-        <h1 className="text-5xl text-center subpixel-antialiased mt-12 mb-4 ">{ writing.alias }</h1>
+        <h1 className="text-5xl font-light text-center subpixel-antialiased mt-12 mb-4 ">{ writing.alias }</h1>
         <p className="text-center text-lg subpixel-antialiased">{writing.body}</p>
       </div>
     </section>

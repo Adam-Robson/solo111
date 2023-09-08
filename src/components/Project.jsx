@@ -6,7 +6,7 @@ export default function Project({ title, description, link, features }) {
   const [hover, setHover] = useState(false);
   return (
     <article
-      className="my-8 p-4 border text-center rounded-lg hover:border-cyan-700 hover:shadow-md transition duration-300 ease-in-out"
+      className="my-12 p-4 border text-center rounded-lg hover:border-cyan-700 hover:shadow-md transition duration-300 ease-in-out"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -18,7 +18,7 @@ export default function Project({ title, description, link, features }) {
           to={link}
           target="blank"
           rel="noopener noreferrer"
-          className=" text-pink-100 text-center text-light text-3xl my-4"
+          className="text-center font-light text-3xl my-4"
         >View Project</Link>
         <div className="flex list-none w-full justify-between items-baseline py-6">
           <FeatureCard features={features} />

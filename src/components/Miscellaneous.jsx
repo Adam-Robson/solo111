@@ -16,7 +16,7 @@ export default function Miscellaneous() {
           className="absolute top-6 right-6 subpixel-antialiased"
           to="/"
         >home</button>
-        <h1 className="text-7xl sm:text-8xl subpixel-antialiased mt-12">
+        <h1 className="text-7xl sm:text-8xl font-light subpixel-antialiased mt-12">
           misc.
         </h1>
         <div className="max-w-sm mx-auto border border-cyan-300">
