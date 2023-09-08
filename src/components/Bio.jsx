@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import BioImage from './BioImage';
 import or from '../assets/slvrfls.png';
 import adam from '../assets/adaam.png';
-
+import door from '../assets/door.png';
 export default function Bio() {
   const navigate = useNavigate();
 
@@ -18,6 +18,7 @@ export default function Bio() {
 
       <div className="max-w-full mx-auto p-4 flex flex-col md:flex-row md:justify-center space-y-4 md:space-y-0 md:space-x-4">
         <BioImage className="bioimage max-w-md" imageUrl={or} text="I am a software engineer and artist living in the beautiful pacific northwest." />
+        <BioImage className="eq bioimage max-w-md" imageUrl={ door } text="Not all programs are straight roads. We may, for example, want to create a branching road, where the program takes on the proper branch based on the situation at hand. This is called conditional execution. --Marijn Haverbeke" />
         <BioImage className="bioimage max-w-md" imageUrl={adam} text="I enjoy working with Postgres, Express, React and Node." />
       </div>
     </section>

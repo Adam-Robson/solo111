@@ -173,6 +173,11 @@ button:focus-visible {
 
 /* bio */
 
+.eq {
+  background-color: var(--azure);
+  
+}
+
 .bioimage {
   border-radius: 0.85rem;
 }
