@@ -31,12 +31,12 @@ export default function Resume() {
 
   return (
     <section className="max-w-full w-11/12 mx-auto fadein px-6">
-      <button onClick={ handleHomeNav } className="text-lg absolute top-10 right-10 subpixel-antialiased" to="/">home</button>
-      <h1 className="text-7xl sm:text-8xl subpixel-antialiased mt-12">resume</h1>
-      <div className="flex flex-col mx-auto max-w-lg">
+      <button onClick={ handleHomeNav } className="absolute top-6 right-6 subpixel-antialiased" to="/">home</button>
+      <h1 className="text-7xl sm:text-8xl font-light subpixel-antialiased mt-12">resume</h1>
+      <div className="flex flex-col mx-auto max-w-md">
         <Link
           download
-          className="px-10 py-6 flex justify-center"
+          className="px-6 pb-4 flex justify-center"
           onClick={handleDownload}>
           download
         </Link>
@@ -44,7 +44,7 @@ export default function Resume() {
           data-testid="resume"
           src={resume}
           id="download"
-          className="px-6"
+          className="mx-auto pb-6"
           alt="resume page"
         />
       </div>

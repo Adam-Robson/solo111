@@ -27,11 +27,11 @@ export default function Arts() {
   function handleHomeNav() {
     navigate('/');
   }
-  
+
   return (
     <section className="max-w-full w-11/12 mx-auto fadein px-6">
-      <button onClick={ handleHomeNav } className="text-lg absolute top-10 right-10 subpixel-antialiased" to="/">home</button>
-      <h1 className="text-7xl sm:text-8xl subpixel-antialiased mt-12">arts</h1>
+      <button onClick={ handleHomeNav } className="absolute top-6 right-6 subpixel-antialiased" to="/">home</button>
+      <h1 className="text-8xl font-light subpixel-antialiased mt-8">arts</h1>
       <div className="w-full max-w-xl mx-auto">
         <article className="w-full mx-auto my-6">
           <h2 className="w-full text-2xl text-center py-4 subpixel-antialiased">le fog</h2>

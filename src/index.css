@@ -15,7 +15,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
+    --rose-quartz: hsla(265, 15%, 65%, 1);
+    --coral: hsla(10, 56%, 65%, 1);
     --platinum: hsla(212, 60%, 95%, 1);
     --beige: hsla(60, 56%, 91%, 1);
     --dogwood: hsla(17, 64%, 88%, 1);
@@ -60,18 +61,12 @@ main {
   width: 100vw;
 }
 
-label {
-  opacity: 0;
-}
-
-.project:hover + .label {
-  opacity: 1;
-}
-
 ul {
   list-style: none;
 }
 
+
+/* DARK MODE BY DEFAULT see line 35 & 151 */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -89,9 +84,9 @@ a:hover {
 button {
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.4em 1em;
+  padding: 0.3em 0.8em;
   font-size: .85em;
-  font-weight: 400;
+  font-weight: 300;
   font-family: inherit;
   background-color: var(--battleship);
   cursor: pointer;
@@ -99,14 +94,101 @@ button {
 }
 
 button:hover {
-  border-color: var(--ash);
-
+  background-color: var(--ash);
+  border-color: var(--gray);
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto var(--honeydew);
 }
+
+/* HOME PAGE */
+.icon {
+    font-size: 24px;
+}
+
+@media (min-width: 768px) {
+    .icon {
+        font-size: 32px;
+    }
+
+/* ERROR PAGE GIF SIZE */
+    .gif {
+      width: 400px;
+    }
+}
+
+/* BIO PAGE */
+.eq {
+  background-color: var(--azure);
+
+}
+
+.bioimage {
+  border-radius: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .bioimage {
+    border-radius: 1.25rem;
+  }
+}
+
+/* PROJECTS PAGE */
+.project-title {
+  color: var(--honeydew);
+}
+
+.cloak {
+  display: none;
+}
+
+.cloak.block {
+  display: block;
+}
+
+/* LIGHT MODE THEME COLORS */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--jet);
+    background-color: var(--platinum);
+  }
+
+  html,
+  body {
+    color: var(--space);
+    background-color: var(--dogwood);
+  }
+
+  a {
+    color: var(--space);
+  }
+
+  a:hover {
+      color: var(--coral);
+    }
+
+  button {
+    background-color: var(--french);
+  }
+
+  button:hover {
+    background-color: var(--alice);
+    border-color: var(--battleship);
+  }
+
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto var(--azure);
+  }
+
+  .project-title {
+    color: var(--rose-quartz);
+  }
+}
+
+/* FADE-IN EFFECT  */
 
 .fadein {
   -webkit-animation-name: fadeIn;
@@ -134,68 +216,4 @@ button:focus-visible {
     opacity: 1;
   }
 }
-
-/* set light mode theme */
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--jet);
-    background-color: var(--platinum);
-  }
-
-  html,
-  body {
-
-    color: var(--jet);
-    background-color: var(--cadet);
-  }
-
-  a {
-    color: var(--charcoal);
-  }
-
-  a:hover {
-      color: var(--space);
-    }
-}
-
-.icon {
-    font-size: 24px; /* Default size for small screens */
-}
-
-@media (min-width: 768px) {
-    .icon {
-        font-size: 32px; /* Larger size for screens with a minimum width of 768px */
-    }
-
-    .gif {
-      width: 400px;
-    }
-}
-
-/* bio */
-
-.bioimage {
-  border-radius: 0.85rem;
-}
-/* Projects Page */
-
-.project-title {
-  color: var(--honeydew);
-}
-/*
-.description {
-  visibility: hidden;
-  color: var(--french);
-  font-size: 1.85rem;
-} */
-
-/* Show description on hover */
-.cloak {
-  display: none; /* Initially hide the description */
-}
-
-.cloak.block {
-  display: block; /* Show the description when the block class is applied */
-}
-
 

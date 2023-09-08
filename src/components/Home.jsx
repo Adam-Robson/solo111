@@ -13,7 +13,8 @@ const colorArray = [
   // 'hsl(17, 64%, 88%)', // dogwood
   // 'hsl(32, 74%, 81%)', // orange
   'hsl(208, 13%, 74%)', // french
-  'hsl(120, 5%, 54%)'   // battleship
+  // 'hsl(120, 5%, 54%)'   // battleship
+  'hsl(93, 12%, 70%)' // cadet
 ];
 
 /**
@@ -27,6 +28,7 @@ const transitionDuration = 3000;
 
 export default function Home() {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
+
 
   /**
    * the color change event will be
