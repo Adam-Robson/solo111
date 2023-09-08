@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Header from './Header';
-import Footer from './Footer';
+import SocialIcons from './SocialIcons';
 
 /**
  * create a set of color values
@@ -64,7 +64,7 @@ export default function Home() {
             <p className="text-xl text-right absolute top-20 right-20">Adam Robson</p></h1>
         </article>
       </main>
-      <Footer />
+      <SocialIcons />
     </div>
   );
 }

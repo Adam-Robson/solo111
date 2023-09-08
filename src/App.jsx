@@ -17,7 +17,7 @@ export default function App() {
         <Route path='/projects' element={ <Projects /> } />
         <Route path='/resume' element={ <Resume /> } />
         <Route path='/arts' element={ <Arts /> } />
-        <Route path="/arts/:title" element={ <Writing /> } />
+        <Route path="/:params" element={ <Writing /> } />
         <Route path='/misc' element={<Miscellaneous />} />
         <Route path='*' element={ <NotFound /> } />
       </Routes>
