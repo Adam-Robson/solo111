@@ -10,7 +10,7 @@ export default function Project({ title, description, link, features }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <h2 className="text-2xl font-light project-title">{title}</h2>
+      <h2 className="text-3xl font-light project-title">{title}</h2>
       <div className={`cloak ${hover ? 'block' : 'hidden'}`}>
         <p className="description">{description}</p>
 
@@ -18,7 +18,7 @@ export default function Project({ title, description, link, features }) {
           to={link}
           target="blank"
           rel="noopener noreferrer"
-          className=" text-pink-100 text-center text-light text-3xl mt-2"
+          className=" text-pink-100 text-center text-light text-3xl my-4"
         >View Project</Link>
         <div className="flex list-none w-full justify-between items-baseline py-6">
           <FeatureCard features={features} />

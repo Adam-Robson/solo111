@@ -28,6 +28,7 @@ const transitionDuration = 3000;
 export default function Home() {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
 
+
   /**
    * the color change event will be
    * activity on the page that
