@@ -36,7 +36,7 @@ export default function Resume() {
       <div className="flex flex-col mx-auto max-w-md">
         <Link
           download
-          className="px-6 py-2 flex justify-center"
+          className="px-6 pb-4 flex justify-center"
           onClick={handleDownload}>
           download
         </Link>

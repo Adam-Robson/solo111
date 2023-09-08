@@ -175,12 +175,19 @@ button:focus-visible {
 
 .eq {
   background-color: var(--azure);
-  
+
 }
 
 .bioimage {
   border-radius: 0.85rem;
 }
+
+@media (max-width: 768px) {
+  .bioimage {
+    border-radius: 1.25rem;
+  }
+}
+
 /* Projects Page */
 
 .project-title {
