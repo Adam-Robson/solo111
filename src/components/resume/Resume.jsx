@@ -1,4 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
+import LazyImageLoader from '../LazyImageLoader';
+
 import resume from '../../assets/res.png';
 
 export default function Resume() {
@@ -37,8 +39,7 @@ export default function Resume() {
           onClick={handleDownload}>
           download
         </Link>
-        <img
-          data-testid="resume"
+        <LazyImageLoader
           src={resume}
           id="download"
           className="mx-auto pb-6"

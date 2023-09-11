@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import crystal from '../../assets/crystal.png';
+import LazyImageLoader from '../LazyImageLoader';
 
 export default function Miscellaneous() {
   const navigate = useNavigate();
@@ -19,9 +20,9 @@ export default function Miscellaneous() {
           misc.
       </h1>
       <div className="max-w-xs p-4 mx-auto border border-cyan-300">
-        <img
+        <LazyImageLoader
           src={crystal}
-          className=""
+          className="rounded-lg max-w-xs w-full mx-auto my-2"
           alt="image of out my window" />
         <p className="w-full text-center mx-auto text-lg">
             see some of my past adventures

@@ -47,10 +47,7 @@ module.exports = {
 
   /**ENTRY*/
   entry: {
-    index: './src/index.js',
-    app: './src/app.jsx',
-    home: './src/home.jsx'
-
+    index: './src/index.js'
   },
 
   /**DEVTOOL*/
