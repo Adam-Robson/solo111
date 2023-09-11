@@ -32,7 +32,7 @@
     --gray: hsla(210, 17%, 35%, 1);
     --charcoal: hsla(225, 8%, 29%, 1);
     --jet: hsla(15, 3%, 26%, 1);
-
+    --cyan: hsla(186, 71%, 59%, 1);
   color-scheme: light dark;
 
   color: var(--platinum);
@@ -78,7 +78,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: var(--rose-quartz);
+  color: var(--cyan);
 }
 
 button {
@@ -95,6 +95,7 @@ button {
 
 button:hover {
   background-color: var(--ash);
+  color: var(--charcoal);
   border-color: var(--gray);
 }
 

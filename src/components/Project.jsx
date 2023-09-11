@@ -10,7 +10,7 @@ export default function Project({ title, description, link, features }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <h2 className="text-3xl text-center font-light project-title">{title}</h2>
+      <h2 className="text-3xl text-center font-light underline underline-offset-4 decoration-1 project-title">{title}</h2>
       <div className={`cloak ${hover ? 'block' : 'hidden'}`}>
         <p className="font-light">{description}</p>
         <div className="text-center">
