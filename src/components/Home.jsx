@@ -1,5 +1,3 @@
-import { NavLink } from 'react-router-dom';
-import { SiSpotify, SiBuymeacoffee, SiGithub, SiLinkedin } from 'react-icons/si';
 
 export default function Home() {
   return (
