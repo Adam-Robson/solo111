@@ -16,11 +16,11 @@ export default function Bio() {
       <button onClick={ handleHomeNav } className="absolute top-6 right-6 subpixel-antialiased" to="/">home</button>
       <h1 className="text-8xl font-light subpixel-antialiased mt-8">bio</h1>
 
-      <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl w-full mx-auto p-2 flex flex-col lg:flex-row lg:justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-        <BioImage className="bioimage max-w-xs lg:max-w-lg" imageUrl={or} text="I am a software engineer and artist living in the beautiful pacific northwest." />
-        <BioImage className="bioimage max-w-xs lg:max-w-lg" imageUrl={globe} text={
+      <div className="max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-3xl w-full mx-auto p-2 flex flex-col lg:flex-row lg:justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+        <BioImage className="bioimage max-w-xs lg:max-w-xl" imageUrl={or} text="I am a software engineer and artist living in the beautiful pacific northwest." />
+        <BioImage className="bioimage max-w-xs lg:max-w-xl" imageUrl={globe} text={
           `Not all programs are straight roads. We may, for example, want to create a branching road, where the program takes on the proper branch based on the situation at hand. This is called conditional execution. --Marijn Haverbeke`} />
-        <BioImage className="bioimage max-w-xs lg:max-w-lg" imageUrl={adam} text="I enjoy working with Postgres, Express, React and Node." />
+        <BioImage className="bioimage max-w-xs md:max-w-xl lg:max-w-2xl" imageUrl={adam} text="I enjoy working with Postgres, Express, React and Node." />
       </div>
     </section>
   );

@@ -148,6 +148,10 @@ button:focus-visible {
   display: block;
 }
 
+.description {
+  text-align: left;
+}
+
 /* LIGHT MODE THEME COLORS */
 @media (prefers-color-scheme: light) {
   :root {

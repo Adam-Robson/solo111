@@ -43,7 +43,7 @@ export default function Arts() {
             writings
           </h2>
           <ul
-            className="w-full mx-auto text-center grid grid-flow-row md:grid-flow-col"
+            className="w-full mx-auto text-center grid grid-flow-row"
           >{list}</ul>
         </article>
       </div>
