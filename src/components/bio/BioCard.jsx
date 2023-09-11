@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function BioImage({ imageUrl, text }) {
+export default function BioCard({ imageUrl, text }) {
   const [isHovered, setIsHovered] = useState(false);
 /**
  *
@@ -19,7 +19,7 @@ export default function BioImage({ imageUrl, text }) {
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={() => setIsHovered(!isHovered)}
     >
-      <img src={imageUrl} alt="Bio Image" className="rounded-lg max-w-xs w-full mx-auto" />
+      <img src={imageUrl} alt="Bio Image" className="rounded-lg max-w-xs w-full mx-auto my-2" />
 
       {isHovered && (
         <div

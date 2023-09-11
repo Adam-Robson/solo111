@@ -7,9 +7,14 @@ import { useEffect, useState } from 'react';
  * (lines 47-48)
  */
 const colorArray = [
-  'hsl(17, 64%, 88%)', // dogwood
+  // 'hsl(17, 64%, 88%)', // dogwood
   'hsl(208, 13%, 74%)', // french
-  'hsl(120, 5%, 54%)'   // battleship
+  'hsl(120, 5%, 54%)', // battleship
+  // 'hsl(21, 25%, 60%)', // tan
+  'hsl(182, 25%, 60%)', // verdigris
+  // 'hsl(62, 25%, 60%)'// pea
+
+
 ];
 /**
  * set the duration for how long
@@ -44,11 +49,11 @@ export default function TitleCard() {
   }, []);
 
   return (
-    <section className="max-w-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+    <section className="max-w-xl absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center mt-12">
       <h1
         style={{ color: colorArray[currentColorIndex] }}
         className="text-8xl m-4 font-light subpixel-antialiased"
-      >portfolio.
+      >portfolio
         <p className="text-xl text-right absolute top-24 right-20">Adam Robson</p>
       </h1>
 

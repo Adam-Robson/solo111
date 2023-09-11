@@ -1,8 +1,13 @@
 import { NavLink } from 'react-router-dom';
 
-export default function Header() {
+export default function Navigation() {
+  /**
+   * This component renders the
+   * navigation menu for the home page.
+   *
+   */
   return (
-    <header
+    <nav
       className="absolute top-0 left-0 my-8 mx-6 flex flex-col font-light">
       <NavLink
         to="/bio"
@@ -28,6 +33,6 @@ export default function Header() {
         to="/misc"
         className="text-lg sm:text-xl md:my-1 hover:underline hover:font-normal tracking-wider subpixel-antialiased"
       >misc.</NavLink>
-    </header>
+    </nav>
   );
 }

@@ -1,6 +1,6 @@
 
 import { useNavigate } from 'react-router-dom';
-import { projects } from '../services/data';
+import { projects } from '../../services/projects';
 import Project from './Project';
 
 export default function Projects() {

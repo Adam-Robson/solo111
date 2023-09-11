@@ -1,6 +1,6 @@
 {
   "name": "murmurmur",
-  "version": "0.0.2",
+  "version": "3.0.0",
   "description": "Portfolio | Adam Robson",
   "main": "./src/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mur-mur-mur/murmurmur.git"
+    "url": "git+https://github.com/Adam-Robson/solo.git"
   },
   "keywords": [
     "catalogue",
@@ -20,20 +20,14 @@
     "babel",
     "tailwindcss"
   ],
-  "author": "",
+  "author": "adaam",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mur-mur-mur/murmurmur/issues"
+    "url": "https://github.com/Adam-Robson/solo/issues"
   },
-  "homepage": "https://github.com/mur-mur-mur/murmurmur#readme",
+  "homepage": "https://github.com/Adam-Robson/solo#readme",
   "dependencies": {
-    "@fontsource-variable/karla": "^5.0.9",
-    "@fontsource-variable/radio-canada": "^5.0.9",
-    "@fontsource-variable/source-code-pro": "^5.0.9",
-    "@fontsource-variable/work-sans": "^5.0.9",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "netlify-cli": "^16.2.0",
-    "node-fetch": "^3.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
@@ -57,13 +51,14 @@
     "compression-webpack-plugin": "^10.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
-    "dotenv": "^16.3.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-webpack-plugin": "^4.0.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
     "jest": "^29.6.4",

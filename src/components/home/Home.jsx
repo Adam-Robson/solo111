@@ -1,13 +1,14 @@
 import TitleCard from './TitleCard';
-import Header from './Header';
+import Navigation from './Navigation';
 import SocialIcons from './SocialIcons';
 
 
 export default function Home() {
-
   return (
     <section className="max-w-full">
-      <Header />
+      <header>
+        <Navigation />
+      </header>
       <main>
         <TitleCard />
       </main>

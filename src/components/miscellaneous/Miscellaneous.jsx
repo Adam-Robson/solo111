@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import crystal from '../assets/crystal.png';
+import crystal from '../../assets/crystal.png';
 
 export default function Miscellaneous() {
   const navigate = useNavigate();

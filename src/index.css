@@ -2,12 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ @license
+ Font Family: Supreme
+ Designed by: Jérémie Hornus, Ilya Naumoff
+ URL: https://www.fontshare.com/fonts/supreme
+ © 2023 Indian Type Foundry
+ Font Styles:
+ Supreme Variable(Variable font)
+ Supreme Variable Italic(Variable font)
+*/
+@font-face {
+  font-family: 'Supreme-Variable';
+  src: url('./assets/fonts/Supreme/Supreme-Variable.woff2') format('woff2'),
+       url('./assets/fonts/Supreme/Supreme-Variable.woff') format('woff'),
+       url('./assets/fonts/Supreme/Supreme-Variable.ttf') format('truetype');
+       font-weight: 100 800;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Supreme-VariableItalic';
+  src: url('./assets/fonts/Supreme/Supreme-VariableItalic.woff2') format('woff2'),
+       url('./assets/fonts/Supreme/Supreme-VariableItalic.woff') format('woff'),
+       url('./assets/fonts/Supreme/Supreme-VariableItalic.ttf') format('truetype');
+       font-weight: 100 800;
+       font-display: swap;
+       font-style: italic;
+}
+
+/*
+@license
+Font Family: Bespoke Stencil
+Designed by: Jérémie Hornus, Théo Guillard, Morgane Pambrun, Alisa Nowak, Joachim Vu
+URL: https://www.fontshare.com/fonts/bespoke-stencil
+© 2023 Indian Type Foundry
+Font Styles:
+Bespoke Stencil Variable(Variable font)
+Bespoke Stencil Variable Italic(Variable font)
+*/
+@font-face {
+  font-family: 'BespokeStencil-Variable';
+  src: url('./assets/fonts/BespokeStencil/BespokeStencil-Variable.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil/BespokeStencil-Variable.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil/BespokeStencil-Variable.ttf') format('truetype');
+       font-weight: 300 800;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'BespokeStencil-VariableItalic';
+  src: url('./assets/fonts/BespokeStencil/BespokeStencil-VariableItalic.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil/BespokeStencil-VariableItalic.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil/BespokeStencil-VariableItalic.ttf') format('truetype');
+       font-weight: 300 800;
+       font-display: swap;
+       font-style: italic;
+}
+
+/*GLOBAL STYLE*/
 :root {
   box-sizing: border-box;
-  --fonta: 'Karla Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --fontb: 'Source Code Pro Variable', Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-  font-family: var(--fonta);
+  --heading-font: 'BespokeStencil-Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --body-font: 'Supreme-Variable', sans-serif;
+  font-family: var(--body-font);
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -15,24 +75,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-    --rose-quartz: hsla(265, 15%, 65%, 1);
-    --coral: hsla(10, 56%, 65%, 1);
-    --platinum: hsla(212, 60%, 95%, 1);
-    --beige: hsla(60, 56%, 91%, 1);
-    --dogwood: hsla(17, 64%, 88%, 1);
-    --orange: hsla(32, 74%, 81%, 1);
-    --ash: hsla(78, 15%, 77%, 1);
-    --alice: hsla(203, 24%, 87%, 1);
-    --azure: hsla(159, 21%, 84%, 1);
-    --french: hsla(208, 13%, 74%, 1);
-    --honeydew: hsla(139, 27%, 82%, 1);
-    --cadet: hsla(93, 12%, 70%, 1);
-    --battleship: hsla(120, 5%, 54%, 1);
-    --space: hsla(210, 10%, 32%, 1);
-    --gray: hsla(210, 17%, 35%, 1);
-    --charcoal: hsla(225, 8%, 29%, 1);
-    --jet: hsla(15, 3%, 26%, 1);
-    --cyan: hsla(186, 71%, 59%, 1);
+
+
+  --dogwood: hsla(17, 64%, 88%, 1);
+  --tan: hsla(21, 25%, 60%, 1);
+  --coral: hsla(10, 56%, 65%, 1);
+  --platinum: hsla(212, 60%, 95%, 1);
+  --alice: hsla(203, 24%, 87%, 1);
+  --french: hsla(208, 13%, 74%, 1);
+  --cyan: hsla(186, 35%, 62%, 1);
+  --verdigris: hsla(182, 25%, 60%, 1);
+  --azure: hsla(159, 21%, 84%, 1);
+  --ash: hsla(78, 15%, 77%, 1);
+  --honeydew: hsla(139, 27%, 82%, 1);
+  --pea: hsla(62, 25%, 60%, 1);
+  --cadet: hsla(93, 12%, 70%, 1);
+  --battleship: hsla(120, 5%, 54%, 1);
+  --gray: hsla(210, 17%, 35%, 1);
+  --space: hsla(210, 10%, 32%, 1);
+  --charcoal: hsla(225, 8%, 29%, 1);
+  --jet: hsla(15, 3%, 26%, 1);
+
   color-scheme: light dark;
 
   color: var(--platinum);
@@ -65,8 +128,7 @@ ul {
   list-style: none;
 }
 
-
-/* DARK MODE BY DEFAULT see line 35 & 151 */
+/*DEFAULT DARKMODE-see :root{color-scheme}*/
 a {
   text-decoration: none;
   cursor: pointer;
@@ -104,38 +166,40 @@ button:focus-visible {
   outline: 4px auto var(--honeydew);
 }
 
-/* HOME PAGE */
-
-
+/*SOCIALICONS*/
 .icon {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
-    .icon {
-        font-size: 32px;
-    }
+  .icon {
+      font-size: 2rem;
+  }
 
-/* ERROR PAGE GIF SIZE */
-    .gif {
-      width: 400px;
-    }
-}
-
-/* BIO PAGE */
-.eq {
-  background-color: var(--azure);
-
-}
-
-
-@media (max-width: 768px) {
-  .bioimage {
-    border-radius: 1.25rem;
+/*NOTFOUND*/
+  .gif {
+    width: 400px;
   }
 }
 
-/* PROJECTS PAGE */
+/*BIO*/
+.bioimage {
+  border-radius: 1.25rem;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .bioimage {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+
+/*PROJECTS*/
 .project-title {
   color: var(--honeydew);
 }
@@ -152,7 +216,14 @@ button:focus-visible {
   text-align: left;
 }
 
-/* LIGHT MODE THEME COLORS */
+/*LOADING*/
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*LIGHT MODE*/
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--jet);
@@ -187,13 +258,9 @@ button:focus-visible {
     outline: 4px auto var(--azure);
   }
 
-  .project-title {
-    color: var(--rose-quartz);
-  }
 }
 
-/* FADE-IN EFFECT  */
-
+/*FADE-IN*/
 .fadein {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;

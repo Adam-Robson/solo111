@@ -4,39 +4,78 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtract = require('mini-css-extract-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const CssMinimizer = require('css-minimizer-webpack-plugin');
 
-require('dotenv').config();
+const developmentMode = process.env.NODE_ENV !== 'production';
 
+const plugins = [
+  new HtmlWebpackPlugin({
+    template: './src/index.html',
+    title: 'Hot Module Replacement',
+  }),
+  new CopyPlugin({
+    patterns: [{ from: 'public' }],
+  }),
+  new CompressionPlugin(),
+  new MiniCssExtract({
+    filename: '[name].css',
+    chunkFilename: '[id].css',
+  }),
+  new ESLintPlugin({
+    extensions: ['js', 'jsx'],
+    fix: true
+  }),
+  new webpack.ProvidePlugin({
+    React: 'react'
+  }),
+];
+
+if (developmentMode) {
+  // enable hot replacement only in development
+  plugins.push(new webpack.HotModuleReplacementPlugin());
+}
+
+// require('dotenv').config();
+
+/** CONFIGURATION OBJECT */
 module.exports = {
+
+  /**MODE*/
   mode: 'development',
-  entry: './src/index.js',
+
+  /**ENTRY*/
+  entry: {
+    app: './src/index.js'
+  },
+
+  /**DEVTOOL*/
+  devtool: 'inline-source-map',
+
+  /**OUTPUT*/
   output: {
     clean: true,
-    filename: '[name].build.js',
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/',
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
+
+  /**DEVSERVER*/
   devServer: {
     port: 7890,
     compress: true,
     historyApiFallback: true,
     hot: true,
-    open: true
+    open: true,
+    static: './dist',
+
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html'
-    }),
-    new CopyPlugin({
-      patterns: [{ from: 'public' }],
-    }),
-    new CompressionPlugin(),
-    new MiniCssExtractPlugin(),
-    new webpack.ProvidePlugin({
-      React: 'react'
-    }),
-  ],
+
+  /**PLUGINS*/
+  plugins,
+
+  /**MODULE*/
   module: {
     rules: [
       {
@@ -50,9 +89,9 @@ module.exports = {
         }
       },
       {
-        test: /\.(css)$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
-          'style-loader',
+          MiniCssExtract.loader,
           {
             loader: 'css-loader',
             options: {
@@ -76,10 +115,6 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      },
-      {
         test: /\.(jpeg|jpg|png|svg|gif)$/,
         type: 'asset/resource'
       },
@@ -89,6 +124,15 @@ module.exports = {
       },
     ]
   },
+
+  /**OPTIMIZATION */
+  optimization: {
+    minimizer: [
+      new CssMinimizer(),
+    ],
+  },
+
+  /**RESOLVE*/
   resolve: {
     extensions: ['.*', '.js', '.jsx']
   }

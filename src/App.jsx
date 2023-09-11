@@ -1,24 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Bio from './components/Bio';
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-import Arts from './components/Arts';
-import Writing from './components/Writing';
-import Miscellaneous from './components/Miscellaneous';
-import NotFound from './components/NotFound';
+import HomePage from './components/home/HomePage';
+import BioPage from './components/bio/BioPage';
+import ProjectsPage from './components/projects/ProjectsPage';
+import ResumePage from './components/resume/ResumePage';
+import ArtsPage from './components/arts/ArtsPage';
+import WritingPage from './components/arts/WritingPage';
+import MiscellaneousPage from './components/miscellaneous/MiscellaneousPage';
+import NotFound from './components/notfound/NotFound';
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} errorElement={<NotFound />} />
-        <Route path='/bio' element={ <Bio /> } />
-        <Route path='/projects' element={ <Projects /> } />
-        <Route path='/resume' element={ <Resume /> } />
-        <Route path='/arts' element={ <Arts /> } />
-        <Route path="/:params" element={ <Writing /> } />
-        <Route path='/misc' element={<Miscellaneous />} />
+        <Route path="/" element={<HomePage />} errorElement={<NotFound />} />
+        <Route path='/bio' element={ <BioPage /> } />
+        <Route path='/projects' element={ <ProjectsPage /> } />
+        <Route path='/resume' element={ <ResumePage /> } />
+        <Route path='/arts' element={ <ArtsPage /> } />
+        <Route path="/:params" element={ <WritingPage /> } />
+        <Route path='/misc' element={<MiscellaneousPage />} />
         <Route path='*' element={ <NotFound /> } />
       </Routes>
     </Router>

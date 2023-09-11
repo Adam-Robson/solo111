@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import resume from '../assets/res.png';
+import resume from '../../assets/res.png';
 
 export default function Resume() {
   const navigate = useNavigate();

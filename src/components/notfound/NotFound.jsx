@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import scribble from '../assets/scribble.gif';
+import scribble from '../../assets/scribble.gif';
 export default function NotFound() {
   return (
     <>

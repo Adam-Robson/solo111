@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
+
 /** bring in array of writings stored in project directory */
-import { writings } from '../services/data.js';
+import { writings } from '../../services/writings.js';
 
 export default function Arts() {
   const navigate = useNavigate();
