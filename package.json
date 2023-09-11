@@ -1,7 +1,7 @@
 {
   "name": "murmurmur",
   "version": "0.0.2",
-  "description": "catalogue | adam robson",
+  "description": "Portfolio | Adam Robson",
   "main": "./src/index.js",
   "scripts": {
     "dev": "webpack serve --mode development",
