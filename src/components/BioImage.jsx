@@ -10,7 +10,7 @@ export default function BioImage({ imageUrl, text }) {
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={() => setIsHovered(!isHovered)}
     >
-      <img src={imageUrl} alt="Bio Image" className="bioimage max-w-xs lg:max-w-lg w-full mx-auto" />
+      <img src={imageUrl} alt="Bio Image" className="rounded-lg max-w-xs w-full mx-auto" />
 
       {isHovered && (
         <div

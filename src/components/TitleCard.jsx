@@ -52,12 +52,12 @@ export default function TitleCard() {
   }, []);
 
   return (
-    <section className="max-w-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center hometitle">
+    <section className="max-w-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
       <h1
         style={{ color: colorArray[currentColorIndex] }}
-        className="text-8xl font-light subpixel-antialiased"
+        className="text-8xl m-4 font-light subpixel-antialiased"
       >portfolio.
-        <p className="text-xl text-right absolute top-20 right-20">Adam Robson</p>
+        <p className="text-xl text-right absolute top-24 right-20">Adam Robson</p>
       </h1>
 
     </section>
