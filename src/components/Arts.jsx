@@ -1,42 +1,52 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+/** bring in array of writings stored in project directory */
 import { writings } from '../services/data.js';
 
 export default function Arts() {
+  const navigate = useNavigate();
+  /**
+   * map through objects in writings
+   * to display the alias of each
+   * as a linked list item; assign
+   * a reference to the result,
+   * which is displayed below in
+   * the ul element
+   */
+
   const list = writings.map((writing) => (
     <li key={ writing.id }>
-      <Link className="text-2xl subpixel-antialiased" to={ writing.alias }>
-        {writing.title}
+      <Link
+        className="text-2xl subpixel-antialiased"
+        to={`/${writing.alias}`}
+      >
+        {writing.alias}
       </Link>
     </li>
   ));
 
-  return (
-    <>
-      <section className="container mx-auto fadein px-6">
-        <Link className="text-xl absolute top-6 right-8 subpixel-antialiased" to="/">home</Link>
-        <h1 className="title text-7xl md:text-8xl relative top-10 subpixel-antialiased">arts</h1>
-        <article className="container w-full mx-auto flex flex-col p-4">
-          <div className="container max-w-4xl w-full p-2 mx-auto">
-            <h3 className="w-full text-left text-2xl md:text-5xl my-8 underline">le fog</h3>
-            <iframe
-              className="rounded-xl md:w-4/5"
-              src="https://open.spotify.com/embed/album/64LjLBqFsNtxvWGZ3jDtIy?utm_source=generator&theme=0"
-              width="100%"
-              height="352"
-              frameBorder="0"
-              allowFullScreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            ></iframe>
-          </div>
+  function handleHomeNav() {
+    navigate('/');
+  }
 
-          <div className="container max-w-4xl w-full p-2 mx-auto">
-            <h3 className="w-full text-left text-2xl md:text-5xl my-8 underline">writings</h3>
-            <ul className="w-full mx-auto grid grid-flow-row md:grid-flow-col gap-8 mt-8">{ list }</ul>
-          </div>
+  return (
+    <section className="max-w-full w-11/12 mx-auto fadein px-6">
+      <button onClick={ handleHomeNav } className="absolute top-6 right-6 subpixel-antialiased border border-cyan-300" to="/">home</button>
+      <h1 className="text-8xl font-light subpixel-antialiased mt-8">arts</h1>
+      <div className="w-full max-w-xl mx-auto">
+        <article className="w-full mx-auto my-6">
+          <h2 className="w-full text-2xl text-center py-4 subpixel-antialiased underline underline-offset-4 decoration-1">le fog</h2>
+          <iframe style={{ borderRadius: '0.75rem' }} src="https://open.spotify.com/embed/artist/4NrRxIaVhlouvojuHGq62y?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
         </article>
-      </section>
-    </>
+
+        <article className="w-full mx-auto my-6">
+          <h2 className="w-full text-2xl text-center py-4 subpixel-antialiased underline underline-offset-4 decoration-1">
+            writings
+          </h2>
+          <ul
+            className="w-full mx-auto text-center grid grid-flow-row"
+          >{list}</ul>
+        </article>
+      </div>
+    </section>
   );
 }

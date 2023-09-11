@@ -1,28 +1,44 @@
-import * as React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams, Link } from 'react-router-dom';
+/** bring in array of writings stored in project directory */
 import { writings } from '../services/data.js';
 
 export default function Writing() {
+  /** bring in hook from react-router v6 */
   const navigate = useNavigate();
-  const { name } = useParams();
+  /** grab the parameters directly from the current URL */
+  const { params } = useParams();
 
-  function goBack() {
+  /**
+   * provide a familiar way
+   * for the person visiting
+   * the page to return to
+   * arts page after reading
+   * writing
+   */
+
+  function previousPage() {
     navigate(-1);
   }
 
-  const writing = writings.find(({ alias }) => alias === name);
+  function handleHomeNav() {
+    navigate('/');
+  }
+
+  const writing = writings.find(({ alias }) => alias === params);
 
   return (
-    <>
-      <Link className="absolute right-8 top-6 text-xl subpixel-antialiased" to='/'>home</Link>
-      <button className="absolute left-8 top-8 text-xl subpixel-antialiased" onClick={goBack}>back</button>
-      <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl py-8 mt-12 md:mt-24 subpixel-antialiased">{ writing.title }</h2>
-      <div className="text-center mx-8">
-        <p className="max-w-sm mx-auto flex justify-center text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl subpixel-antialiased">
-          { writing.text }
-        </p>
+    <section className="max-w-full w-11/12 mx-auto fadein px-6 overflow-hidden">
+      <button onClick={ handleHomeNav } className="absolute top-6 right-6 subpixel-antialiased border border-cyan-300" to="/">home</button>
+
+      <Link
+        className="absolute left-12 md:left-32 top-12 md:top-32 text-xl subpixel-antialiased"
+        onClick={previousPage}
+      >back</Link>
+
+      <div className="flex flex-col h-screen justify-center">
+        <h1 className="text-5xl font-extralight text-center subpixel-antialiased mt-12 mb-4 underline underline-offset-4 decoration-1">{ writing.alias }</h1>
+        <p className="text-center font-extralight text-lg subpixel-antialiased">{writing.body}</p>
       </div>
-    </>
+    </section>
   );
 }

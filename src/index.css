@@ -3,97 +3,202 @@
 @tailwind utilities;
 
 :root {
-  --platinum: hsla(90, 4%, 90%, 1);
-  --beige: hsla(60, 47%, 88%, 1);
-  --dogwood: hsla(17, 44%, 86%, 1);
-  --slate: hsla(208, 18%, 30%, 1);
-  --moonstone: hsla(194, 31%, 59%, 1);
-  --jet: hsla(0, 1%, 24%, 1);
-
-  height: 100vh;
-  width: 100vw;
-  margin: 0 auto;
-  padding: 0;
-  color-scheme: dark light;
-  font-family: 'Inter Variable', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 300;
+  box-sizing: border-box;
+  --fonta: 'Karla Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --fontb: 'Source Code Pro Variable', Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  font-family: var(--fonta);
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+    --rose-quartz: hsla(265, 15%, 65%, 1);
+    --coral: hsla(10, 56%, 65%, 1);
+    --platinum: hsla(212, 60%, 95%, 1);
+    --beige: hsla(60, 56%, 91%, 1);
+    --dogwood: hsla(17, 64%, 88%, 1);
+    --orange: hsla(32, 74%, 81%, 1);
+    --ash: hsla(78, 15%, 77%, 1);
+    --alice: hsla(203, 24%, 87%, 1);
+    --azure: hsla(159, 21%, 84%, 1);
+    --french: hsla(208, 13%, 74%, 1);
+    --honeydew: hsla(139, 27%, 82%, 1);
+    --cadet: hsla(93, 12%, 70%, 1);
+    --battleship: hsla(120, 5%, 54%, 1);
+    --space: hsla(210, 10%, 32%, 1);
+    --gray: hsla(210, 17%, 35%, 1);
+    --charcoal: hsla(225, 8%, 29%, 1);
+    --jet: hsla(15, 3%, 26%, 1);
+    --cyan: hsla(186, 71%, 59%, 1);
+  color-scheme: light dark;
 
+  color: var(--platinum);
+  background-color: var(--jet);
 }
 
 html,
 body {
-  background-color: var(--platinum);
-  color: var(--jet);
-  padding: 0.25em;
-  margin: 0.5em auto;
-  font-weight: 300;
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+  background-color: var(--jet);
+  color: var(--cadet);
+}
+
+#root {
+  min-width: 100vw;;
 }
 
 main {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--dogwood);
-  color: var(--jet);
   background-image: url('./assets/sun.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
+ul {
+  list-style: none;
+}
+
+
+/* DARK MODE BY DEFAULT see line 35 & 151 */
 a {
-  font-weight: 300;
   text-decoration: none;
-  color: var(--jet);
+  cursor: pointer;
+  font-weight: 300;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  color: var(--azure);
+  transition: text-decoration .5s, color 0.3s ease-in-out;
 }
 
 a:hover {
-  color: var(--moonstone);
-  cursor: pointer;
+  text-decoration: underline;
+  color: var(--cyan);
 }
 
-.homelink {
+button {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.3em 0.8em;
+  font-size: .85em;
   font-weight: 300;
-  text-decoration: none;
-  color: var(--jet);
-}
-
-.homelink:hover {
-  color: var(--moonstone);
+  font-family: inherit;
+  background-color: var(--battleship);
   cursor: pointer;
+  transition: border-color 2s;
 }
 
-.name {
-  color: var(--jet);
-  line-height: 1.6;
+button:hover {
+  background-color: var(--ash);
+  color: var(--charcoal);
+  border-color: var(--gray);
 }
 
-label {
-  opacity: 0;
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--honeydew);
 }
 
-.project_icon:hover + .label {
-  opacity: 1;
+/* HOME PAGE */
+
+
+.icon {
+    font-size: 24px;
 }
 
-.adventure:hover {
-  color: var(--dogwood);
+@media (min-width: 768px) {
+    .icon {
+        font-size: 32px;
+    }
+
+/* ERROR PAGE GIF SIZE */
+    .gif {
+      width: 400px;
+    }
 }
 
-.bioImage {
-  border: 4px double var(--dogwood);
+/* BIO PAGE */
+.eq {
+  background-color: var(--azure);
+
 }
+
+
+@media (max-width: 768px) {
+  .bioimage {
+    border-radius: 1.25rem;
+  }
+}
+
+/* PROJECTS PAGE */
+.project-title {
+  color: var(--honeydew);
+}
+
+.cloak {
+  display: none;
+}
+
+.cloak.block {
+  display: block;
+}
+
+.description {
+  text-align: left;
+}
+
+/* LIGHT MODE THEME COLORS */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--jet);
+    background-color: var(--platinum);
+  }
+
+  html,
+  body {
+    color: var(--space);
+    background-color: var(--dogwood);
+  }
+
+  a {
+    color: var(--space);
+  }
+
+  a:hover {
+      color: var(--coral);
+    }
+
+  button {
+    background-color: var(--french);
+  }
+
+  button:hover {
+    background-color: var(--alice);
+    border-color: var(--battleship);
+  }
+
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto var(--azure);
+  }
+
+  .project-title {
+    color: var(--rose-quartz);
+  }
+}
+
+/* FADE-IN EFFECT  */
 
 .fadein {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -106,6 +211,7 @@ label {
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -115,39 +221,3 @@ label {
   }
 }
 
-
-@media (prefers-color-scheme: dark) {
-
-  html,
-  body {
-    background-color: var(--jet);
-    color: var(--platinum);
-  }
-
-  main {
-    background-color: var(--jet);
-    color: var(--beige);
-  }
-
-
-a {
-  color: var(--beige);
-}
-
-a:hover {
-  color: var(--moonstone);
-}
-
-.homelink {
-  color: var(--beige);
-}
-
-.homelink:hover {
-  color: var(--moonstone);
-}
-
-.name {
-  color: var(--beige);
-}
-  
-}
