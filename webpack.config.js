@@ -95,14 +95,14 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true,
+              sourceMap: developmentMode,
               importLoaders: 1
             }
           },
           {
             loader: 'postcss-loader',
             options: {
-              sourceMap: true,
+              sourceMap: developmentMode,
               postcssOptions: {
                 plugins: [
                   require('postcss-import')(),
@@ -115,20 +115,35 @@ module.exports = {
         ]
       },
       {
+        test: /\png$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'images'
+        }
+      },
+      {
         test: /\.(jpeg|jpg|png|svg|gif)$/,
         type: 'asset/resource'
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource'
-      },
+      }
     ]
   },
-
+  
   /**OPTIMIZATION */
   optimization: {
+    runtimeChunk: 'single',
     splitChunks: {
-      chunks: 'all'
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
     },
     minimizer: [
       new CssMinimizer(),
