@@ -32,7 +32,7 @@
     --gray: hsla(210, 17%, 35%, 1);
     --charcoal: hsla(225, 8%, 29%, 1);
     --jet: hsla(15, 3%, 26%, 1);
-
+    --cyan: hsla(186, 71%, 59%, 1);
   color-scheme: light dark;
 
   color: var(--platinum);
@@ -78,7 +78,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: var(--french);
+  color: var(--cyan);
 }
 
 button {
@@ -95,6 +95,7 @@ button {
 
 button:hover {
   background-color: var(--ash);
+  color: var(--charcoal);
   border-color: var(--gray);
 }
 
@@ -104,6 +105,8 @@ button:focus-visible {
 }
 
 /* HOME PAGE */
+
+
 .icon {
     font-size: 24px;
 }
@@ -125,9 +128,6 @@ button:focus-visible {
 
 }
 
-.bioimage {
-  border-radius: 0.85rem;
-}
 
 @media (max-width: 768px) {
   .bioimage {
@@ -146,6 +146,10 @@ button:focus-visible {
 
 .cloak.block {
   display: block;
+}
+
+.description {
+  text-align: left;
 }
 
 /* LIGHT MODE THEME COLORS */
