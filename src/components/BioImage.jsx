@@ -2,7 +2,16 @@ import React, { useState } from 'react';
 
 export default function BioImage({ imageUrl, text }) {
   const [isHovered, setIsHovered] = useState(false);
-
+/**
+ *
+ * the setIsHovered method is called with
+ * three different DOM events that together
+ * change the state of the image and/or the
+ * text that toggles as an overlay to the
+ * image. The first two events are mouse
+ * events and the third event is a touch event.
+ *
+ */
   return (
     <div
       className="relative group rounded-lg overflow-hidden"

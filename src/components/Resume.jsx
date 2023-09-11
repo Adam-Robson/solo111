@@ -7,7 +7,6 @@ export default function Resume() {
   function handleHomeNav() {
     navigate('/');
   }
-
 /**
  * create a function that we will
  * tuck into the onClick handler
@@ -26,8 +25,6 @@ export default function Resume() {
     link.download = 'resume_robson_adam.png';
     link.click();
   }
-
-
 
   return (
     <section className="max-w-full w-11/12 mx-auto fadein px-6">

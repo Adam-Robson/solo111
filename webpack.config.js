@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 require('dotenv').config();
 
@@ -31,6 +32,7 @@ module.exports = {
       patterns: [{ from: 'public' }],
     }),
     new CompressionPlugin(),
+    new MiniCssExtractPlugin(),
     new webpack.ProvidePlugin({
       React: 'react'
     }),
@@ -72,6 +74,10 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(jpeg|jpg|png|svg|gif)$/,

@@ -1,34 +1,26 @@
 import { useEffect, useState } from 'react';
-
 /**
- * create a set of color values
- * from which to cycle through
- * for the color of the title
- * element to change color
+ * create a list of color values
+ * to cycle through, and provide
+ * the value to the style prop
+ * of the title element.
+ * (lines 47-48)
  */
-
 const colorArray = [
-  // 'hsl(17, 64%, 88%)', // dogwood
-  // 'hsl(32, 74%, 81%)', // orange
+  'hsl(17, 64%, 88%)', // dogwood
   'hsl(208, 13%, 74%)', // french
-  // 'hsl(120, 5%, 54%)'   // battleship
-  'hsl(93, 12%, 70%)' // cadet
+  'hsl(120, 5%, 54%)'   // battleship
 ];
-
 /**
  * set the duration for how long
  * each color will be displayed
  * before switching to the next
  * color
  */
-
 const transitionDuration = 3000;
-
 
 export default function TitleCard() {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
-
-
   /**
    * the color change event will be
    * activity on the page that
