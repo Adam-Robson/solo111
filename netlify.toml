@@ -1,4 +1,8 @@
 [build]
-command = 'npm run build'
-functions = 'functions'
-publish = 'build'
+	command = "npm run build"
+	functions = "netlify/functions"
+	publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
