@@ -27,6 +27,4 @@ export default function Project({ title, description, link, features }) {
       </div>
     </article>
   );
-
-
 }

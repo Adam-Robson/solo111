@@ -1,5 +1,4 @@
 import { Link, useNavigate } from 'react-router-dom';
-import LazyImageLoader from '../LazyImageLoader';
 
 import resume from '../../assets/res.png';
 
@@ -9,7 +8,7 @@ export default function Resume() {
   function handleHomeNav() {
     navigate('/');
   }
-/**
+  /**
  * create a function that we will
  * tuck into the onClick handler
  * of the download link to be
@@ -39,7 +38,7 @@ export default function Resume() {
           onClick={handleDownload}>
           download
         </Link>
-        <LazyImageLoader
+        <img
           src={resume}
           id="download"
           className="mx-auto pb-6"

@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import LazyImageLoader from '../LazyImageLoader';
+import { useState } from 'react';
 
 export default function BioCard({ imageUrl, text }) {
   const [isHovered, setIsHovered] = useState(false);
-/**
+  /**
  *
  * the setIsHovered method is called with
  * three different DOM events that together
@@ -20,12 +19,11 @@ export default function BioCard({ imageUrl, text }) {
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={() => setIsHovered(!isHovered)}
     >
-      <LazyImageLoader
+      <img
         src={imageUrl}
         alt="Bio Image"
         className="rounded-lg max-w-xs w-full mx-auto my-2"
       />
-
       {isHovered && (
         <div
           className="p-6 absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-100 transition-opacity text-center">
@@ -35,5 +33,3 @@ export default function BioCard({ imageUrl, text }) {
     </div>
   );
 }
-
-

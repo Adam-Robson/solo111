@@ -1,57 +1,39 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended", "prettier"],
-  "plugins": ["react", "prettier"],
   "parserOptions": {
-    "ecmaVersion": 2020,
     "ecmaFeatures": {
-      "impliedStrict": true,
       "jsx": true
     },
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "env": {
-    "browser": true,
-    "es6": true,
-    "jest": true,
-    "node": true
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "fragment": "Fragment",
+      "version": "detect"
+    }
   },
+  "parser": "@babel/eslint-parser",
   "globals": {
-    "QUnit": false,
-    "before": false,
-    "cy": false
+    "process": true
   },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "plugins": ["babel", "react"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "rules": {
-    "eqeqeq": ["error", "always"],
-    "no-console": ["warn", { "allow": ["info", "error"] }],
+    "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
     "indent": [
       "error",
       2,
       {
-        "SwitchCase": 1,
-        "ignoreComments": true
+        "SwitchCase": 1
       }
     ],
-    "quotes": [
-      "error",
-      "single",
-      {
-        "avoidEscape": true,
-        "allowTemplateLiterals": true
-      }
-    ],
-    "no-multi-spaces": [
-      "error",
-      {
-        "ignoreEOLComments": true
-      }
-    ],
-    "new-cap": "error",
-    "no-redeclare": [
-      "error",
-      {
-        "builtinGlobals": true
-      }
-    ],
+    "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "space-in-parens": ["error"],
     "space-infix-ops": "error",
@@ -65,7 +47,8 @@
         "named": "never"
       }
     ],
-    "keyword-spacing": [
+    "eol-last": ["error", "always"],
+    "arrow-spacing": [
       "error",
       {
         "before": true,
@@ -73,13 +56,17 @@
       }
     ],
     "array-bracket-spacing": "error",
-    "react/prop-types": "off",
-    "no-unused-vars": ["warn"],
+    "prefer-const": "error",
+    "no-var": "error",
+    "rest-spread-spacing": "error",
+    "prefer-arrow-callback": "error",
+    "object-shorthand": ["error", "always"],
+    // "max-len": "warn",
+    "jsx-quotes": "error",
+    "babel/no-invalid-this": 1,
+    "babel/semi": 0,
+    "react/jsx-uses-react": "off",
+    "react/prop-types": 0,
     "react/react-in-jsx-scope": "off"
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
   }
 }

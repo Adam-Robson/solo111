@@ -4,7 +4,6 @@ export default function Navigation() {
   /**
    * This component renders the
    * navigation menu for the home page.
-   *
    */
   return (
     <nav

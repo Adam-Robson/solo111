@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BioCard from './BioCard';
 
@@ -30,7 +29,7 @@ export default function Bio() {
         className="bioimage max-w-xs border border-cyan-300"
         imageUrl={globe}
         text={
-          `Not all programs are straight roads. We may, for example, want to create a branching road, where the program takes on the proper branch based on the situation at hand. This is called conditional execution. --Marijn Haverbeke`
+          'Not all programs are straight roads. We may, for example, want to create a branching road, where the program takes on the proper branch based on the situation at hand. This is called conditional execution. --Marijn Haverbeke'
         }
       />
       <BioCard
