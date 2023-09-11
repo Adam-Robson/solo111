@@ -47,7 +47,10 @@ module.exports = {
 
   /**ENTRY*/
   entry: {
-    app: './src/index.js'
+    index: './src/index.js',
+    app: './src/app.jsx',
+    home: './src/home.jsx'
+
   },
 
   /**DEVTOOL*/
@@ -127,6 +130,9 @@ module.exports = {
 
   /**OPTIMIZATION */
   optimization: {
+    splitChunks: {
+      chunks: 'all'
+    },
     minimizer: [
       new CssMinimizer(),
     ],
