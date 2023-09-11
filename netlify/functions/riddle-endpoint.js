@@ -1,5 +1,4 @@
 const fetch = require('node-fetch');
-require('dotenv').config();
 
 const headers = {
   'Access-Control-Allow-Origin': '*',
@@ -7,23 +6,22 @@ const headers = {
   'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
 };
 
-// eslint-disable-next-line no-unused-vars
-exports.handler = async (event, context) => {
+module.exports = async function riddleEndpoint({ event, context }) {
   try {
-    const response = await fetch('https://cat-fact.herokuapp.com/facts');
-    const data = await response.json();
+    console.info({ event }, { context });
+    const res = await fetch('https://riddles-api.vercel.app/random');
+    const data = await res.json();
     const json = JSON.stringify(data);
-
     return {
       statusCode: 200,
       headers,
       body: json,
     };
-  } catch (error) {
-    console.error(error);
+  } catch (err) {
+    console.error(err);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Failed fetching data' }),
+      body: JSON.stringify({ error: 'data fetch failed' }),
     };
   }
 };
