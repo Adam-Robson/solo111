@@ -4,6 +4,7 @@ import BioImage from './BioImage';
 import or from '../assets/slvrfls.png';
 import adam from '../assets/adaam.png';
 import globe from '../assets/globe.png';
+
 export default function Bio() {
   const navigate = useNavigate();
 
