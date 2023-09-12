@@ -32,11 +32,10 @@
        font-style: italic;
 }
 
-/*GLOBAL STYLE*/
+/* GLOBAL STYLE */
 :root {
   box-sizing: border-box;
-  --body-font: 'Supreme-Variable', sans-serif;
-  font-family: var(--body-font);
+  font-family: 'Supreme-Variable', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -44,7 +43,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
 
   --dogwood: hsla(17, 64%, 88%, 1);
   --tan: hsla(21, 25%, 60%, 1);
@@ -97,7 +95,6 @@ ul {
   list-style: none;
 }
 
-/*DEFAULT DARKMODE-see :root{color-scheme}*/
 a {
   text-decoration: none;
   cursor: pointer;
@@ -140,33 +137,17 @@ button:focus-visible {
   color: var(--verdigris);
 }
 
-@media (min-width: 768px) {
-  .subtitle {
-    font-size: 1.65rem;
-  }
-}
-
 .homelink {
   border: 1px solid var(--pea);
 }
 
-/*SOCIALICONS*/
+/* SOCIALICONS */
 .icon {
     font-size: 1.5rem;
 }
 
-@media (min-width: 768px) {
-  .icon {
-      font-size: 2rem;
-  }
 
-/*NOTFOUND*/
-  .gif {
-    width: 400px;
-  }
-}
-
-/*BIO*/
+/* BIO */
 .bioimage {
   border-radius: 1.25rem;
   width: 100%;
@@ -176,15 +157,8 @@ button:focus-visible {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  .bioimage {
-    max-width: 400px;
-    max-height: 400px;
-  }
-}
 
-/*PROJECTS*/
-
+/* PROJECTS */
 .project-title {
   color: var(--verdigris);
 }
@@ -201,52 +175,14 @@ button:focus-visible {
   text-align: left;
 }
 
-/*MISC*/
+
+/* MISC */
 .crystal {
   border: var(--alice) 4px double;
 }
 
-/*LIGHT MODE*/
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--jet);
-    background-color: var(--platinum);
-  }
 
-  html,
-  body {
-    color: var(--space);
-    background-color: var(--dogwood);
-  }
-
-  a {
-    color: var(--space);
-  }
-
-  a:hover {
-      color: var(--battleship);
-    }
-
-  button {
-    background-color: var(--french);
-  }
-
-  button:hover {
-    background-color: var(--alice);
-    border-color: var(--battleship);
-  }
-
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto var(--azure);
-  }
-
-    .crystal {
-      border: var(--french) 4px double;
-    }
-}
-
-/*FADE-IN*/
+/* FADE-IN */
 .fadein {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -271,5 +207,117 @@ button:focus-visible {
   }
   to {
     opacity: 1;
+  }
+}
+
+
+/* mobile devices 600- */
+@media only screen and (max-width: 600px) {
+  .bioimage
+  .gif {
+      max-width: 250px;
+      max-height: 250px;
+    }
+
+  .icon,
+  .subtitle {
+    font-size: 1.6rem;
+  };
+}
+
+/* small devices 600+ */
+@media only screen and (min-width: 600px) {
+  .bioimage,
+  .gif {
+      max-width: 300px;
+      max-height: 300px;
+    }
+
+  .icon,
+  .subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* medium devices 768+ */
+@media only screen and (min-width: 768px) {
+    .bioimage,
+    .gif {
+      max-width: 440px;
+      max-height: 440px;
+    }
+
+    .icon,
+    .subtitle {
+      font-size: 2rem;
+    }
+
+  }
+
+
+/* large devices 992+ */
+@media only screen and (min-width: 992px) {
+  .bioimage,
+  .gif {
+      max-width: 500px;
+      max-height: 500px;
+    }
+
+    .icon,
+    .subtitle {
+      font-size: 2.3rem;
+    }
+  }
+
+/* e.subtitlee devices 1200+ */
+@media only screen and (min-width: 1200px) {
+  .bioimage,
+  .gif {
+      max-width: 600px;
+    max-height: 600px;
+  }
+  .icon,
+  .subtitle {
+    font-size: 3rem;
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--jet);
+    background-color: var(--platinum);
+  }
+
+  html,
+  body {
+    color: var(--space);
+    background-color: var(--dogwood);
+  }
+
+  a {
+    color: var(--space);
+  }
+
+  a:hover {
+    color: var(--battleship);
+  }
+
+  button {
+    background-color: var(--french);
+  }
+
+  button:hover {
+    background-color: var(--alice);
+    border-color: var(--battleship);
+  }
+
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto var(--azure);
+  }
+
+  .crystal {
+    border: var(--french) 4px double;
   }
 }
