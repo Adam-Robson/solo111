@@ -32,40 +32,9 @@
        font-style: italic;
 }
 
-/*
-@license
-Font Family: Bespoke Stencil
-Designed by: Jérémie Hornus, Théo Guillard, Morgane Pambrun, Alisa Nowak, Joachim Vu
-URL: https://www.fontshare.com/fonts/bespoke-stencil
-© 2023 Indian Type Foundry
-Font Styles:
-Bespoke Stencil Variable(Variable font)
-Bespoke Stencil Variable Italic(Variable font)
-*/
-@font-face {
-  font-family: 'BespokeStencil-Variable';
-  src: url('./assets/fonts/BespokeStencil/BespokeStencil-Variable.woff2') format('woff2'),
-       url('./assets/fonts/BespokeStencil/BespokeStencil-Variable.woff') format('woff'),
-       url('./assets/fonts/BespokeStencil/BespokeStencil-Variable.ttf') format('truetype');
-       font-weight: 300 800;
-       font-display: swap;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'BespokeStencil-VariableItalic';
-  src: url('./assets/fonts/BespokeStencil/BespokeStencil-VariableItalic.woff2') format('woff2'),
-       url('./assets/fonts/BespokeStencil/BespokeStencil-VariableItalic.woff') format('woff'),
-       url('./assets/fonts/BespokeStencil/BespokeStencil-VariableItalic.ttf') format('truetype');
-       font-weight: 300 800;
-       font-display: swap;
-       font-style: italic;
-}
-
 /*GLOBAL STYLE*/
 :root {
   box-sizing: border-box;
-  --heading-font: 'BespokeStencil-Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
   --body-font: 'Supreme-Variable', sans-serif;
   font-family: var(--body-font);
   line-height: 1.5;
@@ -139,8 +108,8 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
-  color: var(--cyan);
+  text-decoration: none;
+  color: var(--coral);
 }
 
 button {
@@ -164,6 +133,21 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto var(--honeydew);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--verdigris);
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 1.65rem;
+  }
+}
+
+.homelink {
+  border: 1px solid var(--pea);
 }
 
 /*SOCIALICONS*/
@@ -200,8 +184,9 @@ button:focus-visible {
 }
 
 /*PROJECTS*/
+
 .project-title {
-  color: var(--honeydew);
+  color: var(--verdigris);
 }
 
 .cloak {
@@ -216,11 +201,9 @@ button:focus-visible {
   text-align: left;
 }
 
-/*LOADING*/
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*MISC*/
+.crystal {
+  border: var(--alice) 4px double;
 }
 
 /*LIGHT MODE*/
@@ -241,7 +224,7 @@ button:focus-visible {
   }
 
   a:hover {
-      color: var(--coral);
+      color: var(--battleship);
     }
 
   button {
@@ -258,6 +241,9 @@ button:focus-visible {
     outline: 4px auto var(--azure);
   }
 
+    .crystal {
+      border: var(--french) 4px double;
+    }
 }
 
 /*FADE-IN*/
@@ -287,4 +273,3 @@ button:focus-visible {
     opacity: 1;
   }
 }
-

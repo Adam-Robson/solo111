@@ -4,16 +4,12 @@ import { useEffect, useState } from 'react';
  * to cycle through, and provide
  * the value to the style prop
  * of the title element.
- * (lines 47-48)
+ * (lines 50-51)
  */
 const colorArray = [
-  // 'hsl(17, 64%, 88%)', // dogwood
   'hsl(208, 13%, 74%)', // french
   'hsl(120, 5%, 54%)', // battleship
-  // 'hsl(21, 25%, 60%)', // tan
   'hsl(182, 25%, 60%)', // verdigris
-  // 'hsl(62, 25%, 60%)'// pea
-
 
 ];
 /**
@@ -56,7 +52,6 @@ export default function TitleCard() {
       >portfolio
         <p className="text-xl text-right absolute top-24 right-20">Adam Robson</p>
       </h1>
-
     </section>
   );
 }

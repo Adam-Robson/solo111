@@ -6,6 +6,7 @@ const headers = {
   'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
 };
 
+// eslint-disable-next-line no-undef
 module.exports = async function riddleEndpoint({ event, context }) {
   try {
     console.info({ event }, { context });

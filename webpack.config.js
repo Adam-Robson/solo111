@@ -15,9 +15,9 @@ const plugins = [
     template: './src/index.html',
     title: 'Hot Module Replacement',
   }),
-  new CopyPlugin({
-    patterns: [{ from: 'public' }],
-  }),
+  // new CopyPlugin({
+  //   patterns: [{ from: 'public' }],
+  // }),
   new CompressionPlugin(),
   new MiniCssExtract({
     filename: '[name].css',
@@ -69,7 +69,6 @@ module.exports = {
     hot: true,
     open: true,
     static: './dist',
-
   },
 
   /**PLUGINS*/
@@ -115,14 +114,6 @@ module.exports = {
         ]
       },
       {
-        test: /\png$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]',
-          outputPath: 'images'
-        }
-      },
-      {
         test: /\.(jpeg|jpg|png|svg|gif)$/,
         type: 'asset/resource'
       },
@@ -132,7 +123,7 @@ module.exports = {
       }
     ]
   },
-  
+
   /**OPTIMIZATION */
   optimization: {
     runtimeChunk: 'single',
