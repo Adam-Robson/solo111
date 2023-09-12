@@ -29,12 +29,12 @@ export default function Bio() {
         className="bioimage max-w-sm border border-cyan-300"
         imageUrl={globe}
         text={
-          'Not all programs are straight roads. We may, for example, want to create a branching road, where the program takes on the proper branch based on the situation at hand. This is called conditional execution. --Marijn Haverbeke'
+          'Not all programs are straight roads. We may, for example, want to create a branching road, where the program takes on the proper branch based on the situation at hand. This is called conditional execution. --Marijn Haverbeke, Eloquent JavaScript'
         }
       />
       <BioCard
         className="bioimage max-w-sm border border-cyan-300"
-        imageUrl={adam} text="I enjoy working with Postgres, Express, React and Node."
+        imageUrl={adam} text="I work mainly with Postgres, Express, React and Node.  I find my focus gravitates toward the User Experience when programming. I like to challenge myself and think outside of the box."
       />
     </section>
   );
