@@ -149,6 +149,7 @@ button:focus-visible {
 .homelink {
   border: 1px solid var(--pea);
 }
+
 /*SOCIALICONS*/
 .icon {
     font-size: 1.5rem;
@@ -223,7 +224,7 @@ button:focus-visible {
   }
 
   a:hover {
-      color: var(--coral);
+      color: var(--battleship);
     }
 
   button {
@@ -240,6 +241,9 @@ button:focus-visible {
     outline: 4px auto var(--azure);
   }
 
+    .crystal {
+      border: var(--french) 4px double;
+    }
 }
 
 /*FADE-IN*/

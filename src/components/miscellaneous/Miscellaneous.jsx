@@ -28,7 +28,7 @@ export default function Miscellaneous() {
           <Link
             className="font-semibold"
             to="https://lapaztravels.wordpress.com/"
-          > here</Link>.</p>
+          > here</Link>!</p>
       </div>
     </section>
   );
