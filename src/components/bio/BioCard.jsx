@@ -14,7 +14,7 @@ export default function BioCard({ imageUrl, text }) {
  */
   return (
     <div
-      className="relative group rounded-lg overflow-hidden"
+      className="relative group rounded-lg overflow-hidden my-2 aspect-auto"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={() => setIsHovered(!isHovered)}
@@ -22,11 +22,11 @@ export default function BioCard({ imageUrl, text }) {
       <img
         src={imageUrl}
         alt="Bio Image"
-        className="rounded-lg max-w-xs w-full mx-auto my-2"
+        className="rounded-lg max-w-sm w-full mx-auto"
       />
       {isHovered && (
         <div
-          className="p-6 absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-100 transition-opacity text-center">
+          className="p-4 max-w-sm mx-auto rounded-lg absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-100 transition-opacity text-center">
           {text}
         </div>
       )}

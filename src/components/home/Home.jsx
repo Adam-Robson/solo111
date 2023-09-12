@@ -8,7 +8,7 @@ export default function Home() {
       <header data-testid="header-element">
         <Navigation />
       </header>
-      <main>
+      <main style={ { backgroundImage: '../assets/sun.png' } }>
         <TitleCard />
       </main>
       <SocialIcons />

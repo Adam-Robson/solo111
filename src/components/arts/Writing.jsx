@@ -25,8 +25,8 @@ export default function Writing() {
   const writing = writings.find(({ alias }) => alias === params);
 
   return (
-    <section className="max-w-full w-11/12 mx-auto fadein px-6 overflow-hidden">
-      <button onClick={ handleHomeNav } className="absolute top-6 right-6 subpixel-antialiased border border-cyan-300" to="/">home</button>
+    <section className="max-w-full w-10/12 mx-auto fadein px-6 overflow-hidden">
+      <button onClick={ handleHomeNav } className="absolute top-6 right-6 subpixel-antialiased homelink" to="/">home</button>
       <Link
         className="absolute left-12 md:left-32 top-12 md:top-32 text-xl subpixel-antialiased"
         onClick={previousPage}
