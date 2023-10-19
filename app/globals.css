@@ -15,13 +15,13 @@
   --foreground:  hsla(225, 8%, 29%, 1); /* charcoal */
   --foreground-alt: hsla(15, 3%, 26%, 1); /* jet */
   --background: hsla(212, 60%, 95%, 1); /* platinum */
-  --background-alt: hsla(327, 5%, 62%, 1); /* quartz */
+  --background-alt: #a3999f; /* quartz */
   --el: hsla(15, 3%, 26%, 1); /* cobalt */
   --el-alt:  hsla(78, 15%, 77%, 1); /* ash */
   --content:  hsla(248, 4%, 58%, 1); /* taupe */
-  --content-alt: hsla(208, 13%, 74%, 1);  /* french */
+  --content-alt: #b4bdc5;  /* french */
   --complement: hsla(21, 25%, 60%, 1); /* tan */
-  --complement-alt: hsla(17, 64%, 88%, 1); /* dogwood */
+  --complement-alt: #f4d8cd; /* dogwood */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,7 +29,7 @@
     --foreground:hsla(212, 60%, 95%, 1); /* platinum */
     --foreground-alt:hsla(78, 15%, 77%, 1);  /* ash */
     --background:hsla(225, 8%, 29%, 1); /* charcoal */
-    --background-alt:hsla(210, 17%, 35%, 1); /* cobalt */
+    --background-alt:#4a5968; /* cobalt */
     --el: hsla(17, 64%, 88%, 1); /* dogwood */
     --el-alt:hsla(15, 3%, 26%, 1); /* jet */
     --content:hsla(208, 13%, 74%, 1);  /* french */
