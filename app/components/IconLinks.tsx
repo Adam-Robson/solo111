@@ -8,7 +8,7 @@ import {
 
 export default function IconLinks() {
   return (
-    <ul className=" max-w-2xl w-full flex justify-between items-baseline">
+    <ul className="max-w-xl w-full flex justify-between items-baseline">
       <li>
         <Link href="https://linkedin.com/in/adamrayrobson">
           <PiLinkedinLogoDuotone className="h-8 w-8" />

@@ -20,7 +20,7 @@
   --el-alt:  hsla(78, 15%, 77%, 1); /* ash */
   --content:  hsla(248, 4%, 58%, 1); /* taupe */
   --content-alt: #b4bdc5;  /* french */
-  --complement: hsla(21, 25%, 60%, 1); /* tan */
+  --complement: #b39180; /* tan */
   --complement-alt: #f4d8cd; /* dogwood */
 }
 
@@ -34,8 +34,8 @@
     --el-alt:hsla(15, 3%, 26%, 1); /* jet */
     --content:hsla(208, 13%, 74%, 1);  /* french */
     --content-alt: hsla(248, 4%, 58%, 1); /* taupe */
-    --complement: hsla(327, 5%, 62%, 1); /* quartz */
-    --complement-alt: hsla(21, 25%, 60%, 1); /* tan */
+    --complement: #a3999f; /* quartz */
+    --complement-alt: #b39180; /* tan */
   }
 }
 
@@ -95,15 +95,15 @@ button:focus-visible {
 }
 
 .fade {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fade;
+  animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fade {
   from {
     opacity: 0;
   }
@@ -112,11 +112,39 @@ button:focus-visible {
   }
 }
 
-@keyframes fadeIn {
+@keyframes fade {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+.titlewrap > .title {
+  animation-name: revolution;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+@keyframes revolution {
+  0%   {
+    color:#a3999f;
+  }
+  20%  {
+    color:#919098;
+  }
+  40%  {
+    color:#f4d8cd;
+  }
+  80%  {
+    color:#b39180;
+  }
+  100% {
+    color:#b4bdc5
   }
 }
