@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import background from '../public/sun.png'
 import Nav from './components/Nav'
 import IconLinks from './components/IconLinks'
+import sun from '../public/sun.png'
+
  
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       </div>
       <div className="h-full max-w-3xl relative w-full">
         <Image
-          src={background}
+          src={sun}
           alt="background image | abstract sun"
           sizes="100vw (max-width: 700px) 700px"
           className="-z-10 w-full"
