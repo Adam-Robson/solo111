@@ -11,65 +11,83 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  
-  --foreground:  hsla(225, 8%, 29%, 1); /* charcoal */
-  --foreground-alt: hsla(15, 3%, 26%, 1); /* jet */
-  --background: hsla(212, 60%, 95%, 1); /* platinum */
-  --background-alt: hsla(78, 15%, 77%, 1); /* ash */
-  --el-bg: hsla(208, 13%, 74%, 1); /* french */
-  --el-color:  hsla(15, 3%, 26%, 1);  /* jet */
-  --el-alt: hsla(248, 4%, 58%, 1); /* taupe */
-  
-  --error-a: hsla(339, 100%, 90%, 1);/*fairytale*/
-  --error-b: hsla(359, 96%, 64%, 1);/*imperialred*/
-  --error-c: hsla(0, 100%, 41%, 1); /*engineering-orange*/
-  --error-d: hsla(343, 84%, 26%, 1); /*claret*/
+  --a: #E5E5E5;
+  --b: #D1D1D1;
+  --c: #d8d0c1;
+  --d: #c8cdbc;
+  --e: #f4d8cd;
+  --f: #b4bdc5;
+  --g: #a3999f;
+  --h: #919098;
+  --i: #9da596;
+  --j: #849084;
+  --k: #b39180;
+  --l: #c6868e;
+  --m: #d88474;
+  --n: #AF5D63;
+  --o: #969696;
+  --p: #686a7d;
+  --q: #4a5968;
+  --r: #444750;
+  --s: #2f3e50;
+  --t: #444140;
+  --u: #32373B;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground:hsla(212, 60%, 95%, 1); /* platinum */
-    --foreground-alt: hsla(17, 64%, 88%, 1); /* dogwood */
-    --background:  hsla(210, 17%, 35%, 1); /* cobalt */
-    --background-alt: hsla(225, 8%, 29%, 1); /* charcoal */
-    --el-bg:  hsla(327, 5%, 62%, 1); /* quartz */
-    --el-color: hsla(78, 15%, 77%, 1);  /* ash */
-    --el-alt: hsla(21, 25%, 60%, 1); /* tan */
-    
+  --a: #32373B;
+  --b: #444140;
+  --c: #2f3e50;
+  --d: #444750;
+  --e: #4a5968;
+  --f: #686a7d;
+  --g: #969696;
+  --h: #AF5D63;
+  --i: #d88474;
+  --j: #c6868e;
+  --k: #b39180;
+  --l: #849084;
+  --m: #9da596;
+  --n: #919098;
+  --o: #a3999f;
+  --p: #b4bdc5;
+  --q: #f4d8cd;
+  --r: #c8cdbc;
+  --s: #d8d0c1;
+  --t: #D1D1D1;
+  --u: #E5E5E5;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: linear-gradient(
-      to bottom,
+  color: var(--a);
+  background: linear-gradient(to bottom,
       transparent,
-      var(--background-alt)
-    )
-    var(--background);
+      var(--t)) var(--p);
 }
 
 a {
-  color: var(--el-color);
+  color: var(--f);
   text-decoration: none;
   cursor: pointer;
   font-weight: 300;
 }
 
 a:focus {
-  outline: 1px solid var(--foreground-alt);
+  outline: 1px solid var(--g);
   outline-offset: -4px;
 }
 
 a:visited {
-  color: var(--el-color);
+  color: var(--h);
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover,
 a:active {
-  color: var(--el-alt);
+  color: var(--g);
 }
 
 ul {
@@ -78,45 +96,80 @@ ul {
 
 button {
   padding: .25rem .6rem;
-  border: 1px solid var(--el-alt);
-  color: var(--el-color);
-  transition: border-color 1s var(--el-alt);
+  border: 1px solid var(--d);
+  color: var(--f);
+  transition: border-color 1s var(--d);
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: var(--el-bg);
+  background-color: var(--g);
 }
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto var(--el-alt);
+  outline: 4px auto var(--d);
 }
 
 .fade {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fade;
+  animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fade {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
-@keyframes fadeIn {
+@keyframes fade {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
+  }
+}
+
+.titlewrap > .title {
+  animation-name: revolution;
+  animation-duration: 22s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-and-out;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  transition: color 16s;
+}
+
+@keyframes revolution {
+  0% {
+    color: var(--g);
+  }
+
+  20% {
+    color: var(--h);
+  }
+
+  40% {
+    color: var(--d);
+  }
+
+  80% {
+    color: var(--f);
+  }
+
+  100% {
+    color: var(--l);
   }
 }
