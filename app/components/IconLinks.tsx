@@ -11,17 +11,17 @@ export default function IconLinks() {
     <ul className="max-w-xl w-full flex justify-between items-baseline">
       <li>
         <Link href="https://linkedin.com/in/adamrayrobson">
-          <PiLinkedinLogoDuotone className="h-8 w-8" />
+          <PiLinkedinLogoDuotone size={24} color={'#b39180'} />
         </Link>
       </li>
       <li>
         <Link href="https://github.com/Adam-Robson">
-          <PiGithubLogoDuotone className="h-8 w-8" />
+          <PiGithubLogoDuotone size={24} color={'#b39180'} />
         </Link>
       </li>
       <li>
         <Link href="https://spoti.fi/3QNqMuE">
-          <PiSpotifyLogoDuotone className="h-8 w-8" />
+          <PiSpotifyLogoDuotone size={24} color={'#b39180'} />
         </Link>
       </li>
     </ul>

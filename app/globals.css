@@ -14,50 +14,49 @@
   --a: #E5E5E5;
   --b: #D1D1D1;
   --c: #d8d0c1;
-  --d: #f4d8cd;
-  --e: #c8cdbc;
+  --d: #c8cdbc;
+  --e: #f4d8cd;
   --f: #b4bdc5;
   --g: #a3999f;
   --h: #919098;
-  --i: #4a5968;
-  --j: #444750;
-  --k: #32373B;
-  --l: #AF5D63;
-
-  --puce: hsla(352, 36%, 65%, 1);
-  --rosy-brown: hsla(15, 20%, 65%, 1);
-  --battleship-gray: hsla(0, 0%, 59%, 1);
-  --dim-gray: hsla(234, 9%, 45%, 1);
-  --prussian-blue: hsla(213, 42%, 25%, 1);
-  --jet: hsla(15, 3%, 26%, 1);
-  --charcoal: hsla(225, 8%, 29%, 1);
-  --cobalt: hsla(210, 17%, 35%, 1);
-  --battleship: hsla(120, 5%, 54%, 1);
-  --taupe: hsla(248, 4%, 58%, 1);
-  --quartz: hsla(327, 5%, 62%, 1);
-  --coral: hsla(10, 56%, 65%, 1);
-  --tan: #b39180;
-  --cadet: rgb(157, 165, 150);
-  --dogwood: hsla(17, 64%, 88%, 1);
-  --french: hsla(208, 13%, 74%, 1);
-  --ash: hsla(78, 15%, 77%, 1);
-  --platinum: hsla(212, 60%, 95%, 1);
+  --i: #9da596;
+  --j: #849084;
+  --k: #b39180;
+  --l: #c6868e;
+  --m: #d88474;
+  --n: #AF5D63;
+  --o: #969696;
+  --p: #686a7d;
+  --q: #4a5968;
+  --r: #444750;
+  --s: #2f3e50;
+  --t: #444140;
+  --u: #32373B;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --a: #32373B;
-    --b: #444750;
-    --c: #4a5968;
-    --d: #919098;
-    --e: #a3999f;
-    --f: #b4bdc5;
-    --g: #c8cdbc;
-    --h: #f4d8cd;
-    --i: #d8d0c1;
-    --j: #D1D1D1;
-    --k: #E5E5E5;
-    --l: #AF5D63;
+  --a: #32373B;
+  --b: #444140;
+  --c: #2f3e50;
+  --d: #444750;
+  --e: #4a5968;
+  --f: #686a7d;
+  --g: #969696;
+  --h: #AF5D63;
+  --i: #d88474;
+  --j: #c6868e;
+  --k: #b39180;
+  --l: #849084;
+  --m: #9da596;
+  --n: #919098;
+  --o: #a3999f;
+  --p: #b4bdc5;
+  --q: #f4d8cd;
+  --r: #c8cdbc;
+  --s: #d8d0c1;
+  --t: #D1D1D1;
+  --u: #E5E5E5;
   }
 }
 
@@ -65,11 +64,11 @@ body {
   color: var(--a);
   background: linear-gradient(to bottom,
       transparent,
-      var(--j)) var(--k);
+      var(--t)) var(--p);
 }
 
 a {
-  color: var(--i);
+  color: var(--f);
   text-decoration: none;
   cursor: pointer;
   font-weight: 300;
@@ -81,14 +80,14 @@ a:focus {
 }
 
 a:visited {
-  color: var(--g);
+  color: var(--h);
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover,
 a:active {
-  color: var(--d);
+  color: var(--g);
 }
 
 ul {

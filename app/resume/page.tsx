@@ -1,9 +1,10 @@
-import React from 'react'
+import resume from '../../assets/res.png';
 
-function page() {
+export default function Resume() {
+ 
   return (
-    <div>page</div>
-  )
+    <div className="max-w-full w-10/12 mx-auto fadein px-6">
+     
+    </div>
+  );
 }
-
-export default page
