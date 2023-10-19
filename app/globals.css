@@ -11,31 +11,31 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  
+
   --foreground:  hsla(225, 8%, 29%, 1); /* charcoal */
   --foreground-alt: hsla(15, 3%, 26%, 1); /* jet */
   --background: hsla(212, 60%, 95%, 1); /* platinum */
-  --background-alt: hsla(78, 15%, 77%, 1); /* ash */
-  --el-bg: hsla(208, 13%, 74%, 1); /* french */
-  --el-color:  hsla(15, 3%, 26%, 1);  /* jet */
-  --el-alt: hsla(248, 4%, 58%, 1); /* taupe */
-  
-  --error-a: hsla(339, 100%, 90%, 1);/*fairytale*/
-  --error-b: hsla(359, 96%, 64%, 1);/*imperialred*/
-  --error-c: hsla(0, 100%, 41%, 1); /*engineering-orange*/
-  --error-d: hsla(343, 84%, 26%, 1); /*claret*/
+  --background-alt: hsla(327, 5%, 62%, 1); /* quartz */
+  --el: hsla(15, 3%, 26%, 1); /* cobalt */
+  --el-alt:  hsla(78, 15%, 77%, 1); /* ash */
+  --content:  hsla(248, 4%, 58%, 1); /* taupe */
+  --content-alt: hsla(208, 13%, 74%, 1);  /* french */
+  --complement: hsla(21, 25%, 60%, 1); /* tan */
+  --complement-alt: hsla(17, 64%, 88%, 1); /* dogwood */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground:hsla(212, 60%, 95%, 1); /* platinum */
-    --foreground-alt: hsla(17, 64%, 88%, 1); /* dogwood */
-    --background:  hsla(210, 17%, 35%, 1); /* cobalt */
-    --background-alt: hsla(225, 8%, 29%, 1); /* charcoal */
-    --el-bg:  hsla(327, 5%, 62%, 1); /* quartz */
-    --el-color: hsla(78, 15%, 77%, 1);  /* ash */
-    --el-alt: hsla(21, 25%, 60%, 1); /* tan */
-    
+    --foreground-alt:hsla(78, 15%, 77%, 1);  /* ash */
+    --background:hsla(225, 8%, 29%, 1); /* charcoal */
+    --background-alt:hsla(210, 17%, 35%, 1); /* cobalt */
+    --el: hsla(17, 64%, 88%, 1); /* dogwood */
+    --el-alt:hsla(15, 3%, 26%, 1); /* jet */
+    --content:hsla(208, 13%, 74%, 1);  /* french */
+    --content-alt: hsla(248, 4%, 58%, 1); /* taupe */
+    --complement: hsla(327, 5%, 62%, 1); /* quartz */
+    --complement-alt: hsla(21, 25%, 60%, 1); /* tan */
   }
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 a {
-  color: var(--el-color);
+  color: var(--content);
   text-decoration: none;
   cursor: pointer;
   font-weight: 300;
@@ -62,7 +62,7 @@ a:focus {
 }
 
 a:visited {
-  color: var(--el-color);
+  color: var(--content);
   text-decoration: none;
   cursor: pointer;
 }
@@ -79,14 +79,14 @@ ul {
 button {
   padding: .25rem .6rem;
   border: 1px solid var(--el-alt);
-  color: var(--el-color);
+  color: var(--content);
   transition: border-color 1s var(--el-alt);
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: var(--el-bg);
+  background-color: var(--el);
 }
 
 button:focus,
