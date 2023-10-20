@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import sun from '../public/sun.png'
+import sun from '../public/img/sun.png'
 import IconLinks from './components/IconLinks'
 import Nav from './components/Nav'
 import TitleCard from './components/TitleCard'
