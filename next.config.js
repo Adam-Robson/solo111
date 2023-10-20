@@ -7,14 +7,14 @@ const nextConfig = {
   // images: {
   //   unoptimized: true
   // },
-  webpack: (config) => {
-    config.resolve.alias.canvas = false;
-    config.resolve.extensionAlias = {
-      '.js': ['.js', '.ts', '.tsx'],
-    };
+  // webpack: (config) => {
+  //   config.resolve.alias.canvas = false;
+  //   config.resolve.extensionAlias = {
+  //     '.js': ['.js', '.ts', '.tsx'],
+  //   };
 
-    return config;
-  }
+  //   return config;
+  // }
 };
 
 module.exports = nextConfig

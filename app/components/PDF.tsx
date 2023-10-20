@@ -5,7 +5,6 @@ import {
   Page,
   pdfjs
 } from 'react-pdf'
-import type { PDFDocumentProxy } from 'pdfjs-dist'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
@@ -19,13 +18,13 @@ const options = {
 
 type PDFFile = string | File | null
 
-const resumeFile = '../../public/pdf/resume.pdf'
+const resumeFile = '/pdf/resume.pdf'
 
 export default function PDF() {
   const [file, setFile] = useState<PDFFile>(resumeFile)
   return (
     <div className="min-h-screen max-w-4xl mx-auto p-6">
-      <Document file={resumeFile} options={options}>
+      <Document file={file} options={options}>
         <Page pageNumber={1} />
       </Document>
     </div>

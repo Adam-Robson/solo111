@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'portfolio resume  |  love is cool',
+  title: 'Music',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
