@@ -6,10 +6,13 @@ const nextConfig = {
   // basePath: "/solo",
   // images: {
   //   unoptimized: true
-  //  webpack: (config) => {
-  //    config.resolve.alias.canvas = false;
-  //  }
-  //   return config;
-  //}
+  // },
+  // webpack: (config) => {
+  //   config.resolve.alias.canvas = false;
+  //   config.resolve.extensionAlias = {
+      // '.js': ['.js', '.ts', '.tsx'],
+    // };
+
+  // return config;
 }
-module.exports = nextConfig;
+export default nextConfig;

@@ -1,3 +1,1 @@
-export type PDFTypeProps = {
-  pdfUrl?: string;
-}
+export type PDFTypeProps = string | File | null;
