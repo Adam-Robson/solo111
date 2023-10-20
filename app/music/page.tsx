@@ -1,37 +1,18 @@
 import Link from 'next/link';
-import { writings } from '../utils/data/store'
+import { PiArrowLeftDuotone } from 'react-icons/pi';
 
-export default function Music() {
-  const list = writings.map((writing) => (
-    <li key={ writing.id }>
-      <Link
-        className="text-2xl subpixel-antialiased"
-        href={`/${writing.alias}`}
-      >
-        {writing.alias}
-      </Link>
-    </li>
-  ));
-
+export default function MusicPage() {
   return (
-    <section className="max-w-full w-10/12 mx-auto fadein px-6">
-     
-      <h1 className="text-7xl sm:text-8xl font-light subpixel-antialiased mt-8">arts</h1>
-      <div className="w-full max-w-xl mx-auto">
-        <article className="w-full mx-auto my-6">
-          <h2 className="subtitle w-full text-2xl text-center py-4 subpixel-antialiased underline underline-offset-4 decoration-1">le fog</h2>
-          <iframe style={{ borderRadius: '0.75rem' }} src="https://open.spotify.com/embed/artist/4NrRxIaVhlouvojuHGq62y?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
-        </article>
-
-        <article className="w-full mx-auto my-6">
-          <h2 className="subtitle w-full text-2xl text-center py-4 subpixel-antialiased underline underline-offset-4 decoration-1">
-            writings
-          </h2>
-          <ul
-            className="w-full mx-auto text-center grid grid-flow-row"
-          >{list}</ul>
-        </article>
+    <div className="fade min-h-screen w-11/12 mx-auto px-6">
+      <Link className="absolute top-4 left-6" href="/">
+        <PiArrowLeftDuotone size={24} color={'#b39180'} />
+      </Link>
+      <div className="w-full flex justify-center">
+        <h1 className="text-7xl font-light text-center subpixel-antialiased tracking-tight my-6 underline underline-offset-[2.12rem] decoration-0">music</h1>
       </div>
-    </section>
+      <div className="max-w-xl w-full mx-auto my-6">
+          <iframe id='AmazonMusicEmbedB08BSY6LSP' src='https://music.amazon.com/embed/B08BSY6LSP/?id=zfw4McDXR2&marketplaceId=ATVPDKIKX0DER&musicTerritory=US' width='100%' height='430px' frameBorder='0' className="mt-12 rounded-md border-2 border-black-700 max-w-md"></iframe>
+      </div>
+    </div>
   );
 }

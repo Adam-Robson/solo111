@@ -10,6 +10,7 @@ export default function Home() {
       <div className="absolute top-0 left-0">
         <Nav />
       </div>
+
       <div className="h-full max-w-3xl mx-auto w-full">
         <Image
           src={sun}
@@ -22,10 +23,12 @@ export default function Home() {
           }}
         />
       </div>
-        <TitleCard />
+
+      <TitleCard />
+
       <div className="max-w-lg w-2/5 absolute bottom-4 right-4">
         <IconLinks />
       </div>
-  </main>
+    </main>
   )
 }
