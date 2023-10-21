@@ -101,6 +101,10 @@ button:focus-visible {
   outline: 4px auto var(--d);
 }
 
+.shell {
+  max-height: 34rem;
+}
+
 .fade {
   -webkit-animation-name: fade;
   animation-name: fade;

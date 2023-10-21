@@ -26,7 +26,7 @@ export default function Home() {
 
       <TitleCard />
 
-      <div className="max-w-lg w-2/5 absolute bottom-4 right-4">
+      <div className="max-w-xs w-2/5 absolute top-4 right-4">
         <IconLinks />
       </div>
     </main>

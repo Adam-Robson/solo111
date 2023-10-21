@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Nav() {
   return (
-    <nav className="flex flex-col mt-4 ml-2">{[
+    <nav className="flex flex-col mt-2 ml-2">{[
       ['bio', '/bio'],
       ['projects', '/projects'],
       ['resume', '/resume'],
@@ -14,7 +14,7 @@ export default function Nav() {
       <Link
         key={url}
         href={url}
-        className="px-3 py-1 text-lg sm:text-xl font-normal tracking-tight subpixel-antialiased">
+        className="px-3 text-lg sm:text-xl font-normal tracking-tight subpixel-antialiased">
           {title}
       </Link>
     ))}</nav>
