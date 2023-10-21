@@ -6,7 +6,15 @@ const nextConfig = {
   // basePath: "/solo",
   // images: {
   //   unoptimized: true
-  // }
+  // },
+  webpack: (config) => {
+    config.resolve.alias.canvas = false;
+    config.resolve.extensionAlias = {
+      '.js': ['.js', '.ts', '.tsx'],
+    };
+
+    return config;
+  }
 };
 
-module.exports = nextConfig;
+module.exports = nextConfig

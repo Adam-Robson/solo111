@@ -36,27 +36,27 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --a: #32373B;
-  --b: #444140;
-  --c: #2f3e50;
-  --d: #444750;
-  --e: #4a5968;
-  --f: #686a7d;
-  --g: #969696;
-  --h: #AF5D63;
-  --i: #d88474;
-  --j: #c6868e;
-  --k: #b39180;
-  --l: #849084;
-  --m: #9da596;
-  --n: #919098;
-  --o: #a3999f;
-  --p: #b4bdc5;
-  --q: #f4d8cd;
-  --r: #c8cdbc;
-  --s: #d8d0c1;
-  --t: #D1D1D1;
-  --u: #E5E5E5;
+    --a: #32373B;
+    --b: #444140;
+    --c: #2f3e50;
+    --d: #444750;
+    --e: #4a5968;
+    --f: #686a7d;
+    --g: #969696;
+    --h: #AF5D63;
+    --i: #d88474;
+    --j: #c6868e;
+    --k: #b39180;
+    --l: #849084;
+    --m: #9da596;
+    --n: #919098;
+    --o: #a3999f;
+    --p: #b4bdc5;
+    --q: #f4d8cd;
+    --r: #c8cdbc;
+    --s: #d8d0c1;
+    --t: #D1D1D1;
+    --u: #E5E5E5;
   }
 }
 
@@ -72,17 +72,6 @@ a {
   text-decoration: none;
   cursor: pointer;
   font-weight: 300;
-}
-
-a:focus {
-  outline: 1px solid var(--g);
-  outline-offset: -4px;
-}
-
-a:visited {
-  color: var(--h);
-  text-decoration: none;
-  cursor: pointer;
 }
 
 a:hover,
@@ -110,6 +99,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto var(--d);
+}
+
+.shell {
+  max-height: 34rem;
 }
 
 .fade {
@@ -141,7 +134,7 @@ button:focus-visible {
   }
 }
 
-.titlewrap > .title {
+.titlewrap>.title {
   animation-name: revolution;
   animation-duration: 22s;
   animation-iteration-count: infinite;

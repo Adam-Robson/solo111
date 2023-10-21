@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import { Cairo_Play } from 'next/font/google'
 import './globals.css'
 
-const cairoPlay = Cairo_Play({ 
+const cairoPlay = Cairo_Play({
   subsets: ['latin']
 })
 
 export const metadata: Metadata = {
-  title: 'Adam Robson | Portfolio | Be Kind',
+  title: 'Home | Adam Robson',
   description: 'Portfolio for Adam Robson - Built with Next, TypeScript, Tailwind, and Care'
 }
 
