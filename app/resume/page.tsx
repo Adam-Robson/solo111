@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { PiArrowLeftDuotone, PiFloppyDiskDuotone } from 'react-icons/pi'
 import PDF from '../components/PDF'
 
-
 export default function ResumePage() {
   return (
     <div className="">
