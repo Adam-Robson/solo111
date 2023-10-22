@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import crystal from '../../public/crystal.png';
 
-export default function Misc() {
+export default function MiscPage() {
   return (
     <section className="max-w-full w-10/12 mx-auto fadein px-6">
       <h1 className="text-7xl sm:text-8xl font-light subpixel-antialiased mt-12">

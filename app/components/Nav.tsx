@@ -9,6 +9,7 @@ export default function Nav() {
       ['resume', '/resume'],
       ['music', '/music'],
       ['writings', '/writings'],
+      ['pictures', '/pictures'],
       ['misc.', '/misc']
     ].map(([title, url]) => (
       <Link
