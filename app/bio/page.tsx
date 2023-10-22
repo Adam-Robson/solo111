@@ -5,8 +5,8 @@ import faceOne from '../../public/img/slvrfls-min.png';
 
 export default function BioPage() {
   return (
-    <div className="fade min-h-screen w-full mx-auto px-6">
-      <div className="max-w-sm relative">
+    <div className="fade min-h-screen w-11/12 mx-auto px-6">
+      <div className="relative">
       <Link className="absolute top-0 left-2 sm:top-4 sm:left-8" href="/">
         <PiArrowLeftDuotone size={30} color={'#b39180'} />
       </Link>
@@ -14,7 +14,7 @@ export default function BioPage() {
       <div className="w-full flex justify-center mt-8">
         <h1 className="text-7xl text-center font-light tracking-tight subpixel-antialiased my-6 underline underline-offset-[2.12rem] decoration-0">bio</h1>
       </div>
-      <article className="max-w-xs sm:max-w-sm md:max-w-md mx-auto flex flex-col items-center">
+      <article className="max-w-sm md:max-w-md mx-auto flex flex-col items-center">
         <p className="max-w-sm mx-auto text-sm tracking-tight subpixel-antialiased my-4">
           Born and raised in south California, I spent my young adult years in the Bay Area where I did my undergraduate studies. I would soon meet my partner and shortly after that, we two travelled around without aim in a 1980 Aircooled Volkswagen Vanagon, working remotely and exploring the country. It was a truly unique and singular experience! Documented in part, <Link href="https://lapaztravels.wordpress.com/"target="_blank">here</Link>.
         </p>

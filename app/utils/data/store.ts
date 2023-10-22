@@ -1,3 +1,19 @@
+import {
+  SiReact,
+  SiReactrouter,
+  SiPython,
+  SiFlask,
+  SiGooglemaps,
+  SiTailwindcss,
+  SiHeroku,
+  SiMongodb,
+  SiGithub,
+  SiNetlify,
+  SiChakraui,
+  SiJavascript,
+  SiHtml5,
+  SiCss3
+} from 'react-icons/si'
 
 export const writings = [
   {
@@ -39,7 +55,17 @@ export const projects = [
                   coordinates.  It was built with React and Python, and
                   uses MongoDB for data storage.`,
     link: 'https://pantry-pal-colab.herokuapp.com/',
-    features: ''
+    features: [
+      { name: 'react', icon: SiReact },
+      { name: 'react-router', icon: SiReactrouter },
+      { name: 'python', icon: SiPython },
+      { name: 'flask', icon: SiFlask },
+      { name: 'googlemaps', icon: SiGooglemaps },
+      { name: 'tailwind', icon: SiTailwindcss },
+      { name: 'mongo', icon: SiMongodb },
+      { name: 'heroku', icon: SiHeroku, },
+      { name: 'github', icon: SiGithub }
+    ]
   },
   {
     title: 'TallyHo',
@@ -50,7 +76,14 @@ export const projects = [
                   API. The application includes authentiction so Users
                   can save their trips.`,
     link: 'https://tally-ho-road-trips.netlify.app/auth/sign-in',
-    features: ''
+    features: [
+      { name: 'react', icon: SiReact },
+      { name: 'react-router', icon: SiReactrouter },
+      { name: 'googlemaps', icon: SiGooglemaps },
+      { name: 'chakra', icon: SiChakraui },
+      { name: 'netlify', icon: SiNetlify },
+      { name: 'github', icon: SiGithub }
+    ]
   },
   {
     title: 'Collabo',
@@ -60,7 +93,13 @@ export const projects = [
                   built with vanilla JavaScript, HTML and CSS, and
                   harnesses the power of the Web Audio API.`,
     link: 'https://collabomusic.co/',
-    features: ''
+    features: [
+          { name: 'javascript', icon: SiJavascript },
+      { name: 'html', icon: SiHtml5 },
+      { name: 'css', icon: SiCss3 },
+      { name: 'netlify', icon: SiNetlify },
+      { name: 'github', icon: SiGithub }
+    ]
   },
   {
     title: 'Buddystock',
@@ -71,6 +110,11 @@ export const projects = [
                   show for all attendees and volunteers running logistics.
                   The project was deployed using cPanel and HostGator.`,
     link: 'https://buddystockviii.com',
-    features: ''
+    features: [
+      { name: 'react', icon: SiReact },
+      { name: 'react-router', icon: SiReactrouter },
+      { name: 'netlify', icon: SiNetlify },
+      { name: 'github', icon: SiGithub }
+    ]
   }
 ];
