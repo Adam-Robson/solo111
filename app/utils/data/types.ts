@@ -9,3 +9,9 @@ export interface PhotoType {
 export interface PropsTypes {
   photos: PhotoType[];
 }
+
+export type ProjectProps = {
+  title: string;
+  description: string;
+  link: string;
+}
