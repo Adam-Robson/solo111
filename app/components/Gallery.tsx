@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import type { PropsTypes, PhotoType } from '../utils/data/types'
+import type { PhotoListTypeProps, PhotoTypeProps } from '../utils/data/types'
+import Image from 'next/image';
 
-const Gallery: React.FC<PropsTypes> = ({ photos }) => {
-  const [selectedPhoto, setSelectedPhoto] = useState<PhotoType | null>(null);
+export default function Gallery({ photos }: PhotoListTypeProps) {
+  const [selectedPhoto, setSelectedPhoto] = useState<PhotoTypeProps | null>(null);
 
-  function handleClick(photo: PhotoType) {
+  function handleClick(photo: PhotoTypeProps) {
     setSelectedPhoto(photo);
   }
 
@@ -31,7 +32,7 @@ const Gallery: React.FC<PropsTypes> = ({ photos }) => {
     <div>
       {photos.map(photo => (
         <div key={photo.id} className="photo-container">
-          <img
+          <Image
             src={photo.url}
             alt={photo.caption}
             onClick={() => handleClick(photo)}
@@ -44,13 +45,11 @@ const Gallery: React.FC<PropsTypes> = ({ photos }) => {
       {selectedPhoto && (
         <div className="floating-window">
           <span className="close-icon" onClick={handleClose}>X</span>
-          <img src={selectedPhoto.url} alt={selectedPhoto.caption} />
+          <Image src={selectedPhoto.url} alt={selectedPhoto.caption} />
           <div className="arrow left" onClick={() => handleArrowClick('prev')}>&lt;</div>
           <div className="arrow right" onClick={() => handleArrowClick('next')}>&gt;</div>
         </div>
       )}
     </div>
   );
-};
-
-export default Gallery
+}

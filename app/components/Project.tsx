@@ -1,9 +1,9 @@
 'use client'
 import Link from "next/link"
 import { useState } from 'react';
-import type { ProjectProps } from "../utils/data/types";
+import type { ProjectTypeProps } from "../utils/data/types";
 
-export default function Project({ title, description, link }: ProjectProps) {
+export default function Project({ title, description, link }: ProjectTypeProps) {
   const [hover, setHover] = useState(false);
   return (
     <article

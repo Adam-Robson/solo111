@@ -1,16 +1,18 @@
+import { StaticImageData } from "next/image";
+
 export type PDFTypeProps = string | File | null
 
-export interface PhotoType {
+export type PhotoTypeProps = {
   id: number;
-  url: string;
+  url: StaticImageData;
   caption: string;
 }
 
-export interface PropsTypes {
-  photos: PhotoType[];
+export type PhotoListTypeProps = {
+  photos: PhotoTypeProps[];
 }
 
-export type ProjectProps = {
+export type ProjectTypeProps = {
   title: string;
   description: string;
   link: string;

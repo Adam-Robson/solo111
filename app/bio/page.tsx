@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { PiArrowLeftDuotone, PiVanDuotone } from 'react-icons/pi';
-import faceOne from '../../public/img/slvrfls.png';
+import faceOne from '../../public/img/slvrfls-min.png';
 
 export default function BioPage() {
   return (

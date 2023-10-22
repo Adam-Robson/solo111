@@ -1,5 +1,6 @@
 import { projects } from "../utils/data/store"
 import Project from "../components/Project"
+
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen w-11/12 mx-auto fade px-4">
