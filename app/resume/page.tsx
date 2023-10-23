@@ -16,13 +16,14 @@ export default function ResumePage() {
         <h1 className="text-7xl text-center font-light tracking-tight subpixel-antialiased underline underline-offset-[2.12rem] decoration-0">resume</h1>
       </div>
 
-      <div className="relative max-w-xl mx-auto my-10 flex justify-center">
+      <div className="relative max-w-lg mx-auto mt-8 mb-2 flex justify-center">
         <Link
           href="/pdf/resume.pdf"
           download="resume.pdf"
-          className=""
+          className="flex items-center"
         >
           <PiFloppyDiskDuotone size={30} color={'#b39180'} />
+          Download
         </Link>
       </div>
         <PDF />

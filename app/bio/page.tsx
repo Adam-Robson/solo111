@@ -5,9 +5,9 @@ import faceOne from '../../public/img/slvrfls-min.png';
 
 export default function BioPage() {
   return (
-    <div className="fade min-h-screen w-11/12 mx-auto px-6">
+    <div className="fade min-h-screen w-11/12 mx-auto px-6 overflow-hidden">
       <div className="relative">
-      <Link className="absolute top-0 left-2" href="/">
+      <Link className="absolute top-4 left-4" href="/">
         <PiArrowLeftDuotone size={30} color={'#b39180'} />
       </Link>
       </div>

@@ -97,3 +97,31 @@ export const projects = [
     url: 'https://buddystockviii.com'
   }
 ];
+
+  export const photos = [
+    {
+      id: 1,
+      url: '/img/antiquescape-min.png',
+      caption: 'Antique store, Leucadia, California '
+    },
+    {
+      id: 2,
+      url: '/img/bridgescape-min.png',
+      caption: 'Steel Bridge, Portland, Oregon'
+    },
+    {
+      id: 3,
+      url: '/img/crystalscape-min.png',
+      caption: 'Portugese crystal hangs in the sunlight.'
+    },
+    {
+      id: 4,
+      url: '/img/landscape-min.png',
+      caption: 'Image of landscape. Cascade Locks, Columbia River Gorge'
+    },
+    {
+      id: 5,
+      url: '/img/oregonscape-min.png',
+      caption: 'Bridge, Siuslaw River, Florence, Oregon'
+    },
+  ]

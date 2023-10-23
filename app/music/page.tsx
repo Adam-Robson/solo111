@@ -3,9 +3,9 @@ import { PiArrowLeftDuotone } from 'react-icons/pi';
 
 export default function MusicPage() {
   return (
-    <div className="fade min-h-screen w-full mx-auto px-6">
+    <div className="fade min-h-screen w-11/12 mx-auto px-6 overflow-hidden">
      <div className="max-w-sm relative">
-      <Link className="absolute top-0 left-2 sm:top-4 sm:left-8" href="/">
+      <Link className="absolute top-4 left-4" href="/">
         <PiArrowLeftDuotone size={30} color={'#b39180'} />
       </Link>
       </div>

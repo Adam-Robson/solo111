@@ -65,6 +65,7 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       var(--t)) var(--p);
+  height: 100%;
 }
 
 a {

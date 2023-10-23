@@ -4,9 +4,9 @@ import IconLinks from './components/IconLinks'
 import Nav from './components/Nav'
 import TitleCard from './components/TitleCard'
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="fade flex min-h-screen flex-col items-center justify-center">
+    <main className="min-h-screen w-full flex flex-col justify-center items-center overflow-hidden">
       <div className="absolute top-0 left-0">
         <Nav />
       </div>
@@ -23,9 +23,7 @@ export default function Home() {
           }}
         />
       </div>
-
-      <TitleCard />
-
+        <TitleCard />
       <div className="max-w-xs w-2/5 absolute top-4 right-4">
         <IconLinks />
       </div>
