@@ -13,7 +13,7 @@ export default function MusicPage() {
         <h1 className="text-7xl text-center font-light tracking-tight subpixel-antialiased my-6 underline underline-offset-[2.12rem] decoration-0">music</h1>
       </div>
       <div className="max-w-sm sm:max-w-md mx-auto my-6">
-          <iframe id='AmazonMusicEmbedB08BSY6LSP' src='https://music.amazon.com/embed/B08BSY6LSP/?id=zfw4McDXR2&marketplaceId=ATVPDKIKX0DER&musicTerritory=US' width='100%' height='430px' frameBorder='0' className="mt-12 rounded-md border-2 border-black-700 max-w-md"></iframe>
+         <iframe style={{borderRadius: '12px'}} src="https://open.spotify.com/embed/artist/4NrRxIaVhlouvojuHGq62y?utm_source=generator" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
     </div>
   );
