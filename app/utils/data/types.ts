@@ -13,14 +13,8 @@ export type PhotoListTypeProps = {
   photos: PhotoTypeProps[];
 }
 
-export type ProjectTypeProps = {
+export type ProjectTypes = {
   title: string;
+  url: string;
   description: string;
-  link: string;
-  features: object[]
-}
-
-export type IconTypeProps = {
-  name: string;
-  icon: IconType;
 }

@@ -15,6 +15,18 @@ import {
   SiCss3
 } from 'react-icons/si'
 
+interface Feature {
+  name: string;
+  icon: React.ReactNode;
+}
+
+interface Project {
+  title: string;
+  url: string;
+  description: string;
+  features: Feature[];
+}
+
 export const writings = [
   {
     id: '1',
@@ -43,7 +55,6 @@ export const writings = [
   }
 ];
 
-
 export const projects = [
   {
     title: 'Pantry Pal',
@@ -54,18 +65,7 @@ export const projects = [
                   the GeoCoding API for converting addresses into geographic
                   coordinates.  It was built with React and Python, and
                   uses MongoDB for data storage.`,
-    link: 'https://pantry-pal-colab.herokuapp.com/',
-    features: [
-      { name: 'react', icon: SiReact },
-      { name: 'react-router', icon: SiReactrouter },
-      { name: 'python', icon: SiPython },
-      { name: 'flask', icon: SiFlask },
-      { name: 'googlemaps', icon: SiGooglemaps },
-      { name: 'tailwind', icon: SiTailwindcss },
-      { name: 'mongo', icon: SiMongodb },
-      { name: 'heroku', icon: SiHeroku, },
-      { name: 'github', icon: SiGithub }
-    ]
+    url: 'https://pantry-pal-colab.herokuapp.com/'
   },
   {
     title: 'TallyHo',
@@ -75,15 +75,7 @@ export const projects = [
                   integrates Google Waypoints and the JavaScript Maps
                   API. The application includes authentiction so Users
                   can save their trips.`,
-    link: 'https://tally-ho-road-trips.netlify.app/auth/sign-in',
-    features: [
-      { name: 'react', icon: SiReact },
-      { name: 'react-router', icon: SiReactrouter },
-      { name: 'googlemaps', icon: SiGooglemaps },
-      { name: 'chakra', icon: SiChakraui },
-      { name: 'netlify', icon: SiNetlify },
-      { name: 'github', icon: SiGithub }
-    ]
+    url: 'https://tally-ho-road-trips.netlify.app/auth/sign-in'
   },
   {
     title: 'Collabo',
@@ -92,14 +84,7 @@ export const projects = [
                   to play music together remotely. The project was
                   built with vanilla JavaScript, HTML and CSS, and
                   harnesses the power of the Web Audio API.`,
-    link: 'https://collabomusic.co/',
-    features: [
-          { name: 'javascript', icon: SiJavascript },
-      { name: 'html', icon: SiHtml5 },
-      { name: 'css', icon: SiCss3 },
-      { name: 'netlify', icon: SiNetlify },
-      { name: 'github', icon: SiGithub }
-    ]
+    url: 'https://collabomusic.co/'
   },
   {
     title: 'Buddystock',
@@ -109,12 +94,6 @@ export const projects = [
                   was the source of information for the eighth annual
                   show for all attendees and volunteers running logistics.
                   The project was deployed using cPanel and HostGator.`,
-    link: 'https://buddystockviii.com',
-    features: [
-      { name: 'react', icon: SiReact },
-      { name: 'react-router', icon: SiReactrouter },
-      { name: 'netlify', icon: SiNetlify },
-      { name: 'github', icon: SiGithub }
-    ]
+    url: 'https://buddystockviii.com'
   }
 ];

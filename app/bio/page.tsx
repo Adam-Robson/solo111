@@ -7,7 +7,7 @@ export default function BioPage() {
   return (
     <div className="fade min-h-screen w-11/12 mx-auto px-6">
       <div className="relative">
-      <Link className="absolute top-0 left-2 sm:top-4 sm:left-8" href="/">
+      <Link className="absolute top-0 left-2" href="/">
         <PiArrowLeftDuotone size={30} color={'#b39180'} />
       </Link>
       </div>
