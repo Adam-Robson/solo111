@@ -3,21 +3,26 @@ import { PiArrowLeftDuotone, PiFloppyDiskDuotone } from 'react-icons/pi'
 import PDF from '../components/PDF'
 
 export default function ResumePage() {
+
   return (
-    <div className="">
+    <div className="fade min-h-screen w-11/12 mx-auto px-6">
       <div className="relative">
-        <Link className="absolute top-4 left-8" href="/">
+        <Link className="absolute top-0 left-0" href="/">
           <PiArrowLeftDuotone size={30} color={'#b39180'} />
         </Link>
       </div>
-      <h1 className="text-7xl text-center font-light tracking-tight subpixel-antialiased my-6">resume</h1>
 
-      <div className="max-w-3xl h-16 relative border-2 border-purple-300">
+      <div className="w-full flex justify-center mt-8">
+        <h1 className="text-7xl text-center font-light tracking-tight subpixel-antialiased underline underline-offset-[2.12rem] decoration-0">resume</h1>
+      </div>
+
+      <div className="relative max-w-xl mx-auto my-10 flex justify-center">
         <Link
           href="/pdf/resume.pdf"
           download="resume.pdf"
-          className="absolute bottom-0"
-        ><PiFloppyDiskDuotone size={36} color={'#b39180'} />
+          className=""
+        >
+          <PiFloppyDiskDuotone size={30} color={'#b39180'} />
         </Link>
       </div>
         <PDF />

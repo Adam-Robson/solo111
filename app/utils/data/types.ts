@@ -1,11 +1,20 @@
+import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
+
 export type PDFTypeProps = string | File | null
 
-export interface PhotoType {
+export type PhotoTypeProps = {
   id: number;
-  url: string;
+  url: StaticImageData;
   caption: string;
 }
 
-export interface PropsTypes {
-  photos: PhotoType[];
+export type PhotoListTypeProps = {
+  photos: PhotoTypeProps[];
+}
+
+export type ProjectTypes = {
+  title: string;
+  url: string;
+  description: string;
 }

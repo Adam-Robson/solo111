@@ -1,3 +1,31 @@
+import {
+  SiReact,
+  SiReactrouter,
+  SiPython,
+  SiFlask,
+  SiGooglemaps,
+  SiTailwindcss,
+  SiHeroku,
+  SiMongodb,
+  SiGithub,
+  SiNetlify,
+  SiChakraui,
+  SiJavascript,
+  SiHtml5,
+  SiCss3
+} from 'react-icons/si'
+
+interface Feature {
+  name: string;
+  icon: React.ReactNode;
+}
+
+interface Project {
+  title: string;
+  url: string;
+  description: string;
+  features: Feature[];
+}
 
 export const writings = [
   {
@@ -24,5 +52,48 @@ export const writings = [
     id: '5',
     alias: 'planet',
     body: ['almost all water, ', 'and within every dew drop, ', 'birds punctuate the days.']
+  }
+];
+
+export const projects = [
+  {
+    title: 'Pantry Pal',
+    description: `Pantry Pal is a mobile responsive web-application
+                  that locates food pantries anywhere in the US. It
+                  uses the Google Maps API for mapping functionality,
+                  the Geolocation API for determining user location, and
+                  the GeoCoding API for converting addresses into geographic
+                  coordinates.  It was built with React and Python, and
+                  uses MongoDB for data storage.`,
+    url: 'https://pantry-pal-colab.herokuapp.com/'
+  },
+  {
+    title: 'TallyHo',
+    description: `Tally-Ho is a mobile responsive web-application
+                  that allows users to create lists of their favorite
+                  trips! Built with React and styled using Chakra UI, it
+                  integrates Google Waypoints and the JavaScript Maps
+                  API. The application includes authentiction so Users
+                  can save their trips.`,
+    url: 'https://tally-ho-road-trips.netlify.app/auth/sign-in'
+  },
+  {
+    title: 'Collabo',
+    description: `Collabo is an innovative remote-collaboration
+                  platform built as a solution to enable musicians
+                  to play music together remotely. The project was
+                  built with vanilla JavaScript, HTML and CSS, and
+                  harnesses the power of the Web Audio API.`,
+    url: 'https://collabomusic.co/'
+  },
+  {
+    title: 'Buddystock',
+    description: `Buddystock VIII is a mobile-responsive website for
+                  an annual, non-profit, music festival held in Mosier,
+                  Oregon. It was built with Create React App, and
+                  was the source of information for the eighth annual
+                  show for all attendees and volunteers running logistics.
+                  The project was deployed using cPanel and HostGator.`,
+    url: 'https://buddystockviii.com'
   }
 ];

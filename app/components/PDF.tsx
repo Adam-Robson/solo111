@@ -1,25 +1,23 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useCallback } from 'react'
 import {
   Document,
   Page,
   pdfjs
 } from 'react-pdf'
 import type { PDFTypeProps } from '../utils/data/types';
+import { useResizeObserver } from '@wojtekmaj/react-hooks';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 
+/**
+ * The following must be stated outside of component.
+ */
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
   import.meta.url,
 ).toString();
 
-/**
- * below the options object being made brings
- * in the work done in '../services.ts' and
- * it is a key prop passed to the Document
- * component from react-pdf
- */
 const options = {
   cMapUrl: '/cmaps/',
   standardFontDataUrl: '/standard_fonts/',
@@ -27,17 +25,37 @@ const options = {
 
 export default function PDF() {
   const [file, setFile] = useState<PDFTypeProps>('/pdf/resume.pdf')
+  const [containerRef, setContainerRef] = useState<HTMLElement | null>(null)
+  const [containerWidth, setContainerWidth] = useState<number>()
+
+  const onResize = useCallback<ResizeObserverCallback>((entries) => {
+    const [entry] = entries;
+
+    if (entry) {
+      setContainerWidth(entry.contentRect.width);
+    }
+  }, []);
+
+  const resizeObserverOptions = {};
+  const maxWidth = 800;
+  
+  useResizeObserver(containerRef, resizeObserverOptions, onResize);
   return (
-    <div className="min-w-full max-w-6xl min-h-screen">
-      <div className="max-w-xl mx-auto mt-8">
+    <div className="min-w-full max-w-5xl min-h-screen">
+      <div className="container max-w-xl mx-auto mt-8">
+      <div className="container__document" ref={setContainerRef}>
         <Document file={file} options={options}>
           <Page
             pageNumber={1}
             scale={1}
             renderTextLayer={true}
             renderAnnotationLayer={true}
+            width={containerWidth
+              ? Math.min(containerWidth, maxWidth)
+              : maxWidth}
           />
         </Document>
+        </div>
         </div>
     </div>
   )
