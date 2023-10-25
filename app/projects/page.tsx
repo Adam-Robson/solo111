@@ -18,14 +18,13 @@ export default function ProjectsPage() {
 
       <div className="max-w-sm md:max-w-md mx-auto flex flex-col items-center">
         {projects.map(({ title, description, url }) => (
-          <>
+          <div key={url} >
             <Project
-              key={title}
               title={title}
               description={description}
               url={url}
             />
-          </>
+          </div>
         ))}
       </div>
     </div>
