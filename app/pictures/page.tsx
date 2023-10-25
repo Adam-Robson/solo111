@@ -18,7 +18,7 @@ export default function PicturesPage() {
         <h1 className="text-7xl text-center font-light tracking-tight subpixel-antialiased my-6 underline underline-offset-[2.12rem] decoration-0">pictures</h1>
       </div>
 
-      <article className="max-w-sm md:max-w-md mx-auto flex flex-col items-center">
+      <article className="max-w-md md:max-w-lg lg:max-w-xl mx-auto flex flex-col items-center">
         <Gallery photos={photos} />
       </article>
     </div>

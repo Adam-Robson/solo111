@@ -24,7 +24,7 @@ export default function HomePage() {
         />
       </div>
         <TitleCard />
-      <div className="max-w-xs w-2/5 absolute top-4 right-4">
+      <div className="max-w-xs w-1/5 absolute top-4 right-4">
         <IconLinks />
       </div>
     </main>

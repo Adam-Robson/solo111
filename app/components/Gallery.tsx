@@ -6,7 +6,7 @@ export default function Gallery({ photos }: PhotoListTypeProps) {
   return (
     <div>
       {photos.map(photo => (
-        <div key={photo.id} className="group hover:cursor-pointer max-w-xs flex flex-col justify-start items-center">
+        <div key={photo.id} className="group hover:cursor-pointer max-w-sm mt-8  flex flex-col justify-start items-center">
           <Photo
             id={photo.id}
             url={photo.url}

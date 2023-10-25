@@ -11,52 +11,53 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --a: #E5E5E5;
-  --b: #D1D1D1;
-  --c: #d8d0c1;
-  --d: #c8cdbc;
-  --e: #f4d8cd;
-  --f: #b4bdc5;
-  --g: #a3999f;
-  --h: #919098;
-  --i: #9da596;
-  --j: #849084;
+  --a: #32373B;
+  --b: #444140;
+  --c: #2f3e50;
+  --d: #444750;
+  --e: #4a5968;
+  --f: #686a7d;
+  --g: #969696;
+  --h: #AF5D63;
+  --i: #d88474;
+  --j: #c6868e;
   --k: #b39180;
-  --l: #c6868e;
-  --m: #d88474;
-  --n: #AF5D63;
-  --o: #969696;
-  --p: #686a7d;
-  --q: #4a5968;
-  --r: #444750;
-  --s: #2f3e50;
-  --t: #444140;
-  --u: #32373B;
+  --l: #849084;
+  --m: #9da596;
+  --n: #919098;
+  --o: #a3999f;
+  --p: #b4bdc5;
+  --q: #f4d8cd;
+  --r: #c8cdbc;
+  --s: #d8d0c1;
+  --t: #D1D1D1;
+  --u: #E5E5E5;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --a: #32373B;
-    --b: #444140;
-    --c: #2f3e50;
-    --d: #444750;
-    --e: #4a5968;
-    --f: #686a7d;
-    --g: #969696;
-    --h: #AF5D63;
-    --i: #d88474;
-    --j: #c6868e;
+    --a: #E5E5E5;
+    --b: #D1D1D1;
+    --c: #d8d0c1;
+    --d: #c8cdbc;
+    --e: #f4d8cd;
+    --f: #b4bdc5;
+    --g: #a3999f;
+    --h: #919098;
+    --i: #9da596;
+    --j: #849084;
     --k: #b39180;
-    --l: #849084;
-    --m: #9da596;
-    --n: #919098;
-    --o: #a3999f;
-    --p: #b4bdc5;
-    --q: #f4d8cd;
-    --r: #c8cdbc;
-    --s: #d8d0c1;
-    --t: #D1D1D1;
-    --u: #E5E5E5;
+    --l: #c6868e;
+    --m: #d88474;
+    --n: #AF5D63;
+    --o: #969696;
+    --p: #686a7d;
+    --q: #4a5968;
+    --r: #444750;
+    --s: #2f3e50;
+    --t: #444140;
+    --u: #32373B;
   }
 }
 
@@ -64,12 +65,12 @@ body {
   color: var(--a);
   background: linear-gradient(to bottom,
       transparent,
-      var(--t)) var(--p);
+      var(--s)) var(--u);
   height: 100%;
 }
 
 a {
-  color: var(--f);
+  color: var(--b);
   text-decoration: none;
   cursor: pointer;
   font-weight: 300;
@@ -148,22 +149,22 @@ button:focus-visible {
 
 @keyframes revolution {
   0% {
-    color: var(--g);
+    color: var(--a);
   }
 
   20% {
-    color: var(--h);
-  }
-
-  40% {
-    color: var(--d);
-  }
-
-  80% {
     color: var(--f);
   }
 
+  40% {
+    color: var(--e);
+  }
+
+  80% {
+    color: var(--d);
+  }
+
   100% {
-    color: var(--l);
+    color: var(--k);
   }
 }

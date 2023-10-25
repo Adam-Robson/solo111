@@ -19,3 +19,9 @@ export type ProjectTypes = {
   url: string;
   description: string;
 }
+
+export type WritingTypeProps = {
+  id: string;
+  alias: string;
+  body: string[];
+}

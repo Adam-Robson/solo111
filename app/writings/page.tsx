@@ -1,16 +1,12 @@
-import Link from "next/link";
+import Link from 'next/link';
 import { writings } from "../utils/data/store";
 import { PiArrowLeftDuotone } from "react-icons/pi";
 export default function WritingsPage() {
 
     const list = writings.map((writing) => (
-    <li key={ writing.id }>
-      <Link
-        className="text-2xl subpixel-antialiased my-4"
-        href={`/${writing.alias}`}
-      >
-        {writing.alias}
-      </Link>
+    <li className="group" key={ writing.id }>
+        <h3 className="group-hover:underline underline-offset-1 text-lg text-center subpixel-antialiased mt-8">{writing.alias}</h3>
+        <p className="hidden group-hover:contents">{writing.body}</p>
     </li>
     ));
 
@@ -26,7 +22,7 @@ export default function WritingsPage() {
         <h1 className="text-7xl text-center font-light tracking-tight subpixel-antialiased my-6 underline underline-offset-[2.12rem] decoration-0">writings</h1>
       </div>
       <ul
-        className="h-80 w-full text-center my-4 flex flex-col items-center justify-evenly"
+        className="h-80 w-full text-center my-8 flex flex-col items-center justify-evenly"
         >{list}</ul>
     </div>
   );

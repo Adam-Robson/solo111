@@ -14,7 +14,7 @@ import {
   SiHtml5,
   SiCss3
 } from 'react-icons/si'
-
+import type { WritingTypeProps } from './types';
 interface Feature {
   name: string;
   icon: React.ReactNode;
@@ -27,7 +27,7 @@ interface Project {
   features: Feature[];
 }
 
-export const writings = [
+export const writings: WritingTypeProps[] = [
   {
     id: '1',
     alias: 'easy',

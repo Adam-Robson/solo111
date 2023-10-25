@@ -9,8 +9,8 @@ export default function Photo({ url, caption }: PhotoTypeProps) {
       <Image
         src={url}
         alt={caption}
-        width={200}
-        height={200}
+        width={400}
+        height={400}
         className='rounded-xl'
       />
     </div>

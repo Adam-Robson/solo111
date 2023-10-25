@@ -14,7 +14,7 @@ export default function Nav() {
       <Link
         key={url}
         href={url}
-        className="px-3 text-lg sm:text-xl sm:px-5 md:text-2xl md:my-2 md:px-7 lg:text-3xl lg:px-9 lg:my-6 font-normal tracking-tight subpixel-antialiased">
+        className="px-3 text-lg sm:px-5 lg:text-2xl md:my-2 md:px-7 lg:px-9 lg:my-6 font-normal tracking-tight subpixel-antialiased">
           {title}
       </Link>
     ))}</nav>
