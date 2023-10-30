@@ -19,7 +19,14 @@ export default function RootLayout({
   }) {
   return (
     <html lang="en">
-      <body className={cairo.className}>
+      <body className={cairo.className} style={{
+      backgroundImage: "url('/images/circlesun.png')",
+      backgroundPosition: 'center',
+      backgroundSize: 'contain',
+      backgroundClip: 'border-box',
+      backgroundAttachment: 'fixed',
+      backgroundRepeat: 'no-repeat'
+    }}>
         <Navigation />
         <Suspense fallback={<Loader />}>
           {children}

@@ -1,27 +1,27 @@
 import React from 'react'
 import Link from 'next/link'
 
-function Navigation() {
+export default function Navigation() {
   return (
     <nav className="container">
       <ul className="max-w-lg w-11/12 mx-auto my-10 flex justify-between items-baseline">
         <li>
-          <Link className="drop-shadow-md tracking-tighter font-normal text-xl subpixel-antialiased" href={`/`}>
+          <Link className="drop-shadow-md tracking-tighter font-normal text-lg md:text-xl subpixel-antialiased" href={`/`}>
             Home
           </Link>
         </li>
         <li>
-          <Link className="drop-shadow-md tracking-tighter font-normal text-xl subpixel-antialiased" href={`/projects`}>
+          <Link className="drop-shadow-md tracking-tighter font-normal text-lg md:text-xl subpixel-antialiased" href={`/projects`}>
             Projects
           </Link>
         </li>
         <li>
-          <Link className="drop-shadow-md tracking-tighter font-normal text-xl subpixel-antialiased" href={`/resume`}>
+          <Link className="drop-shadow-md tracking-tighter font-normal text-lg md:text-xl subpixel-antialiased" href={`/resume`}>
             Resume
           </Link>
         </li>
         <li>
-          <Link className="drop-shadow-md tracking-tighter font-normal text-xl subpixel-antialiased" href={`/bio`}>
+          <Link className="drop-shadow-md tracking-tighter font-normal text-lg md:text-xl subpixel-antialiased" href={`/bio`}>
             Bio
           </Link>
         </li>
@@ -29,5 +29,3 @@ function Navigation() {
     </nav>
   )
 }
-
-export default Navigation
