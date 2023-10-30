@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.titlewrap>.title {
+  animation-name: revolution;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.645,
+      0.045,
+      0.355,
+      1);
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+@keyframes revolution {
+  0% {
+    color: #627581;
+  }
+
+  12% {
+    color: #5f5d6b;
+  }
+
+  24% {
+    color: #5e7076;
+  }
+
+  48% {
+    color: #495e77;
+  }
+
+  72% {
+    color: #4a6073;
+  }
+
+  100% {
+    color: #4c5561;
+  }
+}

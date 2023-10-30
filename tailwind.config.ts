@@ -12,7 +12,8 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        'homepage': "url('/images/circlesun.png')"
+        'homepage': "url('/images/circlesun.png')",
+        'biopage': "url('/images/clouds.png')"
       }
     }
   },
