@@ -7,23 +7,21 @@
 }
 
 :root {
-  --bg: hsla(212, 60%, 95%, 1);
-  --fg: hsla(15, 3%, 26%, 1);
-  --btnbg: hsla(198, 24%, 22%, 1);
-  --btnbghvr: hsla(194, 17%, 60%, 1);
-  --a: hsla(331, 11%, 34%, 1);
-  --ahvr: hsla(349, 16%, 80%, 1);
-  --aatv: hsla(345, 2%, 42%, 1);
+  --foreground: hsla(15, 3%, 26%, 1);
+  --background-start:hsla(213, 81%, 92%, 1);
+  --background-end: hsla(215, 28%, 77%, 1);
 
-  --c: hsla(46, 27%, 65%, 1);
-  --d: hsla(226, 13%, 74%, 1);
-  --e: hsla(45, 6%, 62%, 1);
-  --f: hsla(189, 4%, 63%, 1);
-  --g: hsla(194, 17%, 60%, 1);
-  --h: hsla(6, 20%, 64%, 1);
-  --i: hsla(48, 20%, 53%, 1);
-  --k: hsla(353, 20%, 33%, 1);
-  --o: hsla(210, 35%, 15%, 1);
+  --button-background: hsla(198, 24%, 22%, 1);
+  --button-background-hover: hsla(194, 17%, 60%, 1);
+
+  --link: hsla(331, 11%, 34%, 1);
+  --link-hover: hsla(349, 16%, 80%, 1);
+  --link-active: hsla(345, 2%, 42%, 1);
+
+  --alternate: hsla(210, 35%, 15%, 1);
+  --highlight: hsla(188, 12%, 60%, 1);
+  --error: hsla(353, 20%, 33%, 1);
+
   color-scheme: light dark;
 
   line-height: 1.2;
@@ -39,38 +37,32 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: hsla(15, 3%, 26%, 1);
-    --fg: hsla(212, 60%, 95%, 1);
-    --btnbg: hsla(194, 17%, 60%, 1);
-    --btnbghvr: hsla(198, 24%, 22%, 1);
-    --a: hsla(349, 16%, 80%, 1);
-    --ahvr: hsla(331, 11%, 34%, 1);
-    --aatv: hsla(345, 2%, 42%, 1);
+    --foreground: hsla(215, 28%, 77%, 1);
+    --background-start: hsla(15, 3%, 26%, 1);
+    --background-end: hsla(210, 35%, 15%, 1);
 
-    --c: hsla(198, 24%, 22%, 1);
-    --e: hsla(353, 20%, 33%, 1);
-    --g: hsla(48, 20%, 53%, 1);
-    --h: hsla(6, 20%, 64%, 1);
-    --j: hsla(189, 4%, 63%, 1);
-    --k: hsla(45, 6%, 62%, 1);
-    --l: hsla(226, 13%, 74%, 1);
-    --m: hsla(46, 27%, 65%, 1);
-    --o: hsla(210, 35%, 15%, 1);
+    --button-background: hsla(194, 17%, 60%, 1);
+    --button-background-hover: hsla(198, 24%, 22%, 1);
+
+    --link: hsla(349, 16%, 80%, 1);
+    --link-hover: hsla(331, 11%, 34%, 1);
+    --link-active: hsla(345, 2%, 42%, 1);
+
+    --alternate:hsla(215, 28%, 77%, 1);
+    --highlight: hsla(188, 12%, 60%, 1);
+    --error: hsla(353, 20%, 33%, 1);
   }
 }
 
-html {
-  color: var(--fg);
-  background-color: var(--bg);
-}
-
 body {
+  color: var(--foreground);
+  background: linear-gradient(to bottom,
+        transparent,
+        var(--background-end)
+        var(--background-start));
   margin: 0 0 1.3rem 0;
   padding: 1.3rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   place-items: center;
   min-width: 20rem;
   width: 100%;
@@ -81,8 +73,8 @@ body {
 button {
   -webkit-appearance: none;
   appearance: none;
-  color: var(--bg);
-  background-color: var(--a);
+  color: var(--background);
+  background-color: var(--link);
   cursor: pointer;
   vertical-align: bottom;
   display: inline-block;
@@ -92,7 +84,7 @@ button {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 0.56rem;
-  border-color: var(--btnbghvr);
+  border-color: var(--button-background-hover);
   transition: border-color 0.5s;
 }
 
@@ -103,17 +95,17 @@ button:visited {
 button:hover,
 button:visited:hover {
   color: var(--fg);
-  background-color: var(--btnbghvr);
-  border: 1px solid var(--btnbg);
+  background-color: var(--button-background-hover);
+  border: 1px solid var(--button-background);
 }
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto var(--btnbghvr)
+  outline: 4px auto var(--button-background-hover)
 }
 
 a {
-  color: var(--a);
+  color: var(--link);
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;
@@ -122,18 +114,18 @@ a {
 
 a:hover,
 a:visited:hover {
-  color: var(--ahvr);
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
 a:visited,
 .link:visited {
-  color: var(--aatv);
+  color: var(--link-active);
 }
 
 a:active,
 a:visited:active {
-  color: var(--aatv);
+  color: var(--link-active);
   outline: none;
   background-color: transparent;
 }
@@ -151,27 +143,36 @@ img {
   border-radius: 5px;
 }
 
-@media (max-width: 576px) {
+.drawer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.drawer li {
+  padding: 0.7rem;
+}
+
+@media (max-width: 36.5rem) {
   body {
     max-width: 30rem;
   }
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 36.51rem) and (max-width: 48.5rem) {
   body {
-    max-width: 42rem;
+    max-width: 35rem;
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 48.51rem) and (max-width: 62.51rem) {
   body {
-    max-width: 56rem;
+    max-width: 47rem;
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 62.5rem) {
   body {
-    max-width: 75rem;
+    max-width: 61rem;
   }
 }
 
@@ -212,13 +213,4 @@ img {
   100% {
     color: #4c5561;
   }
-}
-
-.drawer {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: 0.4s;
-}
-
-.drawer li {
-  padding: 0.7rem;
 }

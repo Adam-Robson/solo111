@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function TitleCard() {
   return (
    <div className="max-w-2xl absolute left-1/2 transform -translate-x-1/2 text-center">
