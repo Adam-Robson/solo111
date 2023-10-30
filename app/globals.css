@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  background-image: url('/images/circlesun.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-clip: border-box;
+}
+
+.titlewrap>.title {
+  animation-name: revolution;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.175, 0.775, 0.25, 1.275);
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes revolution {
+  0% {
+    color: #fdf1eb;
+  }
+
+  15% {
+    color: #817f8f;
+  }
+
+  30% {
+    color: #617773;
+  }
+
+  60% {
+    color: #b3bfab;
+  }
+
+  80% {
+    color: #7d8f9f;
+  }
+
+  100% {
+    color: #434b54;
+  }
+}
