@@ -1,10 +1,18 @@
 import Icons from '@/components/Icons'
 import TitleCard from '@/components/TitleCard'
-
 export default function Home() {
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main
+      className="flex min-h-screen flex-col items-center justify-between"
+       style={{
+        backgroundImage: "url('/images/sun.png')",
+        backgroundPosition: 'center',
+        backgroundSize: 'contain',
+        backgroundClip: 'border-box',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <TitleCard />
       </div>

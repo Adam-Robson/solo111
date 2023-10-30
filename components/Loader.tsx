@@ -5,7 +5,7 @@ export default function Loader() {
   return (
     <div className="container w-screen mx-auto flex justify-center items-center">
       <Image
-        src={`/gif/loading.gif`}
+        src={`/gif/loader.gif`}
         width={`350`}
         height={`350`}
         alt={`a gif to display while page loads`}
