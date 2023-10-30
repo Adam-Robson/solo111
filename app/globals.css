@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground: hsla(15, 3%, 26%, 1);
+  --background-start:hsla(213, 81%, 92%, 1);
+  --background-end: hsla(215, 28%, 77%, 1);
+
+  --button-background: hsla(198, 24%, 22%, 1);
+  --button-background-hover: hsla(194, 17%, 60%, 1);
+
+  --link: hsla(331, 11%, 34%, 1);
+  --link-hover: hsla(349, 16%, 80%, 1);
+  --link-active: hsla(345, 2%, 42%, 1);
+
+  --alternate: hsla(210, 35%, 15%, 1);
+  --highlight: hsla(188, 12%, 60%, 1);
+  --error: hsla(353, 20%, 33%, 1);
+
+  color-scheme: light dark;
+
+  line-height: 1.2;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: hsla(215, 28%, 77%, 1);
+    --background-start: hsla(15, 3%, 26%, 1);
+    --background-end: hsla(210, 35%, 15%, 1);
+
+    --button-background: hsla(194, 17%, 60%, 1);
+    --button-background-hover: hsla(198, 24%, 22%, 1);
+
+    --link: hsla(349, 16%, 80%, 1);
+    --link-hover: hsla(331, 11%, 34%, 1);
+    --link-active: hsla(345, 2%, 42%, 1);
+
+    --alternate:hsla(215, 28%, 77%, 1);
+    --highlight: hsla(188, 12%, 60%, 1);
+    --error: hsla(353, 20%, 33%, 1);
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: linear-gradient(to bottom,
+        transparent,
+        var(--background-end)
+        var(--background-start));
+  margin: 0 0 1.3rem 0;
+  padding: 1.3rem;
+  display: flex;
+  place-items: center;
+  min-width: 20rem;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--background);
+  background-color: var(--link);
+  cursor: pointer;
+  vertical-align: bottom;
+  display: inline-block;
+  padding: 0.46rem 0.92rem;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 0.56rem;
+  border-color: var(--button-background-hover);
+  transition: border-color 0.5s;
+}
+
+button:visited {
+  transition: all 180ms ease-in-out;
+}
+
+button:hover,
+button:visited:hover {
+  color: var(--fg);
+  background-color: var(--button-background-hover);
+  border: 1px solid var(--button-background);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--button-background-hover)
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+a:hover,
+a:visited:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+a:visited,
+.link:visited {
+  color: var(--link-active);
+}
+
+a:active,
+a:visited:active {
+  color: var(--link-active);
+  outline: none;
+  background-color: transparent;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.drawer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.drawer li {
+  padding: 0.7rem;
+}
+
+@media (max-width: 36.5rem) {
+  body {
+    max-width: 30rem;
+  }
+}
+
+@media (min-width: 36.51rem) and (max-width: 48.5rem) {
+  body {
+    max-width: 35rem;
+  }
+}
+
+@media (min-width: 48.51rem) and (max-width: 62.51rem) {
+  body {
+    max-width: 47rem;
+  }
+}
+
+@media (min-width: 62.5rem) {
+  body {
+    max-width: 61rem;
+  }
+}
+
+.titlewrap>.title {
+  animation-name: revolution;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.645,
+      0.045,
+      0.355,
+      1);
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+@keyframes revolution {
+  0% {
+    color: #627581;
+  }
+
+  12% {
+    color: #5f5d6b;
+  }
+
+  24% {
+    color: #5e7076;
+  }
+
+  48% {
+    color: #495e77;
+  }
+
+  72% {
+    color: #4a6073;
+  }
+
+  100% {
+    color: #4c5561;
+  }
+}
