@@ -4,10 +4,15 @@ import TitleCard from '@/components/TitleCard'
 export default function Home() {
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 z-20" style={{
+      backgroundImage: "url('/images/circlesun.png')",
+      backgroundPosition: 'center',
+      backgroundSize: 'contain',
+      backgroundClip: 'border-box',
+      backgroundAttachment: 'fixed',
+      backgroundRepeat: 'no-repeat'
+    }}>
         <TitleCard />
-      </div>
       <div className="absolute bottom-6 left-3/4">
         <Icons />
       </div>

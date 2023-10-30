@@ -2,10 +2,177 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: hsla(212, 60%, 95%, 1);
+  --fg: hsla(15, 3%, 26%, 1);
+  --btnbg: hsla(198, 24%, 22%, 1);
+  --btnbghvr: hsla(194, 17%, 60%, 1);
+  --a: hsla(331, 11%, 34%, 1);
+  --ahvr: hsla(349, 16%, 80%, 1);
+  --aatv: hsla(345, 2%, 42%, 1);
+
+  --c: hsla(46, 27%, 65%, 1);
+  --d: hsla(226, 13%, 74%, 1);
+  --e: hsla(45, 6%, 62%, 1);
+  --f: hsla(189, 4%, 63%, 1);
+  --g: hsla(194, 17%, 60%, 1);
+  --h: hsla(6, 20%, 64%, 1);
+  --i: hsla(48, 20%, 53%, 1);
+  --k: hsla(353, 20%, 33%, 1);
+  --o: hsla(210, 35%, 15%, 1);
+  color-scheme: light dark;
+
+  line-height: 1.2;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsla(15, 3%, 26%, 1);
+    --fg: hsla(212, 60%, 95%, 1);
+    --btnbg: hsla(194, 17%, 60%, 1);
+    --btnbghvr: hsla(198, 24%, 22%, 1);
+    --a: hsla(349, 16%, 80%, 1);
+    --ahvr: hsla(331, 11%, 34%, 1);
+    --aatv: hsla(345, 2%, 42%, 1);
+
+    --c: hsla(198, 24%, 22%, 1);
+    --e: hsla(353, 20%, 33%, 1);
+    --g: hsla(48, 20%, 53%, 1);
+    --h: hsla(6, 20%, 64%, 1);
+    --j: hsla(189, 4%, 63%, 1);
+    --k: hsla(45, 6%, 62%, 1);
+    --l: hsla(226, 13%, 74%, 1);
+    --m: hsla(46, 27%, 65%, 1);
+    --o: hsla(210, 35%, 15%, 1);
+  }
+}
+
+html {
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  
+  margin: 0 0 1.3rem 0;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  min-width: 20rem;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--bg);
+  background-color: var(--a);
+  cursor: pointer;
+  vertical-align: bottom;
+  display: inline-block;
+  padding: 0.46rem 0.92rem;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 0.56rem;
+  border-color: var(--btnbghvr);
+  transition: border-color 0.5s;
+}
+
+button:visited {
+  transition: all 180ms ease-in-out;
+}
+
+button:hover,
+button:visited:hover {
+  color: var(--fg);
+  background-color: var(--btnbghvr);
+  border: 1px solid var(--btnbg);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--btnbghvr)
+}
+
+a {
+  color: var(--a);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+a:hover,
+a:visited:hover {
+  color: var(--ahvr);
+  text-decoration: underline;
+}
+
+a:visited,
+.link:visited {
+  color: var(--aatv);
+}
+
+a:active,
+a:visited:active {
+  color: var(--aatv);
+  outline: none;
+  background-color: transparent;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+  body {
+    max-width: 30rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  body {
+    max-width: 42rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  body {
+    max-width: 56rem;
+  }
+}
+
+@media (min-width: 993px) {
+  body {
+    max-width: 75rem;
+  }
 }
 
 .titlewrap>.title {
@@ -45,4 +212,13 @@ body {
   100% {
     color: #4c5561;
   }
+}
+
+.drawer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.drawer li {
+  padding: 0.7rem;
 }
