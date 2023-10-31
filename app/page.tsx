@@ -1,4 +1,4 @@
-import Icons from '@/components/Icons'
+import SocialIconLinks from '@/components/SocialIconLinks'
 import TitleCard from '@/components/TitleCard'
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <TitleCard />
       </div>
       <div className="absolute bottom-6 left-3/4">
-        <Icons />
+        <SocialIconLinks />
       </div>
     </main>
   )
