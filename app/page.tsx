@@ -3,7 +3,7 @@ import TitleCard from '@/components/TitleCard'
 export default function Home() {
   return (
     <main
-      className="flex min-h-screen max-w-3xl w-96 mx-auto"
+      className="flex min-h-screen max-w-3xl mx-auto"
        style={{
         backgroundImage: "url('/images/sun.png')",
         backgroundPosition: 'center',

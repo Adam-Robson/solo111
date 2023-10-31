@@ -8,15 +8,14 @@
 
 :root {
   --foreground: hsla(15, 3%, 26%, 1);
-  --background-start: hsla(213, 81%, 92%, 1);
-  --background-end: hsla(215, 28%, 77%, 1);
+  --background-start: hsla(215, 28%, 77%, 1);
 
   --button-background: hsla(198, 24%, 22%, 1);
   --button-background-hover: hsla(194, 17%, 60%, 1);
 
-  --link: hsla(331, 11%, 34%, 1);
-  --link-hover: hsla(349, 16%, 80%, 1);
-  --link-active: hsla(345, 2%, 42%, 1);
+  --link: hsla(215, 18%, 42%, 1);
+  --link-hover: rgb(137, 98, 106);
+  --link-active: hsl(214, 29%, 59%);
 
   --alternate: hsla(210, 35%, 15%, 1);
   --highlight: hsla(188, 12%, 60%, 1);
@@ -38,27 +37,24 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground: hsla(215, 28%, 77%, 1);
-    --background-start: hsla(15, 3%, 26%, 1);
-    --background-end: hsla(210, 35%, 15%, 1);
+    --background: hsla(15, 3%, 26%, 1);
 
     --button-background: hsla(194, 17%, 60%, 1);
     --button-background-hover: hsla(198, 24%, 22%, 1);
 
-    --link: hsla(349, 16%, 80%, 1);
-    --link-hover: hsla(331, 11%, 34%, 1);
-    --link-active: hsla(345, 2%, 42%, 1);
+    --link: rgb(115, 143, 162);
+    --link-hover: hsla(349, 16%, 80%, 1);
+    --link-active: rgb(154, 195, 208);
 
-    --alternate: hsla(215, 28%, 77%, 1);
-    --highlight: hsla(188, 12%, 60%, 1);
-    --error: hsla(353, 20%, 33%, 1);
+    --alternate: hsla(193, 40%, 56%, 1);
+    --highlight: hsla(179, 24%, 54%, 1);
+    --error: hsla(352, 20%, 39%, 1);
   }
 }
 
 body {
   color: var(--foreground);
-  background: linear-gradient(to bottom,
-      transparent,
-      var(--background-end) var(--background-start));
+  background-color: var(--background);
   margin: 0 0 1.3rem 0;
   padding: 1.3rem;
   display: flex;
@@ -164,30 +160,6 @@ img {
   }
 }
 
-@media (max-width: 36.5rem) {
-  body {
-    max-width: 30rem;
-  }
-}
-
-@media (min-width: 36.51rem) and (max-width: 48.5rem) {
-  body {
-    max-width: 35rem;
-  }
-}
-
-@media (min-width: 48.51rem) and (max-width: 62.51rem) {
-  body {
-    max-width: 47rem;
-  }
-}
-
-@media (min-width: 62.5rem) {
-  body {
-    max-width: 61rem;
-  }
-}
-
 .titlewrap>.title {
   animation-name: revolution;
   animation-duration: 20s;
@@ -224,5 +196,29 @@ img {
 
   100% {
     color: #4c5561;
+  }
+}
+
+@media (max-width: 36.5rem) {
+  body {
+    max-width: 30rem;
+  }
+}
+
+@media (min-width: 36.51rem) and (max-width: 48.5rem) {
+  body {
+    max-width: 35rem;
+  }
+}
+
+@media (min-width: 48.51rem) and (max-width: 62.51rem) {
+  body {
+    max-width: 47rem;
+  }
+}
+
+@media (min-width: 62.5rem) {
+  body {
+    max-width: 61rem;
   }
 }

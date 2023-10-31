@@ -20,23 +20,23 @@ export default function Navigation() {
         {
           isOpen && (
             <div className={clsx('drawer', isOpen && 'onscreen')}>
-            <ul className="list-none p-0 my-2 mx-0">
-                <li className="cursor-pointer p-1">
+            <ul className="list-none my-2">
+                <li className="cursor-pointer p-1 my-4">
                   <Link className="drop-shadow-md tracking-tighter font-normal text-lg md:text-xl subpixel-antialiased" href={`/`}>
                     Home
                   </Link>
                 </li>
-                <li className="cursor-pointer p-1">
+                <li className="cursor-pointer p-1 my-4">
                   <Link className="drop-shadow-md tracking-tighter font-normal text-lg md:text-xl subpixel-antialiased" href={`/projects`}>
                     Projects
                   </Link>
                 </li>
-                <li className="cursor-pointer p-1">
+                <li className="cursor-pointer p-1 my-4">
                   <Link className="drop-shadow-md tracking-tighter font-normal text-lg md:text-xl subpixel-antialiased" href={`/resume`}>
                     Resume
                   </Link>
                 </li>
-                <li className="cursor-pointer p-1">
+                <li className="cursor-pointer p-1 my-4">
                   <Link className="drop-shadow-md tracking-tighter font-normal text-lg md:text-xl subpixel-antialiased" href={`/bio`}>
                     Bio
                   </Link>
