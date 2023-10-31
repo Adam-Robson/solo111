@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { PiListDuotone } from 'react-icons/pi'
+import clsx from 'clsx'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,15 +12,14 @@ export default function Navigation() {
   }
 
   return (
-    <div className="max-h-lg h-11/12 my-auto mx-10 flex flex-col justify-between items-center">
+    <div className="">
       <div className="relative">
-
-      <button className="cursor-pointer" onClick={toggleNavDrawer}>
+      <button className="cursor-pointer z-10" onClick={toggleNavDrawer}>
         <PiListDuotone />
       </button>
-      {
-        isOpen && (
-          <div className="drawer fixed top-0 left-[-250px] w-[250px] h-full p-0 my-2 mx-0">
+        {
+          isOpen && (
+            <div className={clsx('drawer', isOpen && 'onscreen')}>
             <ul className="list-none p-0 my-2 mx-0">
                 <li className="cursor-pointer p-1">
                   <Link className="drop-shadow-md tracking-tighter font-normal text-lg md:text-xl subpixel-antialiased" href={`/`}>

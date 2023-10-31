@@ -3,13 +3,12 @@ import TitleCard from '@/components/TitleCard'
 export default function Home() {
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-between"
+      className="flex min-h-screen max-w-3xl w-96 mx-auto"
        style={{
         backgroundImage: "url('/images/sun.png')",
         backgroundPosition: 'center',
         backgroundSize: 'contain',
         backgroundClip: 'border-box',
-        backgroundAttachment: 'fixed',
         backgroundRepeat: 'no-repeat'
       }}
     >

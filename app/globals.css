@@ -8,7 +8,7 @@
 
 :root {
   --foreground: hsla(15, 3%, 26%, 1);
-  --background-start:hsla(213, 81%, 92%, 1);
+  --background-start: hsla(213, 81%, 92%, 1);
   --background-end: hsla(215, 28%, 77%, 1);
 
   --button-background: hsla(198, 24%, 22%, 1);
@@ -48,7 +48,7 @@
     --link-hover: hsla(331, 11%, 34%, 1);
     --link-active: hsla(345, 2%, 42%, 1);
 
-    --alternate:hsla(215, 28%, 77%, 1);
+    --alternate: hsla(215, 28%, 77%, 1);
     --highlight: hsla(188, 12%, 60%, 1);
     --error: hsla(353, 20%, 33%, 1);
   }
@@ -57,9 +57,8 @@
 body {
   color: var(--foreground);
   background: linear-gradient(to bottom,
-        transparent,
-        var(--background-end)
-        var(--background-start));
+      transparent,
+      var(--background-end) var(--background-start));
   margin: 0 0 1.3rem 0;
   padding: 1.3rem;
   display: flex;
@@ -138,18 +137,31 @@ ol {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
   margin: 0 auto;
   border-radius: 5px;
 }
 
 .drawer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: 0.4s;
+  position: absolute;
+  top: 0;
+  left: 4.76rem;
+  width: 15rem;
+  height: 100%;
+  background-color: var(--background);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  animation: 4s linear 0s infinite alternate nav-drawer;
 }
 
-.drawer li {
-  padding: 0.7rem;
+@keyframes nav-drawer {
+  from {
+    transform: translateX(-11rem);
+  }
+
+  to {
+    transform: translateX(0rem);
+  }
 }
 
 @media (max-width: 36.5rem) {
