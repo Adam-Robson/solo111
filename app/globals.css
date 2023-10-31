@@ -11,11 +11,11 @@
   --background-start: hsla(215, 28%, 77%, 1);
 
   --button-background: hsla(198, 24%, 22%, 1);
-  --button-background-hover: hsla(194, 17%, 60%, 1);
+  --button-background-hover: hsla(349, 16%, 80%, 1);
 
   --link: hsla(215, 18%, 42%, 1);
   --link-hover: rgb(137, 98, 106);
-  --link-active: hsl(214, 29%, 59%);
+  --link-active: hsla(351, 14%, 62%, 1);
 
   --alternate: hsla(210, 35%, 15%, 1);
   --highlight: hsla(188, 12%, 60%, 1);
@@ -39,11 +39,11 @@
     --foreground: hsla(215, 28%, 77%, 1);
     --background: hsla(15, 3%, 26%, 1);
 
-    --button-background: hsla(194, 17%, 60%, 1);
+    --button-background: hsla(349, 16%, 80%, 1);
     --button-background-hover: hsla(198, 24%, 22%, 1);
 
     --link: rgb(115, 143, 162);
-    --link-hover: hsla(349, 16%, 80%, 1);
+    --link-hover: hsl(351, 14%, 62%);
     --link-active: rgb(154, 195, 208);
 
     --alternate: hsla(193, 40%, 56%, 1);
@@ -53,6 +53,12 @@
 }
 
 body {
+  background-image: url('/images/sun.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-clip: border-box;
+
   color: var(--foreground);
   background-color: var(--background);
   margin: 0 0 1.3rem 0;
@@ -66,60 +72,41 @@ body {
 }
 
 button {
-  -webkit-appearance: none;
-  appearance: none;
   color: var(--background);
   background-color: var(--link);
   cursor: pointer;
-  vertical-align: bottom;
-  display: inline-block;
-  padding: 0.46rem 0.92rem;
-  font-family: inherit;
+  padding: 0.36rem 0.82rem;
   text-align: center;
   text-decoration: none;
   border: 1px solid transparent;
-  border-radius: 0.56rem;
+  border-radius: 0.32rem;
   border-color: var(--button-background-hover);
   transition: border-color 0.5s;
+  z-index: 1;
 }
 
-button:visited {
-  transition: all 180ms ease-in-out;
-}
-
-button:hover,
-button:visited:hover {
-  color: var(--fg);
+button:hover {
+  color: var(--foreground);
   background-color: var(--button-background-hover);
   border: 1px solid var(--button-background);
-}
-
-button:focus,
-button:focus-visible {
+  transition: all 180ms ease-in-out;
   outline: 4px auto var(--button-background-hover)
 }
 
 a {
   color: var(--link);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
   transition: all 250ms ease-in-out;
 }
 
-a:hover,
-a:visited:hover {
+a:hover {
   color: var(--link-hover);
   text-decoration: underline;
 }
 
-a:visited,
-.link:visited {
-  color: var(--link-active);
-}
-
-a:active,
-a:visited:active {
+a:active {
   color: var(--link-active);
   outline: none;
   background-color: transparent;
@@ -137,29 +124,6 @@ img {
   border-radius: 5px;
 }
 
-.drawer {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 0;
-  left: 4.76rem;
-  width: 15rem;
-  height: 100%;
-  background-color: var(--background);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: left 0.3s ease;
-  animation: 4s linear 0s infinite alternate nav-drawer;
-}
-
-@keyframes nav-drawer {
-  from {
-    transform: translateX(-11rem);
-  }
-
-  to {
-    transform: translateX(0rem);
-  }
-}
-
 .titlewrap>.title {
   animation-name: revolution;
   animation-duration: 20s;
@@ -173,17 +137,23 @@ img {
   animation-play-state: running;
 }
 
+.case,
+.drawer {
+  z-index: 0;
+}
+
+
 @keyframes revolution {
   0% {
-    color: #627581;
+    color: #53909d;
   }
 
   12% {
-    color: #5f5d6b;
+    color: #9db8c5;
   }
 
   24% {
-    color: #5e7076;
+    color: #618a98;
   }
 
   48% {
@@ -191,7 +161,7 @@ img {
   }
 
   72% {
-    color: #4a6073;
+    color: #799ca0;
   }
 
   100% {
