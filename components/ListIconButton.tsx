@@ -7,7 +7,6 @@ export default function ListIconButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleIsOpen() {
-    console.log('WHAT THE FUCK IS THIS BUTTON DOING')
     setIsOpen(!isOpen);
   }
 

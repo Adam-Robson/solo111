@@ -137,11 +137,6 @@ img {
   animation-play-state: running;
 }
 
-.case,
-.drawer {
-  z-index: 0;
-}
-
 
 @keyframes revolution {
   0% {
