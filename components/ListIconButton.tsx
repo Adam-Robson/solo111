@@ -14,11 +14,12 @@ export default function ListIconButton() {
   return (
     <>
       <button
+        className="absolute top-8 left-4"
         onClick={toggleIsOpen}
       >
         <PiListDuotone />
       </button>
-      <div className={`drawer absolute top-8 left-4 shadow-sm h-full w-56 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-1000 ease-in-out`}>
+      <div className={`drawer flex flex-col items-center justify-around absolute top-8 left-4 shadow-sm h-full w-56 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-1000 ease-in-out`}>
           <Link href="/projects">Projects</Link>
           <Link href="/resume">Resume</Link>
           <Link href="/bio">Bio</Link>
