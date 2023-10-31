@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Cairo_Play } from 'next/font/google'
 import Loader from '@/components/Loader'
 import Navigation from '@/components/Navigation'
+
 import './globals.css'
 
 const cairo = Cairo_Play({ subsets: ['latin'] })
@@ -19,8 +20,8 @@ export default function RootLayout({
   }) {
   return (
     <html lang="en">
-      <Navigation />
       <body className={cairo.className}>
+        <Navigation />
         <Suspense fallback={<Loader />}>
           {children}
         </Suspense>

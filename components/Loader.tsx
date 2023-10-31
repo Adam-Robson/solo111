@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Loader() {
   return (
-    <div className="container w-screen mx-auto flex justify-center items-center">
+    <div className="container">
       <Image
         src={`/gif/loader.gif`}
         width={`350`}
