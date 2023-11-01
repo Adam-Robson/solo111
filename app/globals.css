@@ -7,19 +7,21 @@
 }
 
 :root {
-  --foreground: hsla(15, 3%, 26%, 1);
-  --background-start: hsla(215, 28%, 77%, 1);
+  --black: #0d1f2dff;
+  --alt: #2b3d46ff;
 
-  --button-background: hsla(198, 24%, 22%, 1);
-  --button-background-hover: hsla(349, 16%, 80%, 1);
+  --foreground: #373737ff;
+  --background: #d8e2dcff;
 
-  --link: hsla(215, 18%, 42%, 1);
-  --link-hover: rgb(137, 98, 106);
-  --link-active: hsla(351, 14%, 62%, 1);
+  --button: #c7dfc5ff;
+  --button-hover: #8da2a5ff;
 
-  --alternate: hsla(210, 35%, 15%, 1);
-  --highlight: hsla(188, 12%, 60%, 1);
-  --error: hsla(353, 20%, 33%, 1);
+  --link: #9d8189ff;
+  --link-hover: #d4c4c7ff;
+  --link-active: #baa7b0ff;
+
+  --alternate: #9ea3b0ff;
+  --error: #c44900ff;
 
   color-scheme: light dark;
 
@@ -36,44 +38,60 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: hsla(215, 28%, 77%, 1);
-    --background: hsla(15, 3%, 26%, 1);
+    --black: #0d1f2dff;
+    --alt: #2b3d46ff;
 
-    --button-background: hsla(349, 16%, 80%, 1);
-    --button-background-hover: hsla(198, 24%, 22%, 1);
+    --foreground: #d8e2dcff;
+    --background: #373737ff;
 
-    --link: rgb(115, 143, 162);
-    --link-hover: hsl(351, 14%, 62%);
-    --link-active: rgb(154, 195, 208);
+    --button: #8da2a5ff;
+    --button-hover: #c7dfc5ff;
 
-    --alternate: hsla(193, 40%, 56%, 1);
-    --highlight: hsla(179, 24%, 54%, 1);
-    --error: hsla(352, 20%, 39%, 1);
+    --link: #d4c4c7ff;
+    --link-hover: #baa7b0ff;
+    --link-active: #9d8189ff;
+
+    --alternate: #9ea3b0ff;
+    --error: #c44900ff;
   }
 }
 
+html,
 body {
-  background-image: url('/images/sun.png');
-  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#root:before {
+  content: "";
+  background-image: url(/images/sun.png);
+  background-size: cover;
+  background-repeat: no-peat;
   background-position: center;
-  background-size: contain;
-  background-clip: border-box;
 
   color: var(--foreground);
   background-color: var(--background);
-  margin: 0 0 1.3rem 0;
-  padding: 1.3rem;
-  display: flex;
-  place-items: center;
-  min-width: 20rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
   width: 100%;
-  min-height: 100vh;
-  text-align: center
+  height: 100%;
+  opacity: 0.6;
+  z-index: -1;
+
 }
 
 button {
   color: var(--background);
-  background-color: var(--link);
+  background-color: var(--button);
   cursor: pointer;
   padding: 0.36rem 0.82rem;
   text-align: center;
@@ -86,11 +104,10 @@ button {
 }
 
 button:hover {
-  color: var(--foreground);
-  background-color: var(--button-background-hover);
-  border: 1px solid var(--button-background);
+  background-color: var(--button-hover);
+  border: 1px solid var(--button);
   transition: all 180ms ease-in-out;
-  outline: 4px auto var(--button-background-hover)
+  outline: 4px auto var(--button-hover)
 }
 
 a {
@@ -140,50 +157,26 @@ img {
 
 @keyframes revolution {
   0% {
-    color: #53909d;
+    color: #9da3a4ff;
   }
 
   12% {
-    color: #9db8c5;
+    color: #a4a198ff;
   }
 
   24% {
-    color: #618a98;
+    color: #b4b8c5ff;
   }
 
   48% {
-    color: #495e77;
+    color: #8d818cff;
   }
 
   72% {
-    color: #799ca0;
+    color: #88a2aaff;
   }
 
   100% {
-    color: #4c5561;
-  }
-}
-
-@media (max-width: 36.5rem) {
-  body {
-    max-width: 30rem;
-  }
-}
-
-@media (min-width: 36.51rem) and (max-width: 48.5rem) {
-  body {
-    max-width: 35rem;
-  }
-}
-
-@media (min-width: 48.51rem) and (max-width: 62.51rem) {
-  body {
-    max-width: 47rem;
-  }
-}
-
-@media (min-width: 62.5rem) {
-  body {
-    max-width: 61rem;
+    color: #d5c5c8ff;
   }
 }

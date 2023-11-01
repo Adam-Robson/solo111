@@ -21,10 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cairo.className}>
-        <Navigation />
-        <Suspense fallback={<Loader />}>
-          {children}
-        </Suspense>
+        <div id="root">
+          <Navigation />
+          <Suspense fallback={<Loader />}>
+            {children}
+          </Suspense>
+        </div>
       </body>
     </html>
   )
