@@ -1,7 +1,10 @@
 import React, { Suspense } from 'react'
 import type { Metadata } from 'next'
+import { Cairo_Play } from 'next/font/google'
 import Loader from '@/components/Loader'
 import Navigation from '@/components/Navigation'
+
+const cairo = Cairo_Play({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Adam Robson | Bio',
@@ -15,11 +18,10 @@ export default function BioLayout({
   }) {
   return (
     <div
-      className="min-h-screen w-full mx-auto"
+      className={cairo.className}
     >
       <div>
         <Navigation />
-        <h1 className="text-center tracking-tighter font-light w-full subpixel-antialiased">bio</h1>
         <Suspense fallback={<Loader />}>
           {children}
         </Suspense>
