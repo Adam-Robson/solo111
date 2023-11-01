@@ -24,7 +24,7 @@ export const projects: ProjectTypes[] = [
   },
   {
     id: 4,
-    title: "Buddystock Annual Music Festival",
+    title: "Buddystock",
     description: `Buddystock is an annual music festival held in Mosier, Oregon. In 2023, the festival was held from June 2nd-June 4th. This project gave me a chance to build a real world product for a client on a real-world deadline. The project effectively conveyed practical details such as event dates, venue guidelines, and camping options, and served as a central hub for providing essential information to anybody attending the festival.  A big learning aspect for this project was integrating cPanel and HostGator for deployment.`,
     githubLink: "https://github.com/Buddystock/buddy",
     liveLink: "https://www.buddystockviii.com",

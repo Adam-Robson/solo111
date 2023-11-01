@@ -5,7 +5,7 @@ import { ProjectTypes } from '@/lib/types'
 
 export default function ProjectList() {
   return (
-    <div className="project-list">
+    <div className="flex flex-col">
       {projects.map((project: ProjectTypes) => (
         <ProjectCard key={project.id} project={project} />
       ))}

@@ -9,24 +9,18 @@
 :root {
   --black: #0d1f2dff;
   --alt: #2b3d46ff;
-
   --foreground: #373737ff;
   --background: #d8e2dcff;
-
   --button: #c7dfc5ff;
   --button-hover: #8da2a5ff;
-
   --link: #9d8189ff;
   --link-hover: #d4c4c7ff;
   --link-active: #baa7b0ff;
-
   --alternate: #9ea3b0ff;
   --error: #c44900ff;
 
   color-scheme: light dark;
-
   line-height: 1.2;
-
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,22 +29,17 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
     --black: #0d1f2dff;
     --alt: #2b3d46ff;
-
     --foreground: #d8e2dcff;
-    --background: #373737ff;
-
+    --background: #3c3d40ff;
     --button: #8da2a5ff;
     --button-hover: #c7dfc5ff;
-
     --link: #d4c4c7ff;
     --link-hover: #baa7b0ff;
     --link-active: #9d8189ff;
-
     --alternate: #9ea3b0ff;
     --error: #c44900ff;
   }
@@ -60,33 +49,8 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-}
-
-#root {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-#root:before {
-  content: "";
-  background-image: url(/images/sun.png);
-  background-size: cover;
-  background-repeat: no-peat;
-  background-position: center;
-
-  color: var(--foreground);
   background-color: var(--background);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  z-index: -1;
-
+  color: var(--foreground);
 }
 
 button {
@@ -156,27 +120,24 @@ img {
 
 
 @keyframes revolution {
-  0% {
-    color: #9da3a4ff;
-  }
 
-  12% {
+  0% {
     color: #a4a198ff;
   }
 
-  24% {
-    color: #b4b8c5ff;
+  25% {
+    color: var(--alternate);
   }
 
-  48% {
+  50% {
     color: #8d818cff;
   }
 
-  72% {
+  75% {
     color: #88a2aaff;
   }
 
   100% {
-    color: #d5c5c8ff;
+    color: #88a3afff;
   }
 }
