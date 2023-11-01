@@ -11,9 +11,9 @@
   --alt: #2b3d46ff;
   --foreground: #383838ff;
   --background: #d8e2dcff;
-  --button: #b6bfbcff;
+  --button: #6d7c77ff;
   --button-hover: #8da2a5ff;
-  --link: #9d8189ff;
+  --link: #67565bff;
   --link-hover: #8d898d;
   --link-active: #baa7b0ff;
   --alternate: #9ea3b0ff;
@@ -31,18 +31,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --black: #0d1f2dff;
+    --white: #ffffffff;
+    --black: #00000000;
     --alt: #2b3d46ff;
     --foreground: #d8e2dcff;
     --background: #3c3d40ff;
-    --button: #b8c5c7ff;
-    --button-hover: #c7dfc5ff;
-    --link: #d4c4c7ff;
-    --link-hover: #baa7b0ff;
+    --button: #a6c0c5ff;
+    --button-hover: #d1eeceff;
+    --link: #eafcfdff;
+    --link-hover: #ead4ceff;
     --link-active: #c0c4ceff;
-    --alternate: #9ea3b0ff;
+    --alternate: #c3cde7ff;
     --error: #c44900ff;
   }
+
 }
 
 html,
@@ -63,6 +65,7 @@ body {
   top: 0;
   left: 0;
   opacity: 0.6;
+  z-index: 0;
 }
 
 button {
@@ -74,7 +77,7 @@ button {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 0.32rem;
-  border-color: var(--button-background-hover);
+  border-color: var(--white);
   transition: border-color 0.5s;
   z-index: 1;
 }
@@ -83,7 +86,6 @@ button:hover {
   background-color: var(--button-hover);
   border: 1px solid var(--button);
   transition: all 180ms ease-in-out;
-  outline: 4px auto var(--button-hover)
 }
 
 a {
@@ -117,6 +119,10 @@ img {
   border-radius: 5px;
 }
 
+.error {
+  color: var(--error);
+}
+
 .titlewrap>.title {
   animation-name: revolution;
   animation-duration: 20s;
@@ -134,22 +140,22 @@ img {
 @keyframes revolution {
 
   0% {
-    color: #a4a198ff;
+    color: #9d9683ff;
   }
 
   25% {
-    color: #989ba4ff;
+    color: #707687ff;
   }
 
   50% {
-    color: #a99a97ff;
+    color: #967f7aff;
   }
 
   75% {
-    color: #9e9e99ff;
+    color: #7f7f6bff;
   }
 
   100% {
-    color: #a8b5b7ff;
+    color: #5a8389ff;
   }
 }

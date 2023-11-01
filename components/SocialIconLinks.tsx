@@ -8,12 +8,12 @@ import {
 
 export default function SocialIconLinks() {
   return (
-    <ul className="max-w-xs w-40 md:max-w-md md:w-48 flex justify-between items-baseline">
+    <ul className="max-w-sm w-48 md:max-w-md md:w-52 flex justify-between items-baseline">
       <li>
         <Link href="https://linkedin.com/in/adamrayrobson">
           <PiLinkedinLogoLight
             data-testid="icon-links"
-            className="h-6 md:h-8 lg:h-10 w-6 md:w-8 lg:w-10"
+            className="h-6 md:h-8 lg:h-10 w-6 md:w-10 lg:w-12"
           />
         </Link>
       </li>
@@ -21,7 +21,7 @@ export default function SocialIconLinks() {
         <Link href="https://github.com/Adam-Robson">
           <PiGithubLogoLight
             data-testid="icon-links"
-            className="h-6 md:h-8 lg:h-10 w-6 md:w-8 lg:w-10"
+            className="h-6 md:h-8 lg:h-10 w-6 md:w-10 lg:w-12"
           />
         </Link>
       </li>
@@ -29,7 +29,7 @@ export default function SocialIconLinks() {
         <Link href="https://spoti.fi/3QNqMuE">
           <PiSpotifyLogoLight
             data-testid="icon-links"
-            className="h-6 md:h-8 lg:h-10 w-6 md:w-8 lg:w-10"
+            className="h-6 md:h-8 lg:h-10 w-6 md:w-10 lg:w-12"
           />
         </Link>
       </li>
