@@ -9,12 +9,12 @@
 :root {
   --black: #0d1f2dff;
   --alt: #2b3d46ff;
-  --foreground: #373737ff;
+  --foreground: #383838ff;
   --background: #d8e2dcff;
-  --button: #c7dfc5ff;
+  --button: #b6bfbcff;
   --button-hover: #8da2a5ff;
   --link: #9d8189ff;
-  --link-hover: #d4c4c7ff;
+  --link-hover: #8d898d;
   --link-active: #baa7b0ff;
   --alternate: #9ea3b0ff;
   --error: #c44900ff;
@@ -35,11 +35,11 @@
     --alt: #2b3d46ff;
     --foreground: #d8e2dcff;
     --background: #3c3d40ff;
-    --button: #8da2a5ff;
+    --button: #b8c5c7ff;
     --button-hover: #c7dfc5ff;
     --link: #d4c4c7ff;
     --link-hover: #baa7b0ff;
-    --link-active: #9d8189ff;
+    --link-active: #c0c4ceff;
     --alternate: #9ea3b0ff;
     --error: #c44900ff;
   }
@@ -51,6 +51,18 @@ body {
   height: 100vh;
   background-color: var(--background);
   color: var(--foreground);
+}
+
+.full-size-background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/images/sun.png');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
 }
 
 button {
@@ -126,18 +138,18 @@ img {
   }
 
   25% {
-    color: var(--alternate);
+    color: #989ba4ff;
   }
 
   50% {
-    color: #8d818cff;
+    color: #a99a97ff;
   }
 
   75% {
-    color: #88a2aaff;
+    color: #9e9e99ff;
   }
 
   100% {
-    color: #88a3afff;
+    color: #a8b5b7ff;
   }
 }
