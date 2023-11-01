@@ -18,15 +18,18 @@ export default function ListIconButton() {
       >
         <PiListDuotone />
       </button>
-      <div className={`drawer flex flex-col items-center justify-evenly absolute top-8 left-4 shadow-sm h-1/3 w-36 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-1000 ease-in-out z-10`}>
+      <div className={`drawer flex flex-col items-center justify-evenly absolute top-8 left-4 h-1/3 w-36 mt-6 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-1000 ease-in-out z-10`}>
+         <Link className="text-lg/4 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/">
+          home
+        </Link>
         <Link className="text-lg/4 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/projects">
-          Projects
+          projects
         </Link>
         <Link className="text-lg/4 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/resume">
-          Resume
+          resume
         </Link>
         <Link className="text-lg/4 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/bio">
-          Bio
+          bio
         </Link>
       </div>
     </>

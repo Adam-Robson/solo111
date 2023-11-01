@@ -19,6 +19,7 @@ export default function BioLayout({
     >
       <div>
         <Navigation />
+        <h1 className="text-center tracking-tighter font-light w-full subpixel-antialiased">bio</h1>
         <Suspense fallback={<Loader />}>
           {children}
         </Suspense>
