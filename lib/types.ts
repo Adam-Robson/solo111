@@ -1,4 +1,4 @@
-export type ProjectTypes = {
+export type ProjectType = {
   id: number;
   title: string;
   description: string;
@@ -6,7 +6,7 @@ export type ProjectTypes = {
   liveLink: string;
 }
 
-
-export type ProjectListPropsType = {
-  project: ProjectTypes[];
+export interface FloatingCardProps {
+  project: ProjectType | null;
+  onClose: () => void;
 }

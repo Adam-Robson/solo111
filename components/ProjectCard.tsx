@@ -1,8 +1,8 @@
 import React from "react";
 import Link from 'next/link'
-import type { ProjectTypes } from '../lib/types'
+import type { ProjectType } from '../lib/types'
 
-export default function ProjectCard({ project }: { project: ProjectTypes } ) {
+export default function ProjectCard({ project }: { project: ProjectType } ) {
   return (
      <div className="max-w-xl group">
       <h3 className="text-center text-lg tracking-tighter subpixel-antialiased">{project.title}
