@@ -4,10 +4,6 @@ export type ProjectType = {
   description: string;
   githubLink: string | '';
   liveLink: string | '';
-
-}
-
-export interface FloatingCardProps {
-  selectedProject: ProjectType | null;
-  onClose: () => void;
+  selectedProject: boolean;
+  onClose: () => void
 }
