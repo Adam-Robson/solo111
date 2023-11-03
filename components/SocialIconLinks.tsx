@@ -8,7 +8,7 @@ import {
 
 export default function SocialIconLinks() {
   return (
-    <ul className="max-w-sm w-48 md:max-w-md md:w-52 flex justify-between items-baseline">
+    <ul className="max-w-sm w-48 flex justify-between items-baseline">
       <li>
         <Link href="https://linkedin.com/in/adamrayrobson">
           <PiLinkedinLogoLight
