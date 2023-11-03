@@ -12,24 +12,21 @@ export default function SocialIconLinks() {
       <li>
         <Link href="https://linkedin.com/in/adamrayrobson">
           <PiLinkedinLogoLight
-            data-testid="icon-links"
-            className="h-6 md:h-8 lg:h-10 w-6 md:w-10 lg:w-12"
+            size={32}
           />
         </Link>
       </li>
       <li>
         <Link href="https://github.com/Adam-Robson">
           <PiGithubLogoLight
-            data-testid="icon-links"
-            className="h-6 md:h-8 lg:h-10 w-6 md:w-10 lg:w-12"
+            size={32}
           />
         </Link>
       </li>
       <li>
         <Link href="https://spoti.fi/3QNqMuE">
           <PiSpotifyLogoLight
-            data-testid="icon-links"
-            className="h-6 md:h-8 lg:h-10 w-6 md:w-10 lg:w-12"
+            size={32}
           />
         </Link>
       </li>

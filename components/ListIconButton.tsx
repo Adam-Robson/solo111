@@ -20,17 +20,17 @@ export default function ListIconButton() {
       >
         <PiListDuotone />
       </button>
-      <div className={`drawer flex flex-col items-center justify-evenly absolute top-8 left-4 h-1/3 w-24 mt-6 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-1000 ease-in-out z-20`}>
-         <Link className="text-lg/4 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/" onClick={closeMenu}>
+      <div className={`drawer flex flex-col items-start justify-evenly absolute top-8 left-4 h-1/2 w-32 mt-6 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-1000 ease-in-out z-20`}>
+         <Link className="text-xl/5 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/" onClick={closeMenu}>
           home
         </Link>
-        <Link className="text-lg/4 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/projects" onClick={closeMenu}>
+        <Link className="text-xl/5 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/projects" onClick={closeMenu}>
           projects
         </Link>
-        <Link className="text-lg/4 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/resume" onClick={closeMenu}>
+        <Link className="text-xl/5 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/resume" onClick={closeMenu}>
           resume
         </Link>
-        <Link className="text-lg/4 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/bio" onClick={closeMenu}>
+        <Link className="text-xl/5 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/bio" onClick={closeMenu}>
           bio
         </Link>
       </div>

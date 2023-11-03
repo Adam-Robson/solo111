@@ -177,22 +177,22 @@ img {
 
 @keyframes revolution {
   0% {
-    color: var(--e);
+    color: var(--d);
   }
 
   25% {
-    color: var(--f);
+    color: var(--e);
   }
 
   50% {
-    color: var(--g);
+    color: var(--f);
   }
 
   75% {
-    color: var(--i)
+    color: var(--g)
   }
 
   100% {
-    color: var(--d);
+    color: var(--h);
   }
 }
