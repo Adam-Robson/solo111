@@ -4,6 +4,4 @@ export type ProjectType = {
   description: string;
   githubLink: string | '';
   liveLink: string | '';
-  selectedProject: boolean;
-  onClose: () => void
 }
