@@ -23,7 +23,7 @@ export default function BioPage() {
           </p>
 
           <p className='mb-4 text-sm font-normal tracking-tighter subpixel-antialiased'>
-            It can be found <Link href="https://lefogsong.bandcamp.com/">here</Link> or by searching any major music platform for 'le fog'.
+            It can be found <Link href="https://lefogsong.bandcamp.com/">here</Link> or by searching any major music platform for le fog.
           </p>
 
         </div>
