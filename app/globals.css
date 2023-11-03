@@ -7,19 +7,16 @@
 }
 
 :root {
-  --foreground: hsla(15, 3%, 26%, 1);
-  --background-start: hsla(215, 28%, 77%, 1);
-
-  --button-background: hsla(198, 24%, 22%, 1);
-  --button-background-hover: hsla(349, 16%, 80%, 1);
-
-  --link: hsla(215, 18%, 42%, 1);
-  --link-hover: rgb(137, 98, 106);
-  --link-active: hsla(351, 14%, 62%, 1);
-
-  --alternate: hsla(210, 35%, 15%, 1);
-  --highlight: hsla(188, 12%, 60%, 1);
-  --error: hsla(353, 20%, 33%, 1);
+  --a: #f8f9faff;
+  --b: #ced4daff;
+  --c: #cfd2cdff;
+  --d: #adb5bdff;
+  --e: #9a8c98ff;
+  --f: #847577ff;
+  --g: #495057ff;
+  --h: #534b52ff;
+  --i: #343a40ff;
+  --j: #212529ff;
 
   color-scheme: light dark;
 
@@ -36,19 +33,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: hsla(215, 28%, 77%, 1);
-    --background: hsla(15, 3%, 26%, 1);
-
-    --button-background: hsla(349, 16%, 80%, 1);
-    --button-background-hover: hsla(198, 24%, 22%, 1);
-
-    --link: rgb(115, 143, 162);
-    --link-hover: hsl(351, 14%, 62%);
-    --link-active: rgb(154, 195, 208);
-
-    --alternate: hsla(193, 40%, 56%, 1);
-    --highlight: hsla(179, 24%, 54%, 1);
-    --error: hsla(352, 20%, 39%, 1);
+    --a: #212529ff;
+    --b: #343a40ff;
+    --c: #846a6aff;
+    --d: #6c757dff;
+    --e: #a6a2a2ff;
+    --f: #a2999eff;
+    --g: #adb5bdff;
+    --h: #c6c7c4ff;
+    --i: #dee2e6ff;
+    --j: #e9ecefff;
   }
 }
 
