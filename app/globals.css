@@ -19,9 +19,7 @@
   --j: #212529ff;
 
   color-scheme: light dark;
-
   line-height: 1.2;
-
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -46,49 +44,49 @@
   }
 }
 
+html,
 body {
-  background-image: url('/images/sun.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-clip: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--b);
+  color: var(--i);
+}
 
-  color: var(--foreground);
-  background-color: var(--background);
-  margin: 0 0 1.3rem 0;
-  padding: 1.3rem;
-  display: flex;
-  place-items: center;
-  min-width: 20rem;
-  width: 100%;
-  min-height: 100vh;
-  text-align: center
+.full-size-background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/images/sun.png');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: 0;
 }
 
 button {
-  color: var(--background);
-  background-color: var(--link);
+  color: var(--b);
+  background-color: var(--g);
   cursor: pointer;
   padding: 0.36rem 0.82rem;
   text-align: center;
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 0.32rem;
-  border-color: var(--button-background-hover);
+  border-color: var(--d);
   transition: border-color 0.5s;
   z-index: 1;
 }
 
 button:hover {
-  color: var(--foreground);
-  background-color: var(--button-background-hover);
-  border: 1px solid var(--button-background);
+  background-color: var(--d);
+  border: 1px solid var(--b);
   transition: all 180ms ease-in-out;
-  outline: 4px auto var(--button-background-hover)
 }
 
 a {
-  color: var(--link);
+  color: var(--h);
   text-decoration: none;
   font-weight: 400;
   cursor: pointer;
@@ -96,12 +94,12 @@ a {
 }
 
 a:hover {
-  color: var(--link-hover);
+  color: var(--f);
   text-decoration: underline;
 }
 
 a:active {
-  color: var(--link-active);
+  color: var(--e);
   outline: none;
   background-color: transparent;
 }
@@ -131,53 +129,24 @@ img {
   animation-play-state: running;
 }
 
-
 @keyframes revolution {
   0% {
-    color: #53909d;
+    color: var(--c);
   }
 
-  12% {
-    color: #9db8c5;
+  25% {
+    color: var(--f);
   }
 
-  24% {
-    color: #618a98;
+  50% {
+    color: var(--g);
   }
 
-  48% {
-    color: #495e77;
-  }
-
-  72% {
-    color: #799ca0;
+  75% {
+    color: var(--i)
   }
 
   100% {
-    color: #4c5561;
-  }
-}
-
-@media (max-width: 36.5rem) {
-  body {
-    max-width: 30rem;
-  }
-}
-
-@media (min-width: 36.51rem) and (max-width: 48.5rem) {
-  body {
-    max-width: 35rem;
-  }
-}
-
-@media (min-width: 48.51rem) and (max-width: 62.51rem) {
-  body {
-    max-width: 47rem;
-  }
-}
-
-@media (min-width: 62.5rem) {
-  body {
-    max-width: 61rem;
+    color: var(--d);
   }
 }
