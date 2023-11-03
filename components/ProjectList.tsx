@@ -1,9 +1,11 @@
 'use client'
 import React, { useState } from "react"
 import ProjectCard from "./ProjectCard"
-import { projects } from '@/lib/data'
-import type { ProjectType } from '@/lib/types'
 import FloatingCard from "./FloatingCard"
+
+import { projects } from '@/lib/data'
+
+import type { ProjectType } from '@/lib/types'
 
 export default function ProjectList() {
   const [showProject, setShowProject] = useState(false)
@@ -24,7 +26,7 @@ export default function ProjectList() {
       <div>
       {
           showProject && (
-            <FloatingCard project={selectedProject} onClose={handleCloseCard} />
+            <FloatingCard selectedProject={selectedProject} onClose={handleCloseCard} />
       )}
       </div>
       {projects.map((project: ProjectType) => (
