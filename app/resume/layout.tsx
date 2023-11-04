@@ -2,6 +2,9 @@ import React, { Suspense } from 'react'
 import type { Metadata } from 'next'
 import Loader from '@/components/Loader'
 import Navigation from '@/components/Navigation'
+import { Cairo_Play } from 'next/font/google'
+
+const cairo = Cairo_Play({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Adam Robson | Resume',
@@ -14,15 +17,11 @@ export default function ResumeLayout({
     children: React.ReactNode
   }) {
   return (
-    <div
-      className="min-h-screen w-full mx-auto"
-    >
-      <div>
+    <div className={cairo.className}>
         <Navigation />
         <Suspense fallback={<Loader />}>
           {children}
         </Suspense>
-      </div>
     </div>
   )
 }
