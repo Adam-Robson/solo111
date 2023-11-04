@@ -1,12 +1,7 @@
-export type ProjectTypes = {
+export type ProjectType = {
   id: number;
   title: string;
   description: string;
-  githubLink: string;
-  liveLink: string;
-}
-
-
-export type ProjectListPropsType = {
-  project: ProjectTypes[];
+  githubLink: string | '';
+  liveLink: string | '';
 }
