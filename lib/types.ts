@@ -5,3 +5,5 @@ export type ProjectType = {
   githubLink: string | '';
   liveLink: string | '';
 }
+
+export type PDFTypeProps = string | File | null

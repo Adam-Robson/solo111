@@ -135,7 +135,6 @@ img {
 
 .div3 {
   grid-area: 2 / 1 / 3 / 2;
-  margin: 0 3rem 0 3rem;
 }
 
 @media (min-width: 768px) {
