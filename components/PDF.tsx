@@ -50,22 +50,22 @@ export default function PDF() {
   }
 
   return (
-    <div className="min-w-full max-w-5xl min-h-screen">
-      <div className="container max-w-xl mx-auto mt-8">
-      <div className="document__container" ref={setContainerRef}>
-        <Document file={file} options={options}>
-          <Page
-            pageNumber={1}
-            scale={1}
-            renderTextLayer={true}
-            renderAnnotationLayer={true}
-            width={containerWidth
-              ? Math.min(containerWidth, maxWidth)
-              : maxWidth}
-          />
-        </Document>
+    <div className="max-w-2xl">
+      <div className="max-w-xl mx-auto mt-6">
+        <div className="document__container" ref={setContainerRef}>
+          <Document file={file} options={options}>
+            <Page
+              pageNumber={1}
+              scale={1}
+              renderTextLayer={true}
+              renderAnnotationLayer={true}
+              width={containerWidth
+                ? Math.min(containerWidth, maxWidth)
+                : maxWidth}
+            />
+          </Document>
         </div>
-        </div>
+      </div>
     </div>
   )
 }

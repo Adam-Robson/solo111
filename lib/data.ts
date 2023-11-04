@@ -25,7 +25,7 @@ export const projects: ProjectType[] = [
   {
     id: 4,
     title: "Buddystock",
-    description: `"Buddystock" is an annual music festival held in Oregon.`,
+    description: `"Buddystock" is an annual music festival held in Oregon. I was responsible for creating and deploying the website in 2023.`,
     githubLink: "https://github.com/Buddystock/buddy",
     liveLink: "https://www.buddystockviii.com",
   }
