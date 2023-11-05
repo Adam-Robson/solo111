@@ -8,7 +8,7 @@ const cairo = Cairo_Play({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Adam Robson | Resume',
-  description: 'Built with Next, TypeScript, & Tailwind'
+  description: 'Resume route for portfolio site by Adam Robson'
 }
 
 export default function ResumeLayout({
