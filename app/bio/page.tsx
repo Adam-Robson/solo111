@@ -20,7 +20,7 @@ export default function BioPage() {
             After spending ten years in the legal field, I chose to transition to software.
           </p>
           <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
-            In my personal time, I write, play, record, edit, and prodece original music.
+            In my personal time, I write, play, record, edit, and produce original music.
           </p>
 
           <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
