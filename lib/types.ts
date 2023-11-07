@@ -7,3 +7,9 @@ export type ProjectType = {
 }
 
 export type PDFTypeProps = string | File | null
+
+export interface WritingType {
+  id: number;
+  title: string;
+  body: string;
+}

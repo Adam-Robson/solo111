@@ -4,28 +4,27 @@ import { Cairo_Play } from 'next/font/google'
 import Loader from '@/components/Loader'
 import Navigation from '@/components/Navigation'
 
-import './globals.css'
-
 const cairo = Cairo_Play({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Adam Robson | Portfolio',
-  description: 'Home route for portfolio site by Adam Robson. Built with Next14, TypeScript, & Tailwind'
+  title: 'Adam Robson | Music',
+  description: 'Music route for portfolio site by Adam Robson.'
 }
-
-export default function RootLayout({
+export default function MusicLayout({
   children
 }: {
-    children: React.ReactNode
-  }) {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en">
-      <body className={cairo.className}>
+    <div
+      className={cairo.className}
+    >
+      <div>
         <Navigation />
         <Suspense fallback={<Loader />}>
           {children}
         </Suspense>
-      </body>
-    </html>
+      </div>
+    </div>
   )
 }

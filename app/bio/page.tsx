@@ -13,14 +13,14 @@ export default function BioPage() {
         </div>
 
         <div className="div3 max-w-md w-full ml-10 pr-12">
-          <p className='mb-4 text-sm font-normal tracking-tighter subpixel-antialiased'>
+          <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
             I am a full-stack software developer trained in <Link href="https://www.postgresql.org/"><b>Postgres</b></Link>, <Link href="https://expressjs.com/"><b>Express</b></Link>, <Link href="https://react.dev/"><b>React</b></Link>, <Link href="https://www.typescriptlang.org/"><b>TypeScript</b></Link>, and <Link href="https://nodejs.org/en"><b>Node</b></Link>.
           </p>
           <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
             After spending ten years in the legal field, I chose to transition to software.
           </p>
           <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
-            In my personal time, I write, play, record, edit, and prodece original music.
+            In my personal time, I write, play, record, edit, and produce original music.
           </p>
 
           <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
