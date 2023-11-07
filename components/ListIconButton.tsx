@@ -33,6 +33,9 @@ export default function ListIconButton() {
         <Link className="text-xl/5 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/bio" onClick={closeMenu}>
           bio
         </Link>
+        <Link className="text-xl/5 md:text-2xl/6 lg:text-3xl/7 tracking-tighter subpixel-antialiased" href="/writing" onClick={closeMenu}>
+          writing
+        </Link>
       </div>
     </>
     )
