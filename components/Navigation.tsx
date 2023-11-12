@@ -1,10 +1,10 @@
 import React from 'react';
-import ListIconButton from './ListIconButton';
+import NavDrawer from './NavDrawer';
 
 export default function Navigation() {
   return (
     <>
-      <ListIconButton />
+      <NavDrawer />
     </>
   );
 }
