@@ -1,5 +1,6 @@
 import React from 'react'
-import WritingList from '@/components/WritingList'
+import Writings from '@/components/Writings'
+import { writings } from '@/components/lib/data'
 
 export default function WritingPage() {
   return (
@@ -7,7 +8,7 @@ export default function WritingPage() {
       <h1 className="text-center text-7xl md:text-8xl font-light tracking-tighter subpixel-antialiased">
         writing
       </h1>
-      <WritingList />
+      <Writings writings={writings} />
     </div>
   )
 }

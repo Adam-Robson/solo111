@@ -1,7 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-import type { ProjectListProps } from '@/lib/types'
+import type { ProjectListProps } from '@/components/lib/types'
+
 export default function Projects({ projects }: ProjectListProps) {
   const [selectedProjectId, setSelectedProjectId] = useState<number | null>(null);
   function handleHoveredProject(projectId: number): void {
@@ -11,7 +12,7 @@ export default function Projects({ projects }: ProjectListProps) {
     setSelectedProjectId(null);
   }
   return (
-    <div className="max-w-2xl mx-auto p-4 hover:cursor-pointer">
+    <div className="max-w-2xl mx-auto hover:cursor-pointer">
       <ul>
         {
           projects.map((project) => {
@@ -20,19 +21,19 @@ export default function Projects({ projects }: ProjectListProps) {
             return (
               <li
                 key={project.id}
-                className={isHovered ? 'hovered' : ''}
+                className={`max-w-lg mx-auto`}
                 onMouseEnter={() => handleHoveredProject(project.id)}
                 onMouseLeave={handleLeaveHoveredProject}
               >
-                <div className={`max-w-sm sm:max-w-md md:max-w-lg mx-auto p-6 sm:p-10 md:p12 {isHovered ? 'hovered' : ''}`}>
+                <div className="max-w-md md:max-w-lg mx-auto sm:p-10 md:p12 m-4">
                   <div className="text-center text-lg/5 md:text-xl/6">
                     {project.title}
                   </div>
                 </div>
 
                 {isHovered && (
-                  <div className="max-w-sm mx-auto">
-                    <div className="w-full">
+                  <div className={`max-w-sm mx-auto shadow-md min-h-fit p-4`}>
+                    <div className="w-full p-4">
                       {project.description}
                     </div>
 

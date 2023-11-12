@@ -17,3 +17,7 @@ export interface WritingType {
   title: string;
   body: string;
 }
+
+export interface WritingListProps {
+  writings: WritingType[];
+}

@@ -124,6 +124,10 @@ img {
   display: block;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .parent {
   display: grid;
   grid-template-columns: 1fr;
