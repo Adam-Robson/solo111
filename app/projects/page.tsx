@@ -1,5 +1,6 @@
-import ProjectList from '@/components/ProjectList'
 import React from 'react'
+import Projects from '@/components/Projects'
+import { projects } from '@/lib/data'
 
 export default function ProjectsPage() {
   return (
@@ -7,7 +8,7 @@ export default function ProjectsPage() {
       <h1 className="text-center text-7xl md:text-8xl font-light tracking-tighter subpixel-antialiased">
         projects
       </h1>
-      <ProjectList />
+      <Projects projects={projects} />
     </div>
   )
 }

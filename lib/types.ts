@@ -6,6 +6,10 @@ export type ProjectType = {
   liveLink: string | '';
 }
 
+export interface ProjectListProps {
+  projects: ProjectType[];
+}
+
 export type PDFTypeProps = string | File | null
 
 export interface WritingType {

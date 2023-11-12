@@ -116,6 +116,14 @@ img {
   border-radius: 8px;
 }
 
+.hovered {
+  display: none;
+}
+
+.hovered:hover {
+  display: block;
+}
+
 .parent {
   display: grid;
   grid-template-columns: 1fr;
