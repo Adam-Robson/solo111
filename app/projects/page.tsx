@@ -1,6 +1,6 @@
 import React from 'react'
 import Projects from '@/components/Projects'
-import { projects } from '@/components/lib/data'
+import { projects } from '@/lib/data'
 
 export default function ProjectsPage() {
   return (
