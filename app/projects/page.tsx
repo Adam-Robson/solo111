@@ -8,7 +8,9 @@ export default function ProjectsPage() {
       <h1 className="text-center text-7xl md:text-8xl font-light tracking-tighter subpixel-antialiased">
         projects
       </h1>
-      <Projects projects={projects} />
+      <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+        <Projects projects={projects} />
+      </div>
     </div>
   )
 }
