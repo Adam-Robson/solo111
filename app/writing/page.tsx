@@ -1,6 +1,6 @@
 import React from 'react'
 import Writings from '@/components/Writings'
-import { writings } from '@/components/lib/data'
+import { writings } from '@/lib/data'
 
 export default function WritingPage() {
   return (
