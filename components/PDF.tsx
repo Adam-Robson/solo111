@@ -33,7 +33,7 @@ export default function PDF() {
   }, [])
 
   const resizeObserverOptions = {}
-  const maxWidth = 800
+  const maxWidth = 700
 
   useResizeObserver(containerRef, resizeObserverOptions, onResize)
 
@@ -50,8 +50,8 @@ export default function PDF() {
   }
 
   return (
-    <div className="max-w-2xl">
-      <div className="max-w-xl mx-auto mt-6">
+    <div className="w-full">
+      <div className="max-w-sm sm:max-w-md mx-auto">
         <div className="document__container" ref={setContainerRef}>
           <Document file={file} options={options}>
             <Page

@@ -28,6 +28,13 @@ export const projects: ProjectType[] = [
     description: `"Buddystock" is an annual music festival held in Oregon. I was responsible for creating and deploying the website in 2023.`,
     githubLink: "https://github.com/Buddystock/buddy",
     liveLink: "https://www.buddystockviii.com"
+  },
+  {
+    id: 5,
+    title: "Playground",
+    description: `"Playground" is a collection of many of the games that I have built since I began as a software developer. `,
+    githubLink: "https://github.com/Adam-Robson/collection",
+    liveLink: "https://lambent-lolly-7e09b9.netlify.app/"
   }
 ];
 

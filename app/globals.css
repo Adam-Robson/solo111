@@ -7,16 +7,35 @@
 }
 
 :root {
-  --a: #f8f9faff;
-  --b: #ced4daff;
-  --c: #cfd2cdff;
-  --d: #adb5bdff;
-  --e: #9a8c98ff;
-  --f: #847577ff;
-  --g: #495057ff;
-  --h: #534b52ff;
-  --i: #343a40ff;
-  --j: #212529ff;
+
+  --a: #f1f2eeff;
+  /*white-smoke*/
+  --b: #f7edf0ff;
+  /*lavendar-blush*/
+  --c: #adb5bdff;
+  /*french-gray*/
+  --d: #7c99b4ff;
+  /*air-superiority-blue*/
+  --e: #37505cff;
+  /*charcoal*/
+  --f: #5f5b6bff;
+  /*davys-gray*/
+  --g: #a2999eff;
+  /*rose-quartz*/
+  --h: #a6a2a2ff;
+  /*silver*/
+  --i: #706f6fff;
+  /*dim-gray*/
+  --j: #7f7979ff;
+  /*gray*/
+  --k: #6c757dff;
+  /*slate-gray*/
+  --l: #3d3b3cff;
+  /*jet-2*/
+  --m: #32373bff;
+  /*onyx*/
+  --n: #1e000eff;
+  /*licorice*/
 
   color-scheme: light dark;
   line-height: 1.2;
@@ -31,16 +50,34 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --a: #212529ff;
-    --b: #343a40ff;
-    --c: #846a6aff;
+    --a: #1e000eff;
+    /*licorice*/
+    --b: #32373bff;
+    /*onyx*/
+    --c: #3d3b3cff;
+    /*jet-2*/
     --d: #6c757dff;
-    --e: #a6a2a2ff;
-    --f: #a2999eff;
-    --g: #adb5bdff;
-    --h: #c6c7c4ff;
-    --i: #dee2e6ff;
-    --j: #e9ecefff;
+    /*slate-gray*/
+    --e: #7f7979ff;
+    /*gray*/
+    --f: #706f6fff;
+    /*dim-gray*/
+    --g: #a6a2a2ff;
+    /*silver*/
+    --h: #a2999eff;
+    /*rose-quartz*/
+    --i: #5f5b6bff;
+    /*davys-gray*/
+    --j: #37505cff;
+    /*charcoal*/
+    --k: #7c99b4ff;
+    /*air-superiority-blue*/
+    --l: #adb5bdff;
+    /*french-gray*/
+    --m: #f7edf0ff;
+    /*lavendar-blush*/
+    --n: #f1f2eeff;
+    /*white-smoke*/
   }
 }
 
@@ -49,7 +86,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: var(--b);
-  color: var(--i);
+  color: var(--n);
 }
 
 .full-size-background {
@@ -66,8 +103,8 @@ body {
 }
 
 button {
-  color: var(--b);
-  background-color: var(--g);
+  color: var(--m);
+  background-color: var(--c);
   cursor: pointer;
   padding: 0.36rem 0.82rem;
   text-align: center;
@@ -80,13 +117,13 @@ button {
 }
 
 button:hover {
-  background-color: var(--d);
-  border: 1px solid var(--b);
+  background-color: var(--g);
+  border: 1px solid var(--c);
   transition: all 180ms ease-in-out;
 }
 
 a {
-  color: var(--h);
+  color: var(--f);
   text-decoration: none;
   font-weight: 400;
   cursor: pointer;
@@ -94,7 +131,7 @@ a {
 }
 
 a:hover {
-  color: var(--f);
+  color: var(--h);
   text-decoration: underline;
 }
 
@@ -116,16 +153,9 @@ img {
   border-radius: 8px;
 }
 
-.hovered {
-  display: none;
-}
-
-.hovered:hover {
-  display: block;
-}
-
-.hidden {
-  visibility: hidden;
+.card {
+  background-color: var(--b);
+  border: 3px double var(--i);
 }
 
 .parent {
@@ -205,5 +235,23 @@ img {
 
   100% {
     color: var(--h);
+  }
+}
+
+@media (min-width: 400) {
+  .document__container {
+    width: 320px;
+  }
+
+  .react-pdf__Document {
+    width: 320px;
+  }
+
+  .react-pdf__Page {
+    width: 320px;
+  }
+
+  .react-pdf__Page__canvas {
+    width: 320px;
   }
 }
