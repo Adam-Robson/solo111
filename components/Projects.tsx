@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-import type { ProjectListProps } from '@/components/lib/types'
+import type { ProjectListProps } from '@/lib/types'
 
 export default function Projects({ projects }: ProjectListProps) {
   return (

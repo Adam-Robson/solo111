@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import type { WritingListProps } from '@/components/lib/types'
+import type { WritingListProps } from '@/lib/types'
 
 export default function Writings({ writings }: WritingListProps) {
   const [selectedWritingId, setSelectedWritingId] = useState<number | null>(null);
