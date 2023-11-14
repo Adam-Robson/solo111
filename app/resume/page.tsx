@@ -12,7 +12,7 @@ export default function ResumePage() {
       <div className="relative max-w-sm mx-auto my-10 flex justify-center items-baseline">
         <DownloadButton />
       </div>
-      <div className="max-w-lg">
+      <div className="">
         <PDF />
       </div>
     </div>

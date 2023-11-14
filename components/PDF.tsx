@@ -40,7 +40,7 @@ export default function PDF() {
 
   return (
     <div className="w-full h-full">
-      <div className="max-w-xs sm:max-w-sm md:max-w-md mx-auto mb-6">
+      <div className="max-w-sm md:max-w-md mx-auto mb-6">
         <div className="document__container" ref={(ref) => setContainerRef(ref)}>
           <Document file={file} options={options}>
             <Page
