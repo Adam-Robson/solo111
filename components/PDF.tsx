@@ -22,7 +22,7 @@ const options = {
 export default function PDF() {
   const [file, setFile] = useState<PDFTypeProps>('/pdf/resume.pdf')
   const [containerRef, setContainerRef] = useState<HTMLElement | null>(null)
-  const [containerWidth, setContainerWidth] = useState<number>(512)
+  const [containerWidth, setContainerWidth] = useState<number>(300)
 
   const onResize = useCallback<ResizeObserverCallback>((entries) => {
 
@@ -41,11 +41,10 @@ export default function PDF() {
   return (
     <div className="w-full h-full">
       <div className="max-w-xs sm:max-w-sm md:max-w-md mx-auto mb-6">
-        <div className="document__container" ref={setContainerRef}>
+        <div className="document__container" ref={(ref) => setContainerRef(ref)}>
           <Document file={file} options={options}>
             <Page
               pageNumber={1}
-              scale={1}
               renderTextLayer={true}
               renderAnnotationLayer={true}
               width={containerWidth
