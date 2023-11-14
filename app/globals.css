@@ -56,22 +56,22 @@
     /*onyx*/
     --c: #3d3b3cff;
     /*jet-2*/
-    --d: #6c757dff;
-    /*slate-gray*/
-    --e: #7f7979ff;
-    /*gray*/
-    --f: #706f6fff;
-    /*dim-gray*/
-    --g: #a6a2a2ff;
-    /*silver*/
-    --h: #a2999eff;
-    /*rose-quartz*/
-    --i: #5f5b6bff;
-    /*davys-gray*/
-    --j: #37505cff;
-    /*charcoal*/
-    --k: #7c99b4ff;
+    --d: #7c99b4ff;
     /*air-superiority-blue*/
+    --e: #37505cff;
+    /*charcoal*/
+    --f: #5f5b6bff;
+    /*davys-gray*/
+    --g: #a2999eff;
+    /*rose-quartz*/
+    --h: #a6a2a2ff;
+    /*silver*/
+    --i: #706f6fff;
+    /*dim-gray*/
+    --j: #7f7979ff;
+    /*gray*/
+    --k: #6c757dff;
+    /*slate-gray*/
     --l: #adb5bdff;
     /*french-gray*/
     --m: #f7edf0ff;
@@ -86,7 +86,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: var(--b);
-  color: var(--n);
+  color: var(--m);
 }
 
 .full-size-background {
@@ -103,27 +103,27 @@ body {
 }
 
 button {
-  color: var(--m);
-  background-color: var(--c);
+  color: var(--e);
+  background-color: var(--h);
   cursor: pointer;
   padding: 0.36rem 0.82rem;
   text-align: center;
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 0.32rem;
-  border-color: var(--d);
+  border-color: var(--e);
   transition: border-color 0.5s;
   z-index: 1;
 }
 
 button:hover {
-  background-color: var(--g);
-  border: 1px solid var(--c);
+  background-color: var(--l);
+  border: 1px solid var(--d);
   transition: all 180ms ease-in-out;
 }
 
 a {
-  color: var(--f);
+  color: var(--g);
   text-decoration: none;
   font-weight: 400;
   cursor: pointer;
@@ -131,12 +131,12 @@ a {
 }
 
 a:hover {
-  color: var(--h);
+  color: var(--l);
   text-decoration: underline;
 }
 
 a:active {
-  color: var(--e);
+  color: var(--d);
   outline: none;
   background-color: transparent;
 }
@@ -154,7 +154,7 @@ img {
 }
 
 .card {
-  background-color: var(--b);
+  background-color: var(--c);
   border: 3px double var(--i);
 }
 
@@ -218,7 +218,7 @@ img {
 
 @keyframes revolution {
   0% {
-    color: var(--d);
+    color: var(--c);
   }
 
   25% {
@@ -226,7 +226,7 @@ img {
   }
 
   50% {
-    color: var(--f);
+    color: var(--h);
   }
 
   75% {
@@ -234,24 +234,6 @@ img {
   }
 
   100% {
-    color: var(--h);
-  }
-}
-
-@media (min-width: 400) {
-  .document__container {
-    width: 320px;
-  }
-
-  .react-pdf__Document {
-    width: 320px;
-  }
-
-  .react-pdf__Page {
-    width: 320px;
-  }
-
-  .react-pdf__Page__canvas {
-    width: 320px;
+    color: var(--f);
   }
 }
