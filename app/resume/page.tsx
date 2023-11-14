@@ -19,7 +19,7 @@ export default function ResumePage() {
           Download
         </Link>
       </div>
-      <div className="max-w-2xl">
+      <div className="max-w-lg">
         <PDF />
       </div>
     </div>

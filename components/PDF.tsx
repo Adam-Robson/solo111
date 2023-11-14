@@ -22,9 +22,10 @@ const options = {
 export default function PDF() {
   const [file, setFile] = useState<PDFTypeProps>('/pdf/resume.pdf')
   const [containerRef, setContainerRef] = useState<HTMLElement | null>(null)
-  const [containerWidth, setContainerWidth] = useState<number>(0)
+  const [containerWidth, setContainerWidth] = useState<number>(512)
 
   const onResize = useCallback<ResizeObserverCallback>((entries) => {
+
     const [entry] = entries;
 
     if (entry) {
@@ -37,21 +38,9 @@ export default function PDF() {
 
   useResizeObserver(containerRef, resizeObserverOptions, onResize)
 
-  let width
-
-  if (containerWidth <= 300) {
-    width = '100%'
-  } else if (containerWidth <= 600) {
-    width = '85%'
-  } else if (containerWidth < 800) {
-    width = '65%'
-  } else {
-    width = '100%'
-  }
-
   return (
-    <div className="w-full">
-      <div className="max-w-sm sm:max-w-md mx-auto">
+    <div className="w-full h-full">
+      <div className="max-w-xs sm:max-w-sm md:max-w-md mx-auto mb-6">
         <div className="document__container" ref={setContainerRef}>
           <Document file={file} options={options}>
             <Page
