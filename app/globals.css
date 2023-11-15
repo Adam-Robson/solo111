@@ -7,7 +7,6 @@
 }
 
 :root {
-
   --a: #f1f2eeff;
   /*white-smoke*/
   --b: #f7edf0ff;
@@ -117,13 +116,14 @@ button {
 }
 
 button:hover {
-  background-color: var(--l);
-  border: 1px solid var(--d);
+  background-color: var(--k);
+  color: var(--h);
+  border: 1px solid var(--h);
   transition: all 180ms ease-in-out;
 }
 
 a {
-  color: var(--g);
+  color: var(--h);
   text-decoration: none;
   font-weight: 400;
   cursor: pointer;
@@ -131,7 +131,7 @@ a {
 }
 
 a:hover {
-  color: var(--l);
+  color: var(--g);
   text-decoration: underline;
 }
 
@@ -156,6 +156,10 @@ img {
 .card {
   background-color: var(--c);
   border: 3px double var(--i);
+}
+
+.proj-link {
+  color: var(--m);
 }
 
 .parent {
@@ -218,7 +222,7 @@ img {
 
 @keyframes revolution {
   0% {
-    color: var(--c);
+    color: var(--f);
   }
 
   25% {
@@ -226,7 +230,7 @@ img {
   }
 
   50% {
-    color: var(--h);
+    color: var(--d);
   }
 
   75% {
@@ -234,6 +238,6 @@ img {
   }
 
   100% {
-    color: var(--f);
+    color: var(--k);
   }
 }

@@ -33,8 +33,8 @@ export default function BioPage() {
           <Image
             src={'/images/dev.png'}
             alt='dev img'
-            width={250}
-            height={250}
+            width={300}
+            height={300}
           />
         </div>
 

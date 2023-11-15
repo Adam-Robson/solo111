@@ -2,9 +2,9 @@ import React, { Suspense } from 'react'
 import type { Metadata } from 'next'
 import Loader from '@/components/Loader'
 import Navigation from '@/components/Navigation'
-import { Cairo_Play } from 'next/font/google'
+import { Cairo_Play, Inter_Tight, Overpass } from 'next/font/google'
 
-const cairo = Cairo_Play({ subsets: ["latin"] })
+const overpass = Overpass({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: 'Adam Robson | Projects',
@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 export default function ProjectsLayout({
   children
 }: {
-    children: React.ReactNode
-  }) {
+  children: React.ReactNode
+}) {
   return (
-    <div className={cairo.className}>
+    <div className={overpass.className}>
       <div>
         <Navigation />
         <Suspense fallback={<Loader />}>
