@@ -2,43 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css?family=Cairo Play:variable|Baloo_Da:variable');
+
 * {
   box-sizing: border-box;
-}
 
-:root {
-  --a: #f1f2eeff;
-  /*white-smoke*/
-  --b: #f7edf0ff;
-  /*lavendar-blush*/
-  --c: #adb5bdff;
-  /*french-gray*/
-  --d: #7c99b4ff;
-  /*air-superiority-blue*/
-  --e: #37505cff;
-  /*charcoal*/
-  --f: #5f5b6bff;
-  /*davys-gray*/
-  --g: #a2999eff;
-  /*rose-quartz*/
-  --h: #a6a2a2ff;
-  /*silver*/
-  --i: #706f6fff;
-  /*dim-gray*/
-  --j: #7f7979ff;
-  /*gray*/
-  --k: #6c757dff;
-  /*slate-gray*/
-  --l: #3d3b3cff;
-  /*jet-2*/
-  --m: #32373bff;
-  /*onyx*/
-  --n: #1e000eff;
-  /*licorice*/
-
-  color-scheme: light dark;
-  line-height: 1.2;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,37 +14,35 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #363636ff;
+    --background: #c9c9c9ff;
+    --primary: #474a55ff;
+    --secondary: #a3a8a6ff;
+    --accent: #af9f9fff;
+
+    --one: #54696c;
+    --two: #5d6e7d;
+    --three: #725a5a;
+    --four: #5d7572;
+    --five: #a1967f;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --a: #1e000eff;
-    /*licorice*/
-    --b: #32373bff;
-    /*onyx*/
-    --c: #3d3b3cff;
-    /*jet-2*/
-    --d: #7c99b4ff;
-    /*air-superiority-blue*/
-    --e: #37505cff;
-    /*charcoal*/
-    --f: #5f5b6bff;
-    /*davys-gray*/
-    --g: #a2999eff;
-    /*rose-quartz*/
-    --h: #a6a2a2ff;
-    /*silver*/
-    --i: #706f6fff;
-    /*dim-gray*/
-    --j: #7f7979ff;
-    /*gray*/
-    --k: #6c757dff;
-    /*slate-gray*/
-    --l: #adb5bdff;
-    /*french-gray*/
-    --m: #f7edf0ff;
-    /*lavendar-blush*/
-    --n: #f1f2eeff;
-    /*white-smoke*/
+    --text: #c9c9c9ff;
+    --background: #363636ff;
+    --primary: #a3a8a6ff;
+    --secondary: #474a55ff;
+    --accent: #af9f9fff;
+
+    --one: rgb(208, 226, 228);
+    --two: rgb(216, 226, 235);
+    --three: rgb(231, 216, 216);
+    --four: rgb(210, 225, 223);
+    --five: rgb(224, 217, 229);
   }
 }
 
@@ -84,8 +50,8 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-  background-color: var(--b);
-  color: var(--m);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .full-size-background {
@@ -97,33 +63,65 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 4.210rem;
+  /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem;
+  /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem;
+  /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem;
+  /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem;
+  /* 21.28px */
+}
+
+small {
+  font-size: 0.750rem;
+  /* 12px */
+}
+
 button {
-  color: var(--e);
-  background-color: var(--h);
+  color: var(--secondary);
+  background-color: var(--primary);
   cursor: pointer;
   padding: 0.36rem 0.82rem;
   text-align: center;
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 0.32rem;
-  border-color: var(--e);
+  border-color: var(--secondary);
   transition: border-color 0.5s;
   z-index: 1;
 }
 
 button:hover {
-  background-color: var(--k);
-  color: var(--h);
-  border: 1px solid var(--h);
+  border: 1px solid var(--accent);
   transition: all 180ms ease-in-out;
 }
 
 a {
-  color: var(--h);
+  color: var(--primary);
   text-decoration: none;
   font-weight: 400;
   cursor: pointer;
@@ -131,14 +129,8 @@ a {
 }
 
 a:hover {
-  color: var(--g);
+  color: var(--accent);
   text-decoration: underline;
-}
-
-a:active {
-  color: var(--d);
-  outline: none;
-  background-color: transparent;
 }
 
 ul,
@@ -154,12 +146,8 @@ img {
 }
 
 .card {
-  background-color: var(--c);
-  border: 3px double var(--i);
-}
-
-.proj-link {
-  color: var(--m);
+  background-color: var(--secondary);
+  border: 3px double var(--primary);
 }
 
 .parent {
@@ -206,6 +194,9 @@ img {
   }
 }
 
+.socialicon {
+  color: var(--text);
+}
 
 .titlewrap>.title {
   animation-name: revolution;
@@ -222,22 +213,22 @@ img {
 
 @keyframes revolution {
   0% {
-    color: var(--f);
+    color: var(--one);
   }
 
   25% {
-    color: var(--e);
+    color: var(--two);
   }
 
   50% {
-    color: var(--d);
+    color: var(--three);
   }
 
   75% {
-    color: var(--g)
+    color: var(--four);
   }
 
   100% {
-    color: var(--k);
+    color: var(--five);
   }
 }

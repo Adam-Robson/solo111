@@ -39,7 +39,7 @@ export default function PDF() {
   useResizeObserver(containerRef, resizeObserverOptions, onResize)
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full px-16">
       <div className="max-w-sm md:max-w-md mx-auto mb-6">
         <div className="document__container" ref={(ref) => setContainerRef(ref)}>
           <Document file={file} options={options}>
