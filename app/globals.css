@@ -4,41 +4,6 @@
 
 * {
   box-sizing: border-box;
-}
-
-:root {
-  --a: #f1f2eeff;
-  /*white-smoke*/
-  --b: #f7edf0ff;
-  /*lavendar-blush*/
-  --c: #adb5bdff;
-  /*french-gray*/
-  --d: #7c99b4ff;
-  /*air-superiority-blue*/
-  --e: #37505cff;
-  /*charcoal*/
-  --f: #5f5b6bff;
-  /*davys-gray*/
-  --g: #a2999eff;
-  /*rose-quartz*/
-  --h: #a6a2a2ff;
-  /*silver*/
-  --i: #706f6fff;
-  /*dim-gray*/
-  --j: #7f7979ff;
-  /*gray*/
-  --k: #6c757dff;
-  /*slate-gray*/
-  --l: #3d3b3cff;
-  /*jet-2*/
-  --m: #32373bff;
-  /*onyx*/
-  --n: #1e000eff;
-  /*licorice*/
-
-  color-scheme: light dark;
-  line-height: 1.2;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,37 +11,23 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #363636ff;
+    --background: #c9c9c9ff;
+    --primary: #474a55ff;
+    --secondary: #a3a8a6ff;
+    --accent: #af9f9fff;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --a: #1e000eff;
-    /*licorice*/
-    --b: #32373bff;
-    /*onyx*/
-    --c: #3d3b3cff;
-    /*jet-2*/
-    --d: #7c99b4ff;
-    /*air-superiority-blue*/
-    --e: #37505cff;
-    /*charcoal*/
-    --f: #5f5b6bff;
-    /*davys-gray*/
-    --g: #a2999eff;
-    /*rose-quartz*/
-    --h: #a6a2a2ff;
-    /*silver*/
-    --i: #706f6fff;
-    /*dim-gray*/
-    --j: #7f7979ff;
-    /*gray*/
-    --k: #6c757dff;
-    /*slate-gray*/
-    --l: #adb5bdff;
-    /*french-gray*/
-    --m: #f7edf0ff;
-    /*lavendar-blush*/
-    --n: #f1f2eeff;
-    /*white-smoke*/
+    --text: #c9c9c9ff;
+    --background: #363636ff;
+    --primary: #a3a8a6ff;
+    --secondary: #474a55ff;
+    --accent: #af9f9fff;
   }
 }
 
@@ -84,8 +35,8 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-  background-color: var(--b);
-  color: var(--m);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .full-size-background {
@@ -102,43 +53,34 @@ body {
 }
 
 button {
-  color: var(--e);
-  background-color: var(--h);
+  background-color: var(--primary);
   cursor: pointer;
   padding: 0.36rem 0.82rem;
   text-align: center;
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 0.32rem;
-  border-color: var(--e);
+  border-color: var(--secondary);
   transition: border-color 0.5s;
   z-index: 1;
 }
 
 button:hover {
-  background-color: var(--k);
-  color: var(--h);
-  border: 1px solid var(--h);
+  border: 1px solid var(--accent);
   transition: all 180ms ease-in-out;
 }
 
 a {
-  color: var(--h);
-  text-decoration: none;
+  color: var(--primary);
+  text-decoration: underline;
   font-weight: 400;
   cursor: pointer;
   transition: all 250ms ease-in-out;
 }
 
 a:hover {
-  color: var(--g);
-  text-decoration: underline;
-}
-
-a:active {
-  color: var(--d);
-  outline: none;
-  background-color: transparent;
+  color: var(--accent);
+  text-decoration: none;
 }
 
 ul,
@@ -154,12 +96,8 @@ img {
 }
 
 .card {
-  background-color: var(--c);
-  border: 3px double var(--i);
-}
-
-.proj-link {
-  color: var(--m);
+  background-color: var(--secondary);
+  border: 3px double var(--primary);
 }
 
 .parent {
@@ -206,7 +144,6 @@ img {
   }
 }
 
-
 .titlewrap>.title {
   animation-name: revolution;
   animation-duration: 20s;
@@ -222,22 +159,22 @@ img {
 
 @keyframes revolution {
   0% {
-    color: var(--f);
+    color: #94afb3ff;
   }
 
   25% {
-    color: var(--e);
+    color: #94a5b3ff;
   }
 
   50% {
-    color: var(--d);
+    color: #9aa8a2ff;
   }
 
   75% {
-    color: var(--g)
+    color: #a8a3a3ff;
   }
 
   100% {
-    color: var(--k);
+    color: #a6b7b7ff;
   }
 }

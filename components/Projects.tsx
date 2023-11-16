@@ -18,8 +18,8 @@ export default function Projects({ projects }: ProjectListProps) {
             </div>
 
             <div className="w-full flex justify-evenly items-baseline mx-auto">
-              <Link className="proj-link text-sm/4 md:text-lg/5" href={project.githubLink}>Go to Github</Link>
-              <Link className="proj-link text-sm/4 md:text-lg/5" href={project.liveLink}>See it Live</Link>
+              <Link className="text-sm/4 md:text-lg/5" href={project.githubLink}>Go to Github</Link>
+              <Link className="text-sm/4 md:text-lg/5" href={project.liveLink}>See it Live</Link>
             </div>
           </div>
         </li>
