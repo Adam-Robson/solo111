@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import type { Metadata } from 'next'
-import { Baloo_Da_2, Cairo_Play } from 'next/font/google'
+import { Cairo_Play } from 'next/font/google'
 import Loader from '@/components/Loader'
 import Navigation from '@/components/Navigation'
 

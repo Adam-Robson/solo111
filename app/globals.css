@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css?family=Cairo Play:variable|Baloo_Da:variable');
+@import url('https://fonts.googleapis.com/css?family=Cairo Play:variable');
 
 * {
   box-sizing: border-box;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,32 +16,22 @@
 @media (prefers-color-scheme: light) {
   :root {
     --text: #363636ff;
-    --background: #c9c9c9ff;
+    --background: #c1cfd4ff;
     --primary: #474a55ff;
     --secondary: #a3a8a6ff;
     --accent: #af9f9fff;
-
-    --one: #54696c;
-    --two: #5d6e7d;
-    --three: #725a5a;
-    --four: #5d7572;
-    --five: #a1967f;
+    --highlight: #644a4aff;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #c9c9c9ff;
+    --text: #c1cfd4ff;
     --background: #363636ff;
     --primary: #a3a8a6ff;
     --secondary: #474a55ff;
     --accent: #af9f9fff;
-
-    --one: rgb(208, 226, 228);
-    --two: rgb(216, 226, 235);
-    --three: rgb(231, 216, 216);
-    --four: rgb(210, 225, 223);
-    --five: rgb(224, 217, 229);
+    --highlight: #d9b9b9ff;
   }
 }
 
@@ -111,13 +100,21 @@ button {
   border: 1px solid transparent;
   border-radius: 0.32rem;
   border-color: var(--secondary);
-  transition: border-color 0.5s;
+  transition: transform 0.5s;
   z-index: 1;
 }
 
 button:hover {
   border: 1px solid var(--accent);
   transition: all 180ms ease-in-out;
+}
+
+.nav-button {
+  transition: transform 0.4s ease;
+}
+
+.nav-button.pressed {
+  transform: translateY(4px);
 }
 
 a {
@@ -145,11 +142,13 @@ img {
   border-radius: 8px;
 }
 
+/* writings & projects */
 .card {
   background-color: var(--secondary);
   border: 3px double var(--primary);
 }
 
+/* bio */
 .parent {
   display: grid;
   grid-template-columns: 1fr;
@@ -194,10 +193,7 @@ img {
   }
 }
 
-.socialicon {
-  color: var(--text);
-}
-
+/* landing */
 .titlewrap>.title {
   animation-name: revolution;
   animation-duration: 20s;
@@ -213,22 +209,14 @@ img {
 
 @keyframes revolution {
   0% {
-    color: var(--one);
-  }
-
-  25% {
-    color: var(--two);
+    color: var(--highlight);
   }
 
   50% {
-    color: var(--three);
-  }
-
-  75% {
-    color: var(--four);
+    color: var(--text);
   }
 
   100% {
-    color: var(--five);
+    color: var(--primary);
   }
 }
