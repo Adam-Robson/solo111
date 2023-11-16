@@ -6,13 +6,13 @@ export default function BioPage() {
   return (
     <div className="max-w-3xl mx-auto flex flex-col justify-center items-center p-12">
       <div className='parent max-w-2xl'>
-        <div className='div1 p-2 m-2'>
+        <div className='div1'>
           <h1 className="text-center text-6xl sm:text-7xl md:text-8xl font-light tracking-tighter subpixel-antialiased mt-8 mb-4">
             bio
           </h1>
         </div>
 
-        <div className="div3 max-w-md w-full ml-10 pr-12">
+        <div className="div3 max-w-md w-full ml-8 pr-12">
           <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
             I am a full-stack software developer trained in <Link href="https://www.postgresql.org/"><b>Postgres</b></Link>, <Link href="https://expressjs.com/"><b>Express</b></Link>, <Link href="https://react.dev/"><b>React</b></Link>, <Link href="https://www.typescriptlang.org/"><b>TypeScript</b></Link>, and <Link href="https://nodejs.org/en"><b>Node</b></Link>.
           </p>

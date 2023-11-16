@@ -21,6 +21,12 @@
     --primary: #474a55ff;
     --secondary: #a3a8a6ff;
     --accent: #af9f9fff;
+
+    --one: #54696c;
+    --two: #5d6e7d;
+    --three: #725a5a;
+    --four: #5d7572;
+    --five: #a1967f;
   }
 }
 
@@ -31,6 +37,12 @@
     --primary: #a3a8a6ff;
     --secondary: #474a55ff;
     --accent: #af9f9fff;
+
+    --one: rgb(208, 226, 228);
+    --two: rgb(216, 226, 235);
+    --three: rgb(231, 216, 216);
+    --four: rgb(210, 225, 223);
+    --five: rgb(224, 217, 229);
   }
 }
 
@@ -51,7 +63,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: 0;
 }
 
@@ -90,6 +102,7 @@ small {
 }
 
 button {
+  color: var(--secondary);
   background-color: var(--primary);
   cursor: pointer;
   padding: 0.36rem 0.82rem;
@@ -200,22 +213,22 @@ img {
 
 @keyframes revolution {
   0% {
-    color: #94afb3ff;
+    color: var(--one);
   }
 
   25% {
-    color: #94a5b3ff;
+    color: var(--two);
   }
 
   50% {
-    color: #9aa8a2ff;
+    color: var(--three);
   }
 
   75% {
-    color: #a8a3a3ff;
+    color: var(--four);
   }
 
   100% {
-    color: #a6b7b7ff;
+    color: var(--five);
   }
 }

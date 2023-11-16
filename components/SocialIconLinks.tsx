@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import {
-  PiLinkedinLogoLight,
-  PiGithubLogoLight,
-  PiSpotifyLogoLight
+  PiLinkedinLogo,
+  PiGithubLogo,
+  PiSpotifyLogo,
 } from 'react-icons/pi';
 
 export default function SocialIconLinks() {
@@ -10,7 +10,7 @@ export default function SocialIconLinks() {
     <ul className="max-w-md w-60 flex justify-between items-baseline">
       <li>
         <Link href="https://linkedin.com/in/adamrayrobson">
-          <PiLinkedinLogoLight
+          <PiLinkedinLogo
             size={48}
             className="socialicon"
           />
@@ -18,7 +18,7 @@ export default function SocialIconLinks() {
       </li>
       <li>
         <Link href="https://github.com/Adam-Robson">
-          <PiGithubLogoLight
+          <PiGithubLogo
             size={48}
             className="socialicon"
           />
@@ -26,7 +26,7 @@ export default function SocialIconLinks() {
       </li>
       <li>
         <Link href="https://spoti.fi/3QNqMuE">
-          <PiSpotifyLogoLight
+          <PiSpotifyLogo
             size={48}
             className="socialicon"
           />
