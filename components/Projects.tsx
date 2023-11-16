@@ -9,12 +9,13 @@ export default function Projects({ projects }: ProjectListProps) {
           key={project.id}
           className={`p-6 m-4`}
         >
-          <div>
-            <div className='text-center font-normal text-lg/6 sm:text-xl/7 md:text-2xl/8 subpixel-antialiased underline'>{project.title}</div>
-          </div>
           <div className={`card shadow-sm rounded-md p-4 mt-2`}>
-            <div className="w-full px-4 pt-2 pb-6">
-              {project.description}
+            <div className='text-center font-normal text-base/5 sm:text-lg/6 md:text-xl/7 subpixel-antialiased underline underline-offset-2 decoration-1'>{project.title}</div>
+
+            <div>
+              <div className="w-full px-4 pt-2 pb-6">
+                {project.description}
+              </div>
             </div>
 
             <div className="w-full flex justify-evenly items-baseline mx-auto">

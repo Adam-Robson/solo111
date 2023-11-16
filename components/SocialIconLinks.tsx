@@ -7,25 +7,28 @@ import {
 
 export default function SocialIconLinks() {
   return (
-    <ul className="max-w-sm w-48 flex justify-between items-baseline">
+    <ul className="max-w-md w-60 flex justify-between items-baseline">
       <li>
         <Link href="https://linkedin.com/in/adamrayrobson">
           <PiLinkedinLogoLight
-            size={40}
+            size={48}
+            className="socialicon"
           />
         </Link>
       </li>
       <li>
         <Link href="https://github.com/Adam-Robson">
           <PiGithubLogoLight
-            size={40}
+            size={48}
+            className="socialicon"
           />
         </Link>
       </li>
       <li>
         <Link href="https://spoti.fi/3QNqMuE">
           <PiSpotifyLogoLight
-            size={40}
+            size={48}
+            className="socialicon"
           />
         </Link>
       </li>
