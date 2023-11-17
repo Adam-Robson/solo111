@@ -41,7 +41,7 @@ export default function PDF() {
   return (
     <div className="w-full h-full px-16">
       <div className="max-w-sm md:max-w-md mx-auto mb-6">
-        <div className="document__container" ref={(ref) => setContainerRef(ref)}>
+        <div className="document__container flex justify-center items-center" ref={(ref) => setContainerRef(ref)}>
           <Document file={file} options={options}>
             <Page
               pageNumber={1}

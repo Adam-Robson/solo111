@@ -21,3 +21,8 @@ export interface WritingType {
 export interface WritingListProps {
   writings: WritingType[];
 }
+
+export type ButtonProps = {
+  className: string;
+  onClick: () => void;
+}
