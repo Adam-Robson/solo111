@@ -23,6 +23,5 @@ export interface WritingListProps {
 }
 
 export type ButtonProps = {
-  className: string;
   onClick: () => void;
 }
