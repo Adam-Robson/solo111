@@ -17,7 +17,7 @@ export default function NavButton({ onClick }: ButtonProps) {
 
   return (
     <button
-      className={`nav-button ${down ? 'pressed' : ''}`}
+      className={`nav-button ${down ? 'pressed' : ''} absolute top-8 left-4 z-20`}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onTouchStart={handleMouseDown}
