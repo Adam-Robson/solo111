@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next/link';
 import { PiFloppyDiskDuotone } from 'react-icons/pi'
 
@@ -12,7 +11,7 @@ export default function DownloadButton() {
         Click on the icon to download the document:
       </p>
       <Link href={documentUrl} download={documentName}>
-        <PiFloppyDiskDuotone size={40} />
+        <PiFloppyDiskDuotone size={40} color={'var(--primary)'} />
       </Link>
     </div>
   );
