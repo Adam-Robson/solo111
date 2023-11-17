@@ -7,12 +7,12 @@ export default function DownloadButton() {
 
   return (
     <div className="max-w-sm mx-auto flex flex-col items-center">
-      <p className="text-sm/4 sm:text-base/5 md:text-lg/7 subpixeled-antialiased">
-        Click on the icon to download the document:
-      </p>
       <Link href={documentUrl} download={documentName}>
         <PiFloppyDiskDuotone size={40} color={'var(--primary)'} />
       </Link>
+      <p className="text-sm/4 sm:text-base/5 md:text-lg/7 subpixeled-antialiased">
+        Download
+      </p>
     </div>
   );
 };

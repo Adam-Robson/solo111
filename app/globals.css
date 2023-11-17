@@ -20,7 +20,7 @@
     --primary: #474a55ff;
     --secondary: #a3a8a6ff;
     --accent: #af9f9fff;
-    --highlight: #644a4aff;
+    --highlight: #625858ff;
   }
 }
 
@@ -196,7 +196,7 @@ img {
 /* landing */
 .titlewrap>.title {
   animation-name: revolution;
-  animation-duration: 20s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(0.645,
