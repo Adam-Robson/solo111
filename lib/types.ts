@@ -23,7 +23,6 @@ export interface WritingListProps {
 }
 
 export type ButtonProps = {
-  // className: string;
-  // children: React.ReactElement;
+  className: string;
   onClick: () => void;
 }
