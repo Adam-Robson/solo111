@@ -15,21 +15,21 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --text: #444140;
-    --background: #f5f0e5;
-    --primary: #414d68;
-    --secondary: #e1ddf7;
-    --accent: #44565a;
+  --text: #444140ff;
+  --background: #e4e9eeff;
+  --primary: #404848ff;
+  --secondary: #dae1e8ff;
+  --accent: #687174ff;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #bfbcbb;
-    --background: #1a150a;
-    --primary: #97a3be;
-    --secondary: #0c0821;
-    --accent: #a5b7bb;
+    --background: #444140;
+    --primary: #d6e2e6;
+    --secondary: #111212;
+    --accent: #747b7a;
   }
 }
 
