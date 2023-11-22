@@ -23,7 +23,7 @@ export default function BioPage() {
             Beyond coding, my passion extends to writing, playing, recording, editing, and producing original music.
           </p>
           <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
-            Explore my musical creations on <Link href="https://lefogsong.bandcamp.com/"><b>Bandcamp</b></Link> or search for 'le fog' on any major music platform.
+            Explore my musical creations on <Link href="https://lefogsong.bandcamp.com/"><b>Bandcamp</b></Link> or search for `&apos;`le fog`&apos;` on any major music platform.
           </p>
 
 
