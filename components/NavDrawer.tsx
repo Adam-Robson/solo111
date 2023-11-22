@@ -22,6 +22,9 @@ export default function NavDrawer() {
       <NavButton onClick={toggleIsOpen} />
       <div className={`${cairo.className} flex flex-col items-start justify-evenly absolute top-8 left-4 h-1/2 w-32 mt-6 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-1000 ease-in-out z-20`}>
 
+        <Link className="text-lg/4 sm:text-xl/5 md:text-2xl/6 tracking-tighter subpixel-antialiased" href="/" onClick={closeMenu}>
+          home
+        </Link>
         <Link className="text-lg/4 sm:text-xl/5 md:text-2xl/6 tracking-tighter subpixel-antialiased" href="/projects" onClick={closeMenu}>
           projects
         </Link>
@@ -37,9 +40,7 @@ export default function NavDrawer() {
         <Link className="text-lg/4 sm:text-xl/5 md:text-2xl/6 tracking-tighter subpixel-antialiased" href="/writing" onClick={closeMenu}>
           writing
         </Link>
-        <Link className="text-lg/4 sm:text-xl/5 md:text-2xl/6 tracking-tighter subpixel-antialiased" href="/" onClick={closeMenu}>
-          home
-        </Link>
+
       </div>
     </>
   )

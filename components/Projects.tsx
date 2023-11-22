@@ -19,7 +19,7 @@ export default function Projects({ projects }: ProjectListProps) {
             </div>
 
             <div className="w-full flex justify-evenly items-baseline mx-auto">
-              <Link className="text-sm/4 md:text-lg/5 underline underline-offset-2 decoration-1" href={project.githubLink}>Go to Github</Link>
+              <Link className="text-sm/4 md:text-lg/5 underline underline-offset-2 decoration-1" href={project.githubLink}>GitHub</Link>
               <Link className="text-sm/4 md:text-lg/5 underline underline-offset-2 decoration-1" href={project.liveLink}>See it Live</Link>
             </div>
           </div>

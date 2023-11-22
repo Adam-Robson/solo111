@@ -15,23 +15,21 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --text: #363636ff;
-    --background: #c1cfd4ff;
-    --primary: #474a55ff;
-    --secondary: #a3a8a6ff;
-    --accent: #af9f9fff;
-    --highlight: #625858ff;
+    --text: #444140;
+    --background: #f5f0e5;
+    --primary: #414d68;
+    --secondary: #e1ddf7;
+    --accent: #44565a;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #c1cfd4ff;
-    --background: #363636ff;
-    --primary: #a3a8a6ff;
-    --secondary: #474a55ff;
-    --accent: #af9f9fff;
-    --highlight: #d9b9b9ff;
+    --text: #bfbcbb;
+    --background: #1a150a;
+    --primary: #97a3be;
+    --secondary: #0c0821;
+    --accent: #a5b7bb;
   }
 }
 
@@ -209,7 +207,7 @@ img {
 
 @keyframes revolution {
   0% {
-    color: var(--highlight);
+    color: var(--accent);
   }
 
   50% {

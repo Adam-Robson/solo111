@@ -17,10 +17,6 @@ const config: Config = {
         '4xl': '3.158rem',
         '5xl': '4.210rem'
       },
-      fontFamily: {
-        heading: 'Cairo Play',
-        body: 'Baloo 2'
-      },
       fontWeight: {
         light: '300',
         normal: '400',
