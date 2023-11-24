@@ -25,3 +25,13 @@ export interface WritingListProps {
 export type ButtonProps = {
   onClick: () => void;
 }
+
+export type ImageType = {
+  id: number;
+  src: string;
+  alt: string;
+}
+
+export type ImageGalleryProps = {
+  images: ImageType[];
+}

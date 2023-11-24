@@ -1,4 +1,4 @@
-import type { ProjectType, WritingType } from './types'
+import type { ImageGalleryProps, ProjectType, WritingType } from './types'
 
 export const projects: ProjectType[] = [
 
@@ -61,3 +61,26 @@ export const writings: WritingType[] = [
   }
 
 ];
+
+export const photos = [
+  {
+    id: 1,
+    src: '/images/finn.jpg',
+    alt: 'my dog finn'
+  },
+  {
+    id: 2,
+    src: '/images/car.jpg',
+    alt: 'a passing car'
+  },
+  {
+    id: 3,
+    src: '/images/dancer.jpeg',
+    alt: 'tiny sparkler dancer'
+  },
+  {
+    id: 4,
+    src: '/images/atmosphere.jpg',
+    alt: 'oregon countryside, mosier'
+  }
+]

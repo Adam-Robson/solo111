@@ -12,7 +12,7 @@ export default function BioPage() {
           </h1>
         </div>
 
-        <div className="div3 max-w-md w-full ml-8 pr-12">
+        <div className="div3 max-w-lg w-full ml-8 pr-12">
           <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
             As a dedicated full-stack developer, I thrive on perpetual learning, specializing in technologies such as <Link href="https://www.postgresql.org/"><b>Postgres</b></Link>, <Link href="https://expressjs.com/"><b>Express</b></Link>, <Link href="https://react.dev/"><b>React</b></Link>, <Link href="https://www.typescriptlang.org/"><b>TypeScript</b></Link>, and <Link href="https://nodejs.org/en"><b>Node</b></Link>.
           </p>
@@ -33,8 +33,8 @@ export default function BioPage() {
           <Image
             src={'/images/dev.png'}
             alt='dev img'
-            width={300}
-            height={300}
+            width={500}
+            height={500}
           />
         </div>
 

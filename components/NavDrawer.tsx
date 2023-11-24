@@ -40,6 +40,9 @@ export default function NavDrawer() {
         <Link className="text-lg/4 sm:text-xl/5 md:text-2xl/6 tracking-tighter subpixel-antialiased" href="/writing" onClick={closeMenu}>
           writing
         </Link>
+        <Link className="text-lg/4 sm:text-xl/5 md:text-2xl/6 tracking-tighter subpixel-antialiased" href="/photos" onClick={closeMenu}>
+          photos
+        </Link>
 
       </div>
     </>
