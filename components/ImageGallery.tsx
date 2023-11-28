@@ -10,9 +10,9 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           key={image.id}
           src={image.src}
           alt={image.alt}
-          className="h-80 w-80 my-4 border-2 border-gray-700"
-          width={400}
-          height={400}
+          className="my-4 mx-10 border-2 border-gray-700"
+          width={250}
+          height={250}
         />
       ))}
     </div>

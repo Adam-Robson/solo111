@@ -12,29 +12,29 @@ export default function BioPage() {
           </h1>
         </div>
 
-        <div className="div3 max-w-lg w-full ml-8 pr-12">
-          <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
+        <div className="div3 max-w-lg w-full ml-8 pl-10 pr-20">
+          <p className='mb-4 text-sm sm:text-base md:text-lg font-normal tracking-tighter subpixel-antialiased'>
             As a dedicated full-stack developer, I thrive on perpetual learning, specializing in technologies such as <Link href="https://www.postgresql.org/"><b>Postgres</b></Link>, <Link href="https://expressjs.com/"><b>Express</b></Link>, <Link href="https://react.dev/"><b>React</b></Link>, <Link href="https://www.typescriptlang.org/"><b>TypeScript</b></Link>, and <Link href="https://nodejs.org/en"><b>Node</b></Link>.
           </p>
-          <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
+          <p className='mb-4 text-sm sm:text-base md:text-lg font-normal tracking-tighter subpixel-antialiased'>
             With a decade-long background in the legal field, I made the pivotal decision to transition into the dynamic realm of software development.
           </p>
-          <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
+          <p className='mb-4 text-sm sm:text-base md:text-lg font-normal tracking-tighter subpixel-antialiased'>
             Beyond coding, my passion extends to writing, playing, recording, editing, and producing original music.
           </p>
-          <p className='mb-4 text-sm md:text-lg font-normal tracking-tighter subpixel-antialiased'>
+          <p className='mb-4 text-sm sm:text-base md:text-lg font-normal tracking-tighter subpixel-antialiased'>
             Explore my musical creations on <Link href="https://lefogsong.bandcamp.com/"><b>Bandcamp</b></Link> or search for `&apos;`le fog`&apos;` on any major music platform.
           </p>
 
 
         </div>
 
-        <div className="div2 p-2">
+        <div className="div2 p-2 w-80 mx-auto mt-8">
           <Image
             src={'/images/dev.png'}
             alt='dev img'
-            width={500}
-            height={500}
+            width={400}
+            height={400}
           />
         </div>
 

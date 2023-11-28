@@ -6,11 +6,13 @@ import { PiListDuotone } from 'react-icons/pi';
 export default function NavButton({ onClick }: ButtonProps) {
   const [open, setOpen] = useState(false);
 
-  function handleMouseDown() {
+  function handleMouseDown(event: React.MouseEvent<HTMLButtonElement>) {
+    event.preventDefault();
     setOpen(true);
   }
 
-  function handleMouseUp() {
+  function handleMouseUp(event: React.MouseEvent<HTMLButtonElement>) {
+    event.preventDefault();
     setOpen(false);
     onClick()
   }
