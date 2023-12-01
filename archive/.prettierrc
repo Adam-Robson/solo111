@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "bracketSpacing": true,
   "printWidth": 80,
   "semi": true,
@@ -9,3 +10,12 @@
   "quoteProps": "as-needed",
   "arrowParens": "avoid"
 }
+=======
+  "semi": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "printWidth": 70,
+  "bracketSpacing": true
+}
+>>>>>>> solo/main
