@@ -15,11 +15,12 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-  --text: #444140ff;
-  --background: #e4e9eeff;
-  --primary: #404848ff;
-  --secondary: #dae1e8ff;
-  --accent: #687174ff;
+
+    --text: #444140;
+    --background: #d7dedc;
+    --primary: #8e7872;
+    --secondary: #c2c5b7;
+    --accent: #a3ac98;
   }
 }
 
@@ -27,9 +28,9 @@
   :root {
     --text: #bfbcbb;
     --background: #444140;
-    --primary: #d6e2e6;
-    --secondary: #111212;
-    --accent: #747b7a;
+    --primary: #c2b7b3;
+    --secondary: #4d5f5f;
+    --accent: #8b8fa1;
   }
 }
 
@@ -103,7 +104,7 @@ button {
 }
 
 button:hover {
-  border: 1px solid var(--accent);
+  border: 2px solid var(--accent);
   transition: all 180ms ease-in-out;
 }
 
@@ -140,61 +141,10 @@ img {
   border-radius: 8px;
 }
 
-/* writings & projects */
-.card {
-  background-color: var(--secondary);
-  border: 3px double var(--primary);
-}
-
-/* bio */
-.parent {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.25fr 0.5fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.div1 {
-  grid-area: 1 / 1 / 2 / 2;
-  text-align: center;
-}
-
-.div2 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-
-.div3 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-@media (min-width: 768px) {
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr 5fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 15px;
-  }
-
-  .div1 {
-    grid-area: 1 / 1 / 2 / 11;
-    text-align: center;
-  }
-
-  .div2 {
-    grid-area: 2 / 1 / 3 / 6;
-  }
-
-  .div3 {
-    grid-area: 2 / 6 / 3 / 11;
-  }
-}
-
 /* landing */
 .titlewrap>.title {
   animation-name: revolution;
-  animation-duration: 5s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(0.645,
