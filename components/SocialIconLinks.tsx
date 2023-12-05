@@ -12,7 +12,6 @@ export default function SocialIconLinks() {
         <Link href="https://linkedin.com/in/adamrayrobson">
           <PiLinkedinLogo
             size={48}
-            className="socialicon"
           />
         </Link>
       </li>
@@ -20,7 +19,6 @@ export default function SocialIconLinks() {
         <Link href="https://github.com/Adam-Robson">
           <PiGithubLogo
             size={48}
-            className="socialicon"
           />
         </Link>
       </li>
@@ -28,7 +26,6 @@ export default function SocialIconLinks() {
         <Link href="https://spoti.fi/3QNqMuE">
           <PiSpotifyLogo
             size={48}
-            className="socialicon"
           />
         </Link>
       </li>

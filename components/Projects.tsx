@@ -1,5 +1,6 @@
-import Link from 'next/link';
+import Link from 'next/link'
 import type { ProjectListProps } from '@/lib/types'
+import styles from '@/app/projects/styles.module.css'
 
 export default function Projects({ projects }: ProjectListProps) {
   return (
@@ -9,7 +10,7 @@ export default function Projects({ projects }: ProjectListProps) {
           key={project.id}
           className={`p-6 m-4`}
         >
-          <div className={`card shadow-sm rounded-md p-4 mt-2`}>
+          <div className={styles.card}>
             <div className='text-center font-normal text-base/5 sm:text-lg/6 md:text-xl/7 subpixel-antialiased'>{project.title}</div>
 
             <div>
