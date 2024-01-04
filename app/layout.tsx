@@ -1,8 +1,10 @@
 import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import { Cairo_Play } from 'next/font/google'
-import Loader from '@/components/Loader'
-import Navigation from '@/components/Navigation'
+import Loader from './components/Loader'
+import Navigation from './components/Navigation'
+import { DarkModeProvider } from '@/lib/context/DarkModeContext'
+import DarkModeButton from './components/DarkModeButton'
 
 import './globals.css'
 
@@ -21,10 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cairo.className}>
+        <DarkModeProvider>
         <Navigation />
+        <DarkModeButton />
         <Suspense fallback={<Loader />}>
           {children}
         </Suspense>
+        </DarkModeProvider>
       </body>
     </html>
   )
