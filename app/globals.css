@@ -11,26 +11,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --text: #353839ff;
+  --background: #f0f8ffff;
+  --alternate: #cfcfcfff;
+
+  --primary: #45495bff;
+  --secondary: #aab5b5ff;
+  --accent: #90989eff;
+  --complement: #5c6b73ff;
+
+  --highlight: #b0b5aaff;
+  --counterpart: #b5aaaaff;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --text: #353839ff;
-    --background: #f0f8ffff;
-    --alternate: #cfcfcfff;
-
-    --primary: #45495bff;
-    --secondary: #aab5b5ff;
-    --accent: #90989eff;
-    --complement: #5c6b73ff;
-
-    --highlight: #b0b5aaff;
-    --counterpart: #b5aaaaff;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
+body.dark-mode {
     --text: #f0f8ffff;
     --background: #353839ff;
     --alternate: #cfcfcfff;
@@ -42,7 +36,6 @@
 
     --highlight: #b0b5aaff;
     --counterpart: #b5aaaaff;
-  }
 }
 
 html,
@@ -137,7 +130,7 @@ img {
 }
 
 /* social icon links */
-.linkedwrap>.linked {
+.linkedwrap>.linked { 
   animation-name: linkedrev;
   animation-duration: 35s;
   animation-iteration-count: infinite;
@@ -168,7 +161,6 @@ img {
   }
 
 }
-
 
 .githubwrap>.github {
   animation-name: githubrev;
@@ -231,4 +223,16 @@ img {
   100% {
     color: var(--primary);
   }
+}
+
+/* dark/light mode icon */
+.toggle-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.toggle-text-wrap:hover .toggle-text {
+  visibility: visible;
+  opacity: 1;
 }

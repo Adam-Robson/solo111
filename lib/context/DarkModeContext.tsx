@@ -1,5 +1,5 @@
 'use client'
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
 
 interface DarkModeContextProps {
   darkMode: boolean;
@@ -22,11 +22,11 @@ export function DarkModeProvider({ children }: DarkModeProviderProps) {
       // If dark mode preference is stored, return its boolean value
       return JSON.parse(localDarkMode);
     } else {
-      return 'There is no dark mode set in local storage'
+      return null;
     }
   }
 
-  function setLocalDarkMode() {
+  const setter = useCallback(function setLocalDarkMode() {
     const localDarkMode = checkLocalStorage();
     if (typeof localDarkMode === 'boolean') {
       setDarkMode(localDarkMode);
@@ -34,23 +34,31 @@ export function DarkModeProvider({ children }: DarkModeProviderProps) {
       window.matchMedia('(prefers-color-scheme: dark)').matches ? setDarkMode(true) : setDarkMode(false);
       localStorage.setItem('darkMode', JSON.stringify(darkMode));
     }
-  }
+  }, [darkMode]);
 
   function toggleDarkMode() {
-    let check = checkLocalStorage();
-    let set = setLocalDarkMode();
-    if (localStorage.getItem('darkMode') === 'true') {
-      localStorage.setItem('darkMode', 'false');
-      setDarkMode(false);
-      console.log(darkMode);
+    setDarkMode(prevMode => {
+      const newMode = !prevMode;
+      localStorage.setItem('darkMode', JSON.stringify(newMode));
+      if (newMode) {
+        document.body.classList.add('dark-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+      }
+      return newMode;
+  });
+}
 
+  useEffect(() => {
+    setter();
+    const darkMode = JSON.parse(localStorage.getItem('darkMode') || 'false');
+    setDarkMode(darkMode);
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
     } else {
-      localStorage.setItem('darkMode', 'true');
-      setDarkMode(true);
-      console.log(darkMode);
-
+      document.body.classList.remove('dark-mode');
     }
-  }
+}, [setter]);
 
   return (
     <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
