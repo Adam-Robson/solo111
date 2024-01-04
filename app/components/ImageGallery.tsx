@@ -4,7 +4,7 @@ import type { ImageGalleryProps, ImageType } from '@/lib/types';
 
 export default function ImageGallery({ images }: ImageGalleryProps) {
   return (
-    <div className="flex flex-col justify-evenly items-center">
+    <div className="flex flex-col md:flex-row justify-evenly items-baseline pt-20">
       {images.map((image: ImageType) => (
         <Image
           key={image.id}

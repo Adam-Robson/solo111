@@ -25,7 +25,6 @@ export default function RootLayout({
       <body className={cairo.className}>
         <DarkModeProvider>
         <Navigation />
-        <DarkModeButton />
         <Suspense fallback={<Loader />}>
           {children}
         </Suspense>

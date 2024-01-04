@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import type { ProjectListProps } from '@/lib/types'
+import type { ProjectListProps } from '../../lib/types'
 import styles from '@/app/projects/styles.module.css'
 
 export default function Projects({ projects }: ProjectListProps) {

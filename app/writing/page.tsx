@@ -1,5 +1,5 @@
 import React from 'react'
-import Writings from '@/components/Writings'
+import Writings from '../components/Writings'
 import { writings } from '@/lib/data'
 
 export default function WritingPage() {
