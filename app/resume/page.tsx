@@ -1,6 +1,6 @@
 import React from 'react'
-import PDF from '@/components/PDF'
-import DownloadButton from '@/components/DownloadButton'
+import PDF from '../components/PDF'
+import DownloadButton from '../components/DownloadButton'
 
 export default function ResumePage() {
   return (

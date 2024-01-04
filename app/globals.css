@@ -4,107 +4,77 @@
 
 @import url('https://fonts.googleapis.com/css?family=Cairo Play:variable');
 
-* {
+:root {
   box-sizing: border-box;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --text: #353839ff;
+  --background: #f0f8ffff;
+  --alternate: #cfcfcfff;
+
+  --primary: #45495bff;
+  --secondary: #aab5b5ff;
+  --accent: #90989eff;
+  --complement: #5c6b73ff;
+
+  --highlight: #b0b5aaff;
+  --counterpart: #b5aaaaff;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
+body.dark-mode {
+    --text: #f0f8ffff;
+    --background: #353839ff;
+    --alternate: #cfcfcfff;
 
-    --text: #444140;
-    --background: #d7dedc;
-    --primary: #8e7872;
-    --secondary: #c2c5b7;
-    --accent: #a3ac98;
-  }
-}
+    --primary: #aab5b5ff;
+    --secondary: #45495bff;
+    --accent: #90989eff;
+    --complement: #5c6b73ff;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #bfbcbb;
-    --background: #444140;
-    --primary: #c2b7b3;
-    --secondary: #4d5f5f;
-    --accent: #8b8fa1;
-  }
+    --highlight: #b0b5aaff;
+    --counterpart: #b5aaaaff;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 html,
 body {
+  font-size: 100%;
   width: 100vw;
   height: 100vh;
   background-color: var(--background);
   color: var(--text);
 }
 
-.full-size-background {
-  height: 100vh;
-  width: 100vw;
-  background-image: url('/images/sun.png');
-  background-size: cover;
-  background-position: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.4;
-  z-index: 0;
-}
-
-html {
-  font-size: 100%;
-}
-
 h1 {
   font-size: 4.210rem;
-  /* 67.36px */
 }
 
 h2 {
   font-size: 3.158rem;
-  /* 50.56px */
-}
-
-h3 {
-  font-size: 2.369rem;
-  /* 37.92px */
-}
-
-h4 {
-  font-size: 1.777rem;
-  /* 28.48px */
-}
-
-h5 {
-  font-size: 1.333rem;
-  /* 21.28px */
-}
-
-small {
-  font-size: 0.750rem;
-  /* 12px */
 }
 
 button {
-  color: var(--secondary);
-  background-color: var(--primary);
+  color: var(--complement);
+  background-color: var(--alternate);
   cursor: pointer;
   padding: 0.36rem 0.82rem;
   text-align: center;
   text-decoration: none;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 0.32rem;
-  border-color: var(--secondary);
+  border-color: var(--complement);
   transition: transform 0.5s;
   z-index: 1;
 }
 
 button:hover {
-  border: 2px solid var(--accent);
+  border: 2px solid var(--secondary);
   transition: all 180ms ease-in-out;
 }
 
@@ -125,7 +95,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--secondary);
   text-decoration: underline;
 }
 
@@ -141,30 +111,129 @@ img {
   border-radius: 8px;
 }
 
-/* landing */
-.titlewrap>.title {
-  animation-name: revolution;
-  animation-duration: 15s;
+/* landing page */
+.full-size-background {
+  height: 100%;
+  width: 100%;
+  background-image: url('/images/sun.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.title {
+  color: var(--accent);
+}
+
+/* social icon links */
+.linkedwrap>.linked { 
+  animation-name: linkedrev;
+  animation-duration: 35s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.645,
-      0.045,
-      0.355,
-      1);
+  animation-timing-function: cubic-bezier(0.47,
+      0,
+      0.745,
+      0.715);
   animation-fill-mode: both;
   animation-play-state: running;
 }
 
-@keyframes revolution {
+@keyframes linkedrev {
   0% {
-    color: var(--accent);
+    color: var(--secondary);
   }
 
-  50% {
-    color: var(--text);
+  25% {
+    color: var(--primary);
+  }
+
+  75% {
+    color: var(--highlight);
+  }
+
+  100% {
+    color: var(--counterpart);
+  }
+
+}
+
+.githubwrap>.github {
+  animation-name: githubrev;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.47,
+      0,
+      0.745,
+      0.715);
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+@keyframes githubrev {
+  0% {
+    color: var(--counterpart);
+  }
+
+  25% {
+    color: var(--highlight);
+  }
+
+  75% {
+    color: var(--primary);
+  }
+
+  100% {
+    color: var(--secondary);
+  }
+}
+
+
+.spotwrap>.spot {
+  animation-name: spotrev;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.47,
+      0,
+      0.745,
+      0.715);
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+@keyframes spotrev {
+  0% {
+    color: var(--highlight);
+  }
+
+  25% {
+    color: var(--counterpart);
+  }
+
+  75% {
+    color: var(--secondary);
   }
 
   100% {
     color: var(--primary);
   }
+}
+
+/* dark/light mode icon */
+.toggle-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.toggle-text-wrap:hover .toggle-text {
+  visibility: visible;
+  opacity: 1;
 }

@@ -7,11 +7,12 @@ export default function DownloadButton() {
 
   return (
     <div className="max-w-sm mx-auto flex flex-col items-center">
-      <Link href={documentUrl} download={documentName}>
+      <Link href={documentUrl} download={documentName} className="flex flex-col justify-center items-center text-center">
         <PiFloppyDiskDuotone size={40} color={'var(--primary)'} />
+        <span className="text-sm subpixel-antialiased">Download</span>
       </Link>
       <p className="text-sm/4 sm:text-base/5 md:text-lg/7 subpixeled-antialiased">
-        Download
+        Take a copy with you!
       </p>
     </div>
   );
