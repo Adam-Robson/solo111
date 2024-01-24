@@ -11,30 +11,31 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  
   --text: #353839ff;
   --background: #f0f8ffff;
-  --alternate: #cfcfcfff;
+  --alternate: #cadee2ff;
 
   --primary: #45495bff;
   --secondary: #aab5b5ff;
-  --accent: #90989eff;
+  --accent:  #b0b5aaff;
   --complement: #5c6b73ff;
 
-  --highlight: #b0b5aaff;
+  --highlight:#90989eff;
   --counterpart: #b5aaaaff;
 }
 
 body.dark-mode {
     --text: #f0f8ffff;
     --background: #353839ff;
-    --alternate: #cfcfcfff;
+    --alternate: #cadee2ff;
 
     --primary: #aab5b5ff;
     --secondary: #45495bff;
-    --accent: #90989eff;
+    --accent: #b0b5aaff;
     --complement: #5c6b73ff;
 
-    --highlight: #b0b5aaff;
+    --highlight: #90989eff;
     --counterpart: #b5aaaaff;
     width: 100vw;
     min-height: 100vh;
@@ -127,7 +128,7 @@ img {
 }
 
 .title {
-  color: var(--accent);
+  color: var(--primary);
 }
 
 /* social icon links */
