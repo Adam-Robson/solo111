@@ -11,7 +11,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  
+
   --text: #353839ff;
   --background: #f0f8ffff;
   --alternate: #cadee2ff;
@@ -132,7 +132,7 @@ img {
 }
 
 /* social icon links */
-.linkedwrap>.linked { 
+.linkedwrap>.linked {
   animation-name: linkedrev;
   animation-duration: 35s;
   animation-iteration-count: infinite;
@@ -147,11 +147,11 @@ img {
 
 @keyframes linkedrev {
   0% {
-    color: var(--secondary);
+    color: var(--alternate);
   }
 
   25% {
-    color: var(--primary);
+    color: var(--accent);
   }
 
   75% {
@@ -187,11 +187,11 @@ img {
   }
 
   75% {
-    color: var(--primary);
+    color: var(--alternate);
   }
 
   100% {
-    color: var(--secondary);
+    color: var(--accent);
   }
 }
 
@@ -219,11 +219,11 @@ img {
   }
 
   75% {
-    color: var(--secondary);
+    color: var(--accent);
   }
 
   100% {
-    color: var(--primary);
+    color: var(--alternate);
   }
 }
 
