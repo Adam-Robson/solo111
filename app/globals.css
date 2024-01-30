@@ -79,16 +79,7 @@ button:hover {
   transition: all 180ms ease-in-out;
 }
 
-.nav-button {
-  transition: transform 0.4s ease;
-}
-
-.nav-button.pressed {
-  transform: translateY(4px);
-}
-
 a {
-  color: var(--primary);
   text-decoration: none;
   font-weight: 400;
   cursor: pointer;
@@ -96,7 +87,6 @@ a {
 }
 
 a:hover {
-  color: var(--secondary);
   text-decoration: underline;
 }
 
@@ -129,6 +119,26 @@ img {
 
 .title {
   color: var(--primary);
+}
+
+/* navigation drawer */
+
+.drawer {
+  background-color: #404144df;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #f0f8ffff;
+}
+
+.nav-button {
+  transition: transform 0.4s ease;
+}
+
+.nav-button.pressed {
+  transform: translateY(4px);
 }
 
 /* social icon links */
