@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link';
 import React, { useState } from 'react'
-import { PiListDuotone } from 'react-icons/pi'
 import { Cairo_Play } from 'next/font/google';
 import NavButton from './NavButton';
 import DarkModeButton from './DarkModeButton';
@@ -21,8 +20,8 @@ export default function NavDrawer() {
   return (
     <>
       <NavButton onClick={toggleIsOpen} />
-      <div className={`${cairo.className} flex flex-col items-start justify-evenly absolute top-8 left-4 h-2/5 w-32 mt-6 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-1000 ease-in-out z-20`}>
-        
+      <div className={`drawer ${cairo.className} flex flex-col items-start justify-around absolute top-10 left-0 h-1/2 w-32 mt-10 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-1000 ease-in-out z-20`}>
+
         <Link className="text-lg/4 sm:text-xl/5 md:text-2xl/6 tracking-tighter subpixel-antialiased" href="/" onClick={closeMenu}>
           home
         </Link>
