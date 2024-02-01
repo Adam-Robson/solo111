@@ -5,24 +5,27 @@ import { useDarkMode } from '@/lib/context/DarkModeContext'
 
 export default function DarkModeButton() {
   const { darkMode, toggleDarkMode } = useDarkMode();
-
   const [text, setText] = useState('')
-  const [showText, setShowText] = useState(false)
-
-  useEffect(() => {
-    if (text !== '') {
-      setShowText(true)
-      setTimeout(() => {
-        setShowText(false)
-      }, 5000)
-    }
-  }, [text])
-
+  const [visible, setVisible] = useState(true)
 
   const handleToggleDarkMode = () => {
     toggleDarkMode();
-    setText(darkMode ? 'Light Mode' : 'Dark Mode');
+    setText(darkMode ? 'Dark Mode' : 'Light Mode');
   };
+
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+
+    if (visible) {
+      timer = setTimeout(() => {
+        setVisible(false);
+      }, 2000);
+    }
+
+    return () => {
+      if (timer) clearTimeout(timer);
+    };
+  }, [visible]);
 
   return (
     <div
@@ -34,8 +37,11 @@ export default function DarkModeButton() {
       {darkMode
         ? <PiMoon style={{color: '#f0f8ffff' }} size={24} className="mr-2"/>
         : <PiMoonStars style={{color: '#f0f8ffff'}} size={24} className="mr-2"/>}
-
-        <span className="toggle-text">{text}</span>
+      {
+        visible ? (
+          <span>{darkMode ? 'Dark Mode' : 'Light Mode'}</span>
+        ) : null
+      }
     </div>
   )
 }

@@ -23,6 +23,7 @@ export default function PDF() {
   const [file, setFile] = useState<PDFTypeProps>('/pdf/resume.pdf')
   const [containerRef, setContainerRef] = useState<HTMLElement | null>(null)
   const [containerWidth, setContainerWidth] = useState<number>(300)
+  const [numPages, setNumPages] = useState<number | null>(2)
 
   const onResize = useCallback<ResizeObserverCallback>((entries) => {
 
@@ -34,23 +35,17 @@ export default function PDF() {
   }, [])
 
   const resizeObserverOptions = {}
-  const maxWidth = 700
 
   useResizeObserver(containerRef, resizeObserverOptions, onResize)
 
   return (
     <div className="w-full h-full px-16">
-      <div className="max-w-sm md:max-w-md mx-auto mb-6">
-        <div className="document__container flex justify-center items-center" ref={(ref) => setContainerRef(ref)}>
-          <Document file={file} options={options}>
-            <Page
-              pageNumber={1}
-              renderTextLayer={true}
-              renderAnnotationLayer={true}
-              width={containerWidth
-                ? Math.min(containerWidth, maxWidth)
-                : maxWidth}
-            />
+      <div className="max-w-xs mx-auto mb-6">
+        <div className="document__container flex justify-center items-center max-w-96 mx-auto" ref={(ref) => setContainerRef(ref)}>
+          <Document file={file} options={options} onLoadSuccess={({ numPages }) => setNumPages(numPages)}>
+            {Array.apply(null, Array(numPages))
+              .map((x, i) => i + 1)
+              .map((page, i) => <Page key={i} pageNumber={page} />)}
           </Document>
         </div>
       </div>
