@@ -4,8 +4,6 @@ import { Cairo_Play } from 'next/font/google'
 import Loader from './components/Loader'
 import Navigation from './components/Navigation'
 import { DarkModeProvider } from '@/lib/context/DarkModeContext'
-import DarkModeButton from './components/DarkModeButton'
-
 import './globals.css'
 
 const cairo = Cairo_Play({ subsets: ['latin'] })

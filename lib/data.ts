@@ -35,7 +35,7 @@ export const writings: WritingType[] = [
   {
     id: 1,
     title: 'planet',
-    body: 'almost all water, and within every dew drop, birds punctuate the days. every ocean wave holds another moment in its place. in the present and the past, every instant - something fleeting, something vast.'
+    body: 'almost all water, and within every dew drop, birds punctuate the days. every single wave, a piece of time held in space. both the present and the past - something fleeting, something vast.'
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ export const writings: WritingType[] = [
   {
     id: 3,
     title: 'between',
-    body: 'i can hear the wind, feel the trees against the sun. in the breeze hear spirits breathe. the world weaved in gravity. maybe many can not taste, where you fill up to your face. threaded thoughts, sewn into clouds, may soon reveal, or sooner shroud. where even knowing, can be confusing, and soon enough, becomes amusing, pinch your skin, and i will budge. we\'re in-between, a grin and nudge.'
+    body: 'i can hear the wind, feel the trees against the sun. in the breeze hear spirits breathe. the world weaved in gravity. maybe many can not taste, where you fill up to your face. threaded thoughts, sewn into clouds, may soon reveal, or sooner shroud. where even knowing, becomes confusing, soon enough, becomes amusing, pinch your skin, and i will budge. we\'re in-between, a grin and nudge.'
   },
   {
     id: 4,
@@ -58,22 +58,27 @@ export const writings: WritingType[] = [
 export const photos = [
   {
     id: 1,
-    src: '/images/finn.jpg',
-    alt: 'my dog finn'
+    src: '/images/rainbow.jpg',
+    alt: 'hwy 84 oregon'
   },
   {
     id: 2,
-    src: '/images/car.jpg',
-    alt: 'a passing car'
+    src: '/images/fla.jpg',
+    alt: 'florida bar portland'
   },
   {
     id: 3,
-    src: '/images/dancer.jpeg',
-    alt: 'tiny sparkler dancer'
+    src: '/images/ripples.jpg',
+    alt: 'are we the ripples we make?'
   },
   {
     id: 4,
-    src: '/images/atmosphere.jpg',
-    alt: 'oregon countryside, mosier'
+    src: '/images/tree.jpg',
+    alt: 'tree passing'
+  },
+  {
+    id: 5,
+    src: '/images/cat.jpg',
+    alt: 'cat magazine'
   }
 ]

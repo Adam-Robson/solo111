@@ -1,25 +1,20 @@
 'use client'
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
+import { type DarkModeContextProps, type DarkModeProviderProps } from '../types';
 
-interface DarkModeContextProps {
-  darkMode: boolean;
-  toggleDarkMode: () => void;
-}
-
-interface DarkModeProviderProps {
-  children: React.ReactNode;
-}
 
 const DarkModeContext = createContext<DarkModeContextProps | undefined>(undefined);
 
 export function DarkModeProvider({ children }: DarkModeProviderProps) {
   const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [showText, setShowText] = useState<boolean>(false)
+
 
   function checkLocalStorage() {
-    // Check if dark mode preference is stored in localStorage
+    // check if dark mode preference is stored in localStorage
     const localDarkMode = localStorage.getItem('darkMode');
     if (localDarkMode !== null) {
-      // If dark mode preference is stored, return its boolean value
+      // if dark mode preference is stored, return its boolean value
       return JSON.parse(localDarkMode);
     } else {
       return null;
@@ -45,6 +40,10 @@ export function DarkModeProvider({ children }: DarkModeProviderProps) {
       } else {
         document.body.classList.remove('dark-mode');
       }
+      setShowText(true);
+      setTimeout(() => {
+        setShowText(false)
+      }, 2500)
       return newMode;
   });
 }
@@ -60,8 +59,9 @@ export function DarkModeProvider({ children }: DarkModeProviderProps) {
     }
 }, [setter]);
 
+  const value = { showText, darkMode, toggleDarkMode };
   return (
-    <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
+    <DarkModeContext.Provider value={value}>
       {children}
     </DarkModeContext.Provider>
   );

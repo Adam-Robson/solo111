@@ -14,7 +14,7 @@
 
   --text: #353839ff;
   --background: #f0f8ffff;
-  --alternate: #cadee2ff;
+  --alternate: #dce5e7ff;
 
   --primary: #45495bff;
   --secondary: #aab5b5ff;
@@ -28,7 +28,7 @@
 body.dark-mode {
     --text: #f0f8ffff;
     --background: #353839ff;
-    --alternate: #cadee2ff;
+    --alternate: #dce5e7ff;
 
     --primary: #aab5b5ff;
     --secondary: #45495bff;
@@ -117,10 +117,6 @@ img {
   z-index: 0;
 }
 
-.title {
-  color: var(--primary);
-}
-
 /* navigation drawer */
 
 .drawer {
@@ -141,110 +137,29 @@ img {
   transform: translateY(4px);
 }
 
-/* social icon links */
-.linkedwrap>.linked {
-  animation-name: linkedrev;
-  animation-duration: 35s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.47,
-      0,
-      0.745,
-      0.715);
-  animation-fill-mode: both;
-  animation-play-state: running;
+@media (max-width: 568px) {
+  .image-container {
+    display: block;
+    width: 100%;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-@keyframes linkedrev {
-  0% {
-    color: var(--alternate);
+@media (min-width: 569px) {
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.64rem;
   }
 
-  25% {
-    color: var(--accent);
-  }
-
-  75% {
-    color: var(--highlight);
-  }
-
-  100% {
-    color: var(--counterpart);
-  }
-
-}
-
-.githubwrap>.github {
-  animation-name: githubrev;
-  animation-duration: 35s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.47,
-      0,
-      0.745,
-      0.715);
-  animation-fill-mode: both;
-  animation-play-state: running;
-}
-
-@keyframes githubrev {
-  0% {
-    color: var(--counterpart);
-  }
-
-  25% {
-    color: var(--highlight);
-  }
-
-  75% {
-    color: var(--alternate);
-  }
-
-  100% {
-    color: var(--accent);
+  .image-container img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
 
-.spotwrap>.spot {
-  animation-name: spotrev;
-  animation-duration: 35s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.47,
-      0,
-      0.745,
-      0.715);
-  animation-fill-mode: both;
-  animation-play-state: running;
-}
-
-@keyframes spotrev {
-  0% {
-    color: var(--highlight);
-  }
-
-  25% {
-    color: var(--counterpart);
-  }
-
-  75% {
-    color: var(--accent);
-  }
-
-  100% {
-    color: var(--alternate);
-  }
-}
-
-/* dark/light mode icon */
-.toggle-text {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
-
-.toggle-text-wrap:hover .toggle-text {
-  visibility: visible;
-  opacity: 1;
-}
