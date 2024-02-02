@@ -1,6 +1,7 @@
 import React from 'react'
 import PDF from '../components/PDF'
 import DownloadButton from '../components/DownloadButton'
+import "../globals.css"
 
 export default function ResumePage() {
   return (

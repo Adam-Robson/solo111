@@ -1,8 +1,7 @@
 'use client'
 
-import React, { useState, useCallback } from 'react'
+import React, { useState } from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
-import { useResizeObserver } from '@wojtekmaj/react-hooks';
 
 import type { PDFTypeProps } from '@/lib/types';
 
@@ -35,8 +34,15 @@ export default function PDF() {
     setPageNumber(prevPageNumber => prevPageNumber + offset);
   }
 
-  const previousPage = () => { changePage(-1); }
-  const nextPage = () => { changePage(+1); }
+  const previousPage = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    event.preventDefault();
+    changePage(-1);
+  }
+
+  const nextPage = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    event.preventDefault();
+    changePage(+1);
+  }
 
   return (
     <div className="w-full h-full px-16">
@@ -54,17 +60,17 @@ export default function PDF() {
         </div>
          {renderNavButtons &&
         <div className="w-full max-w-screen-sm mx-auto flex justify-evenly pt-4">
-          <button
-            disabled={pageNumber <= 1}
-            onClick={previousPage}
-          >
+            <button
+              disabled={pageNumber <= 1}
+              onClick={previousPage}
+            >
             <PiArrowLeftBold />
           </button>
           {"  "}
-          <button
-            disabled={pageNumber === numPages}
-            onClick={nextPage}
-          >
+            <button
+              disabled={pageNumber >= (numPages ?? 2)}
+              onClick={nextPage}
+            >
             <PiArrowRightBold />
           </button>
         </div>}
