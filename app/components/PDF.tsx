@@ -8,6 +8,7 @@ import type { PDFTypeProps } from '@/lib/types';
 
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
+import { PiArrowLeftBold, PiArrowRightBold } from 'react-icons/pi';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
@@ -21,33 +22,52 @@ const options = {
 
 export default function PDF() {
   const [file, setFile] = useState<PDFTypeProps>('/pdf/resume.pdf')
-  const [containerRef, setContainerRef] = useState<HTMLElement | null>(null)
-  const [containerWidth, setContainerWidth] = useState<number>(300)
-  const [numPages, setNumPages] = useState<number | null>(2)
+  const [numPages, setNumPages] = useState<number>();
+  const [pageNumber, setPageNumber] = useState(1);
+  const [renderNavButtons, setRenderNavButtons] = useState<Boolean>(false);
 
-  const onResize = useCallback<ResizeObserverCallback>((entries) => {
+  const onSuccess = (sample: any) => {
+    setPageNumber(1);
+    setRenderNavButtons(true);
+  }
 
-    const [entry] = entries;
+  const changePage = (offset: number) => {
+    setPageNumber(prevPageNumber => prevPageNumber + offset);
+  }
 
-    if (entry) {
-      setContainerWidth(entry.contentRect.width)
-    }
-  }, [])
-
-  const resizeObserverOptions = {}
-
-  useResizeObserver(containerRef, resizeObserverOptions, onResize)
+  const previousPage = () => { changePage(-1); }
+  const nextPage = () => { changePage(+1); }
 
   return (
     <div className="w-full h-full px-16">
-      <div className="max-w-xs mx-auto mb-6">
-        <div className="document__container flex justify-center items-center max-w-96 mx-auto" ref={(ref) => setContainerRef(ref)}>
-          <Document file={file} options={options} onLoadSuccess={({ numPages }) => setNumPages(numPages)}>
-            {Array.apply(null, Array(numPages))
-              .map((x, i) => i + 1)
-              .map((page, i) => <Page key={i} pageNumber={page} />)}
+      <div className="max-w-screen-sm mx-auto mb-6">
+        <div className="document__container flex justify-center items-center max-w-xs mx-auto">
+          <Document
+            file={file}
+            onLoadSuccess={({ numPages }) => {
+              setNumPages(numPages);
+              setRenderNavButtons(true);
+              onSuccess;
+            }}>
+            <Page pageNumber={pageNumber} />
           </Document>
         </div>
+         {renderNavButtons &&
+        <div className="w-full max-w-screen-sm mx-auto flex justify-evenly pt-4">
+          <button
+            disabled={pageNumber <= 1}
+            onClick={previousPage}
+          >
+            <PiArrowLeftBold />
+          </button>
+          {"  "}
+          <button
+            disabled={pageNumber === numPages}
+            onClick={nextPage}
+          >
+            <PiArrowRightBold />
+          </button>
+        </div>}
       </div>
     </div>
   )

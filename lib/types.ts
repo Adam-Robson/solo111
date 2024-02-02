@@ -35,3 +35,13 @@ export type ImageType = {
 export type ImageGalleryProps = {
   images: ImageType[];
 }
+
+export interface DarkModeContextProps {
+  showText: boolean;
+  darkMode: boolean;
+  toggleDarkMode: () => void;
+}
+
+export interface DarkModeProviderProps {
+  children: React.ReactNode;
+}
