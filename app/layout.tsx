@@ -4,6 +4,7 @@ import { Cairo_Play } from 'next/font/google'
 import Loader from './components/Loader'
 import Navigation from './components/Navigation'
 import { DarkModeProvider } from '@/lib/context/DarkModeContext'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 
 const cairo = Cairo_Play({ subsets: ['latin'] })
@@ -24,7 +25,8 @@ export default function RootLayout({
         <DarkModeProvider>
         <Navigation />
         <Suspense fallback={<Loader />}>
-          {children}
+            {children}
+            <SpeedInsights />
         </Suspense>
         </DarkModeProvider>
       </body>
