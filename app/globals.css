@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css?family=Cairo Play:variable');
-
 :root {
   box-sizing: border-box;
   font-synthesis: none;
@@ -13,34 +11,25 @@
   -webkit-text-size-adjust: 100%;
 
   --text: #353839ff;
-  --background: #f0f8ffff;
-  --alternate: #dce5e7ff;
-
+  --background: #f2e9e4ff;
   --primary: #45495bff;
-  --secondary: #aab5b5ff;
+  --secondary: #90989eff;
   --accent:  #b0b5aaff;
-  --complement: #5c6b73ff;
-
-  --highlight:#90989eff;
-  --counterpart: #b5aaaaff;
+  --complement: #b5aaaaff;
 }
 
 body.dark-mode {
-    --text: #f0f8ffff;
-    --background: #353839ff;
-    --alternate: #dce5e7ff;
+  --text: #f2e9e4ff;
+  --background: #353839ff;
+  --primary: #90989eff;
+  --secondary: #45495bff;
+  --accent: #b0b5aaff;
+  --complement: #b5aaaaff;
 
-    --primary: #aab5b5ff;
-    --secondary: #45495bff;
-    --accent: #b0b5aaff;
-    --complement: #5c6b73ff;
-
-    --highlight: #90989eff;
-    --counterpart: #b5aaaaff;
-    width: 100vw;
-    min-height: 100vh;
-    background-color: var(--background);
-    color: var(--text);
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 html,
@@ -52,31 +41,23 @@ body {
   color: var(--text);
 }
 
-h1 {
-  font-size: 4.210rem;
-}
-
-h2 {
-  font-size: 3.158rem;
-}
-
 button {
-  color: var(--complement);
-  background-color: var(--alternate);
+  color: var(--secondary);
+  background-color: var(--background);
   cursor: pointer;
   padding: 0.36rem 0.82rem;
   text-align: center;
   text-decoration: none;
   border: 2px solid transparent;
   border-radius: 0.32rem;
-  border-color: var(--complement);
+  border-color: var(--secondary);
   transition: transform 0.5s;
   z-index: 1;
 }
 
 button:hover {
-  border: 2px solid var(--secondary);
-  transition: all 180ms ease-in-out;
+  border: 3px solid var(--secondary);
+  transition: all 0.5s ease-in-out;
 }
 
 a {
@@ -113,7 +94,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.1;
+  opacity: 0.2;
   z-index: 0;
 }
 
@@ -121,7 +102,7 @@ img {
 
 .drawer {
   background-color: #404144df;
-  color: #f0f8ffff;
+  color: var(--text);
   margin: 4rem 0;
   padding: 1rem 0;
 

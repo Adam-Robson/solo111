@@ -26,7 +26,7 @@ export default function RootLayout({
         <NavDrawer />
         <Suspense fallback={<Loader />}>
             {children}
-            <SpeedInsights />
+          <SpeedInsights />
         </Suspense>
         </DarkModeProvider>
       </body>
