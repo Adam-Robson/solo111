@@ -1,49 +1,37 @@
 'use client'
-import Link from 'next/link';
 import React, { useState } from 'react'
 import { Cairo_Play } from 'next/font/google';
+import Link from 'next/link';
+
 import NavButton from './NavButton';
-import DarkModeButton from './DarkModeButton';
+import { navigationLinks } from '@/lib/data';
 
 const cairo = Cairo_Play({ subsets: ["latin"] })
 
 export default function NavDrawer() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   function toggleIsOpen() {
     setIsOpen(!isOpen);
   }
 
-  function closeMenu() {
-    setIsOpen(false)
-  }
+  const navLinks = navigationLinks.map(({ id, href, label }) => {
+    return (
+      <Link
+        key={id}
+        href={href}
+        onClick={toggleIsOpen}
+        className="text-base/5 sm:text-lg/6 tracking-tighter subpixel-antialiased transition-transform duration-600 ease-in-out z-20 hover:scale-105 mt-4">
+        {label}
+      </Link>
+    )
+  });
 
   return (
     <>
       <NavButton onClick={toggleIsOpen} />
-      <div className={`drawer ${cairo.className} flex flex-col items-start justify-between absolute top-10 left-0 h-1/2 w-32 mt-10 pt-6 transform ${isOpen ? 'translate-x-2' : '-translate-x-full'} transition-transform duration-1000 ease-in-out z-20`}>
-
-        <Link className="text-lg/4 sm:text-xl/5 tracking-tighter subpixel-antialiased" href="/" onClick={closeMenu}>
-          home
-        </Link>
-        <Link className="text-lg/4 sm:text-xl/5 tracking-tighter subpixel-antialiased" href="/bio" onClick={closeMenu}>
-          bio
-        </Link>
-        <Link className="text-lg/4 sm:text-xl/5 tracking-tighter subpixel-antialiased" href="/resume" onClick={closeMenu}>
-          resume
-        </Link>
-        <Link className="text-lg/4 sm:text-xl/5 tracking-tighter subpixel-antialiased" href="/projects" onClick={closeMenu}>
-          projects
-        </Link>
-        <Link className="text-lg/4 sm:text-xl/5 tracking-tighter subpixel-antialiased" href="/music" onClick={closeMenu}>
-          music
-        </Link>
-        <Link className="text-lg/4 sm:text-xl/5 tracking-tighter subpixel-antialiased" href="/writing" onClick={closeMenu}>
-          writing
-        </Link>
-        <Link className="text-lg/4 sm:text-xl/5 tracking-tighter subpixel-antialiased" href="/photos" onClick={closeMenu}>
-          photos
-        </Link>
-        <DarkModeButton />
+      <div className={`drawer ${cairo.className} transform ${isOpen ? 'translate-x-2' : '-translate-x-full'} duration-1000 ease-in-out z-20`}>
+          {navLinks}
       </div>
     </>
   )

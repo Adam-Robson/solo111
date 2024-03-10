@@ -121,12 +121,21 @@ img {
 
 .drawer {
   background-color: #404144df;
+  color: #f0f8ffff;
+  margin: 4rem 0;
+  padding: 1rem 0;
+
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 10%;
+  height: 60%;
+
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  color: #f0f8ffff;
 }
 
 .nav-button {

@@ -37,7 +37,6 @@ export type ImageGalleryProps = {
 }
 
 export interface DarkModeContextProps {
-  showText: boolean;
   darkMode: boolean;
   toggleDarkMode: () => void;
 }

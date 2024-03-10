@@ -82,3 +82,14 @@ export const photos = [
     alt: 'cat magazine'
   }
 ]
+
+export const navigationLinks = [
+  { id: 0, href: '/', label: 'home' },
+  { id: 1, href: '/bio', label: 'bio' },
+  { id: 2, href: '/resume', label: 'resume' },
+  { id: 3, href: '/projects', label: 'projects' },
+  { id: 4, href: '/music', label: 'music' },
+  { id: 5, href: '/writing', label: 'writing' },
+  { id: 6, href: '/photos', label: 'photos' },
+  { id: 7, href: '/contact', label: 'contact' }
+];

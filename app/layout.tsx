@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import { Cairo_Play } from 'next/font/google'
 import Loader from './components/Loader'
-import Navigation from './components/Navigation'
+import NavDrawer from './components/NavDrawer'
 import { DarkModeProvider } from '@/lib/context/DarkModeContext'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cairo.className}>
         <DarkModeProvider>
-        <Navigation />
+        <NavDrawer />
         <Suspense fallback={<Loader />}>
             {children}
             <SpeedInsights />
