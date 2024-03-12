@@ -18,7 +18,7 @@ export default function NavButton() {
   return (
     <button
       className={`nav-button ${open ? 'pressed' : ''} absolute top-8 left-4 z-20`}
-      onMouseDown={handleMousesssscx                                                                            Down}
+      onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       style={{ color: '#ffffff', border: '#ffffff' }}
     >
