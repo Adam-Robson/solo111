@@ -42,7 +42,7 @@ body {
 }
 
 button {
-  color: var(--secondary);
+  color: var(--text);
   background-color: var(--background);
   cursor: pointer;
   padding: 0.36rem 0.82rem;
@@ -50,13 +50,14 @@ button {
   text-decoration: none;
   border: 2px solid transparent;
   border-radius: 0.32rem;
-  border-color: var(--secondary);
+  border-color: var(--text);
   transition: transform 0.5s;
   z-index: 1;
 }
 
 button:hover {
-  border: 3px solid var(--secondary);
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
   transition: all 0.5s ease-in-out;
 }
 
@@ -109,8 +110,8 @@ img {
   position: absolute;
   top: 1rem;
   left: 0;
-  width: 10%;
-  height: 60%;
+  width: 20%;
+  height: 80%;
 
   border-radius: 0.5rem;
   display: flex;
@@ -125,6 +126,10 @@ img {
 
 .nav-button.pressed {
   transform: translateY(4px);
+}
+
+.nav-link {
+  color: var(--background);
 }
 
 

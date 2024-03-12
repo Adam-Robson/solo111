@@ -16,25 +16,25 @@ export default function NavDrawer() {
       <Link
         key={id}
         href={href}
-        className="text-base/5 sm:text-lg/6 tracking-tighter subpixel-antialiased transition-transform duration-600 ease-in-out z-20 hover:scale-105 mt-4">
+        className="text-base/5 sm:text-lg/6 tracking-tighter subpixel-antialiased transition-transform duration-600 ease-in-out z-20 hover:scale-105 mt-4"
+        style={{ color: '#f2e9e4ff' }}
+      >
         {label}
       </Link>
     )
   });
 
   return (
-    <>
+    <div
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
+      <NavButton />
       <div
-        onMouseEnter={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
+        className={`drawer ${cairo.className} transform ${isOpen ? 'translate-x-2' : '-translate-x-full'} duration-1000 ease-in-out z-20 w-1/3`}
       >
-        <NavButton />
-        <div
-          className={`drawer ${cairo.className} transform ${isOpen ? 'translate-x-2' : '-translate-x-full'} duration-1000 ease-in-out z-20`}
-        >
-          {navLinks}
-          </div>
-      </div>
-    </>
+        {navLinks}
+        </div>
+    </div>
   )
 }

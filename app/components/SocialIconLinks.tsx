@@ -8,7 +8,7 @@ import styles from '../styles.module.css'
 
 export default function SocialIconLinks() {
   return (
-    <ul className="max-w-sm sm:w-40 md:w-48 lg:w-60 flex justify-between items-baseline">
+    <ul className="max-w-sm sm:w-40 md:w-48 lg:w-60 flex justify-between items-baseline py-4">
       <li>
         <Link
           href="https://linkedin.com/in/adamrayrobson"
@@ -16,7 +16,7 @@ export default function SocialIconLinks() {
           className={styles.linkedwrap}
         >
           <PiLinkedinLogo
-            size={48}
+            size={32}
             className={styles.linked}
           />
         </Link>
@@ -28,7 +28,7 @@ export default function SocialIconLinks() {
           className={styles.githubwrap}
         >
           <PiGithubLogo
-            size={48}
+            size={32}
             className={styles.github}
           />
         </Link>
@@ -40,7 +40,7 @@ export default function SocialIconLinks() {
           className={styles.spotwrap}
         >
           <PiSpotifyLogo
-            size={48}
+            size={32}
             className={styles.spot}
           />
         </Link>

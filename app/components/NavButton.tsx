@@ -21,7 +21,7 @@ export default function NavButton() {
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
     >
-      <PiListDuotone size={24} />
+      <PiListDuotone size={20} />
     </button>
   );
 }

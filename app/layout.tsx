@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Cairo_Play } from 'next/font/google'
 import Loader from './components/Loader'
 import NavDrawer from './components/NavDrawer'
-import { ThemeProvider } from '@/lib/context/DarkModeContext'
+import { ThemeProvider } from '@/lib/context/ThemeContext'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 
