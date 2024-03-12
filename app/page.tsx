@@ -19,8 +19,8 @@ export default function Home() {
             className="hover:cursor-pointer transition-transform duration-200 hover:scale-105"
           >
             {darkMode
-              ? <PiMoon style={{color: '#dce5e7ff' }} size={24} />
-              : <PiMoonStars style={{color: '#353839ff'}} size={24} />}
+              ? <PiMoon style={{color: '#353839ff' }} size={24} />
+              : <PiMoonStars style={{color: '#dce5e7ff'}} size={24} />}
           </div>
         </div>
         <div className="absolute bottom-6 right-4">

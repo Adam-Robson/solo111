@@ -20,9 +20,8 @@ export default function NavButton() {
       className={`nav-button ${open ? 'pressed' : ''} absolute top-8 left-4 z-20`}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
-      style={{ color: '#ffffff', border: '#ffffff' }}
     >
-      <PiListDuotone />
+      <PiListDuotone size={24} />
     </button>
   );
 }
