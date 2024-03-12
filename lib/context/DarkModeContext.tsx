@@ -2,49 +2,30 @@
 import React, {
   createContext,
   useContext,
-  useEffect,
   useState
 } from 'react';
-import { DarkModeContextProps, DarkModeProviderProps } from '../types';
+import { ThemeContextProps, ThemeProviderProps } from '../types';
 
+const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
-const DarkModeContext = createContext<DarkModeContextProps | undefined>(undefined);
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
+  const [darkMode, setDarkMode] = useState(false);
 
-export function DarkModeProvider({ children }: DarkModeProviderProps) {
-  const [darkMode, setDarkMode] = useState<boolean>(getInitialDarkMode());
-
-  function getInitialDarkMode() {
-    const localDarkMode = localStorage.getItem('darkMode');
-    if (localDarkMode !== null) {
-      return JSON.parse(localDarkMode);
-    } else {
-      return window.matchMedia('(prefers-color-scheme: dark)').matches
-    }
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
   }
-
-  useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(darkMode));
-    document.body.classList.toggle('dark-mode', darkMode);
-  }, [darkMode]);
-
-  function toggleDarkMode() {
-    setDarkMode((prevMode) => !prevMode);
-  }
-
-  const value = { darkMode, toggleDarkMode };
 
   return (
-    <DarkModeContext.Provider value={value}>
-      { children }
-    </DarkModeContext.Provider>
+    <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
+      {children}
+    </ThemeContext.Provider>
   );
 }
 
-export function useDarkMode() {
-  const context = useContext(DarkModeContext);
+export function useTheme() {
+  const context = useContext(ThemeContext);
   if (!context) {
-    throw new Error('useDarkMode must be used within a DarkModeProvider');
+    throw new Error('useTheme must be used within a ThemeProvider');
   }
   return context;
-
 }

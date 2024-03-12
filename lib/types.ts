@@ -36,11 +36,11 @@ export type ImageGalleryProps = {
   images: ImageType[];
 }
 
-export interface DarkModeContextProps {
+export interface ThemeContextProps {
   darkMode: boolean;
   toggleDarkMode: () => void;
 }
 
-export interface DarkModeProviderProps {
+export interface ThemeProviderProps {
   children: React.ReactNode;
 }

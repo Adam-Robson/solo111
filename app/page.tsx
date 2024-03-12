@@ -2,11 +2,11 @@
 import SocialIconLinks from './components/SocialIconLinks'
 import TitleCard from './components/TitleCard'
 import Container from './components/Container'
-import { useDarkMode } from '@/lib/context/DarkModeContext';
+import { useTheme } from '@/lib/context/DarkModeContext';
 import { PiMoon, PiMoonStars } from 'react-icons/pi';
 
 export default function Home() {
-  const { darkMode, toggleDarkMode } = useDarkMode();
+  const { darkMode, toggleDarkMode } = useTheme();
 
   return (
     <main className="min-h-full max-w-full">
