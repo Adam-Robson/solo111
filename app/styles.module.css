@@ -1,6 +1,7 @@
 .linkedwrap>.linked {
+  margin: 0 0.5rem;
   animation-name: linkedrev;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(0.47,
@@ -31,8 +32,9 @@
 }
 
 .githubwrap>.github {
+  margin: 0 0.5rem;
   animation-name: githubrev;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(0.47,
@@ -62,8 +64,9 @@
 }
 
 .spotwrap>.spot {
+  margin: 0 0.5rem;
   animation-name: spotrev;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(0.47,
@@ -90,64 +93,4 @@
   100% {
     color: var(--alternate);
   }
-}
-
-.titlewrap>.title {
-  animation-name: titlerev;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.47,
-      0,
-      0.745,
-      0.715);
-  animation-fill-mode: both;
-  animation-play-state: running;
-}
-
-@keyframes titlerev {
-  0% {
-    color: var(--accent);
-  }
-
-  25% {
-    color: var(--primary);
-  }
-
-  75% {
-    color: var(--counterpart);
-  }
-
-  100% {
-    color: var(--highlight);
-  }
-
-}
-
-.subtitlewrap>.subtitle {
-  animation-name: subtitlerev;
-  animation-duration: 25s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.47,
-      0,
-      0.745,
-      0.715);
-  animation-fill-mode: both;
-  animation-play-state: running;
-}
-
-@keyframes subtitlerev {
-  0% {
-    color: var(--counterpart);
-  }
-
-  50% {
-    color: var(--primary);
-  }
-
-  100% {
-    color: var(--highlight);
-  }
-
 }
