@@ -1,10 +1,9 @@
 'use client'
 import { useState } from 'react';
-import type { ButtonProps } from '@/lib/types';
 import { PiListDuotone } from 'react-icons/pi';
 
-export default function NavButton({ onClick }: ButtonProps) {
-  const [open, setOpen] = useState(false);
+export default function NavButton() {
+  const [open, setOpen] = useState<boolean>(false);
 
   function handleMouseDown(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
@@ -14,18 +13,6 @@ export default function NavButton({ onClick }: ButtonProps) {
   function handleMouseUp(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     setOpen(false);
-    onClick()
-  }
-
-  function handleTouchStart(event: React.TouchEvent<HTMLButtonElement>) {
-    event.preventDefault();
-    setOpen(true);
-  }
-
-  function handleTouchEnd(event: React.TouchEvent<HTMLButtonElement>) {
-    event.preventDefault();
-    setOpen(false);
-    onClick();
   }
 
   return (
@@ -33,10 +20,8 @@ export default function NavButton({ onClick }: ButtonProps) {
       className={`nav-button ${open ? 'pressed' : ''} absolute top-8 left-4 z-20`}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
     >
-      <PiListDuotone />
+      <PiListDuotone size={20} />
     </button>
   );
 }
