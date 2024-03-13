@@ -15,12 +15,12 @@ export default function TitleCard() {
           height={350}
         />
       ) : (
-        <Image
-          src="/images/logo.svg"
-          alt="a portfolio by Adam Robson logo"
-          width={350}
-          height={350}
-        />
+          <Image
+            src="/images/logo.svg"
+            alt="a portfolio by Adam Robson logo"
+            width={350}
+            height={350}
+          />
       )}
       <h2 className="text-base/5 tracking-tighter subpixel-antialiased relative">
         a portfolio by Adam Robson

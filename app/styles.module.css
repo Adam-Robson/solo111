@@ -14,7 +14,7 @@
 
 @keyframes linkedrev {
   0% {
-    color: var(--alternate);
+    color: var(--primary);
   }
 
   25% {
@@ -22,11 +22,11 @@
   }
 
   75% {
-    color: var(--highlight);
+    color: var(--secondary);
   }
 
   100% {
-    color: var(--counterpart);
+    color: var(--complement);
   }
 
 }
@@ -47,15 +47,15 @@
 
 @keyframes githubrev {
   0% {
-    color: var(--counterpart);
+    color: var(--complement);
   }
 
   25% {
-    color: var(--highlight);
+    color: var(--secondary);
   }
 
   75% {
-    color: var(--alternate);
+    color: var(--primary);
   }
 
   100% {
@@ -79,11 +79,11 @@
 
 @keyframes spotrev {
   0% {
-    color: var(--highlight);
+    color: var(--secondary);
   }
 
   25% {
-    color: var(--counterpart);
+    color: var(--complement);
   }
 
   75% {
@@ -91,6 +91,6 @@
   }
 
   100% {
-    color: var(--alternate);
+    color: var(--primary);
   }
 }

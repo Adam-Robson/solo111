@@ -14,10 +14,7 @@ export function useTheme() {
 }
 
 export function ThemeProvider({ children }: ThemeProviderType) {
-  const [darkMode, setDarkMode] = useState(() => {
-    const localDarkMode = localStorage.getItem('darkMode');
-    return localDarkMode ? JSON.parse(localDarkMode) : false;
-  });
+  const [darkMode, setDarkMode] = useState(false);
 
   function toggleDarkMode() {
     setDarkMode((prevDarkMode: boolean) => {
@@ -38,6 +35,8 @@ export function ThemeProvider({ children }: ThemeProviderType) {
     const isDarkMode = localStorage.getItem('darkMode');
     if (isDarkMode === 'true') {
       setDarkMode(true);
+    } else {
+      setDarkMode(false);
     }
   }, []);
 
