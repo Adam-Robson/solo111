@@ -28,8 +28,8 @@ export const meimages = [
 ];
 
 export const navigationLinks: NavigationLinks = {
-    '/': ['about', 'contact', 'also'],
-    '/about': ['home', 'contact', 'also'],
-    '/contact': ['home', 'about', 'also'],
-    '/also': ['home', 'about', 'contact'],
+    '/': ['about', 'contact', 'more'],
+    '/about': ['home', 'contact', 'more'],
+    '/contact': ['home', 'about', 'more'],
+    '/more': ['home', 'about', 'contact'],
   };

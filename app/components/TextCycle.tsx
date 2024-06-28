@@ -7,7 +7,7 @@ export default function TextCycle() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % mes.length);
-    }, 3000);
+    }, 2200);
 
     return () => clearInterval(interval);
   }, []);

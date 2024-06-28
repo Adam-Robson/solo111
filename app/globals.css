@@ -163,27 +163,24 @@ body {
 }
 
 header {
-  height: 6rem;
-  width: 100%;
-  max-width: 65rem;
-  margin: 3rem auto;
-  display: flex;
-  justify-content: center;
   color: var(--text-800);
-}
-
-nav {
-  width: 100%;
-  padding: 0.9rem;
 }
 
 nav ul {
   list-style: none;
-  padding: 0.5rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+main {
+  min-height: 100dvh;
+  max-width: 100vmax;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 a {
@@ -206,7 +203,7 @@ a:hover {
 }
 
 .image {
-  border-radius: 1rem;
+  border-radius: 0.35rem;
 }
 
 .video-container:hover .caption {
@@ -220,3 +217,94 @@ a:hover {
 @media screen and (max-width: 576px) {
   
 }
+
+.linkedinwrap > .linkedin {
+  animation: linkedincycle 10s infinite alternate cubic-bezier(0.47, 0, 0.745, 0.715) both running;
+}
+
+@keyframes linkedincycle {
+  0% {
+    color: var(--background-200);
+  }
+
+  25% {
+    color: var(--primary-700);
+  }
+
+  50% {
+    color: var(--secondary-400)
+  }
+  
+  75% {
+    color: var(--accent-200);
+  
+  }
+
+  100% {
+    color: var(--text-800);
+  }
+}
+
+
+.githubwrap > .github {
+  animation: githubcycle 10s infinite alternate cubic-bezier(0.47, 0, 0.745, 0.715) both running;
+}
+
+@keyframes githubcycle {
+   0% {
+    color: var(--secondary-400)
+  }
+
+  25% {
+    color: var(--text-600);
+  }
+
+  50% {
+    color: var(--accent-300);
+  }
+  
+  75% {
+    color: var(--background-500);
+
+  }
+
+  100% {
+    color: var(--primary-600);
+  }
+}
+
+
+.spotifywrap > .spotify {
+  animation: spotifycycle 10s infinite alternate cubic-bezier(0.47, 0, 0.745, 0.715) both running;
+}
+
+@keyframes spotifycycle {
+   0% {
+    color: var(--primary-700);
+
+  }
+
+  25% {
+    color: var(--accent-300);
+
+  }
+
+  50% {
+    color: var(--background-400);
+  }
+  
+  75% {
+    color: var(--text-700);
+
+
+  }
+
+  100% {
+    color: var(--secondary-400);
+}
+
+}
+
+
+
+

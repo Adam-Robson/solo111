@@ -1,21 +1,12 @@
-import Link from 'next/link';
+import Home from './components/Home';
+import SharedLayout from './components/SharedLayout';
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <div className="h-full flex flex-col items-center justify-center w-full mx-auto">
-      <figure className="video-container relative flex flex-col items-center mx-auto w-full h-full max-w-xs">
-        <video className="w-full h-auto object-cover object-center mx-auto rounded-md shadow-md transition-opacity" width="400" controls autoPlay loop muted>
-          <source src="/video/coco.webm" type="video/webm" />
-          <source src="/video/coco.mp4" type="video/mp4" />
-          download the <Link href="/video/coco.webm">webm</Link> or
-          <Link href="/video/coco.mp4">mp4</Link>.
-        </video>
-        <figcaption className="text caption absolute bottom-40 left-0 w-full text-center p-4 opacity-0 transition-opacity text-sm subpixel-antialiased">eating ice cream on the street in la paz, mexico</figcaption>
-      </figure>
-      <div className="w-full my-12 flex flex-col items-center justify-center">
-        <p className="text text-base sm:text-xl md:text-2xl subpixel-antialiased">web design & development, for people</p>
-        <p className="text text-base sm:text-xl md:text-2xl subpixel-antialiased"><b>adam robson</b></p>
-      </div>
-    </div>
-  );
+    <>
+      <Home />
+    </>
+  )
 }
+
+export default SharedLayout(HomePage);
