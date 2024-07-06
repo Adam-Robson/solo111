@@ -199,11 +199,15 @@ a:hover {
 .caption {
   color: var(--background-800);
   background-color: var(--transparency);
-
 }
 
 .image {
   border-radius: 0.35rem;
+}
+
+.video-container {
+  max-width: 22rem;
+  margin: 0 auto;
 }
 
 .video-container:hover .caption {
@@ -214,9 +218,6 @@ a:hover {
   transition: all 0.55s ease-in-out;
 }
 
-@media screen and (max-width: 576px) {
-  
-}
 
 .linkedinwrap > .linkedin {
   animation: linkedincycle 10s infinite alternate cubic-bezier(0.47, 0, 0.745, 0.715) both running;

@@ -6,3 +6,5 @@ export type Project = {
   githubLink: string,
   liveLink: string
 };
+
+export type Me = string;

@@ -4,7 +4,7 @@ import SocialIcons from '../components/SocialIcons';
 
 export default function ContactPage() {
   return (
-    <div className="h-full flex flex-col items-center justify-start w-full mx-auto">
+    <div className='h-screen max-w-screen-md mx-auto w-full flex flex-col justify-between items-center'>
       <Navigation />
       <Contact />
       <SocialIcons />

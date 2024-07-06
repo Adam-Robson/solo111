@@ -1,8 +1,8 @@
-import { NavigationLink, Project } from './types';
+import { Me, NavigationLink, Project } from './types';
 
-export const meimage = '/images/adaam.png'
+export const meimage: string = '/images/adaam.png';
 
-export const mes = [
+export const mes: Me[] = [
   'I love to create.',
   'I am a full-stack software engineer.',
   'I live in the pacific northwest.',

@@ -6,18 +6,24 @@ import DownloadButton from './DownloadButton';
 
 export default function About() {
   return (
-    <div className="h-full flex flex-col flex-1 items-center justify-center w-full mx-auto max-w-screen-lg">
+    <div className="flex flex-col flex-1 items-center justify-center w-full h-full mx-auto max-w-screen-sm">
 
-      <div className="flex flex-col justify-center items-center md:flex-row flex-1 min-w-full">
-        <Image src="/images/adaam.png" alt="image of the author" width="500" height="500" className="p-4 flex-1 rounded-lg" />
-        <section className="flex flex-1 justify-center items-center">
+      <div className="w-full flex flex-col flex-1 sm:flex-row justify-center items-center">
+        <Image
+          src="/images/adaam.png"
+          alt="image of the author"
+          width="350"
+          height="350"
+          className=""
+        />
+        <section className="w-full flex flex-col flex-1">
           <TextCycle />
         </section>
       </div>
 
-      <div className="w-full min-h-32 sm:min-h-40 md:min-h-52 lg:-min-h-60 h-full flex flex-col flex-1 items-center justify-between">
-        <DownloadButton />
-      </div>
-    </div>
+
+      <DownloadButton />
+
+    </div >
   );
 }
