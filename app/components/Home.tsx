@@ -1,10 +1,9 @@
 import Link from 'next/link';
-import SocialIcons from './SocialIcons';
 export default function Home() {
   return (
     <div className="h-full flex flex-col items-center justify-start w-full mx-auto">
-      <figure className="video-container relative flex flex-col items-center justify-start mx-auto w-full h-full max-w-xs sm:max-w-sm ">
-        <video className="w-full h-auto object-cover object-center mx-auto rounded-md shadow-md transition-opacity" width="400" controls autoPlay loop muted>
+      <figure className="video-container relative flex flex-col items-center justify-center mx-auto w-full max-w-xs sm:max-w-sm ">
+        <video className="w-full object-cover object-center mx-auto rounded-md shadow-md transition-opacity" width="400" controls autoPlay loop muted>
           <source src="/video/coco.webm" type="video/webm" />
           <source src="/video/coco.mp4" type="video/mp4" />
           download the <Link href="/video/coco.webm">webm</Link> or

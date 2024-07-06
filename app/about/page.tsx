@@ -1,13 +1,14 @@
+import Link from 'next/link';
+import Navigation from '../components/Navigation';
 import About from '../components/About';
-import SharedLayout from '../components/SharedLayout';
+import SocialIcons from '../components/SocialIcons';
 
-const AboutPage = () => {
+export default function AboutPage() {
   return (
-    <>
+    <div className="h-full flex flex-col items-center justify-start w-full mx-auto">
+      <Navigation />
       <About />
-    </>
-  );
-};
-
-export default SharedLayout(AboutPage);
-
+      <SocialIcons />
+    </div>
+  )
+}

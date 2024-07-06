@@ -1,12 +1,13 @@
 import Home from './components/Home';
-import SharedLayout from './components/SharedLayout';
+import Navigation from './components/Navigation';
+import SocialIcons from './components/SocialIcons';
 
-const HomePage = () => {
+export default function HomePage() {
   return (
-    <>
+    <div className="h-full flex flex-col items-center justify-start w-full mx-auto">
+      <Navigation />
       <Home />
-    </>
+      <SocialIcons />
+    </div>
   )
 }
-
-export default SharedLayout(HomePage);

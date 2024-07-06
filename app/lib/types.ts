@@ -1,9 +1,8 @@
-import { ReactNode } from 'react';
+export type NavigationLink = { name: string, path: string }; 
 
-export type NavigationLinks = {
-  [key: string]: string[];
-}
-
-export type WithNavigationProps = {
-  children?: ReactNode;
-}
+export type Project = {
+  title: string,
+  description: string,
+  githubLink: string,
+  liveLink: string
+};
