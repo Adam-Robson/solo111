@@ -1,7 +1,0 @@
-.background {
-  background-color: var(--background);
-  color: var(--text);
-  min-height: 100vh;
-  width: 100%;
-  max-width: 100vw;
-}

@@ -2,161 +2,310 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css?family=Cairo Play:variable');
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-50: #eef5f6;
+    --text-100: #deeced;
+    --text-200: #bcd8dc;
+    --text-300: #9bc5ca;
+    --text-400: #79b1b9;
+    --text-500: #589ea7;
+    --text-600: #467e86;
+    --text-700: #355f64;
+    --text-800: #233f43;
+    --text-900: #122021;
+    --text-950: #091011;
+
+    --background-50: #eef4f6;
+    --background-100: #dde8ee;
+    --background-200: #bbd2dd;
+    --background-300: #99bbcc;
+    --background-400: #77a4bb;
+    --background-500: #558eaa;
+    --background-600: #447188;
+    --background-700: #335566;
+    --background-800: #223944;
+    --background-900: #111c22;
+    --background-950: #090e11;
+
+    --primary-50: #eef6f6;
+    --primary-100: #deeced;
+    --primary-200: #bddadb;
+    --primary-300: #9cc7c9;
+    --primary-400: #7ab5b8;
+    --primary-500: #59a2a6;
+    --primary-600: #478285;
+    --primary-700: #366163;
+    --primary-800: #244142;
+    --primary-900: #122021;
+    --primary-950: #091011;
+
+    --secondary-50: #f6f0ef;
+    --secondary-100: #ede0de;
+    --secondary-200: #dbc1bd;
+    --secondary-300: #c9a29c;
+    --secondary-400: #b7837b;
+    --secondary-500: #a4645b;
+    --secondary-600: #845048;
+    --secondary-700: #633c36;
+    --secondary-800: #422824;
+    --secondary-900: #211412;
+    --secondary-950: #100a09;
+
+    --accent-50: #f6f6ee;
+    --accent-100: #ecedde;
+    --accent-200: #dadbbd;
+    --accent-300: #c7c99c;
+    --accent-400: #b5b87a;
+    --accent-500: #a2a659;
+    --accent-600: #828547;
+    --accent-700: #616336;
+    --accent-800: #414224;
+    --accent-900: #202112;
+    --accent-950: #101109;
+
+    --transparency: #121f21aa;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-50: #091010;
+    --text-100: #121f21;
+    --text-200: #243e42;
+    --text-300: #365e63;
+    --text-400: #487d84;
+    --text-500: #5b9ca4;
+    --text-600: #7bb0b7;
+    --text-700: #9cc4c9;
+    --text-800: #bdd7db;
+    --text-900: #deebed;
+    --text-950: #eff5f6;
+
+    --background-50: #080f12;
+    --background-100: #0f1f24;
+    --background-200: #1f3d47;
+    --background-300: #2e5c6b;
+    --background-400: #3d7a8f;
+    --background-500: #4d99b3;
+    --background-600: #70adc2;
+    --background-700: #94c2d1;
+    --background-800: #b8d6e0;
+    --background-900: #dbebf0;
+    --background-950: #edf5f7;
+
+    --primary-50: #091011;
+    --primary-100: #122021;
+    --primary-200: #244142;
+    --primary-300: #366163;
+    --primary-400: #478285;
+    --primary-500: #59a2a6;
+    --primary-600: #7ab5b8;
+    --primary-700: #9cc7c9;
+    --primary-800: #bddadb;
+    --primary-900: #deeced;
+    --primary-950: #eef6f6;
+
+    --secondary-50: #100a09;
+    --secondary-100: #211412;
+    --secondary-200: #422824;
+    --secondary-300: #633c36;
+    --secondary-400: #845048;
+    --secondary-500: #a4645b;
+    --secondary-600: #b7837b;
+    --secondary-700: #c9a29c;
+    --secondary-800: #dbc1bd;
+    --secondary-900: #ede0de;
+    --secondary-950: #f6f0ef;
+
+    --accent-50: #101109;
+    --accent-100: #202112;
+    --accent-200: #414224;
+    --accent-300: #616336;
+    --accent-400: #828547;
+    --accent-500: #a2a659;
+    --accent-600: #b5b87a;
+    --accent-700: #c7c99c;
+    --accent-800: #dadbbd;
+    --accent-900: #ecedde;
+    --accent-950: #f6f6ee;
+
+    --transparency: #121f21aa;
+
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
 
 :root {
-  box-sizing: border-box;
-  font-synthesis: none;
+  font-family: 'Inter Tight', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
-  --text: #353839ff;
-  --background: #f2e9e4ff;
-  --primary: #45495bff;
-  --secondary: #90989eff;
-  --accent:  #b0b5aaff;
-  --complement:#b5aaaaff;
 }
 
-body.dark-mode {
-  --text: #f2e9e4ff;
-  --background: #353839ff;
-  --primary: #90989eff;
-  --secondary: #45495bff;
-  --accent: #b0b5aaff;
-  --complement: #b5aaaaff;
-
-    width: 100vw;
-    min-height: 100vh;
-    background-color: var(--background);
-    color: var(--text);
-}
-
-html,
 body {
-  font-size: 100%;
+  background-color: var(--background-50);
+  color: var(--text-800);
+  min-height: 100vh;
+  min-width: 320px;
   width: 100vw;
-  height: 100vh;
-  background-color: var(--background);
-  color: var(--text);
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 300;
 }
 
-button {
-  color: var(--text);
-  background-color: var(--background);
-  cursor: pointer;
-  padding: 0.36rem 0.82rem;
-  text-align: center;
-  text-decoration: none;
-  border: 2px solid transparent;
-  border-radius: 0.32rem;
-  border-color: var(--text);
-  transition: transform 0.5s;
-  z-index: 1;
+header {
+  color: var(--text-800);
 }
 
-button:hover {
-  border: 2px solid var(--secondary);
-  color: var(--secondary);
-  transition: all 180ms ease-in-out;
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+main {
+  min-height: 100dvh;
+  max-width: 100vmax;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+  color: var(--text-800);
   font-weight: 400;
+  transition: all 0.55s ease-in-out;
   cursor: pointer;
-  transition: all 250ms ease-in-out;
 }
 
 a:hover {
-  text-decoration: underline;
+   text-decoration: underline;
+   color: var(--secondary-300);
 }
 
-ul,
-ol {
-  list-style: none;
+.caption {
+  color: var(--background-800);
+  background-color: var(--transparency);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.image {
+  border-radius: 0.35rem;
+}
+
+.video-container {
+  max-width: 22rem;
   margin: 0 auto;
-  border-radius: 8px;
 }
 
-/* landing page */
-.full-size-background {
-  height: 100%;
-  width: 100%;
-  background-image: url('/images/sun.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.2;
-  z-index: 0;
+.video-container:hover .caption {
+  opacity: 1;
 }
 
-/* navigation drawer */
-
-.drawer {
-  background-color: #404144df;
-  color: var(--text);
-  margin: 4rem 0;
-  padding: 1rem 0;
-
-  position: absolute;
-  top: 1rem;
-  left: 0;
-  width: 15%;
-  height: 80%;
-
-  border-radius: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+.text {
+  transition: all 0.55s ease-in-out;
 }
 
-.nav-button {
-  transition: transform 0.4s ease;
+
+.linkedinwrap > .linkedin {
+  animation: linkedincycle 10s infinite alternate cubic-bezier(0.47, 0, 0.745, 0.715) both running;
 }
 
-.nav-button.pressed {
-  transform: translateY(4px);
-}
-
-@media (max-width: 568px) {
-  .image-container {
-    display: block;
-    width: 100%;
+@keyframes linkedincycle {
+  0% {
+    color: var(--background-200);
   }
 
-  .image-container img {
-    width: 100%;
-    height: auto;
+  25% {
+    color: var(--primary-700);
   }
 
-  .drawer {
-    width: 20%;
+  50% {
+    color: var(--secondary-400)
+  }
+  
+  75% {
+    color: var(--accent-200);
+  
+  }
+
+  100% {
+    color: var(--text-800);
   }
 }
 
-@media (min-width: 569px) {
-  .image-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.64rem;
+
+.githubwrap > .github {
+  animation: githubcycle 10s infinite alternate cubic-bezier(0.47, 0, 0.745, 0.715) both running;
+}
+
+@keyframes githubcycle {
+   0% {
+    color: var(--secondary-400)
   }
 
-  .image-container img {
-    max-width: 100%;
-    height: auto;
+  25% {
+    color: var(--text-600);
+  }
+
+  50% {
+    color: var(--accent-300);
+  }
+  
+  75% {
+    color: var(--background-500);
+
+  }
+
+  100% {
+    color: var(--primary-600);
   }
 }
+
+
+.spotifywrap > .spotify {
+  animation: spotifycycle 10s infinite alternate cubic-bezier(0.47, 0, 0.745, 0.715) both running;
+}
+
+@keyframes spotifycycle {
+   0% {
+    color: var(--primary-700);
+
+  }
+
+  25% {
+    color: var(--accent-300);
+
+  }
+
+  50% {
+    color: var(--background-400);
+  }
+  
+  75% {
+    color: var(--text-700);
+
+
+  }
+
+  100% {
+    color: var(--secondary-400);
+}
+
+}
+
+
 
 
