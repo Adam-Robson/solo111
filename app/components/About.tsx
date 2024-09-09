@@ -21,8 +21,7 @@ export default function About() {
         </section>
       </div>
 
-
-      <DownloadButton />
+        <DownloadButton />
 
     </div >
   );
