@@ -8,12 +8,11 @@ export const mes: Me[] = [
   'I live in the pacific northwest.',
   'I am neurodivergent.',
   'I am an artist.',
-  'I am fluent in Typescript & JavaScript & Nodejs.',
+  'I love Nodejs.',
   'I have two dogs and a cat.',
   'The cat thinks they are a dog.',
   'I write, record, and produce all of my own music.',
-  'I build web applications in React.',
-  'I am not afraid of AI.'
+  'I am excited about AI.'
 ];
 
 export const projects: Project[] = [

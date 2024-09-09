@@ -14,7 +14,7 @@ export default function Navigation() {
             navigationLinks
               .filter(link => link.path !== pathname)
               .map(link => (
-                <li key={link.path} className='z-10'>
+                <li key={link.path} className='z-10 text-base md:text-lg lg:text-xl subpixel-antialiased'>
                   <Link href={link.path}>{link.name}</Link>
                 </li>
               ))
