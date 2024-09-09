@@ -14,7 +14,7 @@ export default function About() {
           alt="image of the author"
           width="350"
           height="350"
-          className=""
+          className="rounded-lg shadow-lg"
         />
         <section className="w-full flex flex-col flex-1">
           <TextCycle />
