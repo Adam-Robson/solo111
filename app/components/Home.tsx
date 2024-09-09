@@ -7,7 +7,7 @@ export default function Home() {
 
         <figure className="video-container relative">
           <video
-            className="object-center object-contain transition-opacity w-full mb-2"
+            className="object-center object-contain transition-opacity w-full mb-2 rounded-lg shadow-lg"
             width="350"
             controls
             autoPlay
