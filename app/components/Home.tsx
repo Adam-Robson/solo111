@@ -7,7 +7,7 @@ export default function Home() {
 
         <figure className="video-container relative">
           <video
-            className="object-center object-contain transition-opacity w-full mb-2"
+            className="object-center object-contain transition-opacity w-full mb-2 rounded-lg shadow-lg"
             width="350"
             controls
             autoPlay
@@ -20,8 +20,10 @@ export default function Home() {
             <Link href="/video/coco.mp4">mp4</Link>.
           </video>
 
-          <figcaption className="text caption absolute bottom-40 left-0 w-full text-center p-4 opacity-0 transition-opacity text-sm subpixel-antialiased">eating ice cream on the street in la paz, mexico</figcaption>
-
+          <figcaption className="text caption absolute bottom-20 left-0 w-full text-center p-4 bg-black bg-opacity-60 text-white opacity-0 transition-opacity text-base font-normal subpixel-antialiased">
+            <p>{`helado en la calle`}</p>
+            <p>{`la paz | mx`}</p>
+            </figcaption>
         </figure>
 
         <p className="text-center text-lg/7 sm:text-2xl/8 md:text-3xl/9 subpixel-antialiased">web design & development, for people</p>

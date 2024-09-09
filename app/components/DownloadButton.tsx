@@ -9,8 +9,8 @@ export default function DownloadButton() {
   return (
     <div className="max-w-sm mx-auto flex flex-col items-center">
       <div className="min-h-16 h-16">
-        <Link href={documentUrl} download={documentName} title="download resume to learn more about me" className="cursor-pointer flex flex-col justify-center items-center text-center text-xs sm:text-sm subpixel-antialiased mt-12" target="_blank">
-          <PiFilePdfDuotone size={30} />downlaod resume
+        <Link href={documentUrl} download={documentName} title="download resume to learn more about me" className="cursor-pointer flex flex-col justify-center items-center text-center text-xs sm:text-sm subpixel-antialiased" target="_blank">
+          <PiFilePdfDuotone size={30} />download resume
         </Link>
       </div>
     </div>
