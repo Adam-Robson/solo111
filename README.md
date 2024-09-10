@@ -1,8 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+____________
+
+# portfolio
+
+Welcome to my portfolio!
+
+This project showcases some of my development skills, personal projects, and some of the technologies I work with.
+
+It was built using [Next.js](https://nextjs.org/), a powerful [React](https://react.dev/) framework.
+
+The site is designed to provide insight into my professional experience, creative work, and some aspects of who I am.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Stack](#stack)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Running Locally](#running-locally)
+- [Deployment](#deployment)
+- [Contact](#contact)
+
+## Overview
+
+This portfolio highlights my experience as a developer and creative professional.
+
+The website features details about my work, including projects, skills, and more.
+
+It is fully responsive and optimized for performance, accessibility, and SEO.
+
+## Features
+
+- **Responsive Design**: Works across all devices and screen sizes.
+- **Dynamic Content**: All sections are managed by code.
+- **Optimized Performance**: Leveraging Next.js features like server-side rendering (SSR) and static site generation (SSG) for fast load times.
+- **SEO-Friendly**: Integrated with best practices for search engine optimization.
+- **Dark Mode Support**: Toggle between light and dark themes.
+- **Modern UI**: Clean, minimalist design using CSS and Next.js styling features.
+
+## Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) - [React](https://react.dev/)-based framework for server-side rendering and static site generation.
+- **Language**: [TypeScript](https://www.typescriptlang.org/) - Strict typing to ensure better development and fewer bugs.
+- **Styling**: CSS Modules and [Tailwind CSS](https://tailwindcss.com/) for a scalable and maintainable design system.
+- **Hosting**: [Vercel](https://vercel.com) - A fast, scalable platform for deploying Next.js apps.
+- **Fonts**: Custom [Google Fonts](https://fonts.google.com/) with automatic optimization via Next.js.
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+
+To get the project running locally, first clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/Adam-Robson/portfolio.git
+cd portfolio
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+### Running Locally
+
+After installing dependencies, you can start the development server:
 
 ```bash
 npm run dev
@@ -14,23 +78,38 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start editing the content by modifying the files under the `app/` directory.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The app will automatically update as you make changes.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This portfolio is optimized for deployment on **Vercel**, which supports easy integration with Next.js. To deploy:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Create an account on [Vercel](https://vercel.com/).
+2. Connect your GitHub repository to Vercel.
+3. Choose a project and deploy.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Alternatively, you can deploy manually using this command:
 
-## Deploy on Vercel
+```bash
+npm run build
+# or
+yarn build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This creates an optimized production build that can be deployed to any hosting service.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For more detailed instructions, refer to the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
+
+## Contact
+
+To get in touch, feel free to reach out to me through any of the following channels:
+
+- **Email**: [gmail](mailto:adamrayrobson@gmail.com)
+- **LinkedIn**: [linkedin profile](https://www.linkedin.com/in/adamrayrobson)
+- **GitHub**: [github profile](https://github.com/Adam-Robson)
+
+_____________
