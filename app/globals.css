@@ -145,7 +145,6 @@
     --accent-800: #c4d4cf;
     --accent-900: #e1eae7;
     --accent-950: #f0f4f3;
-
   }
 }
 
@@ -201,8 +200,14 @@ a {
 }
 
 a:hover {
-   text-decoration: underline;
-   color: var(--secondary);
+  text-decoration: underline;
+  color: var(--secondary);
+}
+
+.desc {
+  font-family: 'Ruda', sans-serif;
+  font-weight: 400;
+  color: var(--accent-700);
 }
 
 .caption {
@@ -212,6 +217,8 @@ a:hover {
 
 .image {
   border-radius: 0.35rem;
+  width: 100%;
+  height: auto;
 }
 
 .video-container {
@@ -227,9 +234,9 @@ a:hover {
   transition: all 0.55s ease-in-out;
 }
 
-
 .linkedinwrap > .linkedin {
-  animation: linkedincycle 10s infinite alternate cubic-bezier(0.47, 0, 0.745, 0.715) both running;
+  animation: linkedincycle 10s infinite alternate
+    cubic-bezier(0.47, 0, 0.745, 0.715) both running;
 }
 
 @keyframes linkedincycle {
@@ -244,10 +251,9 @@ a:hover {
   50% {
     color: var(--secondary);
   }
-  
+
   75% {
     color: var(--accent);
-  
   }
 
   100% {
@@ -255,14 +261,14 @@ a:hover {
   }
 }
 
-
 .githubwrap > .github {
-  animation: githubcycle 10s infinite alternate cubic-bezier(0.47, 0, 0.745, 0.715) both running;
+  animation: githubcycle 10s infinite alternate
+    cubic-bezier(0.47, 0, 0.745, 0.715) both running;
 }
 
 @keyframes githubcycle {
-   0% {
-    color: var(--secondary-400)
+  0% {
+    color: var(--secondary-400);
   }
 
   25% {
@@ -272,10 +278,9 @@ a:hover {
   50% {
     color: var(--accent);
   }
-  
+
   75% {
     color: var(--background);
-
   }
 
   100% {
@@ -283,38 +288,29 @@ a:hover {
   }
 }
 
-
 .spotifywrap > .spotify {
-  animation: spotifycycle 10s infinite alternate cubic-bezier(0.47, 0, 0.745, 0.715) both running;
+  animation: spotifycycle 10s infinite alternate
+    cubic-bezier(0.47, 0, 0.745, 0.715) both running;
 }
 
 @keyframes spotifycycle {
-   0% {
+  0% {
     color: var(--primary);
-
   }
 
   25% {
     color: var(--accent);
-
   }
 
   50% {
     color: var(--background);
   }
-  
+
   75% {
     color: var(--text);
-
-
   }
 
   100% {
     color: var(--secondary);
+  }
 }
-
-}
-
-
-
-
