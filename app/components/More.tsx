@@ -11,12 +11,15 @@ export default function More() {
         frameBorder="0"
         allowFullScreen
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"></iframe>
+      ></iframe>
 
-      <div className=''> or visit {' '}
-        <Link href='https://lefogsong.bandcamp.com/' target="_blank">bandcamp</Link>
+      <div className="">
+        {' '}
+        or visit{' '}
+        <Link href="https://lefogsong.bandcamp.com/" target="_blank">
+          bandcamp
+        </Link>
       </div>
-
     </div>
-  )
+  );
 }
