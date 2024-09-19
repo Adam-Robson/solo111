@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 export default function Contact() {
   return (
@@ -8,7 +7,7 @@ export default function Contact() {
           <div className="w-full">
             <figure className="video-container relative">
               <video
-                className="object-center object-contain transition-opacity w-full mb-2 rounded-lg shadow-lg"
+                className="object-center object-contain transition-opacity w-full mb-2 rounded-lg shadow-xl"
                 width="350"
                 controls
                 autoPlay
@@ -31,10 +30,13 @@ export default function Contact() {
 
             <p className="text-center text-sm/5 sm:text-base/6 md:text-lg/7 font-light desc subpixel-antialiased">
               reach out through the links below or by{' '}
-              <Link href="mailto:adamrayrobson@gmail.com">email</Link>
-            </p>
-            <p className="p-2 text-center text-base/5 sm:text-lg/6 md:text-xl/7 subpixel-antialiased">
-              adam robson
+              <Link
+                className="font-bold subpixel-antialiased"
+                href="mailto:adamrayrobson@gmail.com"
+                title="Send me an email by clicking this link!"
+              >
+                email
+              </Link>
             </p>
           </div>
         </div>

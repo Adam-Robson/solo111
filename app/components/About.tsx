@@ -1,5 +1,4 @@
 'use client';
-import Link from 'next/link';
 import Image from 'next/image';
 import TextCycle from './TextCycle';
 import DownloadButton from './DownloadButton';
@@ -13,7 +12,7 @@ export default function About() {
           alt="image of the author"
           width="350"
           height="350"
-          className="rounded-lg shadow-lg"
+          className="rounded-lg shadow-xl"
         />
         <section className="w-full flex flex-col flex-1">
           <TextCycle />
