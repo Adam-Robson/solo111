@@ -1,4 +1,4 @@
-# portfolio
+# Catalog
 
 Welcome to my portfolio project! This project aims to provide some detail about
 who I am as a developer, as well as some of the technologies that I work with.
