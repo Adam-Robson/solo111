@@ -12,7 +12,7 @@ export default function DownloadButton() {
         <Link
           href={documentUrl}
           download={documentName}
-          title="download my resume to learn more about me!"
+          title="Download my resume to learn more about me!"
           className="cursor-pointer flex flex-col justify-center items-center text-center text-xs sm:text-sm subpixel-antialiased"
           target="_blank"
         >

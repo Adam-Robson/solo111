@@ -4,141 +4,29 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --text: #333333;
-    --background: #fcf8f8;
-    --primary: #3a4d60;
-    --secondary: #d8c99f;
-    --accent: #aec4bd;
-
-    --text-50: #f2f2f2;
-    --text-100: #e6e6e6;
-    --text-200: #cccccc;
-    --text-300: #b3b3b3;
-    --text-400: #999999;
-    --text-500: #808080;
-    --text-600: #666666;
-    --text-700: #4d4d4d;
-    --text-800: #333333;
-    --text-900: #1a1a1a;
-    --text-950: #0d0d0d;
-
-    --background-50: #f7eded;
-    --background-100: #f0dbdb;
-    --background-200: #e0b8b8;
-    --background-300: #d19494;
-    --background-400: #c27070;
-    --background-500: #b34d4d;
-    --background-600: #8f3d3d;
-    --background-700: #6b2e2e;
-    --background-800: #471f1f;
-    --background-900: #240f0f;
-    --background-950: #120808;
-
-    --primary-50: #eff2f5;
-    --primary-100: #dfe6ec;
-    --primary-200: #bfccd9;
-    --primary-300: #9fb2c6;
-    --primary-400: #8099b3;
-    --primary-500: #607f9f;
-    --primary-600: #4d6680;
-    --primary-700: #394c60;
-    --primary-800: #263340;
-    --primary-900: #131920;
-    --primary-950: #0a0d10;
-
-    --secondary-50: #f8f5ed;
-    --secondary-100: #f0eadb;
-    --secondary-200: #e1d6b7;
-    --secondary-300: #d3c192;
-    --secondary-400: #c4ad6e;
-    --secondary-500: #b5984a;
-    --secondary-600: #917a3b;
-    --secondary-700: #6d5b2c;
-    --secondary-800: #483d1e;
-    --secondary-900: #241e0f;
-    --secondary-950: #120f07;
-
-    --accent-50: #f0f4f3;
-    --accent-100: #e1eae7;
-    --accent-200: #c4d4cf;
-    --accent-300: #a6bfb7;
-    --accent-400: #89a99f;
-    --accent-500: #6b9487;
-    --accent-600: #56766c;
-    --accent-700: #405951;
-    --accent-800: #2b3b36;
-    --accent-900: #151e1b;
-    --accent-950: #0b0f0d;
+    --text: #3f343aff;
+    --text2: #333333ff;
+    --background: #edebebff;
+    --primary: #99a189ff;
+    --secondary: #ca9c82ff;
+    --accent: #e4c494ff;
+    --complementary: #977a6bff;
+    --highlight: #e4c3b1ff;
+    --highlight2: #eedacfff;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #cccccc;
-    --background: #070303;
-    --primary: #9fb2c6;
-    --secondary: #5e4f26;
-    --accent: #3a5049;
-
-    --text-50: #0d0d0d;
-    --text-100: #1a1a1a;
-    --text-200: #333333;
-    --text-300: #4d4d4d;
-    --text-400: #666666;
-    --text-500: #808080;
-    --text-600: #999999;
-    --text-700: #b3b3b3;
-    --text-800: #cccccc;
-    --text-900: #e6e6e6;
-    --text-950: #f2f2f2;
-
-    --background-50: #120808;
-    --background-100: #240f0f;
-    --background-200: #471f1f;
-    --background-300: #6b2e2e;
-    --background-400: #8f3d3d;
-    --background-500: #b34d4d;
-    --background-600: #c27070;
-    --background-700: #d19494;
-    --background-800: #e0b8b8;
-    --background-900: #f0dbdb;
-    --background-950: #f7eded;
-
-    --primary-50: #0a0d10;
-    --primary-100: #131920;
-    --primary-200: #263340;
-    --primary-300: #394c60;
-    --primary-400: #4d6580;
-    --primary-500: #607e9f;
-    --primary-600: #8098b3;
-    --primary-700: #9fb2c6;
-    --primary-800: #bfccd9;
-    --primary-900: #dfe5ec;
-    --primary-950: #eff2f5;
-
-    --secondary-50: #120f07;
-    --secondary-100: #241e0f;
-    --secondary-200: #483d1e;
-    --secondary-300: #6d5b2c;
-    --secondary-400: #917a3b;
-    --secondary-500: #b5984a;
-    --secondary-600: #c4ad6e;
-    --secondary-700: #d3c192;
-    --secondary-800: #e1d6b7;
-    --secondary-900: #f0eadb;
-    --secondary-950: #f8f5ed;
-
-    --accent-50: #0b0f0d;
-    --accent-100: #151e1b;
-    --accent-200: #2b3b36;
-    --accent-300: #405951;
-    --accent-400: #56766c;
-    --accent-500: #6b9487;
-    --accent-600: #89a99f;
-    --accent-700: #a6bfb7;
-    --accent-800: #c4d4cf;
-    --accent-900: #e1eae7;
-    --accent-950: #f0f4f3;
+    --text: #edebebff;
+    --text2: #ead6c4ff;
+    --background: #3f343aff;
+    --primary: #99a189ff;
+    --secondary: #ca9c82ff;
+    --accent: #e4c494ff;
+    --complementary: #977a6bff;
+    --highlight: #e4c3b1ff;
+    --highlight2: #ddae94ff;
   }
 }
 
@@ -162,10 +50,10 @@ body {
   margin: 0 auto;
   padding: 0;
   font-weight: 400;
-}
-
-header {
-  color: var(--text);
+  font-family: 'Ruda', sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  overflow-x: hidden;
 }
 
 nav ul {
@@ -185,9 +73,22 @@ main {
   padding: 0;
 }
 
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+  min-height: 100dvh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
 a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--text2);
   font-weight: 400;
   transition: all 0.55s ease-in-out;
   cursor: pointer;
@@ -199,14 +100,11 @@ a:hover {
 }
 
 .desc {
+  margin: 0.8rem auto;
+  line-height: 1.5;
   font-family: 'Ruda', sans-serif;
   font-weight: 400;
-  color: var(--accent-700);
-}
-
-.caption {
-  color: var(--background);
-  background-color: var(--transparency);
+  color: var(--text2);
 }
 
 .image {
@@ -225,115 +123,37 @@ a:hover {
 }
 
 .text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text2);
   transition: all 0.55s ease-in-out;
 }
 
-.linkedinwrap > .linkedin {
-  animation: linkedincycle 10s infinite alternate
-    cubic-bezier(0.47, 0, 0.745, 0.715) both running;
-}
-
-@keyframes linkedincycle {
-  0% {
-    color: var(--text-500);
-  }
-
-  50% {
-    color: var(--background-600);
-  }
-
-  100% {
-    color: var(--primary-400);
+@media screen and (max-width: 1060px) {
+  .container {
+    max-width: 55rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
   }
 }
 
-.githubwrap > .github {
-  animation: githubcycle 10s infinite alternate
-    cubic-bezier(0.47, 0, 0.745, 0.715) both running;
-}
-
-@keyframes githubcycle {
-  0% {
-    color: var(--background-400);
-  }
-
-  50% {
-    color: var(--text-500);
-  }
-
-  100% {
-    color: var(--secondary-600);
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 45rem;
+    padding: 0.25rem;
+    gap: 0.5rem;
   }
 }
 
-.spotifywrap > .spotify {
-  animation: spotifycycle 10s infinite alternate
-    cubic-bezier(0.47, 0, 0.745, 0.715) both running;
-}
-
-@keyframes spotifycycle {
-  0% {
-    color: var(--primary-700);
-  }
-
-  50% {
-    color: var(--accent-600);
-  }
-
-  100% {
-    color: var(--text-500);
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 35rem;
   }
 }
 
-/* css for the projects page */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 4rem;
-  justify-items: center;
-  margin-bottom: 5rem;
-}
-
-.project-item {
-  max-width: 500px;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.icon {
-  transition: transform 0.3s ease;
-  opacity: 1;
-}
-
-.project-item:hover .icon {
-  opacity: 0.1;
-  transform: scale(1.1);
-}
-
-.project-details {
-  position: absolute;
-  bottom: 0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  pointer-events: none;
-  white-space: nowrap;
-  background-color: var(--transparency);
-  min-width: 20rem;
-}
-
-.project-item:hover .project-details {
-  opacity: 1;
-}
-
-.project-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 25rem;
+  }
 }

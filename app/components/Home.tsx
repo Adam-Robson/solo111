@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="h-full flex flex-col flex-1 items-center justify-center w-full max-w-screen-lg mx-auto">
-      <article className="w-full p-4 text-base sm:text-lg md:text-xl">
+      <article className="desc w-full p-4 text-base sm:text-lg md:text-xl">
         <h2 className="text-3xl sm:text-4xl md:text-5xl subpixel-antialiased">
           Adam Robson
         </h2>
@@ -13,7 +13,7 @@ export default function Home() {
         <div className="p-2">
           <Image
             className="image rounded-lg shadow-xl max-w-3xl mx-auto"
-            src={'/images/dreamscape.png'}
+            src={"/images/dreamscape.png"}
             alt="animation of a dream world"
             height="500"
             width="800"

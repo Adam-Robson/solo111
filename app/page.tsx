@@ -4,7 +4,7 @@ import SocialIcons from '@/components/SocialIcons';
 
 export default function HomePage() {
   return (
-    <div className="h-full max-w-screen-xl mx-auto w-full flex flex-col justify-between items-center">
+    <div className="min-h-full max-w-screen-xl mx-auto w-full flex flex-col justify-between items-center flex-1">
       <Navigation />
       <Home />
       <SocialIcons />

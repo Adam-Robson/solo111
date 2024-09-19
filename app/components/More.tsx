@@ -14,7 +14,7 @@ export default function More() {
         frameBorder="0"
         allowFullScreen
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        title="le fog on spotify"
+        title="Le fog on spotify!"
       ></iframe>
 
       <div className="mt-8 text-sm sm:text-base md:text-lg subpixel-antialiased">
@@ -24,7 +24,7 @@ export default function More() {
           href="https://lefogsong.bandcamp.com/"
           target="_blank"
           className="font-bold subpixel-antialiased"
-          title="visit le fog's bandcamp by clicking this link!"
+          title="Visit le fog's bandcamp by clicking this link!"
         >
           bandcamp
         </Link>

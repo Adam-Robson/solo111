@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ruda.className} ${lato.className}`}>
-        <main>{children}</main>
+        <main className="container">{children}</main>
       </body>
     </html>
   );

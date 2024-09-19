@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import ProjectManager from '@/components/ProjectManager';
 import SocialIcons from '@/components/SocialIcons';
+import './projects.css';
 
 export default function ProjectsPage() {
   return (

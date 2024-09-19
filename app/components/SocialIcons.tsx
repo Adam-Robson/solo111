@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { PiLinkedinLogo, PiGithubLogo, PiSpotifyLogo } from 'react-icons/pi';
+import Link from "next/link";
+import { PiLinkedinLogo, PiGithubLogo, PiSpotifyLogo } from "react-icons/pi";
 
 export default function SocialIcons() {
   return (
@@ -11,7 +11,11 @@ export default function SocialIcons() {
             className="linkedinwrap"
             target="_blank"
           >
-            <PiLinkedinLogo size={32} className="linkedin my-4" />
+            <PiLinkedinLogo
+              size={32}
+              className="icon linkedin my-4"
+              aria-label="linkedin"
+            />
           </Link>
         </li>
         <li>
@@ -20,7 +24,11 @@ export default function SocialIcons() {
             className="githubwrap"
             target="_blank"
           >
-            <PiGithubLogo size={32} className="github my-4" />
+            <PiGithubLogo
+              size={32}
+              className="icon github my-4"
+              aria-label="github"
+            />
           </Link>
         </li>
         <li>
@@ -29,7 +37,11 @@ export default function SocialIcons() {
             className="spotifywrap"
             target="_blank"
           >
-            <PiSpotifyLogo size={32} className="spotify my-4" />
+            <PiSpotifyLogo
+              size={32}
+              className="icon spotify my-4"
+              aria-label="spotify"
+            />
           </Link>
         </li>
       </ul>
