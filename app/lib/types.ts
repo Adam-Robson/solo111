@@ -1,10 +1,12 @@
-export type NavigationLink = { name: string, path: string }; 
+export type NavigationLink = { name: string; path: string; title: string };
 
 export type Project = {
-  title: string,
-  description: string,
-  githubLink: string,
-  liveLink: string
+  id: number;
+  title: string;
+  description: string;
+  icon: string;
+  url: string;
+  github: string;
 };
 
 export type Me = string;

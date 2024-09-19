@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { mes } from '../lib/data'
+import { mes } from '../lib/data';
 export default function TextCycle() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -14,7 +14,9 @@ export default function TextCycle() {
 
   return (
     <div className="flex justify-center items-center h-full text-center">
-      <p className="text-base sm:text-lg md:text-xl subpixel-antialiased p-4">{mes[currentIndex]}</p>
+      <p className="text-base sm:text-lg md:text-xl subpixel-antialiased p-4">
+        {mes[currentIndex]}
+      </p>
     </div>
   );
 }

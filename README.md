@@ -1,31 +1,30 @@
-____________
-
 # portfolio
 
-Welcome to my portfolio!
+Welcome to my portfolio project! This project aims to provide some detail about
+who I am as a developer, as well as some of the technologies that I work with.
 
-This project showcases some of my development skills, personal projects, and some of the technologies I work with.
-
-It was built using [Next.js](https://nextjs.org/), a powerful [React](https://react.dev/) framework.
-
-The site is designed to provide insight into my professional experience, creative work, and some aspects of who I am.
+This site was built using [Next.js](https://nextjs.org/), a powerful
+[React](https://react.dev/) framework.
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Stack](#stack)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Running Locally](#running-locally)
-- [Deployment](#deployment)
-- [Contact](#contact)
+- [portfolio](#portfolio)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Stack](#stack)
+  - [Getting Started](#getting-started)
+    - [Installation](#installation)
+    - [Running Locally](#running-locally)
+  - [Deployment](#deployment)
+  - [Contact](#contact)
 
 ## Overview
 
-This portfolio highlights my experience as a developer and creative professional.
+The portfolio highlights my experience as a developer and creative professional.
 
-The website features details about my work, including projects, skills, and more.
+The website features details about my work, including projects, contact
+information, and more.
 
 It is fully responsive and optimized for performance, accessibility, and SEO.
 
@@ -33,24 +32,34 @@ It is fully responsive and optimized for performance, accessibility, and SEO.
 
 - **Responsive Design**: Works across all devices and screen sizes.
 - **Dynamic Content**: All sections are managed by code.
-- **Optimized Performance**: Leveraging Next.js features like server-side rendering (SSR) and static site generation (SSG) for fast load times.
-- **SEO-Friendly**: Integrated with best practices for search engine optimization.
+- **Optimized Performance**: Leveraging Next.js features like server-side
+  rendering (SSR) and static site generation (SSG) for fast load times.
+- **SEO-Friendly**: Integrated with best practices for search engine
+  optimization.
 - **Dark Mode Support**: Toggle between light and dark themes.
-- **Modern UI**: Clean, minimalist design using CSS and Next.js styling features.
+- **Modern UI**: Clean, minimalist design using CSS and Next.js styling
+  features.
 
 ## Stack
 
-- **Framework**: [Next.js](https://nextjs.org/) - [React](https://react.dev/)-based framework for server-side rendering and static site generation.
-- **Language**: [TypeScript](https://www.typescriptlang.org/) - Strict typing to ensure better development and fewer bugs.
-- **Styling**: CSS Modules and [Tailwind CSS](https://tailwindcss.com/) for a scalable and maintainable design system.
-- **Hosting**: [Vercel](https://vercel.com) - A fast, scalable platform for deploying Next.js apps.
-- **Fonts**: Custom [Google Fonts](https://fonts.google.com/) with automatic optimization via Next.js.
+- **Framework**: [Next.js](https://nextjs.org/) -
+  [React](https://react.dev/)-based framework for server-side rendering and
+  static site generation.
+- **Language**: [TypeScript](https://www.typescriptlang.org/) - Strict typing
+  to ensure better development and fewer bugs.
+- **Styling**: CSS Modules and [Tailwind CSS](https://tailwindcss.com/) for a
+  scalable and maintainable design system.
+- **Hosting**: [Vercel](https://vercel.com) - A fast, scalable platform for
+  deploying Next.js apps.
+- **Fonts**: Custom [Google Fonts](https://fonts.google.com/) with automatic
+  optimization via Next.js.
 
 ## Getting Started
 
 ### Installation
 
-To get the project running locally, first clone the repository and install the dependencies:
+To get the project running locally, first clone the repository and install
+the dependencies:
 
 ```bash
 git clone https://github.com/Adam-Robson/portfolio.git
@@ -78,7 +87,8 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view
+the portfolio.
 
 Start editing the content by modifying the files under the `app/` directory.
 
@@ -86,7 +96,10 @@ The app will automatically update as you make changes.
 
 ## Deployment
 
-This portfolio is optimized for deployment on **Vercel**, which supports easy integration with Next.js. To deploy:
+This portfolio is optimized for deployment on **Vercel**, which supports easy
+integration with Next.js.
+
+To deploy:
 
 1. Create an account on [Vercel](https://vercel.com/).
 2. Connect your GitHub repository to Vercel.
@@ -100,16 +113,16 @@ npm run build
 yarn build
 ```
 
-This creates an optimized production build that can be deployed to any hosting service.
+This creates an optimized production build that can be deployed to any hosting
+service.
 
-For more detailed instructions, refer to the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
+For more detailed instructions, refer to the
+[Next.js deployment documentation](https://nextjs.org/docs/deployment).
 
 ## Contact
 
 To get in touch, feel free to reach out to me through any of the following channels:
 
 - **Email**: [gmail](mailto:adamrayrobson@gmail.com)
-- **LinkedIn**: [linkedin profile](https://www.linkedin.com/in/adamrayrobson)
-- **GitHub**: [github profile](https://github.com/Adam-Robson)
-
-_____________
+- **LinkedIn**: [linkedin](https://www.linkedin.com/in/adamrayrobson)
+- **GitHub**: [github](https://github.com/Adam-Robson)

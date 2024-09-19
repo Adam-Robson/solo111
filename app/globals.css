@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --text: #333333;
@@ -241,23 +235,15 @@ a:hover {
 
 @keyframes linkedincycle {
   0% {
-    color: var(--background);
-  }
-
-  25% {
-    color: var(--primary);
+    color: var(--text-500);
   }
 
   50% {
-    color: var(--secondary);
-  }
-
-  75% {
-    color: var(--accent);
+    color: var(--background-600);
   }
 
   100% {
-    color: var(--text);
+    color: var(--primary-400);
   }
 }
 
@@ -268,23 +254,15 @@ a:hover {
 
 @keyframes githubcycle {
   0% {
-    color: var(--secondary-400);
-  }
-
-  25% {
-    color: var(--text);
+    color: var(--background-400);
   }
 
   50% {
-    color: var(--accent);
-  }
-
-  75% {
-    color: var(--background);
+    color: var(--text-500);
   }
 
   100% {
-    color: var(--primary);
+    color: var(--secondary-600);
   }
 }
 
@@ -295,22 +273,67 @@ a:hover {
 
 @keyframes spotifycycle {
   0% {
-    color: var(--primary);
-  }
-
-  25% {
-    color: var(--accent);
+    color: var(--primary-700);
   }
 
   50% {
-    color: var(--background);
-  }
-
-  75% {
-    color: var(--text);
+    color: var(--accent-600);
   }
 
   100% {
-    color: var(--secondary);
+    color: var(--text-500);
   }
+}
+
+/* css for the projects page */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 4rem;
+  justify-items: center;
+  margin-bottom: 5rem;
+}
+
+.project-item {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+  opacity: 1;
+}
+
+.project-item:hover .icon {
+  opacity: 0.1;
+  transform: scale(1.1);
+}
+
+.project-details {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  pointer-events: none;
+  white-space: nowrap;
+  background-color: var(--transparency);
+  min-width: 20rem;
+}
+
+.project-item:hover .project-details {
+  opacity: 1;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
 }

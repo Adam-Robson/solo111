@@ -3,6 +3,9 @@ import Link from 'next/link';
 export default function More() {
   return (
     <div className="h-full flex flex-col flex-1 items-center justify-center w-full mx-auto max-w-screen-sm">
+      <h2 className="mb-8 text-sm sm:text-base md:text-lg subpixel-antialiased">
+        checkout my music on spotify or your favorite streaming service
+      </h2>
       <iframe
         className="rounded-lg"
         src="https://open.spotify.com/embed/artist/4NrRxIaVhlouvojuHGq62y?utm_source=generator&theme=0"
@@ -11,12 +14,18 @@ export default function More() {
         frameBorder="0"
         allowFullScreen
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        title="le fog on spotify"
       ></iframe>
 
-      <div className="">
+      <div className="mt-8 text-sm sm:text-base md:text-lg subpixel-antialiased">
         {' '}
         or visit{' '}
-        <Link href="https://lefogsong.bandcamp.com/" target="_blank">
+        <Link
+          href="https://lefogsong.bandcamp.com/"
+          target="_blank"
+          className="font-bold subpixel-antialiased"
+          title="visit le fog's bandcamp by clicking this link!"
+        >
           bandcamp
         </Link>
       </div>

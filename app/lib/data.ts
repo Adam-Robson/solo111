@@ -17,34 +17,43 @@ export const mes: Me[] = [
 
 export const projects: Project[] = [
   {
+    id: 1,
     title: 'Collabo',
     description: `"Collabo" is an innovative and collaborative open-source song project platform that enables musicians to remotely create music together.`,
-    githubLink: 'https://github.com/Collabo-Team/collabo',
-    liveLink: 'https://collabomusic.co/'
+    icon: 'collabo',
+    url: 'https://collabomusic.co/',
+    github: 'https://github.com/Collabo-Team/collabo'
   },
   {
+    id: 2,
     title: 'Pantry Pal',
     description: `"Pantry Pal" is a mobile responsive web-application that locates food pantries anywhere in the U.S.`,
-    githubLink: 'https://github.com/Adam-Robson/colab19-6',
-    liveLink: 'https://pantry-pal-colab.herokuapp.com/'
+    icon: 'pal',
+    url: 'https://pantry-pal-colab.herokuapp.com/',
+    github: 'https://github.com/Adam-Robson/colab19-6'
   },
   {
+    id: 3,
     title: 'Tally Ho',
     description: `"Tallyho" is a responsive web application that provides users with a comprehensive platform allowing users to log in and enjoy a personalized road trip planning experience.`,
-    githubLink: 'https://github.com/road-trippin/tally-ho',
-    liveLink: 'https://tally-ho-road-trips.netlify.app/auth/sign-in'
+    icon: 'tallyho',
+    url: 'https://tally-ho-road-trips.netlify.app/',
+    github: 'https://github.com/road-trippin/tally-ho'
   },
   {
-    title: 'Playground',
-    description: `"Playground" is a collection of many of the games that I have built since I began as a software developer. `,
-    githubLink: 'https://github.com/Adam-Robson/collection',
-    liveLink: 'https://playgroundcollection.netlify.app'
+    id: 4,
+    title: 'Ellington',
+    description: `"Ellington Willoughby" is a local band in in the Pacific Northwest. The website provides the band with a platform, that allows their fans to both enjoy the music and stay up to date with the latest information.`,
+    icon: 'ellington',
+    url: 'https://ellington-willoughby.vercel.app/',
+    github: 'https://github.com/EllingtonWilloughby/ellingtonwilloughby'
   }
 ];
 
 export const navigationLinks: NavigationLink[] = [
-  { name: 'home', path: '/' },
-  { name: 'about', path: '/about' },
-  { name: 'contact', path: '/contact' },
-  { name: 'more', path: '/more' }
+  { name: 'home', path: '/', title: 'return to the home page' },
+  { name: 'about', path: '/about', title: 'learn more about me' },
+  { name: 'projects', path: '/projects', title: 'view my projects' },
+  { name: 'contact', path: '/contact', title: 'get in touch' },
+  { name: 'more', path: '/more', title: 'more projects' }
 ];
