@@ -19,7 +19,7 @@ export default function Contact() {
                 download the <Link href="/video/coco.webm">webm</Link> or
                 <Link href="/video/coco.mp4">mp4</Link>.
               </video>
-              <figcaption className="text caption absolute bottom-20 left-0 w-full text-center p-4 bg-black bg-opacity-60 text-white opacity-0 transition-opacity text-lg font-normal subpixel-antialiased">
+              <figcaption className="caption absolute bottom-20 left-0 w-full text-center p-4 bg-black bg-opacity-60 text-white opacity-0 transition-opacity text-lg font-normal subpixel-antialiased">
                 <p>{`helado de la calle`}</p>
                 <p>{`la paz | mx`}</p>
               </figcaption>
