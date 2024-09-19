@@ -19,8 +19,8 @@ export default function Contact() {
                 download the <Link href="/video/coco.webm">webm</Link> or
                 <Link href="/video/coco.mp4">mp4</Link>.
               </video>
-              <figcaption className="text caption absolute bottom-20 left-0 w-full text-center p-4 bg-black bg-opacity-60 text-white opacity-0 transition-opacity text-base font-normal subpixel-antialiased">
-                <p>{`helado en la calle`}</p>
+              <figcaption className="caption absolute bottom-20 left-0 w-full text-center p-4 bg-black bg-opacity-60 text-white opacity-0 transition-opacity text-lg font-normal subpixel-antialiased">
+                <p>{`helado de la calle`}</p>
                 <p>{`la paz | mx`}</p>
               </figcaption>
             </figure>
@@ -28,7 +28,7 @@ export default function Contact() {
               web design & development, for people
             </p>
 
-            <p className="text-center text-sm/5 sm:text-base/6 md:text-lg/7 font-light desc subpixel-antialiased">
+            <p className="desc text-center text-sm/5 sm:text-base/6 md:text-lg/7 font-light desc subpixel-antialiased">
               reach out through the links below or by{' '}
               <Link
                 className="font-bold subpixel-antialiased"
