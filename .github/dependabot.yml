@@ -27,3 +27,7 @@ updates:
      production-dependencies:
        applies-to: security-updates
        dependency-type: production
+    ignore:
+      - dependency-name: "eslint"
+      update-types: ["version-update:semver-major"]
+      
