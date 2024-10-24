@@ -1,14 +1,14 @@
 # Catalog
 
-Welcome to my portfolio project! This project aims to provide some detail about
-who I am as a developer, as well as some of the technologies that I work with.
+This project aims to detail who I am as a developer,
+as well as to share some of the technologies that I work with.
 
-This site was built using [Next.js](https://nextjs.org/), a powerful
+This site was built using [Next.js](https://nextjs.org/), a
 [React](https://react.dev/) framework.
 
 ## Table of Contents
 
-- [portfolio](#portfolio)
+- [Catalog](#catalog)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Features](#features)
@@ -21,12 +21,12 @@ This site was built using [Next.js](https://nextjs.org/), a powerful
 
 ## Overview
 
-The portfolio highlights my experience as a developer and creative professional.
+The portfolio highlights some of my experiences as a developer.
 
-The website features details about my work, including projects, contact
+The site features details about my work, including projects, contact
 information, and more.
 
-It is fully responsive and optimized for performance, accessibility, and SEO.
+It is responsive and optimized for performance, accessibility, and SEO.
 
 ## Features
 
